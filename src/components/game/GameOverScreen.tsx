@@ -10,14 +10,21 @@ export function GameOverScreen() {
 
   if (!save || !save.isGameOver) return null;
 
+  const isVictory = save.isVictory === true;
   const score = computeFinalScore(save.statistics);
   const grade = getLetterGrade(score);
+  const borderColor = isVictory ? 'var(--accent-green)' : 'var(--accent-red)';
+  const titleColor = isVictory ? 'var(--accent-green)' : 'var(--accent-red)';
+
+  const victoryEmojis = ['🏆', '🎉', '⭐', '🥇'];
+  const defeatEmojis = ['😔', '📋', '🏛️'];
+  const topEmojis = isVictory ? victoryEmojis : defeatEmojis;
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="fixed inset-0 flex items-center justify-center z-50"
+      className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto py-8"
       style={{ background: 'rgba(0,0,0,0.92)' }}
     >
       <motion.div
@@ -27,16 +34,39 @@ export function GameOverScreen() {
         className="max-w-lg w-full mx-4 p-8 rounded text-center"
         style={{
           background: 'var(--bg-card)',
-          border: '2px solid var(--accent-red)',
+          border: `2px solid ${borderColor}`,
         }}
       >
-        <div className="text-5xl mb-4">🏛️</div>
-        <h1 className="text-2xl font-bold mb-2" style={{ color: 'var(--accent-red)' }}>
-          FIN DE LA GESTIÓN
+        {/* Muñequitos animados */}
+        <div className="flex justify-center gap-2 mb-4">
+          {topEmojis.map((e, i) => (
+            <motion.span
+              key={i}
+              className="text-3xl"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ delay: i * 0.15, repeat: Infinity, duration: 1.2 }}
+            >
+              {e}
+            </motion.span>
+          ))}
+        </div>
+
+        <h1 className="text-2xl font-bold mb-2" style={{ color: titleColor }}>
+          {isVictory ? '¡MANDATO COMPLETADO!' : 'FIN DE LA GESTIÓN'}
         </h1>
         <p className="text-sm mb-6" style={{ color: 'var(--text-secondary)' }}>
           {save.gameOverReason}
         </p>
+
+        {/* Ciudadanos reaccionando */}
+        {isVictory && (
+          <div className="mb-4 p-3 rounded text-sm" style={{ background: 'rgba(74,222,128,0.1)', border: '1px solid var(--accent-green)' }}>
+            <div className="flex justify-center gap-3 text-2xl mb-2">
+              <span>👨‍💼</span><span>👩‍💼</span><span>👮</span><span>👩‍🏫</span><span>👨‍⚕️</span>
+            </div>
+            <div style={{ color: 'var(--accent-green)' }}>Los ciudadanos agradecen tu gestión honesta y transparente</div>
+          </div>
+        )}
 
         {/* Calificación */}
         <div
@@ -64,7 +94,7 @@ export function GameOverScreen() {
             { label: 'Decisiones Correctas', value: save.statistics.correctDecisions, color: 'var(--accent-green)' },
             { label: 'Transparencia', value: `${save.statistics.transparencyIndex}%`, color: 'var(--accent-blue)' },
             { label: 'Índice de Corrupción', value: `${save.statistics.corruptionIndex}%`, color: save.statistics.corruptionIndex > 10 ? 'var(--accent-red)' : 'var(--accent-green)' },
-            { label: 'Años Completados', value: `${save.currentYear - 1}/4` },
+            { label: 'Años Completados', value: `${Math.min(save.currentYear - 1, 4)}/4` },
             { label: 'Satisfacción Prom.', value: `${save.statistics.citizenSatisfactionAvg}%` },
           ].map(({ label, value, color }) => (
             <div
@@ -83,7 +113,7 @@ export function GameOverScreen() {
         <button
           onClick={resetGame}
           className="w-full py-3 rounded font-bold text-sm cursor-pointer"
-          style={{ background: 'var(--accent-blue)', color: '#fff' }}
+          style={{ background: isVictory ? 'var(--accent-green)' : 'var(--accent-blue)', color: isVictory ? '#0f1117' : '#fff' }}
         >
           NUEVA PARTIDA
         </button>

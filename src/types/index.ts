@@ -194,6 +194,7 @@ export interface GameSave {
   journalEntries: JournalEntry[];
   statistics: GameStatistics;
   isGameOver: boolean;
+  isVictory?: boolean;
   gameOverReason?: string;
 }
 

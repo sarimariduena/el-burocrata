@@ -245,10 +245,27 @@ export const useGameStore = create<GameStore>()(
           if (!state.save) return {};
           const newDay = state.save.currentDay + 1;
           const newYear = newDay > 365 ? state.save.currentYear + 1 : state.save.currentYear;
+          const dayReset = newDay > 365 ? 1 : newDay;
+
+          // Victoria en modo campaña al completar 4 años
+          if (state.save.gameMode === 'campaign' && newYear > 4) {
+            return {
+              save: {
+                ...state.save,
+                currentDay: dayReset,
+                currentYear: newYear,
+                isGameOver: true,
+                isVictory: true,
+                gameOverReason: '¡Has completado exitosamente tu mandato de 4 años como funcionario público!',
+                updatedAt: new Date().toISOString(),
+              },
+            };
+          }
+
           return {
             save: {
               ...state.save,
-              currentDay: newDay > 365 ? 1 : newDay,
+              currentDay: dayReset,
               currentYear: newYear,
               updatedAt: new Date().toISOString(),
             },

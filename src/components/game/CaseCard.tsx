@@ -62,7 +62,20 @@ export function CaseCard({ gameCase, npcName, npcAvatar }: CaseCardProps) {
       >
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-3">
-            <span className="text-3xl">{npcAvatar}</span>
+            {/* Avatar del NPC */}
+            <div
+              className="flex items-center justify-center rounded-full flex-shrink-0"
+              style={{
+                width: 56,
+                height: 56,
+                fontSize: 32,
+                background: 'var(--bg-secondary)',
+                border: '2px solid var(--accent-blue)',
+                boxShadow: '0 0 10px rgba(96,165,250,0.3)',
+              }}
+            >
+              {npcAvatar}
+            </div>
             <div>
               <div className="text-xs" style={{ color: 'var(--text-secondary)' }}>
                 SOLICITUD DE
