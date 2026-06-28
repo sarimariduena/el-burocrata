@@ -1,0 +1,20 @@
+[
+  { "id": "citizen-001", "name": "María García", "type": "citizen", "avatar": "👩", "personality": "Paciente pero exige respeto y claridad en los procesos.", "trustLevel": 60 },
+  { "id": "citizen-002", "name": "Carlos Mendoza", "type": "citizen", "avatar": "👨", "personality": "Tecnológicamente activo, exige servicios digitales de calidad.", "trustLevel": 55 },
+  { "id": "citizen-003", "name": "Doña Rosa Quispe", "type": "citizen", "avatar": "👴", "personality": "Adulta mayor, no usa internet. Necesita atención presencial y paciencia.", "trustLevel": 70 },
+  { "id": "citizen-004", "name": "Iván Castillo", "type": "citizen", "avatar": "🧑‍💻", "personality": "Investigador de seguridad, reporte sus hallazgos de buena fe.", "trustLevel": 80 },
+  { "id": "citizen-005", "name": "Laura Ríos", "type": "citizen", "avatar": "👩‍⚕️", "personality": "Profesional de salud, afectada por datos médicos expuestos.", "trustLevel": 65 },
+  { "id": "citizen-006", "name": "Colectivo Ciudadano Digital", "type": "citizen", "avatar": "👥", "personality": "Grupo organizado que exige servicios públicos de calidad.", "trustLevel": 75 },
+  { "id": "business-001", "name": "Tecno Soluciones S.A.", "type": "business", "avatar": "🏢", "personality": "Empresa tecnológica con buen historial pero intereses comerciales claros.", "trustLevel": 50 },
+  { "id": "journalist-001", "name": "Ana Valverde", "type": "journalist", "avatar": "📰", "personality": "Periodista de investigación rigurosa. Busca la verdad sin sensacionalismo.", "trustLevel": 65 },
+  { "id": "comptroller-001", "name": "Dr. Felipe Morales", "type": "comptroller", "avatar": "🕵️", "personality": "Contralor meticuloso, exige cumplimiento estricto de la normativa.", "trustLevel": 70 },
+  { "id": "minister-001", "name": "Lic. Sandra Torres", "type": "minister", "avatar": "👩‍💼", "personality": "Ministra pragmática, busca resultados pero a veces cede a presiones políticas.", "trustLevel": 55 },
+  { "id": "minister-002", "name": "Dr. Roberto Chávez", "type": "minister", "avatar": "👨‍💼", "personality": "Ministro técnico, valora los datos y la evidencia para tomar decisiones.", "trustLevel": 70 },
+  { "id": "minister-003", "name": "Ing. Patricia Sánchez", "type": "minister", "avatar": "👩‍🔬", "personality": "Ministra de salud comprometida con la modernización del sistema sanitario.", "trustLevel": 75 },
+  { "id": "mayor-001", "name": "Alcalde Eduardo Vásquez", "type": "mayor", "avatar": "🏛️", "personality": "Alcalde populista que busca impacto visible para la ciudadanía.", "trustLevel": 50 },
+  { "id": "supplier-001", "name": "DataCorp Ecuador", "type": "supplier", "avatar": "💼", "personality": "Proveedor tecnológico con buenos productos pero tendencia a presionar informalmente.", "trustLevel": 40 },
+  { "id": "supplier-002", "name": "CloudGov Solutions", "type": "supplier", "avatar": "☁️", "personality": "Empresa de nube especializada en sector público con buenas referencias.", "trustLevel": 65 },
+  { "id": "supplier-003", "name": "InteligenSys", "type": "supplier", "avatar": "🤖", "personality": "Startup de IA con soluciones innovadoras pero poco probadas en gobierno.", "trustLevel": 45 },
+  { "id": "ngo-001", "name": "Fundación Transparencia Digital", "type": "ngo", "avatar": "🌱", "personality": "ONG rigurosa en su trabajo, defiende los derechos digitales ciudadanos.", "trustLevel": 80 },
+  { "id": "assembly-001", "name": "Asambleísta Jorge Ramos", "type": "assembly", "avatar": "⚖️", "personality": "Legislador que fiscaliza activamente y propone normativa de modernización.", "trustLevel": 60 }
+]

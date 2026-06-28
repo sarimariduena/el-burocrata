@@ -1,0 +1,223 @@
+[
+  {
+    "id": "T001",
+    "title": "Solicitud de acceso a expediente",
+    "description": "Un ciudadano solicita una copia digital de su expediente de trámite de permiso de construcción que lleva 6 meses en proceso.",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["acceso-a-información", "derechos-ciudadanos", "expedientes"],
+    "options": [
+      {
+        "id": "T001-A",
+        "text": "Entregar inmediatamente el expediente en formato digital",
+        "delta": { "citizenSatisfaction": 12, "legality": 8, "institutionalReputation": 5 },
+        "xpReward": 30,
+        "educationalFeedback": "Correcto. El acceso a la información pública es un derecho fundamental. Las instituciones deben facilitar el acceso a los expedientes que conciernen directamente al ciudadano. Esto fortalece la transparencia activa según los principios de Gobierno Abierto.",
+        "isCorrect": true,
+        "legalReference": "Principios de Gobierno Abierto - OCDE 2017"
+      },
+      {
+        "id": "T001-B",
+        "text": "Negar el acceso alegando confidencialidad",
+        "delta": { "citizenSatisfaction": -15, "legality": -20, "institutionalReputation": -10 },
+        "xpReward": 5,
+        "educationalFeedback": "Incorrecto. Negar el acceso a información sobre el propio expediente del ciudadano viola el derecho de acceso a la información pública. Solo información clasificada puede restringirse, y debe justificarse formalmente.",
+        "isCorrect": false
+      },
+      {
+        "id": "T001-C",
+        "text": "Solicitar documentos adicionales innecesarios para dilatar el proceso",
+        "delta": { "citizenSatisfaction": -10, "legality": -12, "institutionalReputation": -8 },
+        "xpReward": 5,
+        "educationalFeedback": "Esta práctica se denomina 'burocracia obstruccionista' y vulnera el principio de simplicidad administrativa. Los trámites deben ser sencillos y no exigir documentos que ya obran en poder de la entidad.",
+        "isCorrect": false
+      },
+      {
+        "id": "T001-D",
+        "text": "Remitir al ciudadano al portal de transparencia institucional",
+        "delta": { "citizenSatisfaction": 5, "legality": 3, "institutionalReputation": 3 },
+        "xpReward": 15,
+        "educationalFeedback": "Parcialmente correcto. Orientar al portal es útil, pero si el expediente no está disponible en línea debes entregarlo directamente. El gobierno digital busca que los servicios sean accesibles por múltiples canales.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "T002",
+    "title": "Publicación del presupuesto institucional",
+    "description": "El director de planificación te pide que publiques el presupuesto detallado del año fiscal en el portal web. Hay resistencia interna porque incluye viáticos de funcionarios.",
+    "category": "transparency",
+    "npcId": "minister-001",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["presupuesto", "transparencia-fiscal", "gobierno-abierto"],
+    "options": [
+      {
+        "id": "T002-A",
+        "text": "Publicar el presupuesto completo sin redacciones",
+        "delta": { "citizenSatisfaction": 15, "legality": 10, "institutionalReputation": 12, "budget": -2 },
+        "xpReward": 40,
+        "educationalFeedback": "Excelente decisión. La transparencia presupuestaria es un pilar del buen gobierno. Los ciudadanos tienen derecho a conocer cómo se gastan los fondos públicos. Esta práctica es reconocida internacionalmente como indicador de democracia fiscal.",
+        "isCorrect": true
+      },
+      {
+        "id": "T002-B",
+        "text": "Publicar solo un resumen ejecutivo sin detalles de viáticos",
+        "delta": { "citizenSatisfaction": -5, "legality": -8, "institutionalReputation": -5 },
+        "xpReward": 10,
+        "educationalFeedback": "Incompleto. La opacidad selectiva debilita la confianza ciudadana y puede interpretarse como ocultamiento de información. Las buenas prácticas exigen publicar el presupuesto desagregado al máximo nivel posible.",
+        "isCorrect": false
+      },
+      {
+        "id": "T002-C",
+        "text": "Diferir la publicación hasta obtener aprobación política",
+        "delta": { "citizenSatisfaction": -8, "legality": -10, "institutionalReputation": -7 },
+        "xpReward": 5,
+        "educationalFeedback": "La información presupuestaria no requiere autorización política especial para su divulgación cuando es de naturaleza pública. Diferir la publicación por presión interna constituye un acto de opacidad institucional.",
+        "isCorrect": false
+      },
+      {
+        "id": "T002-D",
+        "text": "Publicar en formato de datos abiertos reutilizables (CSV, JSON)",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 15, "budget": -3 },
+        "xpReward": 50,
+        "educationalFeedback": "¡Brillante! Publicar en formatos abiertos maximiza el impacto de la transparencia. Ciudadanos, periodistas y organizaciones civiles pueden reutilizar y analizar los datos. Esto cumple con los estándares internacionales de datos abiertos gubernamentales.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "T003",
+    "title": "Periodista solicita contratos de proveedores",
+    "description": "Una periodista de investigación solicita acceso a todos los contratos firmados con proveedores tecnológicos en los últimos 3 años.",
+    "category": "transparency",
+    "npcId": "journalist-001",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["contratación-pública", "periodismo", "acceso-información"],
+    "options": [
+      {
+        "id": "T003-A",
+        "text": "Proporcionar todos los contratos en formato digital en 72 horas",
+        "delta": { "citizenSatisfaction": 12, "legality": 15, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "Correcto. Los contratos públicos son documentos de acceso público. Proporcionarlos oportunamente fortalece la rendición de cuentas y la integridad institucional. La transparencia en compras públicas reduce el riesgo de corrupción.",
+        "isCorrect": true
+      },
+      {
+        "id": "T003-B",
+        "text": "Exigir identificación detallada y propósito de la investigación antes de entregar",
+        "delta": { "citizenSatisfaction": -5, "legality": -8, "institutionalReputation": -5 },
+        "xpReward": 10,
+        "educationalFeedback": "Incorrecto. El acceso a información pública no requiere que el solicitante justifique para qué la usará. Imponer barreras de identificación excesivas vulnera el derecho de acceso.",
+        "isCorrect": false
+      },
+      {
+        "id": "T003-C",
+        "text": "Entregar contratos pero tachar los montos por 'seguridad comercial'",
+        "delta": { "citizenSatisfaction": -3, "legality": -12, "institutionalReputation": -8 },
+        "xpReward": 8,
+        "educationalFeedback": "Los montos de contratos públicos son de acceso público. La excepción de 'seguridad comercial' no aplica al Estado. Solo aplica en casos muy específicos regulados por ley. Esta práctica es frecuentemente cuestionada en auditorías.",
+        "isCorrect": false
+      },
+      {
+        "id": "T003-D",
+        "text": "Publicar proactivamente todos los contratos en el portal antes de que pida más",
+        "delta": { "citizenSatisfaction": 20, "legality": 18, "institutionalReputation": 20, "budget": -5 },
+        "xpReward": 60,
+        "educationalFeedback": "Excelente. La transparencia proactiva supera la reactiva. Publicar contratos sin que se soliciten posiciona a la institución como referente de integridad y reduce el costo administrativo de atender solicitudes individuales.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "T004",
+    "title": "Informe de auditoría interna",
+    "description": "El auditor interno detectó irregularidades menores en gastos de representación. Debes decidir si publicar el informe de auditoría.",
+    "category": "accountability",
+    "npcId": "comptroller-001",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["auditoría", "rendición-de-cuentas", "ética"],
+    "options": [
+      {
+        "id": "T004-A",
+        "text": "Publicar el informe completo con el plan de corrección",
+        "delta": { "citizenSatisfaction": 15, "legality": 20, "institutionalReputation": 12 },
+        "xpReward": 55,
+        "educationalFeedback": "Decisión ejemplar. Publicar hallazgos de auditoría y acciones correctivas demuestra madurez institucional. Las organizaciones que reconocen errores y los corrigen generan más confianza que las que los ocultan.",
+        "isCorrect": true
+      },
+      {
+        "id": "T004-B",
+        "text": "Guardar el informe internamente para corregir sin publicar",
+        "delta": { "citizenSatisfaction": -5, "legality": -10, "institutionalReputation": -8 },
+        "xpReward": 10,
+        "educationalFeedback": "Incompleto. Los informes de auditoría interna deben tener algún nivel de divulgación pública. Ocultar hallazgos, incluso menores, puede interpretarse como falta de rendición de cuentas.",
+        "isCorrect": false
+      },
+      {
+        "id": "T004-C",
+        "text": "Clasificar el informe como reservado para proteger la imagen institucional",
+        "delta": { "citizenSatisfaction": -10, "legality": -18, "institutionalReputation": -15 },
+        "xpReward": 5,
+        "educationalFeedback": "Grave error. Clasificar informes de auditoría por razones de imagen constituye un acto de opacidad que puede derivar en sanciones disciplinarias y penales. La reserva solo procede por causales taxativas en la ley.",
+        "isCorrect": false
+      },
+      {
+        "id": "T004-D",
+        "text": "Notificar a la Contraloría y publicar un resumen ejecutivo",
+        "delta": { "citizenSatisfaction": 10, "legality": 15, "institutionalReputation": 8 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. Notificar al ente de control es obligatorio. Publicar un resumen es adecuado cuando el informe completo contiene información reservada de terceros. Esta práctica es aceptada internacionalmente.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "T005",
+    "title": "Datos de calidad del aire",
+    "description": "La dirección de ambiente tiene datos de calidad del aire de 12 meses. Los datos muestran niveles preocupantes. ¿Publicas los datos?",
+    "category": "open-data",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["datos-abiertos", "ambiente", "salud-pública"],
+    "options": [
+      {
+        "id": "T005-A",
+        "text": "Publicar inmediatamente en el portal de datos abiertos",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. Los datos ambientales son de interés público. Su publicación permite a ciudadanos, investigadores y periodistas tomar decisiones informadas y exigir medidas correctivas. Los datos abiertos empoderan a la sociedad.",
+        "isCorrect": true
+      },
+      {
+        "id": "T005-B",
+        "text": "Retener los datos hasta preparar un informe que 'contextualice' las cifras",
+        "delta": { "citizenSatisfaction": -8, "legality": -5, "institutionalReputation": -6 },
+        "xpReward": 10,
+        "educationalFeedback": "Manipular el momento de publicación para 'contextualizar' datos desfavorables es una forma de desinformación institucional. Los datos deben publicarse con su contexto pero sin demora que altere su valor informativo.",
+        "isCorrect": false
+      },
+      {
+        "id": "T005-C",
+        "text": "Publicar solo los datos de los meses con niveles aceptables",
+        "delta": { "citizenSatisfaction": -15, "legality": -20, "institutionalReputation": -18 },
+        "xpReward": 5,
+        "educationalFeedback": "Gravísimo error. Publicar datos seleccionados para mostrar una imagen favorable es una forma de manipulación de información pública. Esto viola el principio de integridad de los datos y puede tener consecuencias penales.",
+        "isCorrect": false
+      },
+      {
+        "id": "T005-D",
+        "text": "Publicar los datos y activar el protocolo de alerta ambiental",
+        "delta": { "citizenSatisfaction": 22, "legality": 15, "institutionalReputation": 18, "budget": -5 },
+        "xpReward": 55,
+        "educationalFeedback": "Excelente. Publicar los datos y actuar en consecuencia demuestra que el gobierno usa la información para mejorar la calidad de vida. Esto es el uso inteligente de datos para políticas públicas basadas en evidencia.",
+        "isCorrect": true
+      }
+    ]
+  }
+]

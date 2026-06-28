@@ -1,0 +1,222 @@
+[
+  {
+    "id": "CS001",
+    "title": "Ataque de phishing a funcionarios",
+    "description": "Varios funcionarios recibieron correos falsos suplantando al departamento de IT pidiendo sus contraseñas. Tres ya las entregaron. Los sistemas están comprometidos.",
+    "category": "cybersecurity",
+    "npcId": "minister-001",
+    "requiredRank": "coordinator",
+    "difficulty": "hard",
+    "tags": ["phishing", "seguridad", "respuesta-incidentes"],
+    "options": [
+      {
+        "id": "CS001-A",
+        "text": "Cambiar inmediatamente las contraseñas de los afectados y activar autenticación multifactor",
+        "delta": { "legality": 15, "institutionalReputation": 10, "budget": -8 },
+        "xpReward": 50,
+        "educationalFeedback": "Respuesta correcta de contención. Ante un incidente de credenciales comprometidas, la acción inmediata es invalidar las credenciales afectadas y activar MFA (autenticación multifactor). Esto limita el daño y protege los sistemas restantes.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS001-B",
+        "text": "Investigar internamente quién fue responsable antes de actuar",
+        "delta": { "legality": -15, "institutionalReputation": -12, "budget": -5 },
+        "xpReward": 5,
+        "educationalFeedback": "Error grave. En un incidente activo, investigar la responsabilidad antes de contener el daño permite que el ataque continúe. La respuesta a incidentes prioriza contención, erradicación y recuperación. La investigación forense viene después.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS001-C",
+        "text": "Notificar a todos los funcionarios sobre el ataque y dar capacitación emergente",
+        "delta": { "legality": 8, "institutionalReputation": 8, "citizenSatisfaction": 3 },
+        "xpReward": 30,
+        "educationalFeedback": "Parcialmente correcto. La comunicación interna es necesaria pero insuficiente. Primero debes contener el incidente activo (cambio de credenciales) y luego comunicar y capacitar. El orden importa en gestión de incidentes.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS001-D",
+        "text": "Activar el plan de respuesta a incidentes, contener, notificar y reportar al CSIRT nacional",
+        "delta": { "legality": 20, "institutionalReputation": 15, "budget": -12, "citizenSatisfaction": 5 },
+        "xpReward": 70,
+        "educationalFeedback": "Respuesta modelo. El protocolo correcto es: Contener → Erradicar → Recuperar → Notificar → Reportar. Notificar al CSIRT (Computer Security Incident Response Team) nacional es obligatorio para incidentes en infraestructura pública crítica según estándares internacionales.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "CS002",
+    "title": "Vulnerabilidad en el portal ciudadano",
+    "description": "Un investigador de seguridad reporta una vulnerabilidad en el portal de trámites que expone datos de 50.000 ciudadanos. Pide reconocimiento público.",
+    "category": "cybersecurity",
+    "npcId": "citizen-004",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["vulnerabilidad", "datos-personales", "divulgación-responsable"],
+    "options": [
+      {
+        "id": "CS002-A",
+        "text": "Ignorar el reporte, el investigador puede estar mintiendo",
+        "delta": { "legality": -25, "institutionalReputation": -20, "citizenSatisfaction": -15 },
+        "xpReward": 0,
+        "educationalFeedback": "Pésima decisión. Ignorar un reporte de vulnerabilidad es negligencia. Si los datos se filtran por no actuar, la institución tiene responsabilidad legal. Los marcos de protección de datos personales establecen obligaciones claras ante brechas de seguridad.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS002-B",
+        "text": "Corregir silenciosamente la vulnerabilidad sin reconocer el reporte",
+        "delta": { "legality": 5, "institutionalReputation": -8 },
+        "xpReward": 15,
+        "educationalFeedback": "Parcialmente correcto en la acción técnica pero eticamente cuestionable. No reconocer a quienes reportan vulnerabilidades desincentiva la divulgación responsable. Los programas de bug bounty y la divulgación coordinada son buenas prácticas internacionales.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS002-C",
+        "text": "Corregir la vulnerabilidad, notificar a los ciudadanos afectados y agradecer al investigador",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 12, "budget": -8 },
+        "xpReward": 65,
+        "educationalFeedback": "Respuesta ejemplar. La divulgación responsable (responsible disclosure) es el estándar ético: corregir, notificar a afectados y reconocer al reportante. La notificación a ciudadanos afectados es obligatoria en marcos de protección de datos como GDPR.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS002-D",
+        "text": "Amenazar legalmente al investigador por acceder sin autorización",
+        "delta": { "legality": -20, "institutionalReputation": -25, "citizenSatisfaction": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "Gravísimo error. Perseguir a investigadores que reportan vulnerabilidades de buena fe es una práctica que destruye la reputación institucional y va contra la tendencia internacional de fomentar el reporte responsable de vulnerabilidades.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "CS003",
+    "title": "Ransomware en sistemas de salud",
+    "description": "El sistema hospitalario público sufre un ataque de ransomware. Los atacantes piden 500.000 USD para devolver el acceso a expedientes médicos de miles de pacientes.",
+    "category": "cybersecurity",
+    "npcId": "minister-003",
+    "requiredRank": "viceminister",
+    "difficulty": "expert",
+    "tags": ["ransomware", "infraestructura-crítica", "salud"],
+    "options": [
+      {
+        "id": "CS003-A",
+        "text": "Pagar el rescate para recuperar los datos rápidamente",
+        "delta": { "legality": -20, "institutionalReputation": -15, "budget": -30 },
+        "xpReward": 0,
+        "educationalFeedback": "No se debe pagar rescates. Hacerlo financia el crimen organizado, incentiva futuros ataques y no garantiza la recuperación de datos. Las agencias internacionales de ciberseguridad desaconsejan explícitamente pagar rescates a atacantes.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS003-B",
+        "text": "Activar protocolos de continuidad, restaurar desde backups y reportar a autoridades",
+        "delta": { "legality": 18, "institutionalReputation": 12, "budget": -15, "citizenSatisfaction": 5 },
+        "xpReward": 70,
+        "educationalFeedback": "Respuesta correcta. La resiliencia ante ransomware depende de tener backups actualizados y aislados. Activar la continuidad operativa, restaurar sistemas limpios y reportar a las autoridades (CSIRT, policía) es el protocolo estándar internacional.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS003-C",
+        "text": "Negociar con los atacantes para reducir el monto del rescate",
+        "delta": { "legality": -15, "institutionalReputation": -20, "budget": -20 },
+        "xpReward": 0,
+        "educationalFeedback": "Negociar con atacantes, aunque parezca pragmático, legitima su actividad criminal y generalmente no resulta en la recuperación real de los datos. Es equivalente a negociar con terroristas: un precedente peligroso.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS003-D",
+        "text": "Activar plan de continuidad, contratar respuesta forense y revisar la estrategia de backups",
+        "delta": { "legality": 20, "institutionalReputation": 18, "budget": -18, "citizenSatisfaction": 8 },
+        "xpReward": 80,
+        "educationalFeedback": "Excelente respuesta integral. La respuesta forense profesional permite entender el vector de ataque y prevenir recurrencias. Revisar la estrategia de backups (regla 3-2-1: 3 copias, 2 medios, 1 offsite) es indispensable para la resiliencia.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "CS004",
+    "title": "Política de contraseñas institucional",
+    "description": "El 60% de los funcionarios usa contraseñas débiles o compartidas. El área de TI propone implementar un gestor de contraseñas corporativo.",
+    "category": "cybersecurity",
+    "npcId": "supplier-001",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["contraseñas", "gestión-accesos", "cultura-seguridad"],
+    "options": [
+      {
+        "id": "CS004-A",
+        "text": "Aprobar el gestor de contraseñas y hacer la adopción obligatoria",
+        "delta": { "legality": 12, "institutionalReputation": 8, "budget": -5 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. Los gestores de contraseñas corporativos son una herramienta estándar de seguridad que permite contraseñas únicas y robustas para cada sistema. La adopción obligatoria garantiza cobertura completa.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS004-B",
+        "text": "Emitir una circular pidiendo a los funcionarios mejorar sus contraseñas voluntariamente",
+        "delta": { "legality": 3, "institutionalReputation": 2 },
+        "xpReward": 10,
+        "educationalFeedback": "Insuficiente. Las circulares voluntarias tienen baja adherencia. La seguridad informática no puede depender de la voluntad individual. Requiere controles técnicos y políticas de cumplimiento obligatorio.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS004-C",
+        "text": "Implementar autenticación multifactor además del gestor de contraseñas",
+        "delta": { "legality": 18, "institutionalReputation": 15, "budget": -10 },
+        "xpReward": 55,
+        "educationalFeedback": "Excelente. MFA + gestor de contraseñas es la combinación de seguridad estándar recomendada por NIST y CISA. El MFA puede bloquear el 99% de ataques de credenciales comprometidas incluso si la contraseña se filtra.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS004-D",
+        "text": "Rechazar por el costo y establecer requisitos mínimos de longitud de contraseña",
+        "delta": { "legality": -5, "institutionalReputation": -3, "budget": 2 },
+        "xpReward": 5,
+        "educationalFeedback": "Insuficiente. Los requisitos mínimos de contraseña sin herramientas de soporte son inefectivos. Los funcionarios los cumplirán superficialmente (Contraseña1!). La inversión en seguridad es siempre menor al costo de un incidente.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "CS005",
+    "title": "Uso de aplicaciones no autorizadas",
+    "description": "Los funcionarios usan WhatsApp personal para comunicar información institucional confidencial porque el sistema oficial es lento.",
+    "category": "cybersecurity",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["shadow-IT", "información-confidencial", "comunicaciones"],
+    "options": [
+      {
+        "id": "CS005-A",
+        "text": "Prohibir formalmente el uso de WhatsApp para asuntos institucionales",
+        "delta": { "legality": 8, "institutionalReputation": 3, "citizenSatisfaction": -5 },
+        "xpReward": 20,
+        "educationalFeedback": "Parcialmente correcto. La prohibición sin alternativa lleva a que los funcionarios la incumplan. La causa raíz es que el sistema oficial es lento. Prohibir sin solucionar el problema de fondo genera resistencia.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS005-B",
+        "text": "Implementar una plataforma de mensajería segura institucional y capacitar al equipo",
+        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8, "budget": -8 },
+        "xpReward": 55,
+        "educationalFeedback": "Correcto. Solucionar el problema de raíz (sistema oficial lento) con una alternativa segura es el enfoque correcto. Las plataformas de colaboración segura (cifrado de extremo a extremo, control de datos) protegen la información institucional.",
+        "isCorrect": true
+      },
+      {
+        "id": "CS005-C",
+        "text": "Ignorar el problema, es solo para comunicación interna sin importancia",
+        "delta": { "legality": -15, "institutionalReputation": -8, "citizenSatisfaction": 2 },
+        "xpReward": 0,
+        "educationalFeedback": "Grave error. La información institucional transmitida por aplicaciones de terceros sin control puede violar la protección de datos personales, comprometer expedientes y generar responsabilidad legal. No hay comunicación institucional 'sin importancia'.",
+        "isCorrect": false
+      },
+      {
+        "id": "CS005-D",
+        "text": "Sancionar a los funcionarios que usen WhatsApp para asuntos oficiales",
+        "delta": { "legality": 5, "institutionalReputation": -5, "citizenSatisfaction": -8 },
+        "xpReward": 10,
+        "educationalFeedback": "Contraproducente. Sancionar sin proveer alternativas destruye el clima laboral y no soluciona el problema. La gestión de la seguridad requiere facilitar buenas prácticas, no solo castigar malas.",
+        "isCorrect": false
+      }
+    ]
+  }
+]

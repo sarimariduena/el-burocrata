@@ -1,0 +1,222 @@
+[
+  {
+    "id": "AI001",
+    "title": "IA para detección de fraude",
+    "description": "Una empresa propone implementar un sistema de IA para detectar solicitudes fraudulentas de beneficios sociales. El sistema tiene 85% de precisión pero 15% de falsos positivos.",
+    "category": "ai-government",
+    "npcId": "supplier-002",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["inteligencia-artificial", "fraude", "sesgos-algorítmicos"],
+    "options": [
+      {
+        "id": "AI001-A",
+        "text": "Implementar el sistema y rechazar automáticamente los casos marcados como fraude",
+        "delta": { "legality": -20, "citizenSatisfaction": -15, "institutionalReputation": -10, "budget": 5 },
+        "xpReward": 5,
+        "educationalFeedback": "Error grave. Un 15% de falsos positivos significa que 1 de cada 7 personas marcadas podría ser inocente. Usar IA para decisiones definitivas sin revisión humana viola el derecho al debido proceso. Las directrices de IA gubernamental exigen supervisión humana en decisiones que afectan derechos.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI001-B",
+        "text": "Rechazar el sistema por el porcentaje de error inaceptable",
+        "delta": { "legality": 5, "budget": 2 },
+        "xpReward": 15,
+        "educationalFeedback": "Decisión conservadora pero que pierde una oportunidad. Un 85% de precisión puede ser valioso como herramienta de apoyo, no de decisión automática. El rechazo total desperdicia el potencial de la IA como asistente en la detección de fraude.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI001-C",
+        "text": "Implementar como herramienta de apoyo donde la decisión final la toma un funcionario",
+        "delta": { "legality": 15, "citizenSatisfaction": 10, "institutionalReputation": 12, "budget": -8 },
+        "xpReward": 60,
+        "educationalFeedback": "Correcto. El modelo de 'human-in-the-loop' es el estándar ético para IA en decisiones que afectan derechos ciudadanos. La IA señala casos sospechosos y el funcionario decide con información enriquecida. Esto balances eficiencia con derechos fundamentales.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI001-D",
+        "text": "Implementar con auditoría de sesgos, supervisión humana y mecanismo de apelación",
+        "delta": { "legality": 20, "citizenSatisfaction": 15, "institutionalReputation": 18, "budget": -15 },
+        "xpReward": 80,
+        "educationalFeedback": "Excelente. Este es el modelo de gobernanza de IA responsable: auditoría de sesgos (¿discrimina por raza, género, zona geográfica?), supervisión humana y mecanismo de apelación para afectados. Cumple con los principios de IA ética del gobierno según OCDE y UNESCO.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "AI002",
+    "title": "Chatbot para atención ciudadana 24/7",
+    "description": "El ministerio evalúa implementar un chatbot de IA para responder consultas de ciudadanos fuera del horario laboral. Algunos funcionarios temen por sus empleos.",
+    "category": "ai-government",
+    "npcId": "citizen-002",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["chatbot", "atención-ciudadana", "automatización"],
+    "options": [
+      {
+        "id": "AI002-A",
+        "text": "Rechazar para proteger los empleos de los funcionarios",
+        "delta": { "citizenSatisfaction": -8, "institutionalReputation": -5 },
+        "xpReward": 5,
+        "educationalFeedback": "Incorrecto desde la perspectiva del servicio público. Los ciudadanos tienen derecho a servicios de calidad. La resistencia a la automatización por protección de empleo no debe primar sobre la mejora del servicio. La automatización de tareas repetitivas permite al personal enfocarse en casos complejos.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI002-B",
+        "text": "Implementar el chatbot para consultas básicas y redirigir casos complejos a humanos",
+        "delta": { "citizenSatisfaction": 18, "institutionalReputation": 15, "budget": -8 },
+        "xpReward": 55,
+        "educationalFeedback": "Correcto. El modelo híbrido humano-IA es el más efectivo: el chatbot resuelve consultas frecuentes (horarios, requisitos, estados de trámite) y los funcionarios atienden casos que requieren juicio. Mejora el servicio sin eliminar empleos.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI002-C",
+        "text": "Implementar solo si el chatbot puede resolver el 90% de casos sin humano",
+        "delta": { "citizenSatisfaction": 5, "institutionalReputation": 5, "budget": -3 },
+        "xpReward": 20,
+        "educationalFeedback": "Estándar demasiado alto y arriesgado. Buscar 90% de autonomía puede llevar a casos mal resueltos por IA sin supervisión. El modelo híbrido es más seguro y efectivo que buscar máxima automatización.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI002-D",
+        "text": "Implementar con capacitación del equipo en nuevas competencias digitales",
+        "delta": { "citizenSatisfaction": 20, "institutionalReputation": 18, "budget": -12 },
+        "xpReward": 65,
+        "educationalFeedback": "Excelente. La transformación digital requiere transformación del capital humano. Capacitar al equipo en nuevas competencias (análisis de datos del chatbot, casos complejos, supervisión de IA) convierte la automatización en oportunidad de desarrollo profesional.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "AI003",
+    "title": "Algoritmo de priorización de trámites",
+    "description": "Un proveedor ofrece un algoritmo que prioriza automáticamente los trámites según 'riesgo y urgencia'. Al analizar el código, notas que da menor prioridad a solicitudes de zonas rurales.",
+    "category": "ai-government",
+    "npcId": "supplier-003",
+    "requiredRank": "director",
+    "difficulty": "expert",
+    "tags": ["sesgo-algorítmico", "equidad", "IA-pública"],
+    "options": [
+      {
+        "id": "AI003-A",
+        "text": "Implementar el algoritmo, la eficiencia global mejora aunque haya diferencias locales",
+        "delta": { "legality": -22, "citizenSatisfaction": -18, "institutionalReputation": -15 },
+        "xpReward": 0,
+        "educationalFeedback": "Error grave. Un algoritmo que discrimina por zona geográfica viola el principio de igualdad ante la ley. Los sesgos algorítmicos que reproducen desigualdades históricas son inaceptables en sistemas públicos. La eficiencia global nunca puede justificar discriminación sistemática.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI003-B",
+        "text": "Rechazar el algoritmo y reportar el sesgo discriminatorio al proveedor",
+        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 45,
+        "educationalFeedback": "Correcto. Rechazar un algoritmo sesgado y comunicar el sesgo al proveedor es la respuesta ética. Las instituciones públicas tienen la responsabilidad de evaluar los sistemas de IA antes de implementarlos para detectar sesgos.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI003-C",
+        "text": "Solicitar al proveedor que corrija el sesgo antes de cualquier implementación",
+        "delta": { "legality": 18, "institutionalReputation": 15, "citizenSatisfaction": 10 },
+        "xpReward": 55,
+        "educationalFeedback": "Excelente respuesta. Exigir la corrección del sesgo antes de implementar es la práctica correcta. Incluir en el contrato requisitos de equidad algorítmica y auditorías periódicas protege los derechos de los ciudadanos y establece un precedente de responsabilidad del proveedor.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI003-D",
+        "text": "Implementar solo en zonas urbanas donde el sesgo no aplica",
+        "delta": { "legality": -10, "institutionalReputation": -8, "citizenSatisfaction": -5 },
+        "xpReward": 5,
+        "educationalFeedback": "Evasión del problema. Usar un algoritmo sesgado en zonas urbanas no resuelve la inequidad y crea un sistema de dos velocidades. Todos los ciudadanos tienen derecho a los mismos estándares de servicio.",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "id": "AI004",
+    "title": "IA predictiva en seguridad pública",
+    "description": "La policía propone usar IA para predecir zonas de alto crimen antes de que ocurra, usando datos históricos de arrestos. ONG de derechos humanos expresa preocupaciones.",
+    "category": "ai-government",
+    "npcId": "ngo-001",
+    "requiredRank": "viceminister",
+    "difficulty": "expert",
+    "tags": ["policía-predictiva", "derechos-humanos", "IA"],
+    "options": [
+      {
+        "id": "AI004-A",
+        "text": "Aprobar sin condiciones, la tecnología mejora la seguridad ciudadana",
+        "delta": { "legality": -20, "citizenSatisfaction": -10, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "Error. Los sistemas de policía predictiva basados en datos históricos de arrestos pueden perpetuar sesgos raciales y socioeconómicos. Si históricamente ciertas comunidades fueron más vigiladas, el algoritmo predice más crimen en esas zonas, creando un ciclo de discriminación.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI004-B",
+        "text": "Rechazar completamente por los riesgos para los derechos humanos",
+        "delta": { "legality": 8, "citizenSatisfaction": 5, "institutionalReputation": 5 },
+        "xpReward": 25,
+        "educationalFeedback": "Postura conservadora y válida dado el alto riesgo. Sin embargo, una evaluación más matizada podría explorar usos de IA en seguridad que no impliquen vigilancia predictiva de personas, como análisis de puntos calientes geográficos basados en datos de victimización.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI004-C",
+        "text": "Ordenar una evaluación de impacto en derechos humanos antes de decidir",
+        "delta": { "legality": 18, "citizenSatisfaction": 10, "institutionalReputation": 15 },
+        "xpReward": 60,
+        "educationalFeedback": "Correcto. Las evaluaciones de impacto en derechos humanos para sistemas de IA son una práctica recomendada por Naciones Unidas. Permiten identificar riesgos antes de implementar y diseñar salvaguardas adecuadas.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI004-D",
+        "text": "Aprobar con comité de supervisión ciudadana, auditorías de sesgo y sin uso para arrestos preventivos",
+        "delta": { "legality": 20, "citizenSatisfaction": 12, "institutionalReputation": 18, "budget": -10 },
+        "xpReward": 75,
+        "educationalFeedback": "Excelente marco de gobernanza. Limitar el uso (no para arrestos preventivos), supervisión ciudadana y auditorías de sesgo son las salvaguardas mínimas para tecnologías de alto riesgo en seguridad pública. Este modelo sigue los principios de IA responsable del gobierno.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "AI005",
+    "title": "Generación automática de informes con IA",
+    "description": "Un funcionario usa IA generativa para redactar informes oficiales que firma sin revisar. Los informes contienen datos incorrectos que fueron publicados.",
+    "category": "ai-government",
+    "npcId": "citizen-005",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["IA-generativa", "responsabilidad", "documentos-oficiales"],
+    "options": [
+      {
+        "id": "AI005-A",
+        "text": "Sancionar al funcionario y establecer política de verificación de documentos con IA",
+        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 50,
+        "educationalFeedback": "Correcto. La IA generativa puede producir información incorrecta (alucinaciones). El funcionario es responsable de todo documento que firma, independientemente de cómo fue redactado. Establecer políticas claras de uso de IA en documentos oficiales es indispensable.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI005-B",
+        "text": "Prohibir totalmente el uso de IA generativa en la institución",
+        "delta": { "legality": 8, "institutionalReputation": 3, "budget": 2 },
+        "xpReward": 15,
+        "educationalFeedback": "Demasiado restrictivo. La IA generativa tiene usos legítimos en el sector público (borradores, resúmenes, traducción). La solución correcta es regular su uso con protocolos de verificación, no prohibirla.",
+        "isCorrect": false
+      },
+      {
+        "id": "AI005-C",
+        "text": "Emitir una guía de uso responsable de IA en documentos oficiales",
+        "delta": { "legality": 12, "institutionalReputation": 10, "citizenSatisfaction": 5 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. Las guías de uso responsable de IA son el primer paso. Deben incluir: obligación de verificar datos generados, etiquetado de contenido con IA, responsabilidad del firmante y casos de uso permitidos y prohibidos.",
+        "isCorrect": true
+      },
+      {
+        "id": "AI005-D",
+        "text": "Atribuir la responsabilidad al proveedor del software de IA",
+        "delta": { "legality": -15, "institutionalReputation": -12, "citizenSatisfaction": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "Error. El funcionario que firma es el responsable legal del contenido. La herramienta de IA es un instrumento, no un agente legal. Intentar trasladar la responsabilidad al proveedor de software es legalmente inviable y éticamente incorrecto.",
+        "isCorrect": false
+      }
+    ]
+  }
+]

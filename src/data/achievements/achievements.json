@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ACH001",
+    "title": "Funcionario Ejemplar",
+    "description": "Resuelve 100 trámites sin tomar decisiones incorrectas.",
+    "icon": "🏆",
+    "condition": { "type": "streakCorrect", "value": 100 },
+    "xpReward": 500,
+    "unlocked": false
+  },
+  {
+    "id": "ACH002",
+    "title": "Cero Corrupción",
+    "description": "Completa un año completo de gobierno sin ningún acto corrupto.",
+    "icon": "🛡️",
+    "condition": { "type": "noCorruption", "value": 1 },
+    "xpReward": 800,
+    "unlocked": false
+  },
+  {
+    "id": "ACH003",
+    "title": "Gobierno Abierto",
+    "description": "Mantén el índice de transparencia sobre 90 durante 30 días consecutivos.",
+    "icon": "🔓",
+    "condition": { "type": "indicatorMin", "value": 90, "extra": { "indicator": "transparencyIndex", "days": 30 } },
+    "xpReward": 600,
+    "unlocked": false
+  },
+  {
+    "id": "ACH004",
+    "title": "Transformación Digital",
+    "description": "Digitaliza 5 procesos institucionales como Coordinador o superior.",
+    "icon": "💻",
+    "condition": { "type": "categoryMastery", "value": "digital-government", "extra": { "minCases": 5 } },
+    "xpReward": 400,
+    "unlocked": false
+  },
+  {
+    "id": "ACH005",
+    "title": "Defensor de Datos",
+    "description": "Resuelve correctamente 10 casos de protección de datos personales.",
+    "icon": "🔐",
+    "condition": { "type": "categoryMastery", "value": "data-protection", "extra": { "minCases": 10 } },
+    "xpReward": 350,
+    "unlocked": false
+  },
+  {
+    "id": "ACH006",
+    "title": "Ministro del Pueblo",
+    "description": "Alcanza el rango de Ministro.",
+    "icon": "👑",
+    "condition": { "type": "rankReached", "value": "minister" },
+    "xpReward": 1000,
+    "unlocked": false
+  },
+  {
+    "id": "ACH007",
+    "title": "Cuatro Años de Gestión",
+    "description": "Completa los 4 años de campaña sin perder el juego.",
+    "icon": "📅",
+    "condition": { "type": "yearsCompleted", "value": 4 },
+    "xpReward": 1500,
+    "unlocked": false
+  },
+  {
+    "id": "ACH008",
+    "title": "Ciudad Inteligente",
+    "description": "Mantén todos los indicadores sobre 80 durante un año completo.",
+    "icon": "🌆",
+    "condition": { "type": "indicatorMin", "value": 80, "extra": { "allIndicators": true, "year": 1 } },
+    "xpReward": 700,
+    "unlocked": false
+  },
+  {
+    "id": "ACH009",
+    "title": "Datos Abiertos Champion",
+    "description": "Publica 15 conjuntos de datos abiertos durante tu gestión.",
+    "icon": "📊",
+    "condition": { "type": "categoryMastery", "value": "open-data", "extra": { "minCases": 15 } },
+    "xpReward": 400,
+    "unlocked": false
+  },
+  {
+    "id": "ACH010",
+    "title": "Experto en Ciberseguridad",
+    "description": "Supera 5 incidentes de ciberseguridad con daño mínimo.",
+    "icon": "🛡️",
+    "condition": { "type": "categoryMastery", "value": "cybersecurity", "extra": { "minCases": 5 } },
+    "xpReward": 450,
+    "unlocked": false
+  },
+  {
+    "id": "ACH011",
+    "title": "Primer Trámite",
+    "description": "Resuelve tu primer caso como Auxiliar Administrativo.",
+    "icon": "📋",
+    "condition": { "type": "casesResolved", "value": 1 },
+    "xpReward": 50,
+    "unlocked": false
+  },
+  {
+    "id": "ACH012",
+    "title": "Veterano del Servicio",
+    "description": "Resuelve 300 casos en total.",
+    "icon": "⭐",
+    "condition": { "type": "casesResolved", "value": 300 },
+    "xpReward": 800,
+    "unlocked": false
+  },
+  {
+    "id": "ACH013",
+    "title": "Ético por Convicción",
+    "description": "Rechaza 10 sobornos o situaciones de conflicto de interés.",
+    "icon": "⚖️",
+    "condition": { "type": "categoryMastery", "value": "public-ethics", "extra": { "minCases": 10 } },
+    "xpReward": 600,
+    "unlocked": false
+  },
+  {
+    "id": "ACH014",
+    "title": "IA Responsable",
+    "description": "Implementa 3 soluciones de IA con gobernanza adecuada.",
+    "icon": "🤖",
+    "condition": { "type": "categoryMastery", "value": "ai-government", "extra": { "minCases": 3 } },
+    "xpReward": 500,
+    "unlocked": false
+  },
+  {
+    "id": "ACH015",
+    "title": "Voz Ciudadana",
+    "description": "Implementa 5 mecanismos de participación ciudadana exitosos.",
+    "icon": "🗣️",
+    "condition": { "type": "categoryMastery", "value": "citizen-participation", "extra": { "minCases": 5 } },
+    "xpReward": 400,
+    "unlocked": false
+  }
+]

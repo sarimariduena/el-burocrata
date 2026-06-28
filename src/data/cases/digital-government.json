@@ -1,0 +1,222 @@
+[
+  {
+    "id": "DG001",
+    "title": "Implementación de ventanilla única digital",
+    "description": "El ministerio tiene 47 trámites que requieren presencia física. Un consultor propone digitalizar los 10 más frecuentes como piloto.",
+    "category": "digital-government",
+    "npcId": "minister-001",
+    "requiredRank": "director",
+    "difficulty": "normal",
+    "tags": ["ventanilla-única", "transformación-digital", "trámites"],
+    "options": [
+      {
+        "id": "DG001-A",
+        "text": "Aprobar el piloto de los 10 trámites más frecuentes",
+        "delta": { "citizenSatisfaction": 12, "institutionalReputation": 15, "budget": -10 },
+        "xpReward": 45,
+        "educationalFeedback": "Decisión estratégica correcta. Los pilotos permiten probar la transformación digital con riesgo controlado. Iniciar por los trámites de mayor demanda maximiza el impacto ciudadano. Esta metodología ágil es recomendada por la OCDE para la modernización estatal.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG001-B",
+        "text": "Digitalizar todos los 47 trámites de una vez para mayor impacto",
+        "delta": { "citizenSatisfaction": 5, "institutionalReputation": 5, "budget": -25, "legality": -5 },
+        "xpReward": 15,
+        "educationalFeedback": "Ambicioso pero riesgoso. Digitalizar masivamente sin piloto aumenta el riesgo de fracaso. Los proyectos de TI grandes en el sector público tienen alta tasa de fracaso. El enfoque incremental reduce riesgos y permite aprendizaje.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG001-C",
+        "text": "Rechazar la propuesta por los costos de implementación",
+        "delta": { "citizenSatisfaction": -10, "institutionalReputation": -8, "budget": 5 },
+        "xpReward": 5,
+        "educationalFeedback": "Decisión miope. Los costos iniciales de digitalización se recuperan con creces en eficiencia, reducción de papel y tiempo de funcionarios. Rechazar la transformación digital por costos inmediatos genera mayores costos a largo plazo.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG001-D",
+        "text": "Aprobar el piloto e incluir métricas de éxito medibles",
+        "delta": { "citizenSatisfaction": 15, "institutionalReputation": 20, "budget": -12 },
+        "xpReward": 55,
+        "educationalFeedback": "Excelente. Definir métricas de éxito (tiempo de respuesta, satisfacción, tasa de uso digital) permite evaluar el impacto real. La gestión basada en evidencia es fundamental para una transformación digital sostenible.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DG002",
+    "title": "Ciudadano sin acceso a internet",
+    "description": "Se digitalizó el trámite de renovación de licencias. Un adulto mayor sin acceso a internet acude a ventanilla física que ya fue cerrada.",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "normal",
+    "tags": ["brecha-digital", "inclusión", "accesibilidad"],
+    "options": [
+      {
+        "id": "DG002-A",
+        "text": "Explicarle que el proceso es exclusivamente digital y pedirle que consiga ayuda",
+        "delta": { "citizenSatisfaction": -20, "legality": -15, "institutionalReputation": -12 },
+        "xpReward": 5,
+        "educationalFeedback": "Grave error. La digitalización no puede excluir a ciudadanos sin competencias o acceso digital. Las estrategias de gobierno electrónico deben garantizar canales alternativos para poblaciones vulnerables. La inclusión digital es un derecho.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG002-B",
+        "text": "Atenderle personalmente realizando el trámite digital en su nombre",
+        "delta": { "citizenSatisfaction": 20, "legality": 10, "institutionalReputation": 12 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. El principio de no discriminación en el acceso a servicios públicos obliga a proveer asistencia a quienes no pueden usar canales digitales. El gobierno digital debe ser para todos, no solo para quienes tienen conectividad.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG002-C",
+        "text": "Derivarle a un centro de atención ciudadana con computadoras disponibles",
+        "delta": { "citizenSatisfaction": 8, "legality": 8, "institutionalReputation": 6 },
+        "xpReward": 30,
+        "educationalFeedback": "Buena práctica. Los centros de atención presencial como respaldo de canales digitales son un componente esencial del modelo de multicanalidad. Permiten la transición gradual sin excluir a poblaciones vulnerables.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG002-D",
+        "text": "Registrar el caso y proponer crear un canal presencial permanente para adultos mayores",
+        "delta": { "citizenSatisfaction": 15, "legality": 12, "institutionalReputation": 18 },
+        "xpReward": 50,
+        "educationalFeedback": "Excelente visión sistémica. Atender el caso individual y proponer una solución estructural demuestra pensamiento en políticas públicas. La gestión de calidad en servicios públicos requiere mejorar los procesos basándose en casos reales.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DG003",
+    "title": "Firma electrónica para contratos",
+    "description": "Un proveedor rechaza el contrato con firma electrónica alegando que 'no tiene validez legal'. El contrato por 200.000 USD está paralizado.",
+    "category": "electronic-signature",
+    "npcId": "supplier-001",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["firma-electrónica", "contratos", "validez-legal"],
+    "options": [
+      {
+        "id": "DG003-A",
+        "text": "Ceder y firmar el contrato en físico para no retrasar el proyecto",
+        "delta": { "citizenSatisfaction": 3, "legality": -8, "institutionalReputation": -5, "budget": -3 },
+        "xpReward": 10,
+        "educationalFeedback": "Incorrecto. Ceder a la desinformación del proveedor refuerza prácticas obsoletas. La firma electrónica tiene plena validez legal en la mayoría de países con marcos normativos de gobierno electrónico. Esto retrotrasa la modernización.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG003-B",
+        "text": "Explicar al proveedor el marco legal de la firma electrónica y su equivalencia jurídica",
+        "delta": { "citizenSatisfaction": 5, "legality": 15, "institutionalReputation": 10 },
+        "xpReward": 40,
+        "educationalFeedback": "Correcto. La educación del ecosistema privado sobre el marco jurídico de la firma electrónica es parte de la labor de modernización. La firma electrónica avanzada tiene la misma validez que la manuscrita según estándares internacionales.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG003-C",
+        "text": "Buscar otro proveedor que acepte firma electrónica",
+        "delta": { "citizenSatisfaction": 5, "legality": 8, "institutionalReputation": 8, "budget": -5 },
+        "xpReward": 25,
+        "educationalFeedback": "Solución funcional pero que evita el problema de fondo. Lo ideal es educar al proveedor. Sin embargo, como medida pragmática es válida cuando el tiempo apremia. La digitalización requiere un ecosistema de proveedores capacitados.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG003-D",
+        "text": "Emitir una circular informativa para todos los proveedores sobre firma electrónica",
+        "delta": { "citizenSatisfaction": 8, "legality": 12, "institutionalReputation": 15, "budget": -2 },
+        "xpReward": 50,
+        "educationalFeedback": "Excelente. Resolver el caso individual y comunicar masivamente a todos los proveedores es una respuesta sistémica. La gestión del cambio hacia la digitalización requiere comunicación activa con todo el ecosistema.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DG004",
+    "title": "Interoperabilidad entre instituciones",
+    "description": "El registro civil y el ministerio de salud manejan datos de nacimiento en sistemas incompatibles. Los ciudadanos deben llevar físicamente certificados entre entidades.",
+    "category": "interoperability",
+    "npcId": "minister-002",
+    "requiredRank": "viceminister",
+    "difficulty": "hard",
+    "tags": ["interoperabilidad", "datos-ciudadanos", "integración-sistemas"],
+    "options": [
+      {
+        "id": "DG004-A",
+        "text": "Mantener el sistema actual porque funciona aunque sea ineficiente",
+        "delta": { "citizenSatisfaction": -8, "institutionalReputation": -10 },
+        "xpReward": 5,
+        "educationalFeedback": "La resistencia al cambio tecnológico tiene un costo real: tiempo ciudadano, papel, errores de transcripción. La interoperabilidad entre entidades es un principio fundamental del gobierno electrónico moderno.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG004-B",
+        "text": "Crear una API de intercambio de datos entre ambas instituciones",
+        "delta": { "citizenSatisfaction": 20, "legality": 10, "institutionalReputation": 18, "budget": -15 },
+        "xpReward": 60,
+        "educationalFeedback": "Excelente. Las APIs de interoperabilidad son el estándar técnico para el intercambio de datos entre entidades públicas. Esto elimina la necesidad de que el ciudadano sea 'mensajero' entre instituciones. Sigue los marcos de interoperabilidad como AGESIC o Interoperable EU.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG004-C",
+        "text": "Proponer que ambas entidades migren al mismo sistema",
+        "delta": { "citizenSatisfaction": 10, "institutionalReputation": 8, "budget": -25, "legality": -5 },
+        "xpReward": 20,
+        "educationalFeedback": "Técnicamente posible pero políticamente complejo y costoso. La migración a sistemas únicos tiene riesgos altos. La interoperabilidad mediante estándares abiertos es más flexible y menos disruptiva.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG004-D",
+        "text": "Implementar el principio 'once-only': el ciudadano provee datos una sola vez",
+        "delta": { "citizenSatisfaction": 25, "legality": 12, "institutionalReputation": 22, "budget": -18 },
+        "xpReward": 70,
+        "educationalFeedback": "Brillante. El principio 'once-only' es uno de los más transformadores del gobierno digital: el ciudadano entrega sus datos al Estado una vez y todas las entidades los comparten de forma segura. Es un pilar del Plan de Acción de Gobierno Electrónico de la ONU.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DG005",
+    "title": "Migración a la nube",
+    "description": "El proveedor de servidores físicos termina su contrato en 3 meses. Debes decidir entre renovar, comprar servidores propios o migrar a la nube.",
+    "category": "digital-government",
+    "npcId": "supplier-002",
+    "requiredRank": "director",
+    "difficulty": "expert",
+    "tags": ["nube", "infraestructura", "continuidad"],
+    "options": [
+      {
+        "id": "DG005-A",
+        "text": "Renovar contrato con el mismo proveedor por 5 años más",
+        "delta": { "institutionalReputation": -5, "budget": -15 },
+        "xpReward": 10,
+        "educationalFeedback": "Decisión conservadora que prolonga la dependencia de infraestructura obsoleta. No aprovecha las ventajas de elasticidad, ahorro y resiliencia de la nube. Las entidades públicas modernas migran a modelos cloud con gobernanza de datos adecuada.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG005-B",
+        "text": "Comprar servidores propios para mayor control",
+        "delta": { "institutionalReputation": 3, "budget": -30, "legality": 5 },
+        "xpReward": 15,
+        "educationalFeedback": "Alto costo de capital y operación. Los servidores propios tienen costos de mantenimiento, actualización y personal especializado. Solo justificable para sistemas críticos con requisitos de soberanía de datos estrictos.",
+        "isCorrect": false
+      },
+      {
+        "id": "DG005-C",
+        "text": "Migrar a nube pública con evaluación previa de seguridad y soberanía de datos",
+        "delta": { "citizenSatisfaction": 10, "institutionalReputation": 15, "budget": -8, "legality": 10 },
+        "xpReward": 55,
+        "educationalFeedback": "Correcto. La migración a la nube con debida diligencia en seguridad y protección de datos es la práctica recomendada. Evaluar la jurisdicción de los datos, cifrado y acuerdos de nivel de servicio es indispensable en el sector público.",
+        "isCorrect": true
+      },
+      {
+        "id": "DG005-D",
+        "text": "Adoptar modelo híbrido: nube para servicios públicos y servidores propios para datos sensibles",
+        "delta": { "citizenSatisfaction": 12, "institutionalReputation": 18, "budget": -12, "legality": 12 },
+        "xpReward": 65,
+        "educationalFeedback": "Excelente estrategia. El modelo híbrido equilibra eficiencia y seguridad. Los datos de alta sensibilidad permanecen bajo control estatal mientras los servicios ciudadanos aprovechan la escalabilidad de la nube. Es el modelo adoptado por la mayoría de gobiernos avanzados.",
+        "isCorrect": true
+      }
+    ]
+  }
+]

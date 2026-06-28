@@ -1,0 +1,134 @@
+[
+  {
+    "id": "DP001",
+    "title": "Solicitud de datos de ciudadano por empresa privada",
+    "description": "Una empresa de marketing solicita la base de datos de contribuyentes para 'fines estadísticos'. Ofrecen pagar por los datos.",
+    "category": "data-protection",
+    "npcId": "business-001",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["datos-personales", "privacidad", "sector-privado"],
+    "options": [
+      {
+        "id": "DP001-A",
+        "text": "Vender los datos, el ingreso ayuda al presupuesto institucional",
+        "delta": { "legality": -30, "citizenSatisfaction": -25, "institutionalReputation": -20, "budget": 10 },
+        "xpReward": 0,
+        "educationalFeedback": "Gravísimo error. Vender datos personales de ciudadanos es ilegal y viola el derecho fundamental a la privacidad. Los datos que el Estado recopila en ejercicio de sus funciones no pueden comercializarse. Esta acción deriva en sanciones penales y administrativas severas.",
+        "isCorrect": false
+      },
+      {
+        "id": "DP001-B",
+        "text": "Rechazar la solicitud, los datos de contribuyentes son confidenciales",
+        "delta": { "legality": 20, "citizenSatisfaction": 12, "institutionalReputation": 15 },
+        "xpReward": 55,
+        "educationalFeedback": "Correcto. Los datos fiscales y de contribuyentes tienen protección especial. No pueden compartirse con terceros privados sin consentimiento expreso y base legal. La negativa protege el derecho a la privacidad de los ciudadanos.",
+        "isCorrect": true
+      },
+      {
+        "id": "DP001-C",
+        "text": "Proporcionar datos anonimizados sin identificadores personales",
+        "delta": { "legality": 8, "citizenSatisfaction": 5, "institutionalReputation": 5 },
+        "xpReward": 30,
+        "educationalFeedback": "Posiblemente válido con la debida evaluación. Datos verdaderamente anonimizados (no reidentificables) podrían compartirse si existe base legal. Sin embargo, la anonimización efectiva es técnicamente compleja y debe evaluarse por expertos antes de compartir.",
+        "isCorrect": false
+      },
+      {
+        "id": "DP001-D",
+        "text": "Rechazar y reportar el intento a la autoridad de protección de datos",
+        "delta": { "legality": 22, "citizenSatisfaction": 15, "institutionalReputation": 18 },
+        "xpReward": 65,
+        "educationalFeedback": "Excelente. Rechazar y reportar establece precedentes y permite a la autoridad de control monitorear patrones de solicitudes indebidas. El reporte contribuye al sistema de protección de datos personales del país.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DP002",
+    "title": "Brecha de datos de ciudadanos",
+    "description": "Un error en el sistema expuso accidentalmente datos médicos de 10.000 ciudadanos en el portal web por 6 horas. Ya está corregido. ¿Qué haces?",
+    "category": "data-protection",
+    "npcId": "citizen-001",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["brecha-datos", "notificación", "datos-sensibles"],
+    "options": [
+      {
+        "id": "DP002-A",
+        "text": "No comunicar nada, ya está corregido y el riesgo fue mínimo",
+        "delta": { "legality": -25, "institutionalReputation": -20, "citizenSatisfaction": -15 },
+        "xpReward": 0,
+        "educationalFeedback": "Error grave. Los marcos de protección de datos establecen la obligación de notificar brechas que afecten datos sensibles. No notificar viola la ley y expone a la institución a sanciones. La confianza se construye con transparencia, no con silencio.",
+        "isCorrect": false
+      },
+      {
+        "id": "DP002-B",
+        "text": "Notificar a la autoridad de protección de datos y a los 10.000 afectados",
+        "delta": { "legality": 22, "institutionalReputation": 15, "citizenSatisfaction": 8, "budget": -8 },
+        "xpReward": 65,
+        "educationalFeedback": "Correcto. La notificación a la autoridad de control (generalmente en 72 horas) y a los afectados es obligatoria en los marcos de protección de datos modernos. Los datos médicos son datos sensibles con protección especial.",
+        "isCorrect": true
+      },
+      {
+        "id": "DP002-C",
+        "text": "Notificar solo a la autoridad de control pero no a los ciudadanos afectados",
+        "delta": { "legality": 10, "institutionalReputation": -5, "citizenSatisfaction": -8 },
+        "xpReward": 20,
+        "educationalFeedback": "Incompleto. La notificación a los afectados es tan importante como la notificación a la autoridad. Los ciudadanos necesitan saber para tomar medidas de protección (monitorear uso de sus datos, alertar a médicos, etc.).",
+        "isCorrect": false
+      },
+      {
+        "id": "DP002-D",
+        "text": "Notificar, investigar la causa raíz y publicar el informe del incidente",
+        "delta": { "legality": 25, "institutionalReputation": 20, "citizenSatisfaction": 12, "budget": -10 },
+        "xpReward": 80,
+        "educationalFeedback": "Modelo ejemplar. Notificar, investigar la causa raíz (¿fallo técnico, humano, de proceso?) y publicar el informe convierte el incidente en aprendizaje institucional. La transparencia ante incidentes de seguridad genera más confianza que el secretismo.",
+        "isCorrect": true
+      }
+    ]
+  },
+  {
+    "id": "DP003",
+    "title": "Solicitud de datos de ex-funcionario investigado",
+    "description": "La Fiscalía solicita el historial de correos y accesos al sistema de un ex-funcionario bajo investigación penal. Sin orden judicial aún.",
+    "category": "data-protection",
+    "npcId": "comptroller-001",
+    "requiredRank": "director",
+    "difficulty": "expert",
+    "tags": ["datos-personales", "orden-judicial", "investigación-penal"],
+    "options": [
+      {
+        "id": "DP003-A",
+        "text": "Entregar inmediatamente para cooperar con la justicia",
+        "delta": { "legality": -18, "institutionalReputation": -10 },
+        "xpReward": 5,
+        "educationalFeedback": "Incorrecto aunque la intención sea buena. Sin orden judicial, entregar datos personales puede ser ilegal. La cooperación con la justicia es importante pero debe seguir los cauces legales establecidos. Espera la orden judicial para proteger los derechos del investigado y a la institución.",
+        "isCorrect": false
+      },
+      {
+        "id": "DP003-B",
+        "text": "Solicitar la orden judicial formal y preservar los datos hasta recibirla",
+        "delta": { "legality": 20, "institutionalReputation": 15, "citizenSatisfaction": 5 },
+        "xpReward": 60,
+        "educationalFeedback": "Correcto. Las garantías del debido proceso exigen orden judicial para acceder a datos personales en investigaciones penales. Preservar los datos evita que se destruyan mientras se tramita la orden. El Estado de Derecho requiere que incluso la persecución del delito respete procedimientos.",
+        "isCorrect": true
+      },
+      {
+        "id": "DP003-C",
+        "text": "Negarse completamente alegando protección de datos personales",
+        "delta": { "legality": -5, "institutionalReputation": -5 },
+        "xpReward": 10,
+        "educationalFeedback": "Incorrecto. La protección de datos personales no es absoluta. Con orden judicial, los datos deben entregarse. Negarse completamente obstaculiza la justicia. La respuesta correcta es exigir la orden judicial, no negarse permanentemente.",
+        "isCorrect": false
+      },
+      {
+        "id": "DP003-D",
+        "text": "Consultar al área jurídica y al delegado de protección de datos antes de actuar",
+        "delta": { "legality": 18, "institutionalReputation": 12, "citizenSatisfaction": 5 },
+        "xpReward": 50,
+        "educationalFeedback": "Prudente y correcto. Esta situación requiere análisis jurídico especializado. El delegado de protección de datos (DPO) debe participar en la decisión. La consulta antes de actuar evita errores costosos en situaciones legalmente complejas.",
+        "isCorrect": true
+      }
+    ]
+  }
+]
