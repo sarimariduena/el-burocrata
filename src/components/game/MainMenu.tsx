@@ -25,8 +25,7 @@ export function MainMenu() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6"
-      style={{ background: 'var(--bg-primary)' }}>
+    <div className="min-h-screen flex flex-col items-center justify-center p-6">
 
       {step === 'menu' && (
         <motion.div
@@ -73,10 +72,10 @@ export function MainMenu() {
             </motion.button>
           </div>
 
-          {/* Info de organismos */}
+          {/* Info normativa */}
           <div className="mt-12 text-xs" style={{ color: 'var(--text-secondary)' }}>
-            <div className="mb-1">Contenido inspirado en buenas prácticas de:</div>
-            <div>OCDE · ONU · BID · CEPAL · Gobierno Abierto</div>
+            <div className="mb-1">Basado en normativa ecuatoriana vigente:</div>
+            <div>LOTAIP · LOPDP · COIP · LOSEP · COA · Constitución 2008</div>
           </div>
         </motion.div>
       )}
