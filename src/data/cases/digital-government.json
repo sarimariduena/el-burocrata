@@ -1,221 +1,241 @@
 [
   {
     "id": "DG001",
-    "title": "Implementación de ventanilla única digital",
-    "description": "El ministerio tiene 47 trámites que requieren presencia física. Un consultor propone digitalizar los 10 más frecuentes como piloto.",
+    "title": "Ventanilla única digital — Plan Digital 2022-2025",
+    "description": "El ministerio tiene 47 trámites que requieren presencia física, incumpliendo el Plan Nacional de Gobierno Digital del Ecuador. Un consultor propone digitalizar los 10 más frecuentes como piloto.",
     "category": "digital-government",
     "npcId": "minister-001",
     "requiredRank": "director",
     "difficulty": "normal",
-    "tags": ["ventanilla-única", "transformación-digital", "trámites"],
+    "tags": ["ventanilla-única", "SNAP", "Ley-Comercio-Electrónico", "trámites", "MINTEL"],
     "options": [
       {
         "id": "DG001-A",
         "text": "Aprobar el piloto de los 10 trámites más frecuentes",
         "delta": { "citizenSatisfaction": 12, "institutionalReputation": 15, "budget": -10 },
         "xpReward": 45,
-        "educationalFeedback": "Decisión estratégica correcta. Los pilotos permiten probar la transformación digital con riesgo controlado. Iniciar por los trámites de mayor demanda maximiza el impacto ciudadano. Esta metodología ágil es recomendada por la OCDE para la modernización estatal.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Decisión estratégica correcta. El Plan Nacional de Gobierno Digital 2022-2025 del MINTEL exige la digitalización progresiva de trámites. La Ley de Comercio Electrónico, Firmas y Mensajes de Datos (2002, actualizada) otorga validez legal a los trámites digitales. Iniciar por los de mayor demanda maximiza el impacto ciudadano.",
+        "isCorrect": true,
+        "legalReference": "Ley Comercio Electrónico 2002, MINTEL Plan Gobierno Digital 2022-2025, Decreto 1011"
       },
       {
         "id": "DG001-B",
         "text": "Digitalizar todos los 47 trámites de una vez para mayor impacto",
         "delta": { "citizenSatisfaction": 5, "institutionalReputation": 5, "budget": -25, "legality": -5 },
         "xpReward": 15,
-        "educationalFeedback": "Ambicioso pero riesgoso. Digitalizar masivamente sin piloto aumenta el riesgo de fracaso. Los proyectos de TI grandes en el sector público tienen alta tasa de fracaso. El enfoque incremental reduce riesgos y permite aprendizaje.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Riesgoso. El Decreto Ejecutivo 1011 y las normas SNAP exigen evaluaciones de impacto antes de cambios masivos en servicios públicos. Los proyectos grandes de TI en el sector público tienen alta tasa de fracaso. Sin piloto, el riesgo de incumplir los estándares del SNAP (Secretaría Nacional de la Administración Pública) es alto.",
+        "isCorrect": false,
+        "legalReference": "SNAP Norma Técnica de Simplificación de Trámites, Decreto 1011"
       },
       {
         "id": "DG001-C",
         "text": "Rechazar la propuesta por los costos de implementación",
         "delta": { "citizenSatisfaction": -10, "institutionalReputation": -8, "budget": 5 },
         "xpReward": 5,
-        "educationalFeedback": "Decisión miope. Los costos iniciales de digitalización se recuperan con creces en eficiencia, reducción de papel y tiempo de funcionarios. Rechazar la transformación digital por costos inmediatos genera mayores costos a largo plazo.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Decisión miope y potencialmente incumplida. El Plan Nacional de Gobierno Digital 2022-2025 obliga a las instituciones públicas a digitalizar trámites. La COA Art. 31 establece el derecho ciudadano a servicios eficientes. Rechazar la digitalización puede ser observado por la Contraloría General como gestión deficiente.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 31, MINTEL Plan Gobierno Digital 2022-2025"
       },
       {
         "id": "DG001-D",
-        "text": "Aprobar el piloto e incluir métricas de éxito medibles",
+        "text": "Aprobar el piloto con métricas de éxito medibles y reportar al MINTEL",
         "delta": { "citizenSatisfaction": 15, "institutionalReputation": 20, "budget": -12 },
         "xpReward": 55,
-        "educationalFeedback": "Excelente. Definir métricas de éxito (tiempo de respuesta, satisfacción, tasa de uso digital) permite evaluar el impacto real. La gestión basada en evidencia es fundamental para una transformación digital sostenible.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. Definir métricas (tiempo de respuesta, satisfacción, uso digital vs. presencial) cumple con el Reglamento para la Gestión Pública Orientada a Resultados. Reportar al MINTEL cumple con las obligaciones del Plan Nacional de Gobierno Digital. La Norma Técnica de Simplificación de Trámites del SNAP exige evidencia de mejora.",
+        "isCorrect": true,
+        "legalReference": "SNAP Norma Técnica Simplificación Trámites, MINTEL Plan Gobierno Digital 2022-2025, COA Art. 31"
       }
     ]
   },
   {
     "id": "DG002",
-    "title": "Ciudadano sin acceso a internet",
-    "description": "Se digitalizó el trámite de renovación de licencias. Un adulto mayor sin acceso a internet acude a ventanilla física que ya fue cerrada.",
+    "title": "Adulto mayor excluido por digitalización — Doña Rosa",
+    "description": "Se digitalizó el trámite de renovación de licencias, cerrando ventanillas físicas. Doña Rosa Chuquimarca, adulta mayor de Riobamba sin acceso a internet, acude a ventanilla que ya fue cerrada.",
     "category": "digital-government",
     "npcId": "citizen-003",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["brecha-digital", "inclusión", "accesibilidad"],
+    "tags": ["brecha-digital", "inclusión", "Constitución", "adultos-mayores", "COA"],
     "options": [
       {
         "id": "DG002-A",
         "text": "Explicarle que el proceso es exclusivamente digital y pedirle que consiga ayuda",
         "delta": { "citizenSatisfaction": -20, "legality": -15, "institutionalReputation": -12 },
         "xpReward": 5,
-        "educationalFeedback": "Grave error. La digitalización no puede excluir a ciudadanos sin competencias o acceso digital. Las estrategias de gobierno electrónico deben garantizar canales alternativos para poblaciones vulnerables. La inclusión digital es un derecho.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Grave violación constitucional. La Constitución Art. 35 y 36 del Ecuador establecece derechos especiales para adultos mayores, incluyendo la atención prioritaria. El COA Art. 31 garantiza el derecho a servicios públicos de calidad. La Ley del Anciano prohíbe discriminar en el acceso a servicios por falta de competencias digitales.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 35, 36, COA Art. 31, Ley del Anciano Art. 8"
       },
       {
         "id": "DG002-B",
         "text": "Atenderle personalmente realizando el trámite digital en su nombre",
         "delta": { "citizenSatisfaction": 20, "legality": 10, "institutionalReputation": 12 },
         "xpReward": 40,
-        "educationalFeedback": "Correcto. El principio de no discriminación en el acceso a servicios públicos obliga a proveer asistencia a quienes no pueden usar canales digitales. El gobierno digital debe ser para todos, no solo para quienes tienen conectividad.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Correcto. El COA Art. 31 y la Constitución Art. 35 obligan a la atención prioritaria a grupos vulnerables. El Plan Nacional de Gobierno Digital del MINTEL establece que la digitalización debe mantener canales alternativos para poblaciones con brecha digital. El servidor público tiene el deber de facilitar el acceso al servicio.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 35, 36, COA Art. 31, MINTEL Plan Gobierno Digital"
       },
       {
         "id": "DG002-C",
         "text": "Derivarle a un centro de atención ciudadana con computadoras disponibles",
         "delta": { "citizenSatisfaction": 8, "legality": 8, "institutionalReputation": 6 },
         "xpReward": 30,
-        "educationalFeedback": "Buena práctica. Los centros de atención presencial como respaldo de canales digitales son un componente esencial del modelo de multicanalidad. Permiten la transición gradual sin excluir a poblaciones vulnerables.",
-        "isCorrect": true
+        "educationalFeedback": "Válido pero incompleto. Los Centros de Atención Ciudadana del SNAP son el canal oficial para apoyo digital. Sin embargo, derivar a una adulta mayor a otro lugar puede violar el derecho a atención prioritaria en el mismo punto (Constitución Art. 35). Debe al menos verificar que el centro esté cerca y asistirle si no puede movilizarse.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 35, 36, SNAP Centros de Atención"
       },
       {
         "id": "DG002-D",
-        "text": "Registrar el caso y proponer crear un canal presencial permanente para adultos mayores",
+        "text": "Atenderle y proponer canal presencial permanente para grupos vulnerables",
         "delta": { "citizenSatisfaction": 15, "legality": 12, "institutionalReputation": 18 },
         "xpReward": 50,
-        "educationalFeedback": "Excelente visión sistémica. Atender el caso individual y proponer una solución estructural demuestra pensamiento en políticas públicas. La gestión de calidad en servicios públicos requiere mejorar los procesos basándose en casos reales.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente visión sistémica. La Constitución Art. 35-38 establece derechos amplios para adultos mayores. El COA Art. 31 y la Ley del Anciano exigen atención prioritaria sistemática, no caso por caso. Proponer un canal permanente cumple con la obligación institucional y anticipa el deber de no discriminar en servicios públicos.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 35-38, COA Art. 31, Ley del Anciano Art. 8, MINTEL Plan Gobierno Digital"
       }
     ]
   },
   {
     "id": "DG003",
-    "title": "Firma electrónica para contratos",
-    "description": "Un proveedor rechaza el contrato con firma electrónica alegando que 'no tiene validez legal'. El contrato por 200.000 USD está paralizado.",
+    "title": "Proveedor rechaza firma electrónica — Ley de Comercio Electrónico",
+    "description": "Un proveedor rechaza el contrato con firma electrónica alegando que 'no tiene validez legal'. El contrato por 200.000 USD con el Estado está paralizado. El SERCOP ya aprobó el proceso.",
     "category": "electronic-signature",
     "npcId": "supplier-001",
     "requiredRank": "coordinator",
     "difficulty": "normal",
-    "tags": ["firma-electrónica", "contratos", "validez-legal"],
+    "tags": ["firma-electrónica", "Ley-Comercio-Electrónico", "SERCOP", "contratos", "BCE"],
     "options": [
       {
         "id": "DG003-A",
         "text": "Ceder y firmar el contrato en físico para no retrasar el proyecto",
         "delta": { "citizenSatisfaction": 3, "legality": -8, "institutionalReputation": -5, "budget": -3 },
         "xpReward": 10,
-        "educationalFeedback": "Incorrecto. Ceder a la desinformación del proveedor refuerza prácticas obsoletas. La firma electrónica tiene plena validez legal en la mayoría de países con marcos normativos de gobierno electrónico. Esto retrotrasa la modernización.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Incorrecto. Ceder a la desinformación del proveedor incumple la obligación institucional de usar firma electrónica establecida en el Plan Nacional de Gobierno Digital. La Ley de Comercio Electrónico, Firmas y Mensajes de Datos (Art. 14) establece plena equivalencia jurídica con la firma manuscrita.",
+        "isCorrect": false,
+        "legalReference": "Ley Comercio Electrónico Art. 14, MINTEL Plan Gobierno Digital"
       },
       {
         "id": "DG003-B",
-        "text": "Explicar al proveedor el marco legal de la firma electrónica y su equivalencia jurídica",
+        "text": "Explicar al proveedor el marco legal ecuatoriano de la firma electrónica y su validez",
         "delta": { "citizenSatisfaction": 5, "legality": 15, "institutionalReputation": 10 },
         "xpReward": 40,
-        "educationalFeedback": "Correcto. La educación del ecosistema privado sobre el marco jurídico de la firma electrónica es parte de la labor de modernización. La firma electrónica avanzada tiene la misma validez que la manuscrita según estándares internacionales.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Correcto. La Ley de Comercio Electrónico del Ecuador (2002, actualizada) en su Art. 14 establece que la firma electrónica tiene la misma validez y eficacia que la firma manuscrita. El BCE (Banco Central del Ecuador) es la entidad certificadora acreditada. El SERCOP reconoce esta modalidad en procesos de contratación pública.",
+        "isCorrect": true,
+        "legalReference": "Ley Comercio Electrónico Art. 14, BCE (entidad certificadora), LOSNCP Art. 69"
       },
       {
         "id": "DG003-C",
         "text": "Buscar otro proveedor que acepte firma electrónica",
         "delta": { "citizenSatisfaction": 5, "legality": 8, "institutionalReputation": 8, "budget": -5 },
         "xpReward": 25,
-        "educationalFeedback": "Solución funcional pero que evita el problema de fondo. Lo ideal es educar al proveedor. Sin embargo, como medida pragmática es válida cuando el tiempo apremia. La digitalización requiere un ecosistema de proveedores capacitados.",
-        "isCorrect": false
+        "educationalFeedback": "Solución práctica pero que crea precedente negativo. Cambiar de proveedor por desconocimiento de la ley puede afectar al SERCOP (proceso ya aprobado). Lo ideal es educar al proveedor. La LOSNCP Art. 69 permite firma electrónica en contratos públicos y el cambio de proveedor requiere nuevo proceso.",
+        "isCorrect": false,
+        "legalReference": "LOSNCP Art. 69, Ley Comercio Electrónico Art. 14"
       },
       {
         "id": "DG003-D",
-        "text": "Emitir una circular informativa para todos los proveedores sobre firma electrónica",
+        "text": "Emitir circular a todos los proveedores sobre firma electrónica y su validez jurídica en Ecuador",
         "delta": { "citizenSatisfaction": 8, "legality": 12, "institutionalReputation": 15, "budget": -2 },
         "xpReward": 50,
-        "educationalFeedback": "Excelente. Resolver el caso individual y comunicar masivamente a todos los proveedores es una respuesta sistémica. La gestión del cambio hacia la digitalización requiere comunicación activa con todo el ecosistema.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. Resolver el caso y comunicar masivamente cumple la obligación de difundir el marco normativo. La Ley de Comercio Electrónico Arts. 14 y 15 establecen la equivalencia jurídica. El BCE emite certificados de firma electrónica. ARCOTEL y MINTEL tienen rol de supervisión. La circular previene casos futuros.",
+        "isCorrect": true,
+        "legalReference": "Ley Comercio Electrónico Art. 14, 15, BCE, ARCOTEL, LOSNCP Art. 69"
       }
     ]
   },
   {
     "id": "DG004",
-    "title": "Interoperabilidad entre instituciones",
-    "description": "El registro civil y el ministerio de salud manejan datos de nacimiento en sistemas incompatibles. Los ciudadanos deben llevar físicamente certificados entre entidades.",
+    "title": "Interoperabilidad: Registro Civil y MSP",
+    "description": "El Registro Civil (DIGERCIC) y el MSP manejan datos de nacimiento en sistemas incompatibles. Los ciudadanos deben llevar físicamente certificados entre entidades, incumpliendo el principio de no pedir lo que el Estado ya tiene.",
     "category": "interoperability",
     "npcId": "minister-002",
     "requiredRank": "viceminister",
     "difficulty": "hard",
-    "tags": ["interoperabilidad", "datos-ciudadanos", "integración-sistemas"],
+    "tags": ["interoperabilidad", "DIGERCIC", "MSP", "MINTEL", "datos-ciudadanos"],
     "options": [
       {
         "id": "DG004-A",
         "text": "Mantener el sistema actual porque funciona aunque sea ineficiente",
         "delta": { "citizenSatisfaction": -8, "institutionalReputation": -10 },
         "xpReward": 5,
-        "educationalFeedback": "La resistencia al cambio tecnológico tiene un costo real: tiempo ciudadano, papel, errores de transcripción. La interoperabilidad entre entidades es un principio fundamental del gobierno electrónico moderno.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Incumplimiento normativo. El Plan Nacional de Gobierno Digital y la COA Art. 31 exigen eficiencia en los servicios públicos. El principio de no pedir al ciudadano lo que el Estado ya tiene está consagrado en la Norma Técnica de Simplificación de Trámites del SNAP. La resistencia al cambio no es justificación válida.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 31, SNAP Norma Técnica Simplificación, MINTEL Plan Gobierno Digital"
       },
       {
         "id": "DG004-B",
-        "text": "Crear una API de intercambio de datos entre ambas instituciones",
+        "text": "Crear una API de intercambio de datos entre DIGERCIC y MSP bajo protocolo del MINTEL",
         "delta": { "citizenSatisfaction": 20, "legality": 10, "institutionalReputation": 18, "budget": -15 },
         "xpReward": 60,
-        "educationalFeedback": "Excelente. Las APIs de interoperabilidad son el estándar técnico para el intercambio de datos entre entidades públicas. Esto elimina la necesidad de que el ciudadano sea 'mensajero' entre instituciones. Sigue los marcos de interoperabilidad como AGESIC o Interoperable EU.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. Las APIs de interoperabilidad son el estándar técnico del MINTEL para el intercambio seguro de datos entre entidades públicas ecuatorianas. El Plan Nacional de Gobierno Digital establece la interoperabilidad como eje estratégico. Debe incluir evaluación de impacto en privacidad (LOPDP Art. 26) pues se comparten datos personales.",
+        "isCorrect": true,
+        "legalReference": "MINTEL Plan Gobierno Digital, LOPDP Art. 26, COA Art. 31"
       },
       {
         "id": "DG004-C",
-        "text": "Proponer que ambas entidades migren al mismo sistema",
+        "text": "Proponer que DIGERCIC y MSP migren al mismo sistema",
         "delta": { "citizenSatisfaction": 10, "institutionalReputation": 8, "budget": -25, "legality": -5 },
         "xpReward": 20,
-        "educationalFeedback": "Técnicamente posible pero políticamente complejo y costoso. La migración a sistemas únicos tiene riesgos altos. La interoperabilidad mediante estándares abiertos es más flexible y menos disruptiva.",
-        "isCorrect": false
+        "educationalFeedback": "Técnicamente posible pero políticamente complejo. Las migraciones masivas en el sector público ecuatoriano deben pasar por aprobación del MINTEL y la Contraloría General. El riesgo de interrupción de servicios durante la migración afecta a millones de ciudadanos. La interoperabilidad mediante estándares abiertos es más pragmática.",
+        "isCorrect": false,
+        "legalReference": "MINTEL Plan Gobierno Digital, Contraloría General Resoluciones"
       },
       {
         "id": "DG004-D",
-        "text": "Implementar el principio 'once-only': el ciudadano provee datos una sola vez",
+        "text": "Implementar el principio 'una sola vez': ciudadano entrega datos al Estado una vez",
         "delta": { "citizenSatisfaction": 25, "legality": 12, "institutionalReputation": 22, "budget": -18 },
         "xpReward": 70,
-        "educationalFeedback": "Brillante. El principio 'once-only' es uno de los más transformadores del gobierno digital: el ciudadano entrega sus datos al Estado una vez y todas las entidades los comparten de forma segura. Es un pilar del Plan de Acción de Gobierno Electrónico de la ONU.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Brillante. El principio 'once-only' o 'una sola vez' está expresamente en la Norma Técnica de Simplificación de Trámites del SNAP: el Estado no puede pedir lo que ya tiene. La LOPDP Art. 17 y 18 establecen el principio de minimización de datos. El MINTEL lidera técnicamente esta interoperabilidad entre DIGERCIC y todas las entidades.",
+        "isCorrect": true,
+        "legalReference": "SNAP Norma Técnica Simplificación, LOPDP Art. 17, 18, MINTEL Plan Gobierno Digital"
       }
     ]
   },
   {
     "id": "DG005",
-    "title": "Migración a la nube",
-    "description": "El proveedor de servidores físicos termina su contrato en 3 meses. Debes decidir entre renovar, comprar servidores propios o migrar a la nube.",
+    "title": "Migración a la nube gubernamental",
+    "description": "El contrato de servidores físicos termina en 3 meses. El MINTEL acaba de certificar a NubeGov Solutions para el sector público ecuatoriano. Debes decidir entre renovar contrato, comprar equipos o migrar a la nube.",
     "category": "digital-government",
     "npcId": "supplier-002",
     "requiredRank": "director",
     "difficulty": "expert",
-    "tags": ["nube", "infraestructura", "continuidad"],
+    "tags": ["nube", "MINTEL", "LOPDP", "infraestructura", "continuidad", "soberanía-datos"],
     "options": [
       {
         "id": "DG005-A",
         "text": "Renovar contrato con el mismo proveedor por 5 años más",
         "delta": { "institutionalReputation": -5, "budget": -15 },
         "xpReward": 10,
-        "educationalFeedback": "Decisión conservadora que prolonga la dependencia de infraestructura obsoleta. No aprovecha las ventajas de elasticidad, ahorro y resiliencia de la nube. Las entidades públicas modernas migran a modelos cloud con gobernanza de datos adecuada.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Decisión conservadora que frena la modernización. El Plan Nacional de Gobierno Digital del MINTEL promueve la nube como modelo prioritario. Renovar infraestructura obsoleta puede ser observado por la Contraloría General como uso ineficiente de recursos públicos. Además, incumple la directiva de modernización tecnológica del SNAP.",
+        "isCorrect": false,
+        "legalReference": "MINTEL Plan Gobierno Digital 2022-2025, Contraloría General"
       },
       {
         "id": "DG005-B",
-        "text": "Comprar servidores propios para mayor control",
+        "text": "Comprar servidores propios para mayor control de datos",
         "delta": { "institutionalReputation": 3, "budget": -30, "legality": 5 },
         "xpReward": 15,
-        "educationalFeedback": "Alto costo de capital y operación. Los servidores propios tienen costos de mantenimiento, actualización y personal especializado. Solo justificable para sistemas críticos con requisitos de soberanía de datos estrictos.",
-        "isCorrect": false
+        "educationalFeedback": "Alto costo sin beneficio claro. Comprar servidores requiere proceso SERCOP y puede ser cuestionado por la Contraloría si hay alternativas más económicas certificadas. Solo justificable para sistemas con clasificación de seguridad nacional. El MINTEL ha establecido proveedores de nube certificados para reducir este costo.",
+        "isCorrect": false,
+        "legalReference": "LOSNCP (proceso SERCOP), MINTEL Certificación Proveedores Nube"
       },
       {
         "id": "DG005-C",
-        "text": "Migrar a nube pública con evaluación previa de seguridad y soberanía de datos",
+        "text": "Migrar a nube con proveedor certificado por MINTEL, evaluando soberanía de datos",
         "delta": { "citizenSatisfaction": 10, "institutionalReputation": 15, "budget": -8, "legality": 10 },
         "xpReward": 55,
-        "educationalFeedback": "Correcto. La migración a la nube con debida diligencia en seguridad y protección de datos es la práctica recomendada. Evaluar la jurisdicción de los datos, cifrado y acuerdos de nivel de servicio es indispensable en el sector público.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Correcto. El MINTEL certifica proveedores de nube para el sector público. La LOPDP Art. 49 regula la transferencia internacional de datos: los datos de ciudadanos ecuatorianos deben tener protección equivalente. Evaluar que el proveedor tenga centros de datos con soberanía adecuada es obligatorio según la normativa.",
+        "isCorrect": true,
+        "legalReference": "MINTEL Certificación Nube, LOPDP Art. 49, LOSNCP"
       },
       {
         "id": "DG005-D",
-        "text": "Adoptar modelo híbrido: nube para servicios públicos y servidores propios para datos sensibles",
+        "text": "Adoptar modelo híbrido: nube certificada para servicios ciudadanos, servidores propios para datos sensibles",
         "delta": { "citizenSatisfaction": 12, "institutionalReputation": 18, "budget": -12, "legality": 12 },
         "xpReward": 65,
-        "educationalFeedback": "Excelente estrategia. El modelo híbrido equilibra eficiencia y seguridad. Los datos de alta sensibilidad permanecen bajo control estatal mientras los servicios ciudadanos aprovechan la escalabilidad de la nube. Es el modelo adoptado por la mayoría de gobiernos avanzados.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente estrategia. El modelo híbrido equilibra eficiencia y soberanía de datos. La LOPDP Art. 49 permite transferencia internacional si hay garantías adecuadas; para datos sensibles (Art. 23) se requiere mayor cautela. El MINTEL y la Contraloría General valorarán positivamente esta gestión prudente que optimiza el presupuesto público.",
+        "isCorrect": true,
+        "legalReference": "MINTEL Plan Gobierno Digital, LOPDP Art. 23, 49, LOSNCP"
       }
     ]
   }

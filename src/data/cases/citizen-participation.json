@@ -1,133 +1,145 @@
 [
   {
     "id": "CP001",
-    "title": "Consulta pública digital",
-    "description": "Debes aprobar un reglamento de uso de datos personales. Una ONG pide que se realice una consulta pública digital antes de aprobarlo.",
+    "title": "Consulta pública — Reglamento LOPDP",
+    "description": "Debes aprobar un reglamento de uso de datos personales. La Fundación Ciudadanía Digital EC pide consulta pública digital previa, invocando la Constitución Art. 85. El plazo institucional es ajustado.",
     "category": "citizen-participation",
     "npcId": "ngo-001",
     "requiredRank": "director",
     "difficulty": "normal",
-    "tags": ["consulta-pública", "participación-ciudadana", "reglamento"],
+    "tags": ["consulta-pública", "Constitución", "CPCCS", "Ley-Participación-Ciudadana", "LOPDP"],
     "options": [
       {
         "id": "CP001-A",
         "text": "Aprobar el reglamento sin consulta para agilizar el proceso",
         "delta": { "legality": -12, "citizenSatisfaction": -15, "institutionalReputation": -10 },
         "xpReward": 5,
-        "educationalFeedback": "Error. La consulta pública antes de aprobar normativas que afectan derechos ciudadanos es un principio de buen gobierno. Omitirla debilita la legitimidad del reglamento y puede dar lugar a impugnaciones legales posteriores.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Violación constitucional. La Constitución Art. 85 establece que la formulación de políticas públicas debe garantizar la participación ciudadana. La Ley Orgánica de Participación Ciudadana (LOPC) Art. 45 obliga a consulta pública previa para reglamentos que afecten derechos. El CPCCS puede impugnar el reglamento.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 85, 95, LOPC Art. 45, CPCCS"
       },
       {
         "id": "CP001-B",
-        "text": "Abrir un portal de consulta digital por 30 días con síntesis de aportes",
+        "text": "Abrir portal de consulta digital por 30 días con síntesis de aportes publicada",
         "delta": { "legality": 15, "citizenSatisfaction": 18, "institutionalReputation": 15, "budget": -5 },
         "xpReward": 55,
-        "educationalFeedback": "Excelente. La consulta pública digital amplía la participación a ciudadanos que no pueden asistir presencialmente. Publicar una síntesis de aportes cierra el ciclo y demuestra que la participación fue real, no cosmética.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. La LOPC Art. 45 establece el procedimiento de consulta pública. Publicar la síntesis de aportes cierra el ciclo de participación genuina. El portal participacion.gob.ec del Ecuador es el canal oficial. La LOPDP Art. 32 también exige transparencia en políticas de tratamiento de datos.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95, LOPC Art. 45, LOPDP Art. 32, participacion.gob.ec"
       },
       {
         "id": "CP001-C",
         "text": "Hacer una audiencia pública presencial y considerarla suficiente",
         "delta": { "legality": 8, "citizenSatisfaction": 8, "institutionalReputation": 5 },
         "xpReward": 25,
-        "educationalFeedback": "Parcialmente correcto. La audiencia presencial es válida pero limita la participación geográficamente. La combinación de canales digitales y presenciales maximiza la inclusión participativa.",
-        "isCorrect": false
+        "educationalFeedback": "Parcialmente correcto. La audiencia pública cumple formalmente la LOPC Art. 73, pero limita la participación geográficamente. La Constitución Art. 95 establece el principio de participación amplia. La combinación de canales digitales y presenciales es el estándar actual del CPCCS (Consejo de Participación Ciudadana y Control Social).",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 95, LOPC Art. 73, CPCCS"
       },
       {
         "id": "CP001-D",
-        "text": "Publicar el borrador del reglamento y crear un canal de aportes ciudadanos multicanal",
+        "text": "Publicar el borrador y crear canal multicanal (web, redes, presencial, teléfono)",
         "delta": { "legality": 18, "citizenSatisfaction": 22, "institutionalReputation": 20, "budget": -8 },
         "xpReward": 65,
-        "educationalFeedback": "Modelo de participación avanzado. Publicar el borrador (transparencia) y habilitar múltiples canales (web, redes, presencial, teléfono) es el estándar de participación ciudadana inclusiva. Permite que todos los ciudadanos, con o sin acceso digital, puedan participar.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Modelo de participación avanzado que cumple plenamente con la Constitución Art. 95-101 (participación ciudadana). La LOPC Arts. 45-47 prevén múltiples mecanismos de participación. El CPCCS monitorea el cumplimiento de estas obligaciones. La multicanalidad garantiza inclusión de ciudadanos sin acceso digital, cumpliendo la Ley del Anciano y la Ley de Discapacidades.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95-101, LOPC Art. 45-47, CPCCS, Ley Discapacidades"
       }
     ]
   },
   {
     "id": "CP002",
-    "title": "Plataforma de peticiones ciudadanas",
-    "description": "Una petición ciudadana con 50.000 firmas digitales pide mejorar la atención en hospitales públicos. ¿Cómo respondes?",
+    "title": "Petición ciudadana: 50.000 firmas por hospitales públicos",
+    "description": "El Colectivo Gobierno Abierto Ecuador presenta una petición con 50.000 firmas digitales exigiendo mejorar la atención en hospitales del MSP. La Constitución Art. 66 garantiza el derecho de petición.",
     "category": "citizen-participation",
     "npcId": "citizen-006",
     "requiredRank": "viceminister",
     "difficulty": "hard",
-    "tags": ["peticiones", "salud-pública", "respuesta-institucional"],
+    "tags": ["peticiones", "Constitución", "LOPC", "MSP", "CPCCS", "salud-pública"],
     "options": [
       {
         "id": "CP002-A",
         "text": "Ignorar la petición, las redes sociales no son canales oficiales",
         "delta": { "legality": -10, "citizenSatisfaction": -20, "institutionalReputation": -15 },
         "xpReward": 0,
-        "educationalFeedback": "Error. Las peticiones con respaldo ciudadano masivo son una forma legítima de participación. Ignorarlas deteriora la confianza institucional. Las plataformas digitales de peticiones son reconocidas como mecanismo de democracia participativa.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Violación constitucional grave. La Constitución Art. 66 num. 23 garantiza el derecho de petición a toda persona. La LOPC Art. 9 reconoce las peticiones ciudadanas masivas. Ignorar una petición formal activa la competencia del CPCCS para investigar la omisión. La COA Art. 207 establece plazos de respuesta obligatorios.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 66 num. 23, LOPC Art. 9, COA Art. 207, CPCCS"
       },
       {
         "id": "CP002-B",
-        "text": "Responder formalmente con un plan de acción en 30 días",
+        "text": "Responder formalmente con un plan de acción con plazos en 30 días",
         "delta": { "legality": 12, "citizenSatisfaction": 15, "institutionalReputation": 12 },
         "xpReward": 45,
-        "educationalFeedback": "Correcto. Responder con un plan de acción concreto demuestra que la participación ciudadana tiene efecto real. El compromiso con plazos específicos aumenta la credibilidad institucional.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Correcto. La COA Art. 207 establece el plazo de 15 días para responder peticiones ciudadanas. La Constitución Art. 66 num. 23 garantiza respuesta motivada. Comprometerse con plazos concretos cumple el principio de transparencia (LOTAIP Art. 7). El MSP debe publicar el plan en sus canales oficiales.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 66 num. 23, COA Art. 207, LOTAIP Art. 7"
       },
       {
         "id": "CP002-C",
-        "text": "Crear un grupo de trabajo con representantes ciudadanos para diseñar la solución",
+        "text": "Crear grupo de trabajo con representantes ciudadanos para co-diseñar la solución",
         "delta": { "legality": 15, "citizenSatisfaction": 20, "institutionalReputation": 18, "budget": -5 },
         "xpReward": 60,
-        "educationalFeedback": "Excelente. Incluir a representantes ciudadanos en el diseño de la solución es co-creación de políticas públicas. Genera soluciones más pertinentes y aumenta el compromiso ciudadano con su implementación. Es un modelo de participación avanzada.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. La Constitución Art. 95 y la LOPC Arts. 77-83 establecen mecanismos de participación en la gestión pública, incluyendo veedurías ciudadanas en servicios de salud. Incluir representantes ciudadanos en el diseño de la solución es co-creación de políticas públicas, el modelo más avanzado del marco de participación ecuatoriano.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95, LOPC Art. 77-83, Constitución Art. 362 (salud)"
       },
       {
         "id": "CP002-D",
         "text": "Responder prometiendo mejoras sin comprometer plazos ni recursos",
         "delta": { "legality": 3, "citizenSatisfaction": -8, "institutionalReputation": -5 },
         "xpReward": 5,
-        "educationalFeedback": "Respuesta vacía. Los ciudadanos distinguen entre compromisos reales y declaraciones sin sustancia. Las promesas sin plazos ni recursos destruyen la confianza más que el silencio. La rendición de cuentas requiere compromisos medibles.",
-        "isCorrect": false
+        "educationalFeedback": "❌ La COA Art. 207 exige respuesta motivada con fundamento legal y factual. Una respuesta vaga puede ser impugnada ante el CPCCS. La LOPC Art. 9 establece que la participación ciudadana debe ser efectiva, no decorativa. Promesas sin sustancia pueden activar una acción de incumplimiento constitucional.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 207, LOPC Art. 9, Constitución Art. 66 num. 23"
       }
     ]
   },
   {
     "id": "CP003",
-    "title": "Presupuesto participativo digital",
-    "description": "El municipio tiene 2 millones disponibles para inversión comunitaria. Propones implementar un presupuesto participativo digital donde ciudadanos voten en qué gastar.",
+    "title": "Presupuesto participativo digital del Municipio",
+    "description": "El Municipio tiene $2 millones para inversión comunitaria bajo el mandato del COOTAD. El Prefecto Moreira propone presupuesto participativo digital. La Ley establece la obligatoriedad de la participación en los GAD.",
     "category": "citizen-participation",
     "npcId": "mayor-001",
     "requiredRank": "director",
     "difficulty": "normal",
-    "tags": ["presupuesto-participativo", "democracia-digital", "inversión"],
+    "tags": ["presupuesto-participativo", "COOTAD", "GAD", "CPCCS", "democracia-directa"],
     "options": [
       {
         "id": "CP003-A",
-        "text": "Rechazar: los funcionarios saben mejor en qué invertir que los ciudadanos",
+        "text": "Rechazar: los funcionarios saben mejor que los ciudadanos en qué invertir",
         "delta": { "citizenSatisfaction": -15, "institutionalReputation": -10 },
         "xpReward": 0,
-        "educationalFeedback": "Paternalismo institucional. El presupuesto participativo no implica que los ciudadanos decidan técnicamente, sino que prioricen entre opciones técnicamente viables. Experiencias en Porto Alegre, Madrid y Bogotá muestran que aumenta la satisfacción y legitimidad del gasto público.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Ilegal. El COOTAD Art. 238 y la Constitución Art. 267 num. 1 obligan a los Gobiernos Autónomos Descentralizados a implementar sistemas de participación ciudadana en la planificación y presupuesto. La Ley Orgánica de Participación Ciudadana Arts. 64-77 establece el presupuesto participativo como obligatorio para los GAD.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 267 num. 1, COOTAD Art. 238, LOPC Art. 64-77"
       },
       {
         "id": "CP003-B",
-        "text": "Implementar presupuesto participativo con propuestas técnicamente filtradas",
+        "text": "Implementar presupuesto participativo con propuestas técnicamente filtradas por expertos",
         "delta": { "citizenSatisfaction": 20, "institutionalReputation": 18, "legality": 10, "budget": -5 },
         "xpReward": 60,
-        "educationalFeedback": "Modelo correcto. Los funcionarios definen el universo de proyectos técnicamente viables y los ciudadanos votan entre ellos. Esto balancea expertise técnico con preferencias ciudadanas. Es el modelo más efectivo de presupuesto participativo.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Modelo correcto. La LOPC Arts. 64-77 establecen el proceso de presupuesto participativo. Los funcionarios definen el universo de proyectos técnicamente viables (análisis técnico previo) y los ciudadanos votan entre ellos. Esto cumple con el COOTAD Art. 238 y maximiza la pertinencia de la inversión pública.",
+        "isCorrect": true,
+        "legalReference": "COOTAD Art. 238, LOPC Art. 64-77, Constitución Art. 267"
       },
       {
         "id": "CP003-C",
         "text": "Hacer presupuesto participativo solo para el 10% del total como piloto",
         "delta": { "citizenSatisfaction": 10, "institutionalReputation": 8, "legality": 5 },
         "xpReward": 30,
-        "educationalFeedback": "Válido como inicio. Un piloto con porcentaje menor permite aprender el proceso antes de escalar. Sin embargo, debe ser suficientemente significativo para que los ciudadanos perciban impacto real.",
-        "isCorrect": true
+        "educationalFeedback": "Parcialmente válido. El COOTAD Art. 238 no establece un porcentaje mínimo obligatorio para el presupuesto participativo, pero el espíritu de la norma es que sea significativo. El CPCCS monitorea la calidad de la participación en los GAD. Un 10% puede ser cuestionado como participación simbólica.",
+        "isCorrect": true,
+        "legalReference": "COOTAD Art. 238, LOPC Art. 64, CPCCS"
       },
       {
         "id": "CP003-D",
-        "text": "Implementar con votación móvil y garantizar acceso a zonas sin internet",
+        "text": "Implementar con votación móvil y puntos presenciales para garantizar inclusión total",
         "delta": { "citizenSatisfaction": 25, "institutionalReputation": 22, "legality": 12, "budget": -10 },
         "xpReward": 70,
-        "educationalFeedback": "Excelente. La multicanalidad (app móvil + puntos presenciales) garantiza que todos los ciudadanos, incluso sin smartphone o internet, puedan participar. La inclusión digital es condición del gobierno electrónico genuinamente democrático.",
-        "isCorrect": true
+        "educationalFeedback": "✅ Excelente. La multicanalidad (app móvil + puntos presenciales) cumple con el principio de participación inclusiva de la Constitución Art. 95. La Ley de Discapacidades y la Ley del Anciano exigen accesibilidad en todos los procesos participativos. El CPCCS valorará positivamente esta implementación como modelo de democracia directa en el Ecuador.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95, 267, COOTAD Art. 238, LOPC Art. 64-77, CPCCS, Ley Discapacidades"
       }
     ]
   }

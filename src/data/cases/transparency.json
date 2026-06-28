@@ -1,222 +1,241 @@
 [
   {
     "id": "T001",
-    "title": "Solicitud de acceso a expediente",
-    "description": "Un ciudadano solicita una copia digital de su expediente de trámite de permiso de construcción que lleva 6 meses en proceso.",
+    "title": "Solicitud de acceso a expediente de construcción",
+    "description": "El ciudadano Carlos Andrade solicita copia digital de su expediente de permiso de construcción que lleva 8 meses en trámite en el Municipio. Invoca la LOTAIP.",
     "category": "transparency",
     "npcId": "citizen-001",
     "requiredRank": "auxiliary",
     "difficulty": "easy",
-    "tags": ["acceso-a-información", "derechos-ciudadanos", "expedientes"],
+    "tags": ["LOTAIP", "acceso-información", "expedientes", "municipio"],
     "options": [
       {
         "id": "T001-A",
-        "text": "Entregar inmediatamente el expediente en formato digital",
-        "delta": { "citizenSatisfaction": 12, "legality": 8, "institutionalReputation": 5 },
-        "xpReward": 30,
-        "educationalFeedback": "Correcto. El acceso a la información pública es un derecho fundamental. Las instituciones deben facilitar el acceso a los expedientes que conciernen directamente al ciudadano. Esto fortalece la transparencia activa según los principios de Gobierno Abierto.",
+        "text": "Entregar el expediente completo en formato digital en el plazo de 10 días establecido en la LOTAIP",
+        "delta": { "citizenSatisfaction": 12, "legality": 10, "institutionalReputation": 6 },
+        "xpReward": 35,
+        "educationalFeedback": "✅ Correcto. El Art. 9 de la LOTAIP (Ley Orgánica de Transparencia y Acceso a la Información Pública, 2004) obliga a entregar información solicitada en máximo 10 días hábiles. El expediente propio del ciudadano no puede restringirse. La Defensoría del Pueblo del Ecuador puede sancionar el incumplimiento.",
         "isCorrect": true,
-        "legalReference": "Principios de Gobierno Abierto - OCDE 2017"
+        "legalReference": "LOTAIP Art. 9, Constitución Art. 91"
       },
       {
         "id": "T001-B",
-        "text": "Negar el acceso alegando confidencialidad",
-        "delta": { "citizenSatisfaction": -15, "legality": -20, "institutionalReputation": -10 },
+        "text": "Negar el acceso alegando que el expediente es 'documento interno'",
+        "delta": { "citizenSatisfaction": -15, "legality": -22, "institutionalReputation": -10 },
         "xpReward": 5,
-        "educationalFeedback": "Incorrecto. Negar el acceso a información sobre el propio expediente del ciudadano viola el derecho de acceso a la información pública. Solo información clasificada puede restringirse, y debe justificarse formalmente.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Incorrecto. Negar el acceso a información pública sin causal legal es una infracción sancionada por la LOTAIP con destitución del funcionario (Art. 22). La Defensoría del Pueblo puede emitir medidas de cumplimiento obligatorio. Solo son reservados los documentos clasificados según el Art. 17 de la LOTAIP.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, 22"
       },
       {
         "id": "T001-C",
-        "text": "Solicitar documentos adicionales innecesarios para dilatar el proceso",
-        "delta": { "citizenSatisfaction": -10, "legality": -12, "institutionalReputation": -8 },
+        "text": "Pedir nuevos documentos que ya constan en el expediente para dilatar el trámite",
+        "delta": { "citizenSatisfaction": -10, "legality": -15, "institutionalReputation": -8 },
         "xpReward": 5,
-        "educationalFeedback": "Esta práctica se denomina 'burocracia obstruccionista' y vulnera el principio de simplicidad administrativa. Los trámites deben ser sencillos y no exigir documentos que ya obran en poder de la entidad.",
-        "isCorrect": false
+        "educationalFeedback": "❌ El Código Orgánico Administrativo (COA, 2017) prohíbe en su Art. 42 exigir documentos que ya obran en poder de la administración. Esta práctica, conocida como 'burocracia obstruccionista', viola también el principio de simplicidad y puede dar lugar a queja ante el SNAP.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 42, SNAP Norma Técnica de Trámites"
       },
       {
         "id": "T001-D",
-        "text": "Remitir al ciudadano al portal de transparencia institucional",
-        "delta": { "citizenSatisfaction": 5, "legality": 3, "institutionalReputation": 3 },
-        "xpReward": 15,
-        "educationalFeedback": "Parcialmente correcto. Orientar al portal es útil, pero si el expediente no está disponible en línea debes entregarlo directamente. El gobierno digital busca que los servicios sean accesibles por múltiples canales.",
-        "isCorrect": false
+        "text": "Publicar proactivamente el expediente en el portal de transparencia de la institución",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Excelente. La transparencia activa (Art. 7 LOTAIP) obliga a publicar información sin que medie solicitud. Subir el expediente al portal cumple la ley y evita futuras solicitudes similares. El SNAP promueve portales de trámites en línea como parte del Plan Nacional de Gobierno Digital.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Plan Nacional de Gobierno Digital"
       }
     ]
   },
   {
     "id": "T002",
-    "title": "Publicación del presupuesto institucional",
-    "description": "El director de planificación te pide que publiques el presupuesto detallado del año fiscal en el portal web. Hay resistencia interna porque incluye viáticos de funcionarios.",
+    "title": "Publicación del presupuesto institucional con viáticos",
+    "description": "Debes publicar el presupuesto detallado del ministerio en el portal. El director de comunicación pide omitir los rubros de viáticos al exterior de las autoridades.",
     "category": "transparency",
     "npcId": "minister-001",
     "requiredRank": "coordinator",
     "difficulty": "normal",
-    "tags": ["presupuesto", "transparencia-fiscal", "gobierno-abierto"],
+    "tags": ["LOTAIP", "presupuesto", "transparencia-fiscal", "viáticos"],
     "options": [
       {
         "id": "T002-A",
-        "text": "Publicar el presupuesto completo sin redacciones",
-        "delta": { "citizenSatisfaction": 15, "legality": 10, "institutionalReputation": 12, "budget": -2 },
-        "xpReward": 40,
-        "educationalFeedback": "Excelente decisión. La transparencia presupuestaria es un pilar del buen gobierno. Los ciudadanos tienen derecho a conocer cómo se gastan los fondos públicos. Esta práctica es reconocida internacionalmente como indicador de democracia fiscal.",
-        "isCorrect": true
+        "text": "Publicar el presupuesto completo incluyendo viáticos, tal como obliga la LOTAIP",
+        "delta": { "citizenSatisfaction": 15, "legality": 12, "institutionalReputation": 13, "budget": -2 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El Art. 7 literal k) de la LOTAIP exige publicar la remuneración mensual por puesto, incluidos bonos y viáticos. El Ministerio de Economía y Finanzas publica el Presupuesto General del Estado en e-SIGEF. Omitir rubros de gasto público viola la transparencia fiscal obligatoria.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7 lit. k), Ley Orgánica de Responsabilidad Fiscal"
       },
       {
         "id": "T002-B",
-        "text": "Publicar solo un resumen ejecutivo sin detalles de viáticos",
-        "delta": { "citizenSatisfaction": -5, "legality": -8, "institutionalReputation": -5 },
-        "xpReward": 10,
-        "educationalFeedback": "Incompleto. La opacidad selectiva debilita la confianza ciudadana y puede interpretarse como ocultamiento de información. Las buenas prácticas exigen publicar el presupuesto desagregado al máximo nivel posible.",
-        "isCorrect": false
+        "text": "Publicar solo el resumen ejecutivo sin detallar viáticos por 'privacidad de los funcionarios'",
+        "delta": { "citizenSatisfaction": -6, "legality": -10, "institutionalReputation": -7 },
+        "xpReward": 8,
+        "educationalFeedback": "❌ Los viáticos son gasto público, no información privada. La Contraloría General del Estado puede auditar estos rubros y exigir su divulgación pública. Alegar 'privacidad' del funcionario para ocultar gasto público es una interpretación errónea que puede derivar en glosa.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, Contraloría General - Normas de Control Interno"
       },
       {
         "id": "T002-C",
-        "text": "Diferir la publicación hasta obtener aprobación política",
-        "delta": { "citizenSatisfaction": -8, "legality": -10, "institutionalReputation": -7 },
-        "xpReward": 5,
-        "educationalFeedback": "La información presupuestaria no requiere autorización política especial para su divulgación cuando es de naturaleza pública. Diferir la publicación por presión interna constituye un acto de opacidad institucional.",
-        "isCorrect": false
+        "text": "Solicitar criterio a la Procuraduría General del Estado antes de publicar",
+        "delta": { "citizenSatisfaction": -5, "legality": 2, "institutionalReputation": -3 },
+        "xpReward": 10,
+        "educationalFeedback": "La LOTAIP no requiere autorización de la Procuraduría para publicar información obligatoria. Dilatar la publicación presupuestaria puede generar observaciones del Ministerio de Economía y la Contraloría. Ante la duda, la LOTAIP es clara: el presupuesto público debe publicarse íntegro.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, Ley Orgánica de la Procuraduría General del Estado"
       },
       {
         "id": "T002-D",
-        "text": "Publicar en formato de datos abiertos reutilizables (CSV, JSON)",
-        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 15, "budget": -3 },
-        "xpReward": 50,
-        "educationalFeedback": "¡Brillante! Publicar en formatos abiertos maximiza el impacto de la transparencia. Ciudadanos, periodistas y organizaciones civiles pueden reutilizar y analizar los datos. Esto cumple con los estándares internacionales de datos abiertos gubernamentales.",
-        "isCorrect": true
+        "text": "Publicar en formato de datos abiertos (CSV, JSON) en el portal de datos abiertos del Estado ecuatoriano",
+        "delta": { "citizenSatisfaction": 20, "legality": 14, "institutionalReputation": 16, "budget": -3 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Ecuador tiene un portal nacional de datos abiertos (datos.gob.ec). Publicar en formatos reutilizables cumple el Art. 7 de la LOTAIP y los lineamientos del MINTEL. Permite que periodistas, académicos y ciudadanos fiscalicen el gasto público con herramientas de análisis.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Acuerdo MINTEL sobre datos abiertos"
       }
     ]
   },
   {
     "id": "T003",
-    "title": "Periodista solicita contratos de proveedores",
-    "description": "Una periodista de investigación solicita acceso a todos los contratos firmados con proveedores tecnológicos en los últimos 3 años.",
+    "title": "Periodista solicita contratos SERCOP",
+    "description": "La periodista Ana Valverde solicita todos los contratos con proveedores TI de los últimos 3 años. Algunos fueron adjudicados por contratación directa y el Director teme la publicación.",
     "category": "transparency",
     "npcId": "journalist-001",
     "requiredRank": "director",
     "difficulty": "hard",
-    "tags": ["contratación-pública", "periodismo", "acceso-información"],
+    "tags": ["LOTAIP", "LOSNCP", "SERCOP", "contratación-pública", "periodismo"],
     "options": [
       {
         "id": "T003-A",
-        "text": "Proporcionar todos los contratos en formato digital en 72 horas",
-        "delta": { "citizenSatisfaction": 12, "legality": 15, "institutionalReputation": 10 },
-        "xpReward": 45,
-        "educationalFeedback": "Correcto. Los contratos públicos son documentos de acceso público. Proporcionarlos oportunamente fortalece la rendición de cuentas y la integridad institucional. La transparencia en compras públicas reduce el riesgo de corrupción.",
-        "isCorrect": true
+        "text": "Entregar todos los contratos en 10 días hábiles según la LOTAIP",
+        "delta": { "citizenSatisfaction": 12, "legality": 16, "institutionalReputation": 11 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. Los contratos públicos son documentos de acceso libre según la LOTAIP Art. 9. Además, la Ley Orgánica del Sistema Nacional de Contratación Pública (LOSNCP) exige que los contratos se publiquen en el SERCOP (Sistema Oficial de Contratación del Estado). Si ya están en el SERCOP, puedes remitir al enlace.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 9, LOSNCP Art. 13"
       },
       {
         "id": "T003-B",
-        "text": "Exigir identificación detallada y propósito de la investigación antes de entregar",
-        "delta": { "citizenSatisfaction": -5, "legality": -8, "institutionalReputation": -5 },
-        "xpReward": 10,
-        "educationalFeedback": "Incorrecto. El acceso a información pública no requiere que el solicitante justifique para qué la usará. Imponer barreras de identificación excesivas vulnera el derecho de acceso.",
-        "isCorrect": false
+        "text": "Negar indicando que los contratos son 'reservados por seguridad nacional'",
+        "delta": { "citizenSatisfaction": -10, "legality": -25, "institutionalReputation": -15 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Grave error. Los contratos TI no son información reservada por seguridad nacional. La clasificación de información reservada está taxativamente limitada por el Art. 17 de la LOTAIP. Usar esta causal indebidamente puede derivar en proceso disciplinario ante el SNAP y denuncia penal por abuso de autoridad (COIP Art. 278).",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, COIP Art. 278"
       },
       {
         "id": "T003-C",
-        "text": "Entregar contratos pero tachar los montos por 'seguridad comercial'",
-        "delta": { "citizenSatisfaction": -3, "legality": -12, "institutionalReputation": -8 },
+        "text": "Entregar contratos pero tachar los montos alegando 'secreto comercial'",
+        "delta": { "citizenSatisfaction": -3, "legality": -14, "institutionalReputation": -9 },
         "xpReward": 8,
-        "educationalFeedback": "Los montos de contratos públicos son de acceso público. La excepción de 'seguridad comercial' no aplica al Estado. Solo aplica en casos muy específicos regulados por ley. Esta práctica es frecuentemente cuestionada en auditorías.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Los montos de contratos públicos no son secreto comercial cuando el contratante es el Estado ecuatoriano. El SERCOP publica todos los montos. La Contraloría General puede ordenar revelar esta información en sus auditorías. Tachar montos en contratos públicos es una práctica que viola la LOSNCP.",
+        "isCorrect": false,
+        "legalReference": "LOSNCP Art. 13, LOTAIP Art. 17"
       },
       {
         "id": "T003-D",
-        "text": "Publicar proactivamente todos los contratos en el portal antes de que pida más",
-        "delta": { "citizenSatisfaction": 20, "legality": 18, "institutionalReputation": 20, "budget": -5 },
-        "xpReward": 60,
-        "educationalFeedback": "Excelente. La transparencia proactiva supera la reactiva. Publicar contratos sin que se soliciten posiciona a la institución como referente de integridad y reduce el costo administrativo de atender solicitudes individuales.",
-        "isCorrect": true
+        "text": "Publicar proactivamente todos los contratos en el SERCOP y notificar a la periodista",
+        "delta": { "citizenSatisfaction": 22, "legality": 20, "institutionalReputation": 22, "budget": -4 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Brillante. La LOSNCP Art. 13 ya obliga a publicar contratos en el SERCOP. Hacerlo proactivamente y notificar a la periodista es buena práctica. Fortalece la imagen institucional, reduce riesgo de escándalos y posiciona a la entidad como referente de transparencia ante la Contraloría General.",
+        "isCorrect": true,
+        "legalReference": "LOSNCP Art. 13, LOTAIP Art. 7"
       }
     ]
   },
   {
     "id": "T004",
-    "title": "Informe de auditoría interna",
-    "description": "El auditor interno detectó irregularidades menores en gastos de representación. Debes decidir si publicar el informe de auditoría.",
+    "title": "Informe de Contraloría sobre gastos de representación",
+    "description": "La Contraloría General del Estado emitió un informe con observaciones sobre gastos de representación. El Ministro pide clasificarlo como reservado para evitar cobertura mediática.",
     "category": "accountability",
     "npcId": "comptroller-001",
     "requiredRank": "director",
     "difficulty": "hard",
-    "tags": ["auditoría", "rendición-de-cuentas", "ética"],
+    "tags": ["Contraloría", "rendición-de-cuentas", "LOTAIP", "ética-pública"],
     "options": [
       {
         "id": "T004-A",
-        "text": "Publicar el informe completo con el plan de corrección",
-        "delta": { "citizenSatisfaction": 15, "legality": 20, "institutionalReputation": 12 },
-        "xpReward": 55,
-        "educationalFeedback": "Decisión ejemplar. Publicar hallazgos de auditoría y acciones correctivas demuestra madurez institucional. Las organizaciones que reconocen errores y los corrigen generan más confianza que las que los ocultan.",
-        "isCorrect": true
+        "text": "Publicar el informe completo con el plan de acción correctivo en el portal de transparencia",
+        "delta": { "citizenSatisfaction": 16, "legality": 22, "institutionalReputation": 14 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Los informes de la Contraloría General del Estado son públicos por mandato constitucional (Art. 211). El Art. 7 de la LOTAIP obliga a publicarlos. Presentar un plan de acción correctivo demuestra gobernanza responsable y puede reducir las glosas.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 211, LOTAIP Art. 7, Ley Orgánica de la Contraloría"
       },
       {
         "id": "T004-B",
-        "text": "Guardar el informe internamente para corregir sin publicar",
-        "delta": { "citizenSatisfaction": -5, "legality": -10, "institutionalReputation": -8 },
-        "xpReward": 10,
-        "educationalFeedback": "Incompleto. Los informes de auditoría interna deben tener algún nivel de divulgación pública. Ocultar hallazgos, incluso menores, puede interpretarse como falta de rendición de cuentas.",
-        "isCorrect": false
+        "text": "Guardar el informe internamente mientras se resuelven las observaciones",
+        "delta": { "citizenSatisfaction": -5, "legality": -12, "institutionalReputation": -9 },
+        "xpReward": 8,
+        "educationalFeedback": "❌ Los informes de la Contraloría son documentos públicos una vez emitidos. Retenerlos viola la LOTAIP y puede ser interpretado como obstrucción al control. La Contraloría misma publica sus informes en el portal contraloría.gob.ec, por lo que retenerlos institucionalmente es inútil además de ilegal.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de la Contraloría Art. 20, LOTAIP Art. 7"
       },
       {
         "id": "T004-C",
-        "text": "Clasificar el informe como reservado para proteger la imagen institucional",
-        "delta": { "citizenSatisfaction": -10, "legality": -18, "institutionalReputation": -15 },
+        "text": "Clasificar el informe como reservado por 'interés institucional'",
+        "delta": { "citizenSatisfaction": -12, "legality": -25, "institutionalReputation": -18 },
         "xpReward": 5,
-        "educationalFeedback": "Grave error. Clasificar informes de auditoría por razones de imagen constituye un acto de opacidad que puede derivar en sanciones disciplinarias y penales. La reserva solo procede por causales taxativas en la ley.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Gravísimo error. Los informes de control nunca pueden clasificarse como reservados por interés institucional. Esta causal no existe en el Art. 17 de la LOTAIP. Hacerlo puede derivar en proceso de determinación de responsabilidades ante la Contraloría (Art. 45 Ley de Contraloría) y proceso disciplinario por abuso de autoridad.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, Ley Orgánica de la Contraloría Art. 45"
       },
       {
         "id": "T004-D",
-        "text": "Notificar a la Contraloría y publicar un resumen ejecutivo",
-        "delta": { "citizenSatisfaction": 10, "legality": 15, "institutionalReputation": 8 },
-        "xpReward": 40,
-        "educationalFeedback": "Correcto. Notificar al ente de control es obligatorio. Publicar un resumen es adecuado cuando el informe completo contiene información reservada de terceros. Esta práctica es aceptada internacionalmente.",
-        "isCorrect": true
+        "text": "Notificar al SNAP y publicar el informe con el plan de mejora institucional",
+        "delta": { "citizenSatisfaction": 12, "legality": 18, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El SNAP (Secretaría Nacional de Administración Pública) supervisa la gestión institucional. Notificarle y publicar el informe con plan de mejora muestra proactividad. La Contraloría valora positivamente las instituciones que responden oportunamente a sus observaciones.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Decreto Ejecutivo SNAP"
       }
     ]
   },
   {
     "id": "T005",
-    "title": "Datos de calidad del aire",
-    "description": "La dirección de ambiente tiene datos de calidad del aire de 12 meses. Los datos muestran niveles preocupantes. ¿Publicas los datos?",
+    "title": "Datos de calidad del aire en Quito: niveles preocupantes",
+    "description": "El Municipio de Quito tiene 12 meses de datos de monitoreo de calidad del aire que muestran niveles de PM2.5 por encima de normas OMS. El Alcalde pide retrasar la publicación.",
     "category": "open-data",
     "npcId": "citizen-002",
     "requiredRank": "analyst",
     "difficulty": "normal",
-    "tags": ["datos-abiertos", "ambiente", "salud-pública"],
+    "tags": ["datos-abiertos", "salud-pública", "Municipio-Quito", "TULSMA"],
     "options": [
       {
         "id": "T005-A",
-        "text": "Publicar inmediatamente en el portal de datos abiertos",
-        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 10 },
-        "xpReward": 40,
-        "educationalFeedback": "Correcto. Los datos ambientales son de interés público. Su publicación permite a ciudadanos, investigadores y periodistas tomar decisiones informadas y exigir medidas correctivas. Los datos abiertos empoderan a la sociedad.",
-        "isCorrect": true
+        "text": "Publicar inmediatamente en datos.gob.ec y notificar al Ministerio de Salud",
+        "delta": { "citizenSatisfaction": 20, "legality": 14, "institutionalReputation": 12 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. Los datos ambientales son de interés público y su publicación está respaldada por la Constitución (Art. 14 derecho a vivir en ambiente sano) y el TULSMA (Texto Unificado de Legislación Secundaria del Ministerio del Ambiente). Notificar al Ministerio de Salud activa los protocolos de protección ciudadana.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 14, TULSMA, LOTAIP Art. 7"
       },
       {
         "id": "T005-B",
-        "text": "Retener los datos hasta preparar un informe que 'contextualice' las cifras",
-        "delta": { "citizenSatisfaction": -8, "legality": -5, "institutionalReputation": -6 },
-        "xpReward": 10,
-        "educationalFeedback": "Manipular el momento de publicación para 'contextualizar' datos desfavorables es una forma de desinformación institucional. Los datos deben publicarse con su contexto pero sin demora que altere su valor informativo.",
-        "isCorrect": false
+        "text": "Retrasar la publicación hasta preparar un informe que 'contextualice' las cifras",
+        "delta": { "citizenSatisfaction": -9, "legality": -7, "institutionalReputation": -7 },
+        "xpReward": 8,
+        "educationalFeedback": "❌ Retrasar datos de salud ambiental por conveniencia política puede afectar la salud de los quiteños. La Constitución Art. 14 reconoce el derecho a vivir en un ambiente sano. La Defensoría del Pueblo puede interponer acción de acceso a información si los ciudadanos la solicitan y no se entrega.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 14, LOTAIP Art. 9"
       },
       {
         "id": "T005-C",
-        "text": "Publicar solo los datos de los meses con niveles aceptables",
-        "delta": { "citizenSatisfaction": -15, "legality": -20, "institutionalReputation": -18 },
+        "text": "Publicar solo los meses con niveles dentro de la norma ecuatoriana",
+        "delta": { "citizenSatisfaction": -16, "legality": -22, "institutionalReputation": -20 },
         "xpReward": 5,
-        "educationalFeedback": "Gravísimo error. Publicar datos seleccionados para mostrar una imagen favorable es una forma de manipulación de información pública. Esto viola el principio de integridad de los datos y puede tener consecuencias penales.",
-        "isCorrect": false
+        "educationalFeedback": "❌ Manipular datos ambientales para publicar selectivamente los favorables es una forma de desinformación pública. Puede constituir el delito de falsedad ideológica (COIP Art. 328). El Ministerio del Ambiente puede sancionar administrativamente y la ciudadanía puede demandar daños a su salud.",
+        "isCorrect": false,
+        "legalReference": "COIP Art. 328, Constitución Art. 14, 66 num. 27"
       },
       {
         "id": "T005-D",
-        "text": "Publicar los datos y activar el protocolo de alerta ambiental",
-        "delta": { "citizenSatisfaction": 22, "legality": 15, "institutionalReputation": 18, "budget": -5 },
-        "xpReward": 55,
-        "educationalFeedback": "Excelente. Publicar los datos y actuar en consecuencia demuestra que el gobierno usa la información para mejorar la calidad de vida. Esto es el uso inteligente de datos para políticas públicas basadas en evidencia.",
-        "isCorrect": true
+        "text": "Publicar todos los datos, activar alerta ambiental y coordinar con el MAATE",
+        "delta": { "citizenSatisfaction": 25, "legality": 18, "institutionalReputation": 20, "budget": -6 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Excelente. Publicar los datos y coordinar con el Ministerio del Ambiente, Agua y Transición Ecológica (MAATE) es la respuesta completa. El Art. 397 de la Constitución obliga al Estado a actuar ante amenazas ambientales. Esto protege a la ciudadanía y demuestra gobernanza responsable.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 397, TULSMA, LOTAIP Art. 7"
       }
     ]
   }
