@@ -24,54 +24,40 @@ export function GameBoard() {
   const lastCategoryRef        = useRef<string | undefined>(undefined);
   const recentEventIdsRef      = useRef<string[]>([]);
   const casesSinceLastEventRef = useRef(0);
-  const prevShowFeedback       = useRef(false);
-  const prevEvent              = useRef<unknown>(null);
 
+  // Cargar siguiente caso cuando no hay nada en pantalla
   useEffect(() => {
     if (!save || save.isGameOver) return;
+    if (currentCase || showFeedback || currentEvent) return;
 
-    const feedbackDismissed = prevShowFeedback.current && !showFeedback;
-    const eventResolved     = prevEvent.current && !currentEvent;
-    prevShowFeedback.current = showFeedback;
-    prevEvent.current        = currentEvent;
+    const canTriggerEvent =
+      save.statistics.totalCasesResolved >= 2 &&
+      casesSinceLastEventRef.current >= 2;
 
-    // Limpiar caso cuando termina feedback o evento
-    if (feedbackDismissed || eventResolved) {
-      setCurrentCase(null);
-      return;
-    }
-
-    // Cargar caso cuando no hay nada en pantalla
-    if (!currentCase && !showFeedback && !currentEvent) {
-      const canTriggerEvent =
-        save.statistics.totalCasesResolved >= 2 &&
-        casesSinceLastEventRef.current >= 2;
-
-      if (canTriggerEvent && shouldTriggerEvent(save.difficulty, save.currentDay)) {
-        const event = pickRandomEvent(save.difficulty, recentEventIdsRef.current);
-        if (event) {
-          triggerRandomEvent(event);
-          recentEventIdsRef.current = [...recentEventIdsRef.current.slice(-4), event.id];
-          casesSinceLastEventRef.current = 0;
-          return;
-        }
-      }
-
-      const nextCase = pickNextCase(
-        save.currentRank,
-        save.resolvedCaseIds,
-        save.difficulty,
-        lastCategoryRef.current as never
-      );
-
-      if (nextCase) {
-        setCurrentCase(nextCase);
-        lastCategoryRef.current = nextCase.category;
-        casesSinceLastEventRef.current += 1;
-        advanceDay();
+    if (canTriggerEvent && shouldTriggerEvent(save.difficulty, save.currentDay)) {
+      const event = pickRandomEvent(save.difficulty, recentEventIdsRef.current);
+      if (event) {
+        triggerRandomEvent(event);
+        recentEventIdsRef.current = [...recentEventIdsRef.current.slice(-4), event.id];
+        casesSinceLastEventRef.current = 0;
+        return;
       }
     }
-  }, [save, showFeedback, currentEvent, currentCase, setCurrentCase, triggerRandomEvent, advanceDay]);
+
+    const nextCase = pickNextCase(
+      save.currentRank,
+      save.resolvedCaseIds,
+      save.difficulty,
+      lastCategoryRef.current as never
+    );
+
+    if (nextCase) {
+      setCurrentCase(nextCase);
+      lastCategoryRef.current = nextCase.category;
+      casesSinceLastEventRef.current += 1;
+      advanceDay();
+    }
+  }, [save, currentCase, showFeedback, currentEvent, setCurrentCase, triggerRandomEvent, advanceDay]);
 
   if (!save) return null;
   if (save.isGameOver) return <GameOverScreen />;
