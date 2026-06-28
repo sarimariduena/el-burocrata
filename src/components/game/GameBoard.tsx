@@ -24,11 +24,14 @@ export function GameBoard() {
   const lastCategoryRef        = useRef<string | undefined>(undefined);
   const recentEventIdsRef      = useRef<string[]>([]);
   const casesSinceLastEventRef = useRef(0);
+  const loadingRef             = useRef(false);
 
   // Cargar siguiente caso cuando no hay nada en pantalla
   useEffect(() => {
     if (!save || save.isGameOver) return;
     if (currentCase || showFeedback || currentEvent) return;
+    if (loadingRef.current) return;
+    loadingRef.current = true;
 
     const canTriggerEvent =
       save.statistics.totalCasesResolved >= 2 &&
@@ -57,6 +60,8 @@ export function GameBoard() {
       casesSinceLastEventRef.current += 1;
       advanceDay();
     }
+
+    setTimeout(() => { loadingRef.current = false; }, 500);
   }, [save, currentCase, showFeedback, currentEvent, setCurrentCase, triggerRandomEvent, advanceDay]);
 
   if (!save) return null;
