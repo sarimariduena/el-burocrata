@@ -1,11 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import { useGameStore } from '@/store/gameStore';
 import { IndicatorBar } from '@/components/ui/IndicatorBar';
 import { RANKS } from '@/data/levels/ranks';
 
 export function HUD() {
   const save = useGameStore((s) => s.save);
+  const resetGame = useGameStore((s) => s.resetGame);
+  const [confirmAbandon, setConfirmAbandon] = useState(false);
+
   if (!save) return null;
 
   const { indicators, currentRank, xp, currentDay, currentYear, playerName } = save;
@@ -85,30 +89,10 @@ export function HUD() {
         <div className="text-xs font-bold" style={{ color: 'var(--text-secondary)' }}>
           INDICADORES
         </div>
-        <IndicatorBar
-          label="Satisfacción"
-          value={indicators.citizenSatisfaction}
-          icon="😊"
-          colorClass="bg-green-500"
-        />
-        <IndicatorBar
-          label="Presupuesto"
-          value={indicators.budget}
-          icon="💰"
-          colorClass="bg-blue-500"
-        />
-        <IndicatorBar
-          label="Legalidad"
-          value={indicators.legality}
-          icon="⚖️"
-          colorClass="bg-purple-500"
-        />
-        <IndicatorBar
-          label="Reputación"
-          value={indicators.institutionalReputation}
-          icon="🏛️"
-          colorClass="bg-yellow-500"
-        />
+        <IndicatorBar label="Satisfacción" value={indicators.citizenSatisfaction} icon="😊" colorClass="bg-green-500" />
+        <IndicatorBar label="Presupuesto" value={indicators.budget} icon="💰" colorClass="bg-blue-500" />
+        <IndicatorBar label="Legalidad" value={indicators.legality} icon="⚖️" colorClass="bg-purple-500" />
+        <IndicatorBar label="Reputación" value={indicators.institutionalReputation} icon="🏛️" colorClass="bg-yellow-500" />
       </div>
 
       {/* Estadísticas rápidas */}
@@ -146,6 +130,48 @@ export function HUD() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Botón abandonar partida */}
+      <div className="mt-auto">
+        {!confirmAbandon ? (
+          <button
+            onClick={() => setConfirmAbandon(true)}
+            className="w-full py-2 rounded text-xs cursor-pointer"
+            style={{
+              background: 'transparent',
+              border: '1px solid var(--accent-red)',
+              color: 'var(--accent-red)',
+            }}
+          >
+            🚪 ABANDONAR PARTIDA
+          </button>
+        ) : (
+          <div
+            className="p-3 rounded text-xs"
+            style={{ background: 'var(--bg-card)', border: '1px solid var(--accent-red)' }}
+          >
+            <div className="mb-2" style={{ color: 'var(--text-primary)' }}>
+              ¿Segura que quieres abandonar?
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={resetGame}
+                className="flex-1 py-1.5 rounded cursor-pointer font-bold"
+                style={{ background: 'var(--accent-red)', color: '#fff' }}
+              >
+                SÍ, SALIR
+              </button>
+              <button
+                onClick={() => setConfirmAbandon(false)}
+                className="flex-1 py-1.5 rounded cursor-pointer"
+                style={{ background: 'var(--bg-secondary)', color: 'var(--text-secondary)', border: '1px solid var(--border)' }}
+              >
+                CANCELAR
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
