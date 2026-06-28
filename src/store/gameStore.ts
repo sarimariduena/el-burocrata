@@ -15,7 +15,7 @@ import { RANKS } from '@/data/levels/ranks';
 import { clamp } from '@/utils/math';
 import { computeIndexes } from '@/utils/statistics';
 
-const SAVE_KEY = 'el-burocrata-save-v1';
+const SAVE_KEY = 'el-burocrata-save-v2';
 const GAME_VERSION = '1.0.0';
 
 function createInitialIndicators(): GameIndicators {

@@ -7,9 +7,6 @@ import { GameBoard } from '@/components/game/GameBoard';
 export default function Home() {
   const save = useGameStore((s) => s.save);
 
-  if (!save) {
-    return <MainMenu />;
-  }
-
+  if (!save) return <MainMenu />;
   return <GameBoard />;
 }
