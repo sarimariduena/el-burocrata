@@ -110,6 +110,10 @@ export const useGameStore = create<GameStore>()(
         set({ save, currentCase: null, currentEvent: null, showFeedback: false });
       },
 
+      setCurrentCase(gameCase) {
+        set({ currentCase: gameCase });
+      },
+
       loadGame() {
         // El middleware `persist` ya restaura el estado automáticamente.
         // Este método es para uso explícito si se necesita forzar la recarga.

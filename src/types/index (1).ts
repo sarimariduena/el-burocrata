@@ -224,6 +224,7 @@ export interface GameStore {
   initGame: (playerName: string, difficulty: Difficulty, mode: 'campaign' | 'infinite') => void;
   loadGame: () => void;
   saveGame: () => void;
+  setCurrentCase: (gameCase: GameCase | null) => void;
   resolveCase: (caseId: string, optionId: string) => void;
   dismissFeedback: () => void;
   triggerRandomEvent: (event: RandomEvent) => void;

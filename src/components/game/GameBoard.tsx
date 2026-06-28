@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
 import { HUD } from '@/components/hud/HUD';
@@ -10,24 +10,22 @@ import { EventModal } from '@/components/modals/EventModal';
 import { GameOverScreen } from './GameOverScreen';
 import { pickNextCase } from '@/services/caseEngine';
 import { shouldTriggerEvent, pickRandomEvent } from '@/services/eventEngine';
-import type { GameCase } from '@/types';
 import npcProfiles from '@/data/npcs/profiles.json';
 
 export function GameBoard() {
-  const save              = useGameStore((s) => s.save);
-  const showFeedback      = useGameStore((s) => s.showFeedback);
-  const currentEvent      = useGameStore((s) => s.currentEvent);
+  const save               = useGameStore((s) => s.save);
+  const currentCase        = useGameStore((s) => s.currentCase);
+  const showFeedback       = useGameStore((s) => s.showFeedback);
+  const currentEvent       = useGameStore((s) => s.currentEvent);
+  const setCurrentCase     = useGameStore((s) => s.setCurrentCase);
   const triggerRandomEvent = useGameStore((s) => s.triggerRandomEvent);
-  const advanceDay        = useGameStore((s) => s.advanceDay);
+  const advanceDay         = useGameStore((s) => s.advanceDay);
 
-  const [currentCase, setCurrentCase]           = useState<GameCase | null>(null);
-  const lastCategoryRef                          = useRef<string | undefined>(undefined);
-  const recentEventIdsRef                        = useRef<string[]>([]);
-  const casesSinceLastEventRef                   = useRef(0);
-
-  // Track previous values to detect transitions
-  const prevShowFeedback = useRef(false);
-  const prevEvent        = useRef<unknown>(null);
+  const lastCategoryRef        = useRef<string | undefined>(undefined);
+  const recentEventIdsRef      = useRef<string[]>([]);
+  const casesSinceLastEventRef = useRef(0);
+  const prevShowFeedback       = useRef(false);
+  const prevEvent              = useRef<unknown>(null);
 
   useEffect(() => {
     if (!save || save.isGameOver) return;
@@ -37,13 +35,13 @@ export function GameBoard() {
     prevShowFeedback.current = showFeedback;
     prevEvent.current        = currentEvent;
 
-    // Clear case when feedback/event is done
+    // Limpiar caso cuando termina feedback o evento
     if (feedbackDismissed || eventResolved) {
       setCurrentCase(null);
       return;
     }
 
-    // Load a case when there's nothing showing
+    // Cargar caso cuando no hay nada en pantalla
     if (!currentCase && !showFeedback && !currentEvent) {
       const canTriggerEvent =
         save.statistics.totalCasesResolved >= 2 &&
@@ -73,7 +71,7 @@ export function GameBoard() {
         advanceDay();
       }
     }
-  }, [save, showFeedback, currentEvent, currentCase, triggerRandomEvent, advanceDay]);
+  }, [save, showFeedback, currentEvent, currentCase, setCurrentCase, triggerRandomEvent, advanceDay]);
 
   if (!save) return null;
   if (save.isGameOver) return <GameOverScreen />;
@@ -87,7 +85,6 @@ export function GameBoard() {
       <HUD />
 
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', overflowY: 'auto' }}>
-        {/* Banner año/día */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
