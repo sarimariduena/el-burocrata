@@ -1,0 +1,20 @@
+[
+  { "id": "citizen-001", "name": "Carlos Andrade", "type": "citizen", "avatar": "👨", "personality": "Ciudadano quiteño paciente pero exige respeto y claridad en los trámites del Municipio.", "trustLevel": 60 },
+  { "id": "citizen-002", "name": "Verónica Paredes", "type": "citizen", "avatar": "👩", "personality": "Guayaquileña activa digitalmente, exige servicios en línea y rapidez.", "trustLevel": 55 },
+  { "id": "citizen-003", "name": "Doña Rosa Chuquimarca", "type": "citizen", "avatar": "👵", "personality": "Adulta mayor de Riobamba, no usa internet. Necesita atención presencial y paciencia.", "trustLevel": 70 },
+  { "id": "citizen-004", "name": "Diego Villacís", "type": "citizen", "avatar": "🧑‍💻", "personality": "Investigador de ciberseguridad ecuatoriano, reporta vulnerabilidades de buena fe.", "trustLevel": 80 },
+  { "id": "citizen-005", "name": "Dra. Carmen Suárez", "type": "citizen", "avatar": "👩‍⚕️", "personality": "Médica cuencana afectada por filtración de datos del MSP.", "trustLevel": 65 },
+  { "id": "citizen-006", "name": "Colectivo Gobierno Abierto Ecuador", "type": "citizen", "avatar": "👥", "personality": "ONG que monitorea cumplimiento de la LOTAIP y exige datos abiertos.", "trustLevel": 75 },
+  { "id": "business-001", "name": "TecnoGov Ecuador S.A.", "type": "business", "avatar": "🏢", "personality": "Empresa de tecnología con contratos con varias instituciones del Estado ecuatoriano.", "trustLevel": 50 },
+  { "id": "journalist-001", "name": "Ana Valverde", "type": "journalist", "avatar": "📰", "personality": "Periodista de investigación de El Universo, especialista en transparencia y corrupción.", "trustLevel": 65 },
+  { "id": "comptroller-001", "name": "Dr. Ramiro Crespo", "type": "comptroller", "avatar": "🕵️", "personality": "Auditor de la Contraloría General del Estado, exige cumplimiento estricto de la normativa.", "trustLevel": 70 },
+  { "id": "minister-001", "name": "Ab. Sandra Rivadeneira", "type": "minister", "avatar": "👩‍💼", "personality": "Ministra pragmática del SNAP, busca resultados pero a veces cede a presiones políticas.", "trustLevel": 55 },
+  { "id": "minister-002", "name": "Ing. Roberto Andrade", "type": "minister", "avatar": "👨‍💼", "personality": "Ministro de MINTEL, valora la innovación y los datos para la toma de decisiones.", "trustLevel": 70 },
+  { "id": "minister-003", "name": "Dra. Patricia Hidalgo", "type": "minister", "avatar": "👩‍🔬", "personality": "Ministra de Salud Pública comprometida con la modernización del MSP.", "trustLevel": 75 },
+  { "id": "mayor-001", "name": "Prefecto Juan Moreira", "type": "mayor", "avatar": "🏛️", "personality": "Prefecto populista del Gobierno Provincial, busca impacto visible para sus electores.", "trustLevel": 50 },
+  { "id": "supplier-001", "name": "DataCorp Ecuador", "type": "supplier", "avatar": "💼", "personality": "Proveedor tecnológico con contratos en el SERCOP, con tendencia a presionar informalmente.", "trustLevel": 40 },
+  { "id": "supplier-002", "name": "NubeGov Solutions", "type": "supplier", "avatar": "☁️", "personality": "Empresa de nube certificada por MINTEL para el sector público ecuatoriano.", "trustLevel": 65 },
+  { "id": "supplier-003", "name": "IA-Pública Labs", "type": "supplier", "avatar": "🤖", "personality": "Startup ecuatoriana de IA con soluciones innovadoras pero poco probadas en gobierno.", "trustLevel": 45 },
+  { "id": "ngo-001", "name": "Fundación Ciudadanía Digital EC", "type": "ngo", "avatar": "🌱", "personality": "ONG ecuatoriana que defiende la LOPDP y los derechos digitales ciudadanos.", "trustLevel": 80 },
+  { "id": "assembly-001", "name": "Asambleísta Jorge Cevallos", "type": "assembly", "avatar": "⚖️", "personality": "Legislador de la Asamblea Nacional que fiscaliza activamente y propone normativa TIC.", "trustLevel": 60 }
+]

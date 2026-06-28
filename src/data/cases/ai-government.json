@@ -1,0 +1,242 @@
+[
+  {
+    "id": "AI001",
+    "title": "IA para detección de fraude en beneficios sociales",
+    "description": "IA-Pública Labs propone un sistema de IA para detectar solicitudes fraudulentas del Bono de Desarrollo Humano (BDH). El sistema tiene 85% de precisión pero 15% de falsos positivos que negarían beneficios a personas pobres.",
+    "category": "ai-government",
+    "npcId": "supplier-002",
+    "requiredRank": "director",
+    "difficulty": "hard",
+    "tags": ["inteligencia-artificial", "LOPDP", "BDH", "MIES", "sesgos-algorítmicos", "Constitución"],
+    "options": [
+      {
+        "id": "AI001-A",
+        "text": "Implementar el sistema y rechazar automáticamente los casos marcados como fraude",
+        "delta": { "legality": -20, "citizenSatisfaction": -15, "institutionalReputation": -10, "budget": 5 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Error grave. Un 15% de falsos positivos negaría el Bono de Desarrollo Humano a personas en situación de pobreza. La Constitución Art. 76 garantiza el debido proceso. La LOPDP Art. 23 exige evaluación de impacto para decisiones automatizadas con datos sensibles (socioeconómicos). El MIES tiene la obligación de garantizar el derecho a la seguridad social (Constitución Art. 34).",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 34, 76, LOPDP Art. 23, 26"
+      },
+      {
+        "id": "AI001-B",
+        "text": "Rechazar el sistema por el porcentaje de error inaceptable",
+        "delta": { "legality": 5, "budget": 2 },
+        "xpReward": 15,
+        "educationalFeedback": "Conservador pero que pierde una oportunidad. La Agenda Digital Ecuador del MINTEL promueve el uso de IA para eficiencia estatal. Un 85% de precisión puede ser valioso como herramienta de apoyo con supervisión humana. La LOPDP permite decisiones algorítmicas asistidas si hay garantías adecuadas (Art. 23).",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 23, MINTEL Agenda Digital Ecuador"
+      },
+      {
+        "id": "AI001-C",
+        "text": "Implementar como herramienta de apoyo donde la decisión final la toma un funcionario del MIES",
+        "delta": { "legality": 15, "citizenSatisfaction": 10, "institutionalReputation": 12, "budget": -8 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El modelo 'human-in-the-loop' cumple con la LOPDP Art. 23 que limita las decisiones automatizadas sobre datos sensibles. La Constitución Art. 76 (debido proceso) exige que decisiones sobre derechos tengan revisión humana. El MIES puede usar la IA para priorizar casos de revisión manual, no para decidir automáticamente.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 23, 26, Constitución Art. 76, 34"
+      },
+      {
+        "id": "AI001-D",
+        "text": "Implementar con evaluación de impacto LOPDP, supervisión humana y mecanismo de apelación",
+        "delta": { "legality": 20, "citizenSatisfaction": 15, "institutionalReputation": 18, "budget": -15 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. Este es el modelo de gobernanza IA responsable según la normativa ecuatoriana. La LOPDP Art. 26 exige Evaluación de Impacto de Protección de Datos (EIPD) para tratamiento de alto riesgo. El mecanismo de apelación cumple la Constitución Art. 76. Auditar sesgos protege a grupos vulnerables (Constitución Art. 66 num. 4: igualdad).",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 23, 26, Constitución Art. 34, 66 num. 4, 76, MINTEL Agenda Digital"
+      }
+    ]
+  },
+  {
+    "id": "AI002",
+    "title": "Chatbot IA para atención ciudadana 24/7",
+    "description": "El ministerio evalúa un chatbot de IA para responder consultas de ciudadanos fuera del horario laboral. Verónica Paredes, ciudadana digital activa, lo demanda. Algunos funcionarios temen por sus empleos.",
+    "category": "ai-government",
+    "npcId": "citizen-002",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["chatbot", "LOSEP", "Agenda-Digital", "MINTEL", "atención-ciudadana", "automatización"],
+    "options": [
+      {
+        "id": "AI002-A",
+        "text": "Rechazar para proteger los empleos de los funcionarios públicos",
+        "delta": { "citizenSatisfaction": -8, "institutionalReputation": -5 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Incorrecto desde el marco del servicio público ecuatoriano. La COA Art. 31 garantiza el derecho a servicios eficientes. La Agenda Digital Ecuador del MINTEL promueve la automatización para mejorar la calidad del servicio. La LOSEP no contempla la resistencia a la modernización como causa justificada. La automatización debe ir acompañada de reconversión laboral.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 31, LOSEP, MINTEL Agenda Digital Ecuador"
+      },
+      {
+        "id": "AI002-B",
+        "text": "Implementar el chatbot para consultas básicas y redirigir casos complejos a funcionarios",
+        "delta": { "citizenSatisfaction": 18, "institutionalReputation": 15, "budget": -8 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Correcto. El modelo híbrido humano-IA es el más efectivo. La LOPDP Art. 37 exige que el responsable garantice la seguridad de datos procesados por el chatbot. La Agenda Digital Ecuador (MINTEL) promueve este modelo para servicios ciudadanos 24/7. Los funcionarios se enfocan en casos que requieren criterio y empatía.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 37, COA Art. 31, MINTEL Agenda Digital Ecuador"
+      },
+      {
+        "id": "AI002-C",
+        "text": "Implementar solo si el chatbot puede resolver el 90% de casos sin humano",
+        "delta": { "citizenSatisfaction": 5, "institutionalReputation": 5, "budget": -3 },
+        "xpReward": 20,
+        "educationalFeedback": "Estándar contraproducente. Buscar 90% de autonomía puede llevar a respuestas erróneas sin supervisión. La LOPDP Art. 23 limita las decisiones completamente automatizadas. El modelo ecuatoriano de gobierno digital no contempla la eliminación total del factor humano en atención ciudadana.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 23, MINTEL Agenda Digital"
+      },
+      {
+        "id": "AI002-D",
+        "text": "Implementar con capacitación del equipo en nuevas competencias digitales vía IAEN",
+        "delta": { "citizenSatisfaction": 20, "institutionalReputation": 18, "budget": -12 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. La transformación digital requiere desarrollo del capital humano. El IAEN (Instituto de Altos Estudios Nacionales) ofrece programas de formación en gobierno digital para servidores públicos. La LOSEP Art. 69 establece el derecho a la capacitación. Capacitar al equipo convierte la automatización en oportunidad de desarrollo profesional.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 69, IAEN, MINTEL Agenda Digital, COA Art. 31"
+      }
+    ]
+  },
+  {
+    "id": "AI003",
+    "title": "Algoritmo sesgado contra zonas rurales del Ecuador",
+    "description": "IA-Pública Labs ofrece un algoritmo de priorización de trámites. Al revisar el código, notas que da menor prioridad a solicitudes de provincias rurales de la Amazonía y Sierra rural, reproduciendo brechas históricas.",
+    "category": "ai-government",
+    "npcId": "supplier-003",
+    "requiredRank": "director",
+    "difficulty": "expert",
+    "tags": ["sesgo-algorítmico", "Constitución", "LOPDP", "equidad", "pueblos-indígenas", "SERCOP"],
+    "options": [
+      {
+        "id": "AI003-A",
+        "text": "Implementar el algoritmo, la eficiencia global mejora aunque haya diferencias locales",
+        "delta": { "legality": -22, "citizenSatisfaction": -18, "institutionalReputation": -15 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Inconstitucional. Un algoritmo que discrimina por zona geográfica viola la Constitución Art. 66 num. 4 (igualdad y no discriminación) y Art. 57 (derechos colectivos de pueblos indígenas y comunidades rurales). La LOPDP Art. 23 exige evaluación de impacto para tratamientos de alto riesgo. La Contraloría General puede investigar la decisión.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 57, 66 num. 4, LOPDP Art. 23, 26"
+      },
+      {
+        "id": "AI003-B",
+        "text": "Rechazar el algoritmo y documentar el sesgo ante el SERCOP",
+        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. Rechazar un algoritmo sesgado y documentarlo ante el SERCOP cumple el deber de lealtad institucional. El SERCOP puede descalificar proveedores que ofrezcan soluciones discriminatorias. La Defensoría del Pueblo puede actuar si hay violación de derechos constitucionales de comunidades rurales.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 57, 66 num. 4, LOSNCP SERCOP, Defensoría del Pueblo"
+      },
+      {
+        "id": "AI003-C",
+        "text": "Solicitar al proveedor que corrija el sesgo antes de cualquier implementación",
+        "delta": { "legality": 18, "institutionalReputation": 15, "citizenSatisfaction": 10 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Exigir la corrección del sesgo antes de implementar cumple la LOPDP Art. 26 (evaluación de impacto). Incluir en el contrato SERCOP requisitos de equidad algorítmica y auditorías periódicas protege los derechos de las comunidades rurales e indígenas (Constitución Art. 57). Esto establece un precedente de responsabilidad del proveedor.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 26, Constitución Art. 57, 66 num. 4, LOSNCP SERCOP"
+      },
+      {
+        "id": "AI003-D",
+        "text": "Implementar solo en zonas urbanas donde el sesgo no aplica",
+        "delta": { "legality": -10, "institutionalReputation": -8, "citizenSatisfaction": -5 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Evasión del problema que viola el principio de igualdad. La Constitución Art. 66 num. 4 prohíbe la discriminación. Usar tecnología de dos velocidades (urbana vs. rural) profundiza la brecha digital. El Plan Nacional de Gobierno Digital del MINTEL tiene como objetivo explícito reducir la brecha digital territorial en Ecuador.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 66 num. 4, MINTEL Plan Gobierno Digital, LOPDP Art. 26"
+      }
+    ]
+  },
+  {
+    "id": "AI004",
+    "title": "IA predictiva en seguridad pública ecuatoriana",
+    "description": "La Policía Nacional propone usar IA para predecir zonas de alto crimen usando datos históricos de arrestos en Guayaquil. La Fundación Ciudadanía Digital EC alerta sobre sesgos raciales y socioeconómicos en los datos históricos.",
+    "category": "ai-government",
+    "npcId": "ngo-001",
+    "requiredRank": "viceminister",
+    "difficulty": "expert",
+    "tags": ["policía-predictiva", "Constitución", "LOPDP", "derechos-humanos", "Defensoría"],
+    "options": [
+      {
+        "id": "AI004-A",
+        "text": "Aprobar sin condiciones, la tecnología mejora la seguridad ciudadana",
+        "delta": { "legality": -20, "citizenSatisfaction": -10, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Grave error. Los datos históricos de arrestos en Ecuador reflejan desigualdades en la aplicación de la ley (más arrestos en zonas pobres). El algoritmo predice más crimen en esas zonas, creando un ciclo discriminatorio. La Constitución Art. 66 num. 4 prohíbe la discriminación. La LOPDP Art. 26 exige evaluación previa de impacto para sistemas de alto riesgo.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 66 num. 4, LOPDP Art. 26, Constitución Art. 76"
+      },
+      {
+        "id": "AI004-B",
+        "text": "Rechazar completamente por los riesgos para los derechos humanos",
+        "delta": { "legality": 8, "citizenSatisfaction": 5, "institutionalReputation": 5 },
+        "xpReward": 25,
+        "educationalFeedback": "Postura conservadora válida dado el alto riesgo. El Defensor del Pueblo puede actuar ante sistemas que amenacen derechos constitucionales. Sin embargo, el rechazo total sin evaluación puede desperdiciar tecnología útil. La Constitución Art. 76 exige garantías del debido proceso — la evaluación de impacto (LOPDP Art. 26) aclararía los riesgos reales.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 66 num. 4, 76, LOPDP Art. 26, Defensoría del Pueblo"
+      },
+      {
+        "id": "AI004-C",
+        "text": "Ordenar una Evaluación de Impacto de Protección de Datos (EIPD) previa",
+        "delta": { "legality": 18, "citizenSatisfaction": 10, "institutionalReputation": 15 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. La LOPDP Art. 26 obliga a la Evaluación de Impacto de Protección de Datos (EIPD) para tratamientos de alto riesgo, incluyendo vigilancia pública a escala. La Superintendencia de Protección de Datos debe ser consultada. La Defensoría del Pueblo y el CPCCS tienen competencia para supervisar el proceso.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 26, Constitución Art. 66 num. 4, Defensoría del Pueblo, CPCCS"
+      },
+      {
+        "id": "AI004-D",
+        "text": "Aprobar con comité de supervisión ciudadana, EIPD, auditorías de sesgo y sin arrestos preventivos",
+        "delta": { "legality": 20, "citizenSatisfaction": 12, "institutionalReputation": 18, "budget": -10 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Marco de gobernanza responsable que cumple la normativa ecuatoriana. La LOPDP Art. 26 exige la EIPD. El comité de supervisión ciudadana responde a la Constitución Art. 95 (participación). Prohibir arrestos preventivos cumple la Constitución Art. 77 (derechos del detenido). El CPCCS puede ejercer veeduría.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 26, Constitución Art. 77, 95, CPCCS, Defensoría del Pueblo"
+      }
+    ]
+  },
+  {
+    "id": "AI005",
+    "title": "Funcionario firma informes generados por IA sin verificar",
+    "description": "Un funcionario del MSP usa IA generativa para redactar informes epidemiológicos oficiales que firma sin revisar. Los informes contienen datos incorrectos que fueron publicados y causaron pánico en redes sociales.",
+    "category": "ai-government",
+    "npcId": "citizen-005",
+    "requiredRank": "coordinator",
+    "difficulty": "normal",
+    "tags": ["IA-generativa", "LOSEP", "COA", "responsabilidad", "documentos-oficiales", "COIP"],
+    "options": [
+      {
+        "id": "AI005-A",
+        "text": "Sancionar al funcionario y establecer política de verificación de documentos con IA",
+        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La LOSEP Art. 48 lit. b) sanciona el incumplimiento de normas institucionales. El COA Art. 18 establece la responsabilidad de los servidores públicos por sus actos. El funcionario es responsable de todo documento que firma (independiente de la herramienta). La LOPDP Art. 37 también puede aplicar si los informes contenían datos de pacientes.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 48 lit. b), COA Art. 18, LOPDP Art. 37"
+      },
+      {
+        "id": "AI005-B",
+        "text": "Prohibir totalmente el uso de IA generativa en la institución",
+        "delta": { "legality": 8, "institutionalReputation": 3, "budget": 2 },
+        "xpReward": 15,
+        "educationalFeedback": "❌ Demasiado restrictivo y contrario a la Agenda Digital Ecuador del MINTEL. La IA generativa tiene usos legítimos en documentación y análisis. La solución correcta es regular su uso con protocolos de verificación obligatoria, no prohibirla. La LOSEP Art. 69 impulsa la actualización tecnológica de los servidores públicos.",
+        "isCorrect": false,
+        "legalReference": "MINTEL Agenda Digital Ecuador, LOSEP Art. 69"
+      },
+      {
+        "id": "AI005-C",
+        "text": "Emitir una guía institucional de uso responsable de IA en documentos oficiales",
+        "delta": { "legality": 12, "institutionalReputation": 10, "citizenSatisfaction": 5 },
+        "xpReward": 40,
+        "educationalFeedback": "✅ Correcto. Las guías de uso responsable de IA son necesarias. Deben incluir: obligación de verificar datos generados, el responsable final es el firmante (COA Art. 18), casos de uso permitidos y prohibidos, y referencias a la LOPDP cuando se procesen datos de ciudadanos. El MINTEL puede emitir normativa técnica de referencia.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 18, LOSEP Art. 22, LOPDP Art. 37, MINTEL"
+      },
+      {
+        "id": "AI005-D",
+        "text": "Atribuir la responsabilidad al proveedor del software de IA generativa",
+        "delta": { "legality": -15, "institutionalReputation": -12, "citizenSatisfaction": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Imposible legalmente. El COA Art. 18 establece la responsabilidad directa del servidor público por sus actos y omisiones. La LOSEP Art. 22 lit. a) obliga a los funcionarios a cumplir eficientemente sus labores. Firmar un documento sin verificarlo es culpa del firmante. Si los datos falsos causaron daño, el COIP Art. 315 (difusión de información falsa) puede aplicar.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 18, LOSEP Art. 22, COIP Art. 315"
+      }
+    ]
+  }
+]
