@@ -247,9 +247,9 @@ export const useGameStore = create<GameStore>()(
       advanceDay() {
         set((state) => {
           if (!state.save) return {};
-          const newDay = state.save.currentDay + 1;
+          const newDay = state.save.currentDay + 120; // 120 días por caso → ~12 casos por campaña
           const newYear = newDay > 365 ? state.save.currentYear + 1 : state.save.currentYear;
-          const dayReset = newDay > 365 ? 1 : newDay;
+          const dayReset = newDay > 365 ? (newDay - 365) : newDay;
 
           // Victoria en modo campaña al completar 4 años
           if (state.save.gameMode === 'campaign' && newYear > 4) {

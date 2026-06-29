@@ -88,18 +88,19 @@ export function HUD() {
         ))}
       </div>
 
-      {/* Abandonar */}
+      {/* Menú / Abandonar */}
       <div style={{ marginTop: 16 }}>
         {!confirm ? (
-          <button onClick={() => setConfirm(true)} style={{ width: '100%', padding: 10, borderRadius: 10, border: '1px solid #334155', background: 'transparent', color: '#64748b', cursor: 'pointer', fontSize: 12, fontWeight: 600 }}>
-            🚪 Abandonar partida
+          <button onClick={() => setConfirm(true)} style={{ width: '100%', padding: 10, borderRadius: 10, border: '1px solid #475569', background: '#0f172a', color: '#94a3b8', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>
+            🏠 Menú principal
           </button>
         ) : (
           <div style={{ padding: 12, background: '#0f172a', borderRadius: 10, border: '1px solid #ef4444' }}>
-            <p style={{ fontSize: 12, color: '#fca5a5', marginBottom: 10, textAlign: 'center' }}>¿Seguro que quieres salir?</p>
+            <p style={{ fontSize: 12, color: '#fca5a5', marginBottom: 8, textAlign: 'center', fontWeight: 700 }}>¿Volver al menú?</p>
+            <p style={{ fontSize: 11, color: '#64748b', marginBottom: 10, textAlign: 'center' }}>Se perderá la partida actual</p>
             <div style={{ display: 'flex', gap: 6 }}>
-              <button onClick={resetGame} style={{ flex: 1, padding: 8, borderRadius: 8, border: 'none', background: '#ef4444', color: '#fff', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>Sí</button>
-              <button onClick={() => setConfirm(false)} style={{ flex: 1, padding: 8, borderRadius: 8, border: '1px solid #334155', background: 'transparent', color: '#94a3b8', cursor: 'pointer', fontSize: 12 }}>No</button>
+              <button onClick={resetGame} style={{ flex: 1, padding: 8, borderRadius: 8, border: 'none', background: '#ef4444', color: '#fff', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>Sí, salir</button>
+              <button onClick={() => setConfirm(false)} style={{ flex: 1, padding: 8, borderRadius: 8, border: '1px solid #334155', background: 'transparent', color: '#94a3b8', cursor: 'pointer', fontSize: 12 }}>Cancelar</button>
             </div>
           </div>
         )}

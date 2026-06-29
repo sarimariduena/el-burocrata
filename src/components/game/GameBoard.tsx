@@ -47,9 +47,14 @@ export function GameBoard() {
       }
     }
 
+    // Reciclar IDs resueltos para que los casos se repitan (excepto el último lote)
+    const resolvedIds = save.resolvedCaseIds.length >= 10
+      ? save.resolvedCaseIds.slice(-6)
+      : save.resolvedCaseIds;
+
     const nextCase = pickNextCase(
       save.currentRank,
-      save.resolvedCaseIds,
+      resolvedIds,
       save.difficulty,
       lastCategoryRef.current as never
     );
