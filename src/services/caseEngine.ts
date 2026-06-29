@@ -9,6 +9,7 @@ import ethicsCases from '@/data/cases/ethics-corruption.json';
 import aiGovCases from '@/data/cases/ai-government.json';
 import citizenPartCases from '@/data/cases/citizen-participation.json';
 import dataProtCases from '@/data/cases/data-protection.json';
+import publicAdminCases from '@/data/cases/public-administration.json';
 
 const ALL_CASES: GameCase[] = [
   ...(transparencyCases as GameCase[]),
@@ -18,6 +19,7 @@ const ALL_CASES: GameCase[] = [
   ...(aiGovCases as GameCase[]),
   ...(citizenPartCases as GameCase[]),
   ...(dataProtCases as GameCase[]),
+  ...(publicAdminCases as GameCase[]),
 ];
 
 const RANK_ORDER: PlayerRank[] = [
