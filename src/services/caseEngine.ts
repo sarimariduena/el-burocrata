@@ -10,6 +10,9 @@ import aiGovCases from '@/data/cases/ai-government.json';
 import citizenPartCases from '@/data/cases/citizen-participation.json';
 import dataProtCases from '@/data/cases/data-protection.json';
 import publicAdminCases from '@/data/cases/public-administration.json';
+import syllabusCases from '@/data/cases/syllabus-cases.json';
+import extraCases from '@/data/cases/extra-cases.json';
+import newCases from '@/data/cases/new-cases.json';
 
 const ALL_CASES: GameCase[] = [
   ...(transparencyCases as GameCase[]),
@@ -20,6 +23,9 @@ const ALL_CASES: GameCase[] = [
   ...(citizenPartCases as GameCase[]),
   ...(dataProtCases as GameCase[]),
   ...(publicAdminCases as GameCase[]),
+  ...(syllabusCases as GameCase[]),
+  ...(extraCases as GameCase[]),
+  ...(newCases as GameCase[]),
 ];
 
 const RANK_ORDER: PlayerRank[] = [

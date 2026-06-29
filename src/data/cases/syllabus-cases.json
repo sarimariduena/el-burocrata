@@ -1,0 +1,1042 @@
+[
+  {
+    "id": "SC001",
+    "title": "¿Qué es la administración pública?",
+    "description": "Una estudiante universitaria te pregunta: 'Como funcionario, ¿cuál es la diferencia principal entre administrar una empresa privada y administrar una institución del Estado?'",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "administración-pública",
+      "fundamentos",
+      "constitución",
+      "servicio-público"
+    ],
+    "options": [
+      {
+        "id": "SC001-A",
+        "text": "En el sector público se sirve al interés general y se actúa solo dentro de lo que la ley permite",
+        "delta": {
+          "citizenSatisfaction": 10,
+          "legality": 12,
+          "institutionalReputation": 8
+        },
+        "xpReward": 40,
+        "educationalFeedback": "✅ Correcto. El principio de legalidad (Constitución Art. 226) establece que los servidores públicos solo pueden hacer lo que la ley expresamente les permite. En cambio, los privados pueden hacer todo lo que la ley no prohíbe. La administración pública sirve al interés colectivo, no al lucro privado.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 226, 227"
+      },
+      {
+        "id": "SC001-B",
+        "text": "No hay diferencia, ambas buscan eficiencia y resultados económicos",
+        "delta": {
+          "legality": -10,
+          "institutionalReputation": -8
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Incorrecto. La administración pública tiene como fin el bien común, no el lucro. Está sujeta al derecho público, al control de la Contraloría, al CPCCS y a la Constitución. Su legitimidad viene del mandato democrático, no del mercado.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 225, 226"
+      },
+      {
+        "id": "SC001-C",
+        "text": "En el sector público no hay competencia, por eso los funcionarios no necesitan ser eficientes",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La Constitución Art. 227 exige que la administración pública sea eficiente, eficaz, calificada y de calidad. La ausencia de competencia no justifica la ineficiencia. Los servidores están sujetos a evaluación de desempeño según la LOSEP.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227, LOSEP Art. 76"
+      },
+      {
+        "id": "SC001-D",
+        "text": "El sector público actúa con fondos del Estado que pertenecen a todos los ciudadanos, lo que genera mayor responsabilidad",
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 10,
+          "institutionalReputation": 10
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Excelente. Los recursos públicos provienen de los impuestos de todos los ecuatorianos. Esto genera una responsabilidad especial: la rendición de cuentas. La Contraloría General del Estado audita el uso de fondos públicos para garantizar que se usen en beneficio colectivo.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 211, Ley Orgánica de la Contraloría Art. 3"
+      }
+    ]
+  },
+  {
+    "id": "SC002",
+    "title": "El modelo burocrático de Weber en la práctica",
+    "description": "En tu institución, cada trámite requiere 12 firmas, 4 sellos y pasar por 6 departamentos distintos. Los ciudadanos esperan semanas. Tu jefe dice que 'así garantizamos el control'. ¿Qué modelo representa esto?",
+    "category": "transparency",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "modelo-burocrático",
+      "Weber",
+      "eficiencia",
+      "simplificación"
+    ],
+    "options": [
+      {
+        "id": "SC002-A",
+        "text": "Es el modelo burocrático clásico llevado al extremo, que sacrifica eficiencia por control formal",
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 8,
+          "institutionalReputation": 6
+        },
+        "xpReward": 40,
+        "educationalFeedback": "✅ Correcto. Max Weber describió la burocracia como organización basada en reglas, jerarquía y procedimientos formales. En su forma extrema genera lo que se llama 'disfunción burocrática': el procedimiento se vuelve el fin en sí mismo, en lugar de servir al ciudadano. El SNAP tiene la misión de simplificar estos procesos.",
+        "isCorrect": true,
+        "legalReference": "SNAP Norma Técnica de Simplificación de Trámites, COA Art. 42"
+      },
+      {
+        "id": "SC002-B",
+        "text": "Es el modelo de gobernanza, que garantiza participación de todos los actores",
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ El enfoque de gobernanza promueve redes, participación ciudadana y coordinación horizontal. Lo descrito es lo opuesto: jerarquía vertical rígida con múltiples filtros formales, que es una característica del modelo burocrático weberiano en su versión disfuncional.",
+        "isCorrect": false,
+        "legalReference": "Teoría de Gobernanza - Rhodes (1996)"
+      },
+      {
+        "id": "SC002-C",
+        "text": "Es el modelo gerencial, que busca máximos controles para garantizar resultados",
+        "delta": {
+          "legality": -3,
+          "institutionalReputation": -6
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ El modelo gerencial (Nueva Gestión Pública) hace lo contrario: elimina controles innecesarios y se orienta a resultados. 12 firmas y 6 departamentos es todo lo que el modelo gerencial critica de la burocracia clásica.",
+        "isCorrect": false,
+        "legalReference": "Nueva Gestión Pública - Hood (1991)"
+      },
+      {
+        "id": "SC002-D",
+        "text": "Es burocracia disfuncional; propongo reducir a 3 firmas esenciales y digitalizar el resto",
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 10,
+          "institutionalReputation": 12,
+          "budget": 3
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente propuesta. El SNAP exige que todo trámite público sea revisado para eliminar pasos innecesarios. La Norma Técnica de Simplificación de Trámites establece que cada requisito debe tener justificación legal expresa. Digitalizar firmas con el sistema del BCE reduce tiempo sin eliminar el control.",
+        "isCorrect": true,
+        "legalReference": "SNAP Norma Técnica de Simplificación, Decreto 1384, COA Art. 42"
+      }
+    ]
+  },
+  {
+    "id": "SC003",
+    "title": "Principio de eficiencia en la atención ciudadana",
+    "description": "Un ciudadano lleva 3 horas esperando en tu ventanilla. Al revisar, notas que su trámite toma 2 minutos pero hay 8 pasos de revisión interna innecesarios establecidos por costumbre, no por ley.",
+    "category": "citizen-participation",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "eficiencia",
+      "constitución",
+      "COA",
+      "simplificación",
+      "servicio-ciudadano"
+    ],
+    "options": [
+      {
+        "id": "SC003-A",
+        "text": "Atender al ciudadano en 2 minutos y reportar los 8 pasos innecesarios para eliminarlos",
+        "delta": {
+          "citizenSatisfaction": 20,
+          "legality": 14,
+          "institutionalReputation": 12
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El principio de eficiencia (Constitución Art. 227) y simplicidad (COA Art. 31) obligan a eliminar pasos sin base legal. Reportar la ineficiencia es parte de la mejora continua del servicio público. El SNAP puede auditar y eliminar estos pasos mediante su norma de simplificación.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, COA Art. 31, SNAP Norma Técnica"
+      },
+      {
+        "id": "SC003-B",
+        "text": "Seguir los 8 pasos aunque sean innecesarios para no romper el procedimiento establecido",
+        "delta": {
+          "citizenSatisfaction": -15,
+          "legality": -5,
+          "institutionalReputation": -10
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Los procedimientos sin base legal no son obligatorios. El COA Art. 42 prohíbe exigir requisitos no establecidos en norma. Mantener pasos innecesarios viola el principio de simplicidad y eficiencia. Un funcionario puede y debe cuestionar procesos ineficientes.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 31, 42; Constitución Art. 227"
+      },
+      {
+        "id": "SC003-C",
+        "text": "Saltarse todos los pasos y resolver el trámite sin documentar nada",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": -12,
+          "institutionalReputation": -8
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Eliminar pasos sin seguir el proceso de reforma puede crear vacíos de control. Los pasos necesarios deben mantenerse. La solución correcta es identificar cuáles tienen base legal y cuáles no, y reportar formalmente los innecesarios.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 31, Norma de Calidad del Servicio Público"
+      },
+      {
+        "id": "SC003-D",
+        "text": "Atenderle inmediatamente y proponer un proceso de mejora formal ante el SNAP",
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 12,
+          "institutionalReputation": 14,
+          "budget": 2
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ La mejora de procesos es una función institucional. El SNAP tiene instrumentos para revisar y simplificar trámites. Proponer mejoras formales protege al funcionario y genera un cambio sistémico que beneficia a todos los ciudadanos futuros.",
+        "isCorrect": true,
+        "legalReference": "SNAP Norma Técnica de Simplificación, COA Art. 31"
+      }
+    ]
+  },
+  {
+    "id": "SC004",
+    "title": "¿Qué es el gobierno electrónico?",
+    "description": "El director de tu institución pregunta en qué fase del gobierno electrónico están. Los ciudadanos pueden descargar formularios del sitio web, pero deben imprimirlos, llenarlos a mano y traerlos en persona.",
+    "category": "digital-government",
+    "npcId": "citizen-004",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "gobierno-electrónico",
+      "fases",
+      "presencia",
+      "interacción",
+      "transacción"
+    ],
+    "options": [
+      {
+        "id": "SC004-A",
+        "text": "Están en la fase de Presencia: información disponible en línea pero sin interacción real",
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 6,
+          "institutionalReputation": 8
+        },
+        "xpReward": 40,
+        "educationalFeedback": "✅ Correcto. El modelo de fases del gobierno electrónico tiene cuatro etapas: 1) Presencia (información en línea), 2) Interacción (formularios descargables, correo), 3) Transacción (trámites completos en línea), 4) Integración (sistemas conectados entre instituciones). Descargar formularios para llenar a mano es apenas la fase 1.",
+        "isCorrect": true,
+        "legalReference": "OEA Carta Iberoamericana de Gobierno Electrónico, Decreto 1384 Ecuador"
+      },
+      {
+        "id": "SC004-B",
+        "text": "Están en la fase de Transacción porque los ciudadanos usan internet",
+        "delta": {
+          "legality": -3,
+          "institutionalReputation": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ La fase de Transacción implica que el trámite completo se realiza en línea: sin papel, sin ir en persona. Que el ciudadano descargue un formulario y lo lleve en papel es la fase más básica (Presencia). La transacción real sería llenar, firmar electrónicamente y recibir la respuesta en línea.",
+        "isCorrect": false,
+        "legalReference": "OEA Carta Iberoamericana de Gobierno Electrónico"
+      },
+      {
+        "id": "SC004-C",
+        "text": "Están en fase de Integración porque usan tecnología",
+        "delta": {
+          "legality": -3,
+          "institutionalReputation": -6
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La Integración es la fase más avanzada: los sistemas del Estado comparten datos automáticamente (como el modelo X-Road de Estonia). Tener un sitio web con formularios descargables es el nivel más básico, muy lejos de la integración.",
+        "isCorrect": false,
+        "legalReference": "OEA Carta Iberoamericana de Gobierno Electrónico, MINTEL"
+      },
+      {
+        "id": "SC004-D",
+        "text": "Fase de Presencia, y propongo un plan para avanzar a Transacción en 12 meses",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 8,
+          "institutionalReputation": 14,
+          "budget": -2
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Identificar la fase actual Y proponer un plan de mejora es la actitud correcta. El Decreto 1384 obliga a las instituciones a avanzar hacia la transacción completa en línea. Uruguay y Chile lograron pasar de presencia a transacción en 3 años con inversión focalizada.",
+        "isCorrect": true,
+        "legalReference": "Decreto 1384, Plan Nacional de Gobierno Digital, MINTEL"
+      }
+    ]
+  },
+  {
+    "id": "SC005",
+    "title": "Gobierno abierto: los tres pilares",
+    "description": "Tu institución quiere obtener el sello de 'Gobierno Abierto' de la OGP. Te piden que expliques qué tres pilares debe cumplir la entidad para ser reconocida.",
+    "category": "citizen-participation",
+    "npcId": "citizen-005",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "gobierno-abierto",
+      "OGP",
+      "transparencia",
+      "participación",
+      "rendición-de-cuentas"
+    ],
+    "options": [
+      {
+        "id": "SC005-A",
+        "text": "Transparencia, Participación ciudadana y Rendición de cuentas",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 12,
+          "institutionalReputation": 14
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Los tres pilares del Gobierno Abierto según la Alianza para el Gobierno Abierto (OGP, 2011) son: Transparencia (información pública accesible), Participación ciudadana (involucramiento en decisiones) y Rendición de cuentas (accountability). Ecuador es miembro de la OGP desde 2012 y debe presentar Planes de Acción bianuales.",
+        "isCorrect": true,
+        "legalReference": "OGP Open Government Partnership 2011, Plan de Acción Ecuador"
+      },
+      {
+        "id": "SC005-B",
+        "text": "Tecnología, Internet y Redes sociales",
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El gobierno abierto es un concepto político y de gobernanza, no tecnológico. La tecnología es una herramienta, no un pilar. Un gobierno puede ser abierto con o sin tecnología; lo fundamental son los valores de transparencia, participación y rendición de cuentas.",
+        "isCorrect": false,
+        "legalReference": "OGP - Declaración de Gobierno Abierto 2011"
+      },
+      {
+        "id": "SC005-C",
+        "text": "Eficiencia, Ahorro y Digitalización",
+        "delta": {
+          "legality": -3,
+          "institutionalReputation": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Esos son objetivos del modelo gerencial (Nueva Gestión Pública), no del gobierno abierto. El gobierno abierto se enfoca en la relación Estado-ciudadano en términos de acceso a información, voz y control social.",
+        "isCorrect": false,
+        "legalReference": "OGP - Principios Fundacionales"
+      },
+      {
+        "id": "SC005-D",
+        "text": "Transparencia, Colaboración e Innovación cívica",
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 6,
+          "institutionalReputation": 8
+        },
+        "xpReward": 25,
+        "educationalFeedback": "⚠️ Parcialmente correcto. Obama en 2009 describió el gobierno abierto con esos tres principios. Sin embargo, la definición consolidada de la OGP (más usada en Ecuador) habla de Transparencia, Participación y Rendición de Cuentas. La innovación cívica es un resultado, no un pilar fundamental.",
+        "isCorrect": false,
+        "legalReference": "Obama Open Government Directive 2009, OGP 2011"
+      }
+    ]
+  },
+  {
+    "id": "SC006",
+    "title": "LOTAIP: plazos de respuesta a solicitudes",
+    "description": "Una periodista envía por correo electrónico una solicitud de información sobre el presupuesto ejecutado de tu institución. ¿En cuántos días hábiles debes responder según la LOTAIP?",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "LOTAIP",
+      "plazos",
+      "acceso-información",
+      "periodismo"
+    ],
+    "options": [
+      {
+        "id": "SC006-A",
+        "text": "10 días hábiles, prorrogables 5 días adicionales si la información es compleja",
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 18,
+          "institutionalReputation": 10
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El Art. 9 de la LOTAIP establece 10 días hábiles como plazo máximo de respuesta, con posibilidad de prórroga de 5 días adicionales debidamente justificada. Si no se responde en ese plazo, el solicitante puede recurrir a la Defensoría del Pueblo, que puede ordenar la entrega inmediata.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 9, Defensoría del Pueblo - Recursos de Acceso"
+      },
+      {
+        "id": "SC006-B",
+        "text": "30 días calendario como cualquier trámite administrativo",
+        "delta": {
+          "legality": -12,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ El COA establece 15 días como plazo general para trámites, pero la LOTAIP tiene plazo especial de 10 días hábiles para solicitudes de información, que es una norma especial. El principio de especialidad determina que la LOTAIP prevalece sobre el plazo general.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 9, COA Art. 207"
+      },
+      {
+        "id": "SC006-C",
+        "text": "No hay plazo, depende de la complejidad de la información solicitada",
+        "delta": {
+          "legality": -15,
+          "citizenSatisfaction": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La ley establece plazos precisos que no dependen de la discreción del funcionario. La ausencia de plazos claros fue precisamente lo que la LOTAIP vino a corregir. Cualquier demora injustificada es sancionable.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 9, 22"
+      },
+      {
+        "id": "SC006-D",
+        "text": "72 horas, porque es información periodística de interés público",
+        "delta": {
+          "legality": -5,
+          "citizenSatisfaction": 3
+        },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ No existe una categoría especial de 72 horas en la LOTAIP para periodistas. La ley no distingue entre tipos de solicitantes: periodistas, académicos y ciudadanos tienen el mismo plazo de 10 días hábiles. Sin embargo, en la práctica, la urgencia periodística puede justificar atención prioritaria voluntaria.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 9, Constitución Art. 18"
+      }
+    ]
+  },
+  {
+    "id": "SC007",
+    "title": "Principios constitucionales de la función administrativa",
+    "description": "Debes tomar una decisión administrativa que no está expresamente regulada en ninguna ley. Tu compañera dice que si la ley no lo prohíbe, puedes hacerlo. ¿Es correcta esta afirmación para el sector público?",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "principio-legalidad",
+      "constitución",
+      "función-administrativa",
+      "fundamentos"
+    ],
+    "options": [
+      {
+        "id": "SC007-A",
+        "text": "No. En el sector público solo puedes hacer lo que la ley expresamente te autoriza",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 8
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El principio de legalidad en el derecho público (Constitución Art. 226) es inverso al del derecho privado: los particulares pueden hacer todo lo que la ley no prohíbe, pero los servidores públicos solo pueden hacer lo que la ley expresamente les permite. Sin habilitación legal, la actuación del funcionario es inválida y puede ser anulada.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 226, COA Art. 14"
+      },
+      {
+        "id": "SC007-B",
+        "text": "Sí, en el sector público aplica el mismo principio que en derecho privado",
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Es un error fundamental. El derecho administrativo opera con el principio opuesto al derecho civil. En el sector público, la ausencia de autorización legal equivale a prohibición. Este principio protege a los ciudadanos de actuaciones arbitrarias del Estado.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 226, Derecho Administrativo - García de Enterría"
+      },
+      {
+        "id": "SC007-C",
+        "text": "Depende del monto de la decisión y del nivel jerárquico del funcionario",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ El principio de legalidad no tiene umbrales económicos ni jerárquicos. Cualquier funcionario, en cualquier nivel, necesita habilitación legal para actuar. El monto puede afectar el tipo de procedimiento (contratación pública), pero no el principio fundamental.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 226"
+      },
+      {
+        "id": "SC007-D",
+        "text": "No es correcta; debo consultar al área jurídica antes de actuar en ausencia de norma expresa",
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 6
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Consultar al área jurídica cuando hay vacíos legales es la mejor práctica. El COA (Art. 14) permite aplicar principios generales del derecho administrativo cuando hay lagunas normativas, pero siempre con asesoría jurídica. Esta práctica protege al funcionario y a la institución.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 226, COA Art. 14"
+      }
+    ]
+  },
+  {
+    "id": "SC008",
+    "title": "Transparencia activa vs. transparencia pasiva",
+    "description": "Tu institución publica automáticamente contratos, presupuestos y nóminas en su portal web (sin que nadie lo pida). Un ciudadano también envía una solicitud de información sobre el mismo tema. ¿Cómo clasificas estas dos situaciones?",
+    "category": "transparency",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "LOTAIP",
+      "transparencia-activa",
+      "transparencia-pasiva",
+      "gobierno-abierto"
+    ],
+    "options": [
+      {
+        "id": "SC008-A",
+        "text": "Publicar automáticamente es transparencia activa; responder a la solicitud es transparencia pasiva",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 14,
+          "institutionalReputation": 10
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La LOTAIP distingue claramente: Art. 7 regula la transparencia activa (publicación proactiva obligatoria) y Art. 9 regula la transparencia pasiva (respuesta a solicitudes). Ambas son obligatorias. El gobierno abierto promueve maximizar la transparencia activa para reducir la necesidad de solicitudes individuales.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7 y 9, OGP Ecuador"
+      },
+      {
+        "id": "SC008-B",
+        "text": "Ambas son lo mismo, no hay diferencia entre publicar y responder solicitudes",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Son mecanismos distintos regulados en artículos diferentes de la LOTAIP. La transparencia activa (Art. 7) requiere publicación permanente sin que medie petición. La pasiva (Art. 9) es el derecho a pedir información específica. Ambas son obligaciones independientes.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, 9"
+      },
+      {
+        "id": "SC008-C",
+        "text": "Si ya publicaste, no estás obligado a responder la solicitud individual",
+        "delta": {
+          "legality": -10,
+          "institutionalReputation": -6,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Publicar no exime de responder solicitudes. El derecho a pedir información específica (LOTAIP Art. 9) es independiente de lo ya publicado. Además, el solicitante puede pedir formatos específicos, períodos determinados o aclaraciones que van más allá de la publicación general.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 9, Constitución Art. 18"
+      },
+      {
+        "id": "SC008-D",
+        "text": "La publicación en el portal es transparencia activa; la solicitud exige respuesta aunque ya esté publicado",
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 12,
+          "institutionalReputation": 10
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El ciudadano tiene derecho a solicitar información aunque esté publicada, por ejemplo para pedir un formato específico, una aclaración o un período determinado. Ambas obligaciones coexisten y son independientes.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, 9; Defensoría del Pueblo"
+      }
+    ]
+  },
+  {
+    "id": "SC009",
+    "title": "Nueva Gestión Pública: gestión por resultados",
+    "description": "Tu Ministerio debe presentar su informe de gestión semestral. El modelo tradicional reporta actividades realizadas ('se realizaron 45 reuniones', 'se elaboraron 120 informes'). El nuevo modelo exige reportar resultados. ¿Cuál es la diferencia?",
+    "category": "transparency",
+    "npcId": "citizen-004",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "modelo-gerencial",
+      "Nueva-Gestión-Pública",
+      "indicadores",
+      "resultados",
+      "planificación"
+    ],
+    "options": [
+      {
+        "id": "SC009-A",
+        "text": "Las actividades miden lo que hiciste; los resultados miden el impacto real en la ciudadanía",
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 10,
+          "institutionalReputation": 14
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La Nueva Gestión Pública (NGP) de Hood (1991) critica que la burocracia mide procesos, no impactos. Reportar '45 reuniones' no dice si mejoró la vida de los ciudadanos. El modelo gerencial exige indicadores de resultado: '¿cuántos ciudadanos accedieron a agua potable?', '¿en cuánto bajó el tiempo de trámites?'.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES Plan Nacional de Desarrollo, SNAP Norma de Planificación"
+      },
+      {
+        "id": "SC009-B",
+        "text": "Son lo mismo, solo cambia la forma de presentar la información",
+        "delta": {
+          "institutionalReputation": -8,
+          "legality": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Es una diferencia conceptual profunda. Medir actividades (enfoque de proceso) puede mostrar mucha actividad sin ningún impacto real. Medir resultados (enfoque de impacto) obliga a demostrar que la gestión mejoró algo concreto. La SENPLADES y el Plan Nacional exigen indicadores de resultado.",
+        "isCorrect": false,
+        "legalReference": "SENPLADES Marco Lógico, NGP - Hood 1991"
+      },
+      {
+        "id": "SC009-C",
+        "text": "Los resultados son más fáciles de falsificar, así que el modelo de actividades es más confiable",
+        "delta": {
+          "legality": -10,
+          "institutionalReputation": -12
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ambos tipos de indicadores pueden manipularse. Sin embargo, los indicadores de resultado son más difíciles de falsificar porque requieren verificación externa (encuestas de satisfacción, auditorías de la Contraloría). El modelo gerencial exige precisamente mayor transparencia y verificabilidad.",
+        "isCorrect": false,
+        "legalReference": "Contraloría General - Evaluación de Resultados"
+      },
+      {
+        "id": "SC009-D",
+        "text": "Propongo reportar ambos: actividades realizadas Y su impacto medible en la ciudadanía",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 12,
+          "institutionalReputation": 16,
+          "budget": 2
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ El enfoque balanceado (Balanced Scorecard en el sector público) combina indicadores de proceso y de resultado. El Plan Nacional de Desarrollo de Ecuador usa matrices que vinculan actividades con metas e indicadores de resultado. Esto permite monitorear el avance y demostrar impacto.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES Plan Nacional, Marco Lógico de Planificación"
+      }
+    ]
+  },
+  {
+    "id": "SC010",
+    "title": "Mecanismos digitales de participación ciudadana",
+    "description": "Tu institución quiere implementar un mecanismo digital de consulta pública antes de aprobar una política de transporte urbano que afectará a 500,000 ciudadanos de Guayaquil. ¿Cuál es la mejor opción?",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "participación-ciudadana",
+      "consulta-pública",
+      "gobierno-abierto",
+      "COOTAD",
+      "digital"
+    ],
+    "options": [
+      {
+        "id": "SC010-A",
+        "text": "Encuesta en línea abierta con resultados públicos y compromiso de incorporar las propuestas más votadas",
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 12,
+          "institutionalReputation": 16
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Una encuesta pública con resultados transparentes y compromiso de uso es buena práctica. La Ley de Participación Ciudadana (Art. 72) establece que los resultados de consultas deben ser considerados y sus conclusiones publicadas. El compromiso previo de uso diferencia la participación real de la consultiva simbólica.",
+        "isCorrect": true,
+        "legalReference": "Ley Orgánica de Participación Ciudadana Art. 72, COOTAD Art. 304"
+      },
+      {
+        "id": "SC010-B",
+        "text": "Una reunión presencial en el Municipio, obligando a los ciudadanos a asistir para opinar",
+        "delta": {
+          "citizenSatisfaction": -10,
+          "legality": -5,
+          "institutionalReputation": -8
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Exigir presencia física crea barreras de participación que excluyen a trabajadores, personas con discapacidad y quienes viven lejos. El gobierno digital promueve mecanismos que amplían el acceso, no lo restringen. La participación ciudadana efectiva debe ser accesible e incluyente.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de Participación Ciudadana Art. 4, Constitución Art. 11"
+      },
+      {
+        "id": "SC010-C",
+        "text": "Un foro en redes sociales sin sistematización formal de los aportes",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": -5,
+          "institutionalReputation": 2
+        },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ Las redes sociales amplían el alcance pero no reemplazan los mecanismos formales de consulta. Sin sistematización, los aportes se pierden y no tienen valor jurídico. La consulta pública formal debe documentarse y sus resultados integrarse al expediente del proceso de decisión.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de Participación Ciudadana Art. 9"
+      },
+      {
+        "id": "SC010-D",
+        "text": "Plataforma digital con múltiples canales (web, WhatsApp, SMS) para incluir ciudadanos con y sin internet",
+        "delta": {
+          "citizenSatisfaction": 22,
+          "legality": 14,
+          "institutionalReputation": 18,
+          "budget": -3
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ La inclusión digital es clave: el 35% de ecuatorianos no tiene acceso a internet de calidad. Una estrategia multicanal (web + WhatsApp + SMS) maximiza la participación. México y Colombia han implementado este modelo con excelentes resultados. La OGP valora la inclusividad como criterio de calidad de la participación.",
+        "isCorrect": true,
+        "legalReference": "OGP Estándares de Participación, Plan Nacional de Gobierno Digital, INEC Encuesta TIC 2022"
+      }
+    ]
+  },
+  {
+    "id": "SC011",
+    "title": "Control social y organismos de control",
+    "description": "Ciudadanos organizados sospechan que en tu institución se aprobaron contratos sin proceso legal. Presentan una denuncia ante la Contraloría General del Estado. ¿Cuál es el papel de la Contraloría en este caso?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "normal",
+    "tags": [
+      "rendición-de-cuentas",
+      "Contraloría",
+      "control-social",
+      "CPCCS",
+      "constitución"
+    ],
+    "options": [
+      {
+        "id": "SC011-A",
+        "text": "La Contraloría audita el uso de fondos públicos y puede iniciar glosas, multas y denuncias penales",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 10,
+          "citizenSatisfaction": 12
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La Contraloría General del Estado (Constitución Art. 211) tiene función de control externo: audita el uso de fondos públicos, emite glosas (cobros por daños al Estado), impone multas y remite indicios de responsabilidad penal a la Fiscalía. Es independiente del Ejecutivo y sus decisiones son obligatorias.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 211-212, Ley Orgánica de la Contraloría Art. 26-45"
+      },
+      {
+        "id": "SC011-B",
+        "text": "La Contraloría solo puede dar recomendaciones, no tiene poder sancionatorio",
+        "delta": {
+          "legality": -12,
+          "institutionalReputation": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Incorrecto. La Contraloría tiene amplios poderes sancionatorios: puede emitir glosas (recuperación de fondos), multas de hasta el 10% del monto auditado, y responsabilidad civil culposa. Además remite indicios penales a la Fiscalía. Sus informes son vinculantes.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de la Contraloría Art. 39-45"
+      },
+      {
+        "id": "SC011-C",
+        "text": "La Contraloría depende del Presidente de la República, así que no puede actuar contra el Ejecutivo",
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La Contraloría es un organismo de la Función de Transparencia y Control Social (Constitución Art. 204), completamente independiente del Ejecutivo. El Contralor es elegido por el Consejo de Participación Ciudadana y Control Social (CPCCS), no por el Presidente.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 204, 211; Ley Orgánica de la Contraloría Art. 6"
+      },
+      {
+        "id": "SC011-D",
+        "text": "La Contraloría audita, y el CPCCS puede iniciar procesos de control social paralelos",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 14,
+          "institutionalReputation": 12
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. El sistema de control público ecuatoriano tiene múltiples capas: la Contraloría audita fondos, el CPCCS promueve el control social ciudadano y puede designar autoridades. Ambos pueden actuar simultáneamente y se complementan. La Fiscalía actúa si hay indicios de delito.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 204-215, Ley CPCCS, Ley Orgánica de la Contraloría"
+      }
+    ]
+  },
+  {
+    "id": "SC012",
+    "title": "Interoperabilidad: el ciudadano no debe llevar papeles que el Estado ya tiene",
+    "description": "Un ciudadano debe presentar su cédula, RUC y certificado de no adeudar al SRI en 5 instituciones distintas para un mismo trámite de exportación. Te pregunta por qué tiene que llevar los mismos documentos a cada institución.",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "auxiliary",
+    "difficulty": "normal",
+    "tags": [
+      "interoperabilidad",
+      "PIDE",
+      "COA",
+      "gobierno-electrónico",
+      "simplificación"
+    ],
+    "options": [
+      {
+        "id": "SC012-A",
+        "text": "Explicarle que el COA prohíbe exigir documentos que el Estado ya tiene, y que la PIDE debería resolver esto",
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 14,
+          "institutionalReputation": 12
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El COA Art. 42 establece que la administración no puede exigir documentos que ya obran en su poder o en poder de otras entidades del Estado. La Plataforma de Interoperabilidad del Estado (PIDE) del MINTEL conecta los sistemas de SRI, DIGERCIC, IESS y otras entidades para que compartan datos automáticamente.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 42, MINTEL - PIDE Ecuador, Decreto 1384"
+      },
+      {
+        "id": "SC012-B",
+        "text": "Decirle que cada institución tiene sus propios requerimientos y no hay nada que hacer",
+        "delta": {
+          "citizenSatisfaction": -15,
+          "legality": -10,
+          "institutionalReputation": -12
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El COA explícitamente prohíbe esta práctica. Decir que 'no hay nada que hacer' es incorrecto y genera frustración ciudadana. El servidor debe informar sobre sus derechos e iniciar el proceso de simplificación. El SNAP tiene mecanismos para reportar esta duplicación.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 42, SNAP Simplificación de Trámites"
+      },
+      {
+        "id": "SC012-C",
+        "text": "Recomendarle contratar a un gestor privado para que haga los trámites por él",
+        "delta": {
+          "citizenSatisfaction": -8,
+          "legality": -5,
+          "institutionalReputation": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Recomendar intermediarios privados como solución a la ineficiencia del Estado no es aceptable. Abre la puerta a corrupción y desincentiva la reforma. El servidor público debe enfocarse en solucionar el problema sistémico, no en derivarlo.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227, COA Art. 31"
+      },
+      {
+        "id": "SC012-D",
+        "text": "Aceptar los documentos que ya tiene la institución, gestionar el resto vía PIDE y reportar la duplicación al SNAP",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 14,
+          "budget": 2,
+          "citizenSatisfaction": 18
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Esta es la respuesta que combina solución inmediata (aceptar lo que ya está disponible) con mejora sistémica (reportar al SNAP). La PIDE permite que las instituciones consulten en tiempo real si un ciudadano debe al SRI, tiene RUC activo o tiene antecedentes. Estonia ha eliminado casi completamente la presentación de documentos físicos con este modelo.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 42, MINTEL - PIDE, SNAP Simplificación, Estonia X-Road"
+      }
+    ]
+  },
+  {
+    "id": "SC013",
+    "title": "Datos abiertos: formatos y licencias",
+    "description": "Tu institución quiere publicar datos de calidad del aire en el portal datos.gob.ec. El departamento de informática propone subirlos en formato PDF escaneado, sin licencia de uso especificada.",
+    "category": "transparency",
+    "npcId": "citizen-003",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "datos-abiertos",
+      "formatos",
+      "licencias",
+      "gobierno-abierto",
+      "reutilización"
+    ],
+    "options": [
+      {
+        "id": "SC013-A",
+        "text": "Rechazar el PDF: los datos deben publicarse en CSV o JSON con licencia Creative Commons abierta",
+        "delta": {
+          "citizenSatisfaction": 16,
+          "legality": 14,
+          "institutionalReputation": 18
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ La Carta Internacional de Datos Abiertos (firmada por Ecuador) exige que los datos sean: abiertos (sin restricciones de uso), legibles por máquinas (CSV, JSON, XML, no PDF), con licencia explícita (Creative Commons CC-BY o similar) y en formatos no propietarios. Un PDF escaneado viola todos estos principios.",
+        "isCorrect": true,
+        "legalReference": "Carta Internacional de Datos Abiertos 2015, datos.gob.ec Política de Datos"
+      },
+      {
+        "id": "SC013-B",
+        "text": "Publicar el PDF: lo importante es que esté disponible en línea",
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -8,
+          "citizenSatisfaction": 2
+        },
+        "xpReward": 8,
+        "educationalFeedback": "❌ Un PDF escaneado no es un dato abierto reutilizable. Un periodista, científico o empresa no puede analizar miles de registros en PDF. Los datos abiertos deben ser procesables automáticamente. Publicar PDFs cumple formalmente con 'estar en línea' pero incumple el estándar de datos abiertos.",
+        "isCorrect": false,
+        "legalReference": "Carta Internacional de Datos Abiertos, datos.gob.ec"
+      },
+      {
+        "id": "SC013-C",
+        "text": "Publicarlo con todos los derechos reservados para que solo lo use la institución",
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Los datos generados con fondos públicos no pueden tener 'todos los derechos reservados'. La Constitución (Art. 18) establece que la información pública pertenece a los ciudadanos. Reservar datos ambientales impide el control ciudadano sobre temas que afectan la salud pública.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 18, LOTAIP Art. 7, Carta Internacional de Datos Abiertos"
+      },
+      {
+        "id": "SC013-D",
+        "text": "Publicar en CSV con licencia CC-BY, con metadatos que expliquen qué es cada campo y la frecuencia de actualización",
+        "delta": {
+          "citizenSatisfaction": 20,
+          "legality": 16,
+          "institutionalReputation": 20,
+          "budget": -2
+        },
+        "xpReward": 70,
+        "educationalFeedback": "✅ Excelente práctica. Los metadatos (descripción de campos, fuente, frecuencia, cobertura geográfica) son tan importantes como los datos mismos. La licencia CC-BY permite uso libre citando la fuente, lo que promueve investigación y periodismo de datos. datos.gob.ec tiene una guía de publicación que sigue estos estándares.",
+        "isCorrect": true,
+        "legalReference": "Carta Internacional de Datos Abiertos, datos.gob.ec Guía de Publicación, CC-BY License"
+      }
+    ]
+  },
+  {
+    "id": "SC014",
+    "title": "Gobernanza: redes y actores no estatales",
+    "description": "El Ministerio de Salud quiere diseñar una política de salud digital para zonas rurales. Existen ONGs, universidades, empresas de telecomunicaciones y comunidades indígenas con experiencia en el tema. ¿Cómo debería diseñarse la política?",
+    "category": "citizen-participation",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "gobernanza",
+      "redes-de-política",
+      "co-creación",
+      "actores-múltiples",
+      "salud-digital"
+    ],
+    "options": [
+      {
+        "id": "SC014-A",
+        "text": "El Ministerio diseña la política internamente y luego la comunica a los actores",
+        "delta": {
+          "citizenSatisfaction": -10,
+          "legality": -5,
+          "institutionalReputation": -12
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Este enfoque jerárquico (modelo burocrático) ignora el conocimiento distribuido. Las políticas de salud rural fallaron históricamente cuando fueron diseñadas sin participación de las comunidades. El enfoque de gobernanza (Rhodes, Kooiman) reconoce que el Estado ya no puede gobernar solo en sistemas complejos.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de Participación Ciudadana Art. 9, Constitución Art. 100"
+      },
+      {
+        "id": "SC014-B",
+        "text": "Delegar completamente el diseño a las ONGs porque tienen más experiencia en campo",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": -10,
+          "institutionalReputation": -8,
+          "budget": 3
+        },
+        "xpReward": 8,
+        "educationalFeedback": "❌ El Estado no puede delegar su responsabilidad constitucional de formular políticas públicas. Las ONGs son actores clave pero no pueden reemplazar la función estatal. El enfoque de gobernanza implica coordinación en red, no renuncia de responsabilidad.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 32, Ley Orgánica de Salud Art. 6"
+      },
+      {
+        "id": "SC014-C",
+        "text": "Crear una mesa de trabajo con todos los actores para co-diseñar la política con el Ministerio como coordinador",
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 14,
+          "institutionalReputation": 18,
+          "budget": -3
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ El enfoque de gobernanza en red (network governance) coordina actores estatales y no estatales para resolver problemas complejos. El Ministerio mantiene la rectoría pero co-diseña con las ONGs (conocimiento de campo), universidades (evidencia científica), telecomunicaciones (soluciones técnicas) y comunidades (pertinencia cultural).",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, Ley de Participación Ciudadana Art. 77, Enfoque de Gobernanza - Rhodes 1996"
+      },
+      {
+        "id": "SC014-D",
+        "text": "Contratar una consultora internacional para diseñar la política siguiendo estándares de la OMS",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": 6,
+          "institutionalReputation": 5,
+          "budget": -8
+        },
+        "xpReward": 20,
+        "educationalFeedback": "⚠️ Los estándares internacionales son útiles como referencia, pero sin participación local la política puede fracasar por falta de pertinencia cultural y contextual. El BID advierte que políticas importadas sin adaptación local tienen tasas de fracaso altas. Lo técnico internacional debe combinarse con participación ciudadana local.",
+        "isCorrect": false,
+        "legalReference": "BID Diseño de Políticas Públicas, OPS Salud Digital Latinoamérica"
+      }
+    ]
+  },
+  {
+    "id": "SC015",
+    "title": "Presupuesto participativo digital en un GAD rural",
+    "description": "El GAD de un cantón rural de 8,000 habitantes quiere implementar presupuesto participativo digital. El 60% de la población no tiene smartphone ni internet en casa. El alcalde propone hacerlo solo por app.",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "presupuesto-participativo",
+      "brecha-digital",
+      "COOTAD",
+      "inclusión",
+      "gobierno-abierto"
+    ],
+    "options": [
+      {
+        "id": "SC015-A",
+        "text": "Implementar solo por app: los que no tienen smartphone aprenderán con el tiempo",
+        "delta": {
+          "citizenSatisfaction": -20,
+          "legality": -15,
+          "institutionalReputation": -15
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Implementar participación solo digital en zonas con brecha digital excluye a la mayoría de la población, violando el principio de universalidad de la participación (Constitución Art. 95). El COOTAD Art. 304 exige que el presupuesto participativo sea incluyente. Excluir al 60% invalida el proceso.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 95, COOTAD Art. 304, Ley Orgánica de Participación Ciudadana Art. 4"
+      },
+      {
+        "id": "SC015-B",
+        "text": "Cancelar el presupuesto participativo digital porque la brecha digital lo hace inviable",
+        "delta": {
+          "citizenSatisfaction": -12,
+          "legality": -10,
+          "institutionalReputation": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Cancelar no es la solución. El COOTAD obliga al presupuesto participativo, y la brecha digital no exime al GAD de esta responsabilidad. La solución es un enfoque híbrido que use tecnología donde está disponible y canales presenciales donde no.",
+        "isCorrect": false,
+        "legalReference": "COOTAD Art. 304, Ley Orgánica de Participación Ciudadana Art. 64"
+      },
+      {
+        "id": "SC015-C",
+        "text": "Implementar de forma híbrida: app + asambleas presenciales en juntas parroquiales + buzones físicos",
+        "delta": {
+          "citizenSatisfaction": 20,
+          "legality": 16,
+          "institutionalReputation": 18,
+          "budget": -4
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ El diseño inclusivo de mecanismos de participación requiere múltiples canales adaptados al contexto. Porto Alegre (Brasil) combinó asambleas presenciales con plataformas digitales en su modelo pionero de presupuesto participativo. El GAD puede usar infocentros del MINTEL como puntos de acceso digital asistido.",
+        "isCorrect": true,
+        "legalReference": "COOTAD Art. 304, MINTEL Infocentros, Ley Orgánica de Participación Ciudadana Art. 72"
+      },
+      {
+        "id": "SC015-D",
+        "text": "Solicitar al MINTEL instalar internet en el cantón antes de implementar el presupuesto participativo",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": -5,
+          "institutionalReputation": 3,
+          "budget": -2
+        },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ La conectividad es importante pero no puede ser condición previa que paralice la participación. El COOTAD no condiciona el presupuesto participativo a la conectividad. Esperar la infraestructura puede tomar años. La solución correcta es implementar con los medios disponibles ahora, incluyendo tecnología donde sea posible.",
+        "isCorrect": false,
+        "legalReference": "COOTAD Art. 304, Plan Nacional de Conectividad MINTEL"
+      }
+    ]
+  }
+]

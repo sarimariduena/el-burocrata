@@ -1,0 +1,2162 @@
+[
+  {
+    "id": "NV001",
+    "title": "[FÁCIL] ¿Qué es un servicio público?",
+    "description": "Una estudiante te pregunta: '¿Qué caracteriza a un servicio público y por qué no puede interrumpirse cuando quiera la institución?'",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["servicio-público", "fundamentos", "constitución", "continuidad"],
+    "options": [
+      {
+        "id": "NV001-A",
+        "text": "Es una actividad de interés general que el Estado debe prestar de forma continua, regular y universal",
+        "delta": { "citizenSatisfaction": 10, "legality": 12, "institutionalReputation": 8 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El servicio público (Constitución Art. 314) se rige por los principios de obligatoriedad, generalidad, uniformidad, eficiencia, responsabilidad, universalidad, accesibilidad, regularidad, continuidad y calidad. No puede suspenderse arbitrariamente porque afecta derechos.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 314, COA Art. 1"
+      },
+      {
+        "id": "NV001-B",
+        "text": "Es cualquier actividad que el Estado decide hacer cuando tiene presupuesto",
+        "delta": { "legality": -8, "institutionalReputation": -6 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ El servicio público no es discrecional ni depende solo del presupuesto disponible. La Constitución obliga al Estado a garantizar servicios básicos de forma permanente. La falta de presupuesto no exime de la obligación de prestación.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314"
+      },
+      {
+        "id": "NV001-C",
+        "text": "Es un negocio del Estado para generar ingresos",
+        "delta": { "legality": -10, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El servicio público busca el bien común, no el lucro. Aunque algunos servicios cobren tarifas, su fin es satisfacer necesidades colectivas, no maximizar ganancias como una empresa privada.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314, 315"
+      },
+      {
+        "id": "NV001-D",
+        "text": "Es una actividad esencial cuya continuidad protege la ley para no afectar derechos de la ciudadanía",
+        "delta": { "citizenSatisfaction": 12, "legality": 10, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Excelente. El principio de continuidad garantiza que servicios como salud, agua, energía o registro civil no se interrumpan. Por eso muchos servicios públicos tienen restricciones especiales al derecho de huelga y planes de contingencia obligatorios.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 326 numeral 15, Art. 314"
+      }
+    ]
+  },
+  {
+    "id": "NV002",
+    "title": "[FÁCIL] El silencio administrativo",
+    "description": "Un ciudadano presentó una solicitud hace 2 meses y la institución nunca respondió. Te pregunta qué significa eso legalmente.",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["silencio-administrativo", "COA", "derechos-ciudadano", "trámites"],
+    "options": [
+      {
+        "id": "NV002-A",
+        "text": "El silencio administrativo positivo: si la ley lo prevé, la falta de respuesta en plazo se entiende como aceptación",
+        "delta": { "citizenSatisfaction": 12, "legality": 14, "institutionalReputation": 8 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El COA (Art. 207) regula el silencio administrativo. En muchos casos, si la administración no resuelve dentro del plazo legal, la petición se entiende aceptada. Esto protege al ciudadano de la inacción burocrática.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 207"
+      },
+      {
+        "id": "NV002-B",
+        "text": "No significa nada, el ciudadano debe volver a presentar la solicitud",
+        "delta": { "citizenSatisfaction": -12, "legality": -10, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Obligar a re-presentar es una barrera ilegal. El silencio administrativo tiene efectos jurídicos definidos en el COA. La inacción de la administración no puede perjudicar al ciudadano.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 207, 42"
+      },
+      {
+        "id": "NV002-C",
+        "text": "Significa que la solicitud fue negada automáticamente",
+        "delta": { "legality": -6, "institutionalReputation": -4 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Depende del caso. El silencio puede ser positivo (aceptación) o negativo según la materia y la ley aplicable. No siempre equivale a negativa. En el régimen ecuatoriano predomina el silencio positivo para peticiones.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 207"
+      },
+      {
+        "id": "NV002-D",
+        "text": "El ciudadano puede exigir un certificado del silencio administrativo y hacer valer su derecho",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Muy bien. El ciudadano puede solicitar la certificación del silencio administrativo positivo y exigir su cumplimiento, incluso por vía judicial. Esto refuerza la responsabilidad de la administración de resolver a tiempo.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 207, 208"
+      }
+    ]
+  },
+  {
+    "id": "NV003",
+    "title": "[FÁCIL] Atención a persona con discapacidad",
+    "description": "Una persona con discapacidad visual llega a tu ventanilla y necesita llenar un formulario que solo está disponible impreso en letra pequeña. ¿Qué haces?",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["discapacidad", "accesibilidad", "grupos-prioritarios", "constitución"],
+    "options": [
+      {
+        "id": "NV003-A",
+        "text": "Asistirla personalmente, leerle el formulario y llenarlo según sus indicaciones",
+        "delta": { "citizenSatisfaction": 20, "legality": 14, "institutionalReputation": 14 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La Constitución (Art. 47-48) y la Ley Orgánica de Discapacidades garantizan atención prioritaria y accesibilidad. El Estado debe adaptar sus servicios, no exigir que la persona se adapte a barreras institucionales.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 47-48, Ley Orgánica de Discapacidades Art. 19"
+      },
+      {
+        "id": "NV003-B",
+        "text": "Decirle que vuelva con un acompañante que pueda ayudarle a leer",
+        "delta": { "citizenSatisfaction": -18, "legality": -12, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Trasladar la responsabilidad al ciudadano viola la Ley Orgánica de Discapacidades. La institución debe garantizar la accesibilidad y la atención directa, no condicionarla a que la persona traiga ayuda.",
+        "isCorrect": false,
+        "legalReference": "Ley Orgánica de Discapacidades Art. 19, Constitución Art. 47"
+      },
+      {
+        "id": "NV003-C",
+        "text": "Darle el formulario y pedirle que lo llene como pueda",
+        "delta": { "citizenSatisfaction": -15, "legality": -10, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ignorar la necesidad de accesibilidad es discriminación por omisión. El Art. 11 numeral 2 de la Constitución prohíbe toda forma de discriminación, incluida la falta de ajustes razonables para personas con discapacidad.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 11.2, Ley Orgánica de Discapacidades"
+      },
+      {
+        "id": "NV003-D",
+        "text": "Atenderla de inmediato y proponer crear formularios accesibles (audio, braille, digital) para futuros casos",
+        "delta": { "citizenSatisfaction": 22, "legality": 14, "institutionalReputation": 16 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Resolver el caso inmediato Y corregir la causa raíz es la mejor práctica. El diseño universal de servicios públicos exige formatos accesibles. La Norma Técnica Ecuatoriana de accesibilidad respalda esta acción.",
+        "isCorrect": true,
+        "legalReference": "Ley Orgánica de Discapacidades Art. 19, NTE INEN de Accesibilidad"
+      }
+    ]
+  },
+  {
+    "id": "NV004",
+    "title": "[FÁCIL] ¿Qué es un trámite y cómo simplificarlo?",
+    "description": "Tu jefe quiere reducir los pasos de un trámite que actualmente tiene 12 requisitos. Un colega dice que 'mientras más requisitos, más serio el trámite'. ¿Qué opinas?",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["simplificación", "trámites", "SNAP", "eficiencia"],
+    "options": [
+      {
+        "id": "NV004-A",
+        "text": "La simplificación es un mandato legal: hay que eliminar requisitos innecesarios y duplicados",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La Ley de Optimización y Eficiencia de Trámites Administrativos obliga a simplificar y eliminar requisitos innecesarios. El SNAP impulsa la política de cero papeles y de no pedir documentos que el Estado ya tiene.",
+        "isCorrect": true,
+        "legalReference": "Ley de Optimización y Eficiencia de Trámites Administrativos Art. 3, COA Art. 42"
+      },
+      {
+        "id": "NV004-B",
+        "text": "El colega tiene razón: más requisitos garantizan mayor control",
+        "delta": { "citizenSatisfaction": -12, "legality": -8, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Más requisitos no significan más control, sino más burocracia y más espacio para la corrupción. La Ley de Optimización de Trámites prohíbe exigir requisitos no previstos en la ley.",
+        "isCorrect": false,
+        "legalReference": "Ley de Optimización y Eficiencia de Trámites Administrativos Art. 4"
+      },
+      {
+        "id": "NV004-C",
+        "text": "Mantener los 12 requisitos pero hacerlos en línea",
+        "delta": { "citizenSatisfaction": 4, "legality": 2, "institutionalReputation": 2 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Digitalizar un trámite ineficiente solo traslada la complejidad a la pantalla. La regla es primero simplificar, luego digitalizar. Digitalizar el desorden produce desorden digital.",
+        "isCorrect": false,
+        "legalReference": "SNAP Guía de Simplificación de Trámites"
+      },
+      {
+        "id": "NV004-D",
+        "text": "Analizar cada requisito, eliminar los que el Estado ya posee y digitalizar el trámite simplificado",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. El principio de 'una sola vez' (once-only) establece que el ciudadano no debe entregar información que el Estado ya tiene. Simplificar antes de digitalizar es la secuencia correcta de la transformación digital.",
+        "isCorrect": true,
+        "legalReference": "Ley de Optimización de Trámites Art. 3, COA Art. 42, PIDE"
+      }
+    ]
+  },
+  {
+    "id": "NV005",
+    "title": "[FÁCIL] El derecho de petición",
+    "description": "Un grupo de vecinos quiere pedir formalmente al Municipio que arregle el alumbrado de su barrio. Preguntan si tienen derecho a una respuesta.",
+    "category": "citizen-participation",
+    "npcId": "citizen-004",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["derecho-petición", "constitución", "participación", "respuesta-motivada"],
+    "options": [
+      {
+        "id": "NV005-A",
+        "text": "Sí, el derecho de petición está garantizado y la autoridad debe responder de forma motivada y en plazo",
+        "delta": { "citizenSatisfaction": 16, "legality": 14, "institutionalReputation": 10 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. El Art. 66 numeral 23 de la Constitución garantiza el derecho a dirigir peticiones a las autoridades y a recibir respuesta motivada. No responder vulnera un derecho constitucional.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 66.23, COA Art. 32"
+      },
+      {
+        "id": "NV005-B",
+        "text": "Solo si pagan una tasa por el trámite de petición",
+        "delta": { "citizenSatisfaction": -14, "legality": -12, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El derecho de petición es gratuito. Cobrar por ejercer un derecho constitucional es ilegal y puede constituir una barrera de acceso sancionable.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 66.23"
+      },
+      {
+        "id": "NV005-C",
+        "text": "No, los temas de barrio no son competencia formal del Municipio",
+        "delta": { "citizenSatisfaction": -10, "legality": -10, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El alumbrado público es competencia municipal según el COOTAD. Además, aunque no lo fuera, la autoridad debe responder indicando a quién corresponde. El derecho de petición no depende de la competencia.",
+        "isCorrect": false,
+        "legalReference": "COOTAD Art. 55, Constitución Art. 66.23"
+      },
+      {
+        "id": "NV005-D",
+        "text": "Sí, y además pueden usar mecanismos de participación como la silla vacía en el Concejo",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Además del derecho de petición, la Ley de Participación Ciudadana ofrece mecanismos como la silla vacía (Art. 77 COOTAD), que permite a un representante ciudadano participar con voz en las sesiones del Concejo.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, COOTAD Art. 77, Ley de Participación Ciudadana"
+      }
+    ]
+  },
+  {
+    "id": "NV006",
+    "title": "[FÁCIL] Datos personales en una oficina",
+    "description": "Encuentras en tu escritorio una lista impresa con cédulas, direcciones y teléfonos de ciudadanos. Un compañero la deja a la vista de todos. ¿Qué corresponde?",
+    "category": "data-protection",
+    "npcId": "citizen-005",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["LOPDP", "datos-personales", "seguridad", "buenas-prácticas"],
+    "options": [
+      {
+        "id": "NV006-A",
+        "text": "Guardar la lista bajo llave o resguardarla y recordar las normas de protección de datos al equipo",
+        "delta": { "legality": 16, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La LOPDP exige medidas de seguridad para proteger datos personales. Dejar datos a la vista es una falta de medidas de seguridad que puede constituir una infracción. El principio de confidencialidad obliga a todo el personal.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 37, 38"
+      },
+      {
+        "id": "NV006-B",
+        "text": "No hacer nada, no es tu responsabilidad",
+        "delta": { "legality": -10, "institutionalReputation": -6 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La protección de datos es responsabilidad de toda la institución y de cada servidor. La omisión ante una brecha de seguridad puede generar responsabilidad institucional.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 37"
+      },
+      {
+        "id": "NV006-C",
+        "text": "Tomarle una foto para tener los datos a mano por si los necesitas",
+        "delta": { "legality": -18, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Copiar datos personales sin base legal ni finalidad legítima viola la LOPDP. Tener datos 'por si acaso' contradice los principios de finalidad y minimización.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 11"
+      },
+      {
+        "id": "NV006-D",
+        "text": "Resguardar la lista y proponer una política de escritorio limpio y manejo seguro de documentos",
+        "delta": { "legality": 16, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. La política de 'escritorio limpio' (clean desk) es una medida estándar de seguridad de la información, recogida en el EGSI. Proteger el caso inmediato y prevenir futuros es la respuesta más completa.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 37, EGSI"
+      }
+    ]
+  },
+  {
+    "id": "NV007",
+    "title": "[FÁCIL] ¿Para qué sirve el portal de compras públicas?",
+    "description": "Un ciudadano pregunta dónde puede ver en qué gasta el Estado el dinero de las contrataciones.",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["SERCOP", "contratación-pública", "transparencia", "LOSNCP"],
+    "options": [
+      {
+        "id": "NV007-A",
+        "text": "En el portal del SERCOP, donde se publican los procesos de contratación pública por ley",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. El SERCOP administra el Sistema Oficial de Contratación Pública. La LOSNCP obliga a publicar todos los procesos. Cualquier ciudadano puede consultar contratos, montos y proveedores, ejerciendo control social.",
+        "isCorrect": true,
+        "legalReference": "LOSNCP Art. 21, SERCOP"
+      },
+      {
+        "id": "NV007-B",
+        "text": "Esa información es confidencial y no se publica",
+        "delta": { "citizenSatisfaction": -12, "legality": -12, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Falso. La contratación pública es información pública por mandato de la LOSNCP y la LOTAIP. La publicidad es un principio del sistema de compras públicas para prevenir la corrupción.",
+        "isCorrect": false,
+        "legalReference": "LOSNCP Art. 21, LOTAIP Art. 7"
+      },
+      {
+        "id": "NV007-C",
+        "text": "Hay que pedirlo por escrito a cada institución",
+        "delta": { "citizenSatisfaction": -4, "legality": -2 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ No es necesario. La información ya está publicada proactivamente en el portal del SERCOP. Exigir solicitudes escritas para algo público en línea es una barrera innecesaria.",
+        "isCorrect": false,
+        "legalReference": "LOSNCP Art. 21"
+      },
+      {
+        "id": "NV007-D",
+        "text": "En el SERCOP, y también puede usar datos abiertos para analizar tendencias de gasto",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Excelente. Además del portal del SERCOP, los datos de contratación se publican como datos abiertos, permitiendo a periodistas, academia y ciudadanía analizar patrones de gasto y detectar irregularidades.",
+        "isCorrect": true,
+        "legalReference": "LOSNCP Art. 21, datos.gob.ec"
+      }
+    ]
+  },
+  {
+    "id": "NV008",
+    "title": "[FÁCIL] Carta de servicios al ciudadano",
+    "description": "Tu institución no tiene publicado en ningún lado cuánto debería tardar cada trámite ni qué requisitos pedir. Los ciudadanos se quejan de información contradictoria.",
+    "category": "digital-government",
+    "npcId": "citizen-006",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["carta-servicios", "calidad", "transparencia", "trámites"],
+    "options": [
+      {
+        "id": "NV008-A",
+        "text": "Proponer publicar una carta de servicios con requisitos, plazos y costos de cada trámite",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La carta de servicios o catálogo de trámites informa al ciudadano de forma clara y uniforme. La Ley de Optimización de Trámites y el SNAP exigen publicar requisitos y plazos para dar certeza y evitar la discrecionalidad.",
+        "isCorrect": true,
+        "legalReference": "Ley de Optimización de Trámites Art. 8, SNAP"
+      },
+      {
+        "id": "NV008-B",
+        "text": "Dejar que cada funcionario informe según su criterio",
+        "delta": { "citizenSatisfaction": -14, "legality": -10, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La información contradictoria genera incertidumbre y abre espacio a la corrupción. Los trámites deben tener requisitos uniformes y públicos, no depender del criterio de cada servidor.",
+        "isCorrect": false,
+        "legalReference": "Ley de Optimización de Trámites Art. 4"
+      },
+      {
+        "id": "NV008-C",
+        "text": "Publicar solo los plazos pero no los requisitos",
+        "delta": { "citizenSatisfaction": 2, "legality": 0 },
+        "xpReward": 12,
+        "educationalFeedback": "⚠️ Información parcial. El ciudadano necesita conocer requisitos, plazos Y costos para planificar. Publicar solo una parte mantiene la incertidumbre.",
+        "isCorrect": false,
+        "legalReference": "Ley de Optimización de Trámites Art. 8"
+      },
+      {
+        "id": "NV008-D",
+        "text": "Publicar la carta de servicios y registrar los trámites en la plataforma nacional Gob.ec",
+        "delta": { "citizenSatisfaction": 18, "legality": 14, "institutionalReputation": 14 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. La plataforma Gob.ec centraliza los trámites del Estado ecuatoriano. Registrar y mantener actualizados los trámites ahí garantiza información uniforme, accesible y verificable a nivel nacional.",
+        "isCorrect": true,
+        "legalReference": "Ley de Optimización de Trámites, Gob.ec, SNAP"
+      }
+    ]
+  },
+  {
+    "id": "NV009",
+    "title": "[FÁCIL] El principio de eficiencia administrativa",
+    "description": "Un trámite se puede resolver en un día, pero la costumbre de la oficina es tardar 15 días 'porque siempre ha sido así'. ¿Qué corresponde?",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["eficiencia", "constitución", "modelo-gerencial", "calidad"],
+    "options": [
+      {
+        "id": "NV009-A",
+        "text": "Resolverlo en el menor tiempo posible: la eficiencia es un principio constitucional",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. El Art. 227 de la Constitución exige que la administración pública sea eficiente y eficaz. La costumbre no puede prevalecer sobre el deber de servir oportunamente al ciudadano.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, COA Art. 4"
+      },
+      {
+        "id": "NV009-B",
+        "text": "Mantener los 15 días para no alterar la rutina de la oficina",
+        "delta": { "citizenSatisfaction": -14, "legality": -8, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La comodidad de la oficina no justifica retrasar al ciudadano. El modelo gerencial reemplaza la lógica del 'siempre se ha hecho así' por la gestión orientada a resultados.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227"
+      },
+      {
+        "id": "NV009-C",
+        "text": "Resolverlo rápido solo a quien insista o reclame",
+        "delta": { "citizenSatisfaction": -8, "legality": -10, "institutionalReputation": -6 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Tratar diferente según quién reclame vulnera el principio de igualdad. Todos los ciudadanos merecen el mismo servicio eficiente, no solo quienes presionan.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 11.2, 227"
+      },
+      {
+        "id": "NV009-D",
+        "text": "Resolverlo rápido y proponer rediseñar el proceso para que todos los casos se atiendan en un día",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. La mejora continua de procesos (gestión por procesos del SNAP) busca eliminar tiempos muertos. Rediseñar el flujo para que todos se beneficien es la aplicación práctica del principio de eficiencia.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, SNAP Gestión por Procesos"
+      }
+    ]
+  },
+  {
+    "id": "NV010",
+    "title": "[FÁCIL] ¿Qué es la rendición de cuentas?",
+    "description": "Una estudiante pregunta: '¿Por qué las autoridades tienen que hacer audiencias de rendición de cuentas cada año?'",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["rendición-de-cuentas", "CPCCS", "gobierno-abierto", "constitución"],
+    "options": [
+      {
+        "id": "NV010-A",
+        "text": "Porque la Constitución y el CPCCS obligan a informar y justificar el uso del poder y los recursos públicos",
+        "delta": { "citizenSatisfaction": 12, "legality": 14, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. La rendición de cuentas (Art. 100 y 208 de la Constitución) es un deber de toda autoridad y un derecho de la ciudadanía. El CPCCS regula el proceso anual y participativo de rendición de cuentas.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, 208, Ley CPCCS Art. 10"
+      },
+      {
+        "id": "NV010-B",
+        "text": "Es solo un acto protocolario sin valor real",
+        "delta": { "legality": -8, "institutionalReputation": -8, "citizenSatisfaction": -6 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La rendición de cuentas no es protocolo: es un mecanismo de control social con consecuencias. Una rendición incompleta o falsa puede derivar en sanciones de la Contraloría y del CPCCS.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 208"
+      },
+      {
+        "id": "NV010-C",
+        "text": "Solo la deben hacer los ministros, no las autoridades locales",
+        "delta": { "legality": -6, "institutionalReputation": -4 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Incorrecto. Todas las entidades públicas, incluidos los GAD, deben rendir cuentas ante la ciudadanía y el CPCCS. La obligación es general, no exclusiva del nivel central.",
+        "isCorrect": false,
+        "legalReference": "Ley CPCCS Art. 10, COOTAD"
+      },
+      {
+        "id": "NV010-D",
+        "text": "Porque permite a la ciudadanía evaluar y participar, fortaleciendo el gobierno abierto",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Excelente. La rendición de cuentas es uno de los tres pilares del gobierno abierto, junto con transparencia y participación. Permite a la ciudadanía evaluar la gestión y co-construir mejoras.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 208, OGP Ecuador"
+      }
+    ]
+  },
+  {
+    "id": "NV011",
+    "title": "[FÁCIL] Uso de redes sociales institucionales",
+    "description": "Te encargan la cuenta oficial de la institución en redes sociales. Un funcionario sugiere usarla para responder ataques políticos contra el director. ¿Qué corresponde?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["comunicación", "ética", "recursos-públicos", "neutralidad"],
+    "options": [
+      {
+        "id": "NV011-A",
+        "text": "Usar la cuenta solo para información de servicio público, no para defensa política personal",
+        "delta": { "legality": 14, "institutionalReputation": 12, "citizenSatisfaction": 8 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. Los recursos públicos, incluidas las cuentas institucionales, no pueden usarse con fines político-partidistas. El principio de neutralidad y la LOSEP prohíben usar bienes del Estado para intereses personales o de campaña.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 24, Código de la Democracia Art. 207"
+      },
+      {
+        "id": "NV011-B",
+        "text": "Defender al director, total él dirige la institución",
+        "delta": { "legality": -14, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Usar recursos públicos para defensa política personal es un uso indebido sancionable. La institución sirve a la ciudadanía, no a la imagen política de una autoridad.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 24, Código de la Democracia"
+      },
+      {
+        "id": "NV011-C",
+        "text": "Responder los ataques pero sin mencionar al director por su nombre",
+        "delta": { "legality": -8, "institutionalReputation": -6 },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ Sigue siendo uso indebido. El problema no es mencionar nombres, sino destinar un recurso público a una disputa política. La cuenta debe mantenerse neutral e informativa.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 24"
+      },
+      {
+        "id": "NV011-D",
+        "text": "Mantener la cuenta neutral y proponer un protocolo de comunicación institucional",
+        "delta": { "legality": 14, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Un protocolo de comunicación define qué se publica y qué no, protegiendo a la institución de usos indebidos. La comunicación pública debe ser veraz, oportuna y de interés ciudadano.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 24, LOTAIP Art. 7"
+      }
+    ]
+  },
+  {
+    "id": "NV012",
+    "title": "[FÁCIL] La cédula de identidad digital",
+    "description": "Un ciudadano pregunta si la cédula digital o la identidad digital tienen la misma validez que la cédula física para identificarse ante el Estado.",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["identidad-digital", "DIGERCIC", "gobierno-electrónico", "firma-electrónica"],
+    "options": [
+      {
+        "id": "NV012-A",
+        "text": "Sí, la identidad digital emitida por la autoridad competente tiene validez legal para trámites en línea",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Correcto. La identidad digital es un pilar del gobierno electrónico. El DIGERCIC y el BCE trabajan en mecanismos de identificación digital con validez legal, respaldados por la Ley de Comercio Electrónico.",
+        "isCorrect": true,
+        "legalReference": "Ley de Comercio Electrónico Art. 14, DIGERCIC"
+      },
+      {
+        "id": "NV012-B",
+        "text": "No, solo la cédula física de plástico es válida",
+        "delta": { "citizenSatisfaction": -10, "legality": -10, "institutionalReputation": -6 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El gobierno electrónico avanza hacia la identidad digital con plena validez. Negar validez a la identidad digital contradice la política de transformación digital del Estado.",
+        "isCorrect": false,
+        "legalReference": "Ley de Comercio Electrónico Art. 14"
+      },
+      {
+        "id": "NV012-C",
+        "text": "Solo sirve para consultar, no para hacer trámites reales",
+        "delta": { "citizenSatisfaction": -4, "legality": -4 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ Limitado. La meta del gobierno electrónico es llegar a la fase de transacción, donde la identidad digital permite completar trámites de principio a fin, no solo consultar.",
+        "isCorrect": false,
+        "legalReference": "Carta Iberoamericana de Gobierno Electrónico"
+      },
+      {
+        "id": "NV012-D",
+        "text": "Sí, y permite avanzar hacia trámites 100% en línea sin necesidad de acudir presencialmente",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Excelente. La identidad digital habilita la fase más avanzada del gobierno electrónico: trámites completos en línea. Estonia es referente con su e-ID, que permite a sus ciudadanos hacer casi todo digitalmente.",
+        "isCorrect": true,
+        "legalReference": "Ley de Comercio Electrónico, e-ID Estonia, DIGERCIC"
+      }
+    ]
+  },
+  {
+    "id": "NV013",
+    "title": "[FÁCIL] La brecha digital",
+    "description": "Tu institución digitalizó todos sus trámites, pero muchos ciudadanos rurales y adultos mayores no pueden acceder. ¿Qué corresponde?",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["brecha-digital", "inclusión", "gobierno-electrónico", "universalidad"],
+    "options": [
+      {
+        "id": "NV013-A",
+        "text": "Mantener canales presenciales y de asistencia para quienes no tienen acceso digital",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 12 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La universalidad del servicio público exige no excluir a nadie. La transformación digital debe ser inclusiva: ofrecer canales múltiples (presencial, telefónico, asistido) para cerrar la brecha digital.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 314, Plan Nacional de Gobierno Digital"
+      },
+      {
+        "id": "NV013-B",
+        "text": "Obligar a todos a usar el sistema digital, así aprenderán",
+        "delta": { "citizenSatisfaction": -16, "legality": -10, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Forzar el canal digital excluye a quienes no tienen acceso o habilidades, vulnerando la universalidad. El Estado debe adaptarse al ciudadano, no al revés.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314, 35"
+      },
+      {
+        "id": "NV013-C",
+        "text": "Decirles que pidan ayuda a sus familiares o vecinos",
+        "delta": { "citizenSatisfaction": -10, "legality": -6 },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ Trasladar la responsabilidad al ciudadano no resuelve la exclusión estructural. El Estado debe garantizar el acceso, no depender de la buena voluntad de terceros.",
+        "isCorrect": false,
+        "legalReference": "Plan Nacional de Gobierno Digital"
+      },
+      {
+        "id": "NV013-D",
+        "text": "Crear puntos de atención asistida y capacitación digital comunitaria, además del canal en línea",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Los telecentros, infocentros y puntos de atención asistida son estrategias probadas para cerrar la brecha digital. Combinan el canal en línea con apoyo presencial y formación, garantizando inclusión.",
+        "isCorrect": true,
+        "legalReference": "Plan Nacional de Gobierno Digital, Infocentros MINTEL"
+      }
+    ]
+  },
+  {
+    "id": "NV014",
+    "title": "[FÁCIL] Obsequios a funcionarios",
+    "description": "Un proveedor que tiene trámites pendientes en tu oficina te ofrece un obsequio costoso 'por las fiestas'. ¿Qué corresponde?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-004",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["ética", "conflicto-de-interés", "regalos", "integridad"],
+    "options": [
+      {
+        "id": "NV014-A",
+        "text": "Rechazar cortésmente el obsequio: aceptarlo de quien tiene trámites pendientes compromete la imparcialidad",
+        "delta": { "legality": 16, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. Aceptar regalos de personas con intereses en trámites genera conflicto de interés y puede configurar cohecho. El Código de Ética de la Función Pública prohíbe recibir dádivas relacionadas con las funciones del cargo.",
+        "isCorrect": true,
+        "legalReference": "Código de Ética de la Función Pública, COIP Art. 280"
+      },
+      {
+        "id": "NV014-B",
+        "text": "Aceptarlo, total es solo un detalle de fiestas",
+        "delta": { "legality": -18, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Aceptar regalos de quien tiene trámites pendientes puede constituir cohecho (COIP Art. 280), un delito. No importa la intención declarada: el solo hecho compromete la imparcialidad del servidor.",
+        "isCorrect": false,
+        "legalReference": "COIP Art. 280"
+      },
+      {
+        "id": "NV014-C",
+        "text": "Aceptarlo pero acelerar el trámite para 'compensar'",
+        "delta": { "legality": -25, "institutionalReputation": -15 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Esto es cohecho flagrante. Recibir un beneficio a cambio de favorecer un trámite es un delito grave que conlleva destitución y proceso penal.",
+        "isCorrect": false,
+        "legalReference": "COIP Art. 280, LOSEP Art. 48"
+      },
+      {
+        "id": "NV014-D",
+        "text": "Rechazarlo y reportar el ofrecimiento a la unidad de integridad o talento humano",
+        "delta": { "legality": 16, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Además de rechazar, reportar el ofrecimiento fortalece la cultura de integridad institucional y protege al servidor. Muchas instituciones tienen políticas de obsequios y canales de reporte.",
+        "isCorrect": true,
+        "legalReference": "Código de Ética de la Función Pública, Política de Integridad"
+      }
+    ]
+  },
+  {
+    "id": "NV015",
+    "title": "[FÁCIL] ¿Qué es la interoperabilidad?",
+    "description": "Un ciudadano se queja: 'Tuve que llevar mi partida de nacimiento a tres instituciones distintas la misma semana.' Te pregunta por qué el Estado no comparte esa información.",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": ["interoperabilidad", "PIDE", "gobierno-electrónico", "once-only"],
+    "options": [
+      {
+        "id": "NV015-A",
+        "text": "Explicar que existe la interoperabilidad: las instituciones deben compartir datos para no pedir lo mismo varias veces",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 10 },
+        "xpReward": 50,
+        "educationalFeedback": "✅ Correcto. La interoperabilidad permite que los sistemas del Estado se comuniquen entre sí. Ecuador tiene la PIDE (Plataforma de Interoperabilidad del Estado). El principio 'once-only' establece que el ciudadano no debe entregar lo que el Estado ya tiene.",
+        "isCorrect": true,
+        "legalReference": "MINTEL - PIDE, COA Art. 42"
+      },
+      {
+        "id": "NV015-B",
+        "text": "Decir que cada institución es independiente y debe pedir sus propios documentos",
+        "delta": { "citizenSatisfaction": -12, "legality": -8, "institutionalReputation": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La independencia institucional no justifica pedir repetidamente lo mismo al ciudadano. El COA Art. 42 prohíbe exigir documentos que reposan en otra entidad pública.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 42"
+      },
+      {
+        "id": "NV015-C",
+        "text": "Sugerir que el ciudadano saque varias copias para no tener que volver",
+        "delta": { "citizenSatisfaction": -6, "legality": -4 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Esto soluciona el síntoma, no la causa. La verdadera solución es la interoperabilidad entre sistemas, no que el ciudadano cargue con más copias.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 42, PIDE"
+      },
+      {
+        "id": "NV015-D",
+        "text": "Explicar la interoperabilidad y proponer integrar el trámite a la PIDE para eliminar el papeleo",
+        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Excelente. Integrar los servicios a la PIDE permite verificar datos en línea sin pedir documentos físicos. Estonia (X-Road) y Uruguay son referentes mundiales de este modelo de interoperabilidad.",
+        "isCorrect": true,
+        "legalReference": "MINTEL - PIDE, X-Road Estonia, COA Art. 42"
+      }
+    ]
+  },
+  {
+    "id": "NV016",
+    "title": "[INTERMEDIO] Nueva Gestión Pública vs. burocracia clásica",
+    "description": "Tu entidad evalúa pasar de un modelo de control de procesos (cumplir reglas) a un modelo de gestión por resultados. Un directivo teme que 'enfocarse en resultados haga olvidar la legalidad'.",
+    "category": "transparency",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["nueva-gestión-pública", "modelo-gerencial", "resultados", "legalidad"],
+    "options": [
+      {
+        "id": "NV016-A",
+        "text": "La gestión por resultados no reemplaza la legalidad: la complementa midiendo el impacto real del cumplimiento",
+        "delta": { "legality": 14, "institutionalReputation": 16, "citizenSatisfaction": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. La Nueva Gestión Pública (NGP) introduce indicadores de resultado e impacto, pero el principio de legalidad sigue siendo el marco. Eficiencia y legalidad no se oponen: una buena gestión es legal Y eficaz.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, SENPLADES Gestión por Resultados"
+      },
+      {
+        "id": "NV016-B",
+        "text": "Dejar todo igual: cambiar de modelo es arriesgado",
+        "delta": { "institutionalReputation": -8, "citizenSatisfaction": -6 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ El inmovilismo perpetúa la ineficiencia. El modelo burocrático puro (centrado solo en cumplir reglas) puede cumplir la ley pero no garantizar buenos resultados para el ciudadano.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227"
+      },
+      {
+        "id": "NV016-C",
+        "text": "Adoptar gestión por resultados eliminando los controles de legalidad para ganar agilidad",
+        "delta": { "legality": -20, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Eliminar controles de legalidad para ganar velocidad es una distorsión peligrosa de la NGP. Sin legalidad, la 'eficiencia' puede convertirse en arbitrariedad o corrupción.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 226"
+      },
+      {
+        "id": "NV016-D",
+        "text": "Implementar gestión por resultados con indicadores que incluyan tanto impacto como cumplimiento legal",
+        "delta": { "legality": 16, "institutionalReputation": 18, "citizenSatisfaction": 12 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Los mejores sistemas de gestión por resultados incluyen indicadores de eficacia, eficiencia y cumplimiento normativo. Así se garantiza que mejorar resultados no signifique sacrificar la legalidad ni la integridad.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES Gestión por Resultados, Constitución Art. 227"
+      }
+    ]
+  },
+  {
+    "id": "NV017",
+    "title": "[INTERMEDIO] Datos abiertos con calidad",
+    "description": "Tu institución 'publica datos abiertos', pero los sube en PDF escaneados que no se pueden procesar. Un investigador reclama que no le sirven. El jefe dice que 'ya está publicado, es suficiente'.",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["datos-abiertos", "formatos", "calidad", "gobierno-abierto"],
+    "options": [
+      {
+        "id": "NV017-A",
+        "text": "Publicar los datos en formatos reutilizables (CSV, JSON) según los estándares de datos abiertos",
+        "delta": { "legality": 14, "institutionalReputation": 16, "citizenSatisfaction": 14 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Los datos abiertos deben ser reutilizables por máquinas. Un PDF escaneado no cumple. La escala de Tim Berners-Lee (5 estrellas) valora los formatos abiertos y estructurados. La Carta Internacional de Datos Abiertos exige formatos procesables.",
+        "isCorrect": true,
+        "legalReference": "Carta Internacional de Datos Abiertos, LOTAIP Art. 7"
+      },
+      {
+        "id": "NV017-B",
+        "text": "El jefe tiene razón: publicar en PDF ya cumple la transparencia",
+        "delta": { "legality": -10, "institutionalReputation": -10, "citizenSatisfaction": -10 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Publicar en formatos no procesables es transparencia de baja calidad. Cumple formalmente pero no permite el control social real. Los datos deben poder analizarse, no solo verse.",
+        "isCorrect": false,
+        "legalReference": "Carta Internacional de Datos Abiertos"
+      },
+      {
+        "id": "NV017-C",
+        "text": "Pedirle al investigador que transcriba los PDF él mismo",
+        "delta": { "citizenSatisfaction": -12, "legality": -6 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Trasladar al ciudadano el costo de procesar datos mal publicados contradice el espíritu de los datos abiertos. La institución es responsable de publicar en formatos usables.",
+        "isCorrect": false,
+        "legalReference": "Carta Internacional de Datos Abiertos"
+      },
+      {
+        "id": "NV017-D",
+        "text": "Republicar en formatos abiertos, con metadatos y licencia abierta en el portal datos.gob.ec",
+        "delta": { "legality": 14, "institutionalReputation": 18, "citizenSatisfaction": 16 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Formato abierto + metadatos (que describen los datos) + licencia abierta (que permite reutilizarlos) = datos abiertos de calidad. El portal datos.gob.ec es el repositorio oficial de Ecuador.",
+        "isCorrect": true,
+        "legalReference": "datos.gob.ec, Carta Internacional de Datos Abiertos"
+      }
+    ]
+  },
+  {
+    "id": "NV018",
+    "title": "[INTERMEDIO] Presupuesto participativo en un GAD",
+    "description": "Eres técnico de un GAD que debe definir el presupuesto participativo. El alcalde quiere 'consultar' pero ya tiene decidido en qué gastar. Pide que la asamblea sea solo informativa.",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["presupuesto-participativo", "COOTAD", "participación", "co-decisión"],
+    "options": [
+      {
+        "id": "NV018-A",
+        "text": "Explicar que el presupuesto participativo es vinculante: la ciudadanía decide, no solo se informa",
+        "delta": { "citizenSatisfaction": 18, "legality": 16, "institutionalReputation": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El COOTAD (Art. 304-306) establece que el presupuesto participativo es un proceso de co-decisión, no de simple información. La ciudadanía prioriza efectivamente el gasto. Hacerlo 'solo informativo' lo vacía de contenido.",
+        "isCorrect": true,
+        "legalReference": "COOTAD Art. 304-306, Ley de Participación Ciudadana Art. 67"
+      },
+      {
+        "id": "NV018-B",
+        "text": "Hacer la asamblea solo informativa, como pide el alcalde",
+        "delta": { "citizenSatisfaction": -16, "legality": -14, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Convertir el presupuesto participativo en un acto informativo es 'participación simbólica' o tokenismo. Viola el COOTAD, que exige que la ciudadanía decida sobre una parte real del presupuesto.",
+        "isCorrect": false,
+        "legalReference": "COOTAD Art. 304"
+      },
+      {
+        "id": "NV018-C",
+        "text": "Dejar que la ciudadanía decida solo sobre montos muy pequeños y simbólicos",
+        "delta": { "citizenSatisfaction": -6, "legality": -8 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ Asignar montos insignificantes a la decisión ciudadana es una forma encubierta de tokenismo. El presupuesto participativo debe versar sobre recursos significativos para ser real.",
+        "isCorrect": false,
+        "legalReference": "COOTAD Art. 304, Ley de Participación Ciudadana"
+      },
+      {
+        "id": "NV018-D",
+        "text": "Diseñar un proceso participativo real con criterios técnicos, asambleas de priorización y seguimiento ciudadano",
+        "delta": { "citizenSatisfaction": 20, "legality": 16, "institutionalReputation": 16 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. El presupuesto participativo combina criterios técnicos (viabilidad, equidad territorial) con la priorización ciudadana y un comité de seguimiento. Porto Alegre (Brasil) es el referente histórico de este modelo.",
+        "isCorrect": true,
+        "legalReference": "COOTAD Art. 304-306, Ley de Participación Ciudadana Art. 67-71"
+      }
+    ]
+  },
+  {
+    "id": "NV019",
+    "title": "[INTERMEDIO] Evaluación de impacto de un servicio digital",
+    "description": "Tu institución lanzó una app para reportar baches. Tres meses después, el director quiere declararla un éxito porque 'se descargó mucho'. ¿Cómo evaluarías realmente el servicio?",
+    "category": "digital-government",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["gobierno-electrónico", "indicadores", "evaluación", "impacto"],
+    "options": [
+      {
+        "id": "NV019-A",
+        "text": "Medir resultados reales: baches efectivamente reparados, tiempo de respuesta y satisfacción ciudadana",
+        "delta": { "citizenSatisfaction": 14, "legality": 10, "institutionalReputation": 16 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Las descargas son un indicador de actividad, no de impacto. Lo que importa es si el servicio resuelve el problema: baches reparados, tiempos de respuesta y satisfacción. La evaluación debe medir resultados, no solo uso.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES Gestión por Resultados, Modelo de Gobierno Digital"
+      },
+      {
+        "id": "NV019-B",
+        "text": "Aceptar las descargas como medida de éxito",
+        "delta": { "institutionalReputation": -8, "citizenSatisfaction": -6 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Las descargas son una 'métrica de vanidad': impresionan pero no dicen si el servicio funciona. Una app muy descargada que no repara baches es un fracaso disfrazado de éxito.",
+        "isCorrect": false,
+        "legalReference": "Modelo de Gobierno Digital"
+      },
+      {
+        "id": "NV019-C",
+        "text": "Medir solo cuántos reportes se reciben",
+        "delta": { "institutionalReputation": 2, "citizenSatisfaction": 0 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Los reportes recibidos son un paso, pero si no se traducen en reparaciones, el ciudadano se frustra. Una plataforma que recibe quejas sin resolverlas erosiona la confianza.",
+        "isCorrect": false,
+        "legalReference": "Modelo de Gobierno Digital"
+      },
+      {
+        "id": "NV019-D",
+        "text": "Definir indicadores de resultado e impacto, recoger retroalimentación ciudadana y mejorar el servicio iterativamente",
+        "delta": { "citizenSatisfaction": 16, "legality": 10, "institutionalReputation": 18 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. El diseño de servicios públicos centrado en el ciudadano usa indicadores de impacto, retroalimentación continua y mejora iterativa. Medir, aprender y ajustar es la base del gobierno digital maduro.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES, Diseño de Servicios Centrado en el Ciudadano"
+      }
+    ]
+  },
+  {
+    "id": "NV020",
+    "title": "[INTERMEDIO] Consentimiento para tratar datos",
+    "description": "Tu institución quiere enviar notificaciones por WhatsApp sobre el estado de trámites. Para ello necesita los teléfonos de los ciudadanos. ¿Cómo debe manejarse según la LOPDP?",
+    "category": "data-protection",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["LOPDP", "consentimiento", "datos-personales", "finalidad"],
+    "options": [
+      {
+        "id": "NV020-A",
+        "text": "Informar la finalidad, obtener consentimiento y permitir que el ciudadano se retire cuando quiera",
+        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. La LOPDP exige consentimiento informado, libre y específico para tratar datos con una finalidad. El ciudadano debe poder revocar el consentimiento en cualquier momento. La transparencia sobre el uso de los datos es obligatoria.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 7, 9, 12"
+      },
+      {
+        "id": "NV020-B",
+        "text": "Usar los teléfonos que ya están en los formularios de trámites sin avisar",
+        "delta": { "legality": -18, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Usar datos recopilados para un fin (el trámite) en otro fin distinto (notificaciones por WhatsApp) sin consentimiento viola el principio de finalidad de la LOPDP.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 10, 11"
+      },
+      {
+        "id": "NV020-C",
+        "text": "Pedir el teléfono pero no explicar para qué se usará",
+        "delta": { "legality": -10, "citizenSatisfaction": -6 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ El consentimiento debe ser informado. Pedir datos sin explicar la finalidad no cumple la LOPDP. El ciudadano tiene derecho a saber exactamente cómo se usarán sus datos.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 12"
+      },
+      {
+        "id": "NV020-D",
+        "text": "Establecer una política de privacidad clara, registro de consentimientos y un canal para ejercer derechos ARCO",
+        "delta": { "legality": 18, "institutionalReputation": 16, "citizenSatisfaction": 12 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Una política de privacidad clara, el registro de consentimientos y un canal para ejercer derechos ARCO (Acceso, Rectificación, Cancelación, Oposición) cumplen integralmente la LOPDP y generan confianza ciudadana.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 12, derechos ARCO"
+      }
+    ]
+  },
+  {
+    "id": "NV021",
+    "title": "[INTERMEDIO] Conflicto entre transparencia y privacidad",
+    "description": "Un ciudadano pide la lista completa de beneficiarios de un bono social, con nombres, cédulas y montos. Tu institución tiene la lista. ¿Cómo equilibras transparencia y protección de datos?",
+    "category": "data-protection",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["LOPDP", "LOTAIP", "datos-personales", "equilibrio-derechos"],
+    "options": [
+      {
+        "id": "NV021-A",
+        "text": "Entregar datos agregados y estadísticos sin exponer datos personales identificables",
+        "delta": { "legality": 16, "institutionalReputation": 14, "citizenSatisfaction": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Se debe equilibrar el derecho a la información con la protección de datos. Lo correcto es entregar montos totales, número de beneficiarios y criterios, pero no nombres y cédulas individuales protegidos por la LOPDP.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 17, LOPDP Art. 4, Constitución Art. 66.19"
+      },
+      {
+        "id": "NV021-B",
+        "text": "Entregar la lista completa con todos los datos personales, porque todo lo público es transparente",
+        "delta": { "legality": -18, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La transparencia no es absoluta. Exponer nombres, cédulas y condición de beneficiario de un bono social vulnera la LOPDP y puede estigmatizar a personas vulnerables. La LOTAIP excluye datos personales del acceso público.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, LOPDP"
+      },
+      {
+        "id": "NV021-C",
+        "text": "Negar toda la información alegando protección de datos",
+        "delta": { "legality": -10, "citizenSatisfaction": -10 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Negar todo es el extremo opuesto. La información agregada sobre el uso de fondos públicos SÍ es pública y permite control social. La protección de datos no puede usarse para ocultar el gasto público.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7"
+      },
+      {
+        "id": "NV021-D",
+        "text": "Publicar datos estadísticos abiertos y anonimizados que permitan auditoría social sin exponer a las personas",
+        "delta": { "legality": 16, "institutionalReputation": 16, "citizenSatisfaction": 14 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. La anonimización y agregación permiten transparencia y control social sin vulnerar la privacidad. Es el equilibrio que recomiendan los estándares internacionales: máxima apertura de datos de gestión, máxima protección de datos personales.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 4, LOTAIP Art. 7, Estándares Internacionales"
+      }
+    ]
+  },
+  {
+    "id": "NV022",
+    "title": "[INTERMEDIO] Gobernanza colaborativa entre instituciones",
+    "description": "Un problema (inundaciones urbanas) involucra al Municipio, al Ministerio de Ambiente y a la empresa de agua. Cada uno dice que 'no es su competencia exclusiva'. ¿Cómo se aborda?",
+    "category": "citizen-participation",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["gobernanza", "coordinación", "competencias", "trabajo-en-red"],
+    "options": [
+      {
+        "id": "NV022-A",
+        "text": "Crear una mesa de coordinación interinstitucional con responsabilidades claras para cada actor",
+        "delta": { "citizenSatisfaction": 14, "legality": 14, "institutionalReputation": 16 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El enfoque de gobernanza aborda problemas complejos mediante coordinación horizontal entre actores. Una mesa interinstitucional con roles definidos supera la fragmentación de competencias. La Constitución Art. 226 obliga a la coordinación.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 226, COOTAD Art. 260 (gestión concurrente)"
+      },
+      {
+        "id": "NV022-B",
+        "text": "Esperar a que el Gobierno Central decida quién es responsable",
+        "delta": { "citizenSatisfaction": -10, "institutionalReputation": -8 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ La pasividad agrava el problema mientras la población sufre las inundaciones. La gobernanza moderna no espera órdenes verticales: promueve que los actores se coordinen proactivamente.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 226"
+      },
+      {
+        "id": "NV022-C",
+        "text": "Que cada institución actúe por su lado en lo que considere suyo",
+        "delta": { "citizenSatisfaction": -8, "institutionalReputation": -6 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ La acción descoordinada genera duplicidades, vacíos y desperdicio de recursos. Los problemas complejos requieren respuestas articuladas, no esfuerzos aislados.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 226"
+      },
+      {
+        "id": "NV022-D",
+        "text": "Formar una red de gobernanza con instituciones, comunidad y academia, con un plan y seguimiento conjunto",
+        "delta": { "citizenSatisfaction": 16, "legality": 14, "institutionalReputation": 18 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. La gobernanza en red incorpora no solo instituciones, sino a la comunidad afectada y la academia (que aporta soluciones técnicas). Un plan conjunto con seguimiento crea corresponsabilidad y soluciones sostenibles.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 226, Enfoque de Gobernanza en Red"
+      }
+    ]
+  },
+  {
+    "id": "NV023",
+    "title": "[INTERMEDIO] Mérito vs. recomendación en la contratación",
+    "description": "Hay una vacante de analista. Un directivo te pide 'ayudar' a un candidato recomendado, ajustando los requisitos del concurso a su perfil. ¿Qué corresponde?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-003",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["mérito", "LOSEP", "concurso", "ética", "talento-humano"],
+    "options": [
+      {
+        "id": "NV023-A",
+        "text": "Mantener requisitos basados en el perfil del puesto y un concurso de méritos transparente",
+        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 10 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El ingreso al servicio público se rige por mérito y oposición (Constitución Art. 228, LOSEP). Ajustar requisitos a un candidato específico ('traje a la medida') vicia el concurso y puede anularlo.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 228, LOSEP Art. 65"
+      },
+      {
+        "id": "NV023-B",
+        "text": "Ajustar los requisitos para favorecer al recomendado",
+        "delta": { "legality": -22, "institutionalReputation": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Diseñar requisitos a la medida de un candidato es una práctica corrupta que viola el principio de mérito. Puede anular el concurso y generar responsabilidad administrativa y penal.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 65, COIP"
+      },
+      {
+        "id": "NV023-C",
+        "text": "Dejar los requisitos normales pero adelantarle al recomendado las preguntas de la prueba",
+        "delta": { "legality": -25, "institutionalReputation": -16 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Filtrar las preguntas es fraude en el concurso, una falta grave. Vulnera la igualdad de oportunidades y constituye una infracción sancionable con destitución.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 48, Constitución Art. 228"
+      },
+      {
+        "id": "NV023-D",
+        "text": "Mantener el concurso por méritos y dejar constancia escrita ante cualquier presión indebida",
+        "delta": { "legality": 18, "institutionalReputation": 16, "citizenSatisfaction": 10 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Además de mantener el mérito, documentar la presión protege al servidor y a la institución. El sistema de méritos garantiza que el mejor candidato sea seleccionado, fortaleciendo la capacidad del Estado.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 228, LOSEP Art. 65, 90"
+      }
+    ]
+  },
+  {
+    "id": "NV024",
+    "title": "[INTERMEDIO] Ciberhigiene en la oficina",
+    "description": "Llega un correo que parece del 'Ministerio de Finanzas' pidiendo que ingreses tus credenciales en un enlace para 'validar el sistema'. Varios compañeros ya hicieron clic. ¿Qué corresponde?",
+    "category": "cybersecurity",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["phishing", "ciberseguridad", "EGSI", "EcuCERT"],
+    "options": [
+      {
+        "id": "NV024-A",
+        "text": "No hacer clic, reportar el correo como phishing al área de TI y alertar a los compañeros afectados",
+        "delta": { "legality": 14, "institutionalReputation": 16, "citizenSatisfaction": 8 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Es un caso típico de phishing. No se deben ingresar credenciales en enlaces de correos. Reportar al área de TI y alertar a quienes hicieron clic (para que cambien contraseñas) sigue el protocolo del EGSI.",
+        "isCorrect": true,
+        "legalReference": "EGSI 2, EcuCERT Protocolo de Incidentes"
+      },
+      {
+        "id": "NV024-B",
+        "text": "Ingresar las credenciales por si acaso es real",
+        "delta": { "legality": -16, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ingresar credenciales en un enlace sospechoso es exactamente lo que busca el atacante. Ninguna institución legítima pide validar credenciales por correo con enlaces externos.",
+        "isCorrect": false,
+        "legalReference": "EGSI 2"
+      },
+      {
+        "id": "NV024-C",
+        "text": "Borrar el correo y no decir nada",
+        "delta": { "legality": -8, "institutionalReputation": -6 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Borrar sin reportar deja a los demás expuestos. Como ya hubo compañeros que hicieron clic, es urgente activar el protocolo de incidentes para contener el daño.",
+        "isCorrect": false,
+        "legalReference": "EGSI 2"
+      },
+      {
+        "id": "NV024-D",
+        "text": "Reportar el incidente, forzar cambio de contraseñas de los afectados y proponer capacitación en ciberseguridad",
+        "delta": { "legality": 14, "institutionalReputation": 18, "citizenSatisfaction": 8 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Contener (cambio de contraseñas), reportar y prevenir (capacitación) es la respuesta completa. El factor humano es el eslabón más débil en ciberseguridad; la concienciación periódica es clave según el EGSI.",
+        "isCorrect": true,
+        "legalReference": "EGSI 2, EcuCERT"
+      }
+    ]
+  },
+  {
+    "id": "NV025",
+    "title": "[INTERMEDIO] Información reservada bien clasificada",
+    "description": "Tu jefe quiere declarar 'reservado' todo un proyecto de infraestructura para evitar críticas. Te pide preparar la justificación. ¿Qué corresponde según la LOTAIP?",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["LOTAIP", "información-reservada", "transparencia", "motivación"],
+    "options": [
+      {
+        "id": "NV025-A",
+        "text": "Explicar que la reserva solo procede por causales legales específicas, no para evitar críticas",
+        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El Art. 17 de la LOTAIP enumera de forma taxativa las causales de reserva (seguridad nacional, etc.). 'Evitar críticas' no es una causal legal. La reserva debe ser motivada, temporal y excepcional, decidida por el Consejo correspondiente.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 17, 18"
+      },
+      {
+        "id": "NV025-B",
+        "text": "Preparar la justificación para reservar todo el proyecto",
+        "delta": { "legality": -20, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Reservar información para evitar el escrutinio público es un abuso. La regla general es la publicidad; la reserva es la excepción. Clasificar indebidamente información puede ser sancionado.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17"
+      },
+      {
+        "id": "NV025-C",
+        "text": "Reservar solo el presupuesto pero publicar el resto",
+        "delta": { "legality": -8, "citizenSatisfaction": -6 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ El presupuesto de obra pública es justamente la información más sujeta a control social. Reservar el gasto contradice la LOSNCP y la LOTAIP. No hay causal legal para ocultar montos de obra pública.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, LOSNCP Art. 21"
+      },
+      {
+        "id": "NV025-D",
+        "text": "Publicar el proyecto proactivamente y reservar solo lo que tenga causal legal expresa y motivada",
+        "delta": { "legality": 18, "institutionalReputation": 16, "citizenSatisfaction": 14 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. La transparencia proactiva de los proyectos de infraestructura genera confianza y reduce sospechas. Solo lo que tenga causal legal expresa (por ejemplo, datos personales o seguridad) se reserva, con motivación formal.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, 17"
+      }
+    ]
+  },
+  {
+    "id": "NV026",
+    "title": "[INTERMEDIO] Continuidad del servicio ante una caída del sistema",
+    "description": "El sistema digital de turnos médicos colapsa un lunes a primera hora. Hay 200 personas esperando. El proveedor dice que tardará 6 horas en repararlo. ¿Qué haces como coordinador?",
+    "category": "digital-government",
+    "npcId": "citizen-006",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["continuidad", "plan-contingencia", "servicio-público", "gestión"],
+    "options": [
+      {
+        "id": "NV026-A",
+        "text": "Activar un plan de contingencia con atención manual mientras se repara el sistema",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 14 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. El principio de continuidad del servicio público exige planes de contingencia. Si el sistema digital falla, debe haber un procedimiento manual o alternativo para no dejar a los ciudadanos sin atención.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 314, EGSI Continuidad del Negocio"
+      },
+      {
+        "id": "NV026-B",
+        "text": "Enviar a todos a casa y pedirles que vuelvan otro día",
+        "delta": { "citizenSatisfaction": -18, "legality": -10, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Suspender el servicio por una falla técnica vulnera el principio de continuidad. Especialmente en salud, dejar a 200 personas sin atención puede tener consecuencias graves.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314"
+      },
+      {
+        "id": "NV026-C",
+        "text": "Esperar las 6 horas sin hacer nada hasta que el sistema vuelva",
+        "delta": { "citizenSatisfaction": -14, "institutionalReputation": -10 },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ La inacción durante 6 horas con 200 personas esperando es inaceptable. Un coordinador debe tomar medidas inmediatas para mantener el servicio funcionando de alguna manera.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314"
+      },
+      {
+        "id": "NV026-D",
+        "text": "Activar atención manual ahora y, después, exigir al proveedor un plan de continuidad y respaldo en el contrato",
+        "delta": { "citizenSatisfaction": 16, "legality": 14, "institutionalReputation": 16 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Resolver la emergencia (atención manual) y corregir la causa (exigir continuidad y respaldos al proveedor) es la respuesta completa. Los contratos de sistemas críticos deben incluir acuerdos de nivel de servicio (SLA) y planes de recuperación.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 314, EGSI, LOSNCP (cláusulas de SLA)"
+      }
+    ]
+  },
+  {
+    "id": "NV027",
+    "title": "[INTERMEDIO] Veeduría ciudadana",
+    "description": "Un grupo de ciudadanos quiere conformar una veeduría para vigilar una obra pública. Un directivo dice que 'eso entorpece el trabajo' y pide negarles información. ¿Qué corresponde?",
+    "category": "citizen-participation",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["veeduría", "control-social", "CPCCS", "participación"],
+    "options": [
+      {
+        "id": "NV027-A",
+        "text": "Facilitar la veeduría: es un mecanismo de control social reconocido por la Constitución y el CPCCS",
+        "delta": { "citizenSatisfaction": 16, "legality": 16, "institutionalReputation": 12 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Las veedurías ciudadanas son un derecho (Constitución Art. 100, Ley de Participación Ciudadana). El CPCCS las regula. Las instituciones deben facilitar su trabajo entregando la información que requieran, no obstaculizarlas.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, Ley de Participación Ciudadana Art. 84, CPCCS"
+      },
+      {
+        "id": "NV027-B",
+        "text": "Negar la información para que la veeduría no funcione",
+        "delta": { "citizenSatisfaction": -16, "legality": -14, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Obstaculizar una veeduría viola el derecho a la participación y al control social. Puede dar lugar a sanciones del CPCCS. El control social no entorpece: previene la corrupción y mejora la obra.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 100, Ley de Participación Ciudadana"
+      },
+      {
+        "id": "NV027-C",
+        "text": "Aceptar la veeduría pero entregarles información incompleta",
+        "delta": { "citizenSatisfaction": -8, "legality": -10 },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Entregar información parcial es una forma de obstaculización encubierta. La veeduría necesita información completa y oportuna para cumplir su función de control social.",
+        "isCorrect": false,
+        "legalReference": "Ley de Participación Ciudadana Art. 84"
+      },
+      {
+        "id": "NV027-D",
+        "text": "Facilitar la veeduría, designar un enlace y entregarles información oportuna y completa de la obra",
+        "delta": { "citizenSatisfaction": 18, "legality": 16, "institutionalReputation": 14 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Designar un enlace institucional y entregar información completa demuestra apertura al control social. Las veedurías bien acompañadas mejoran la calidad de las obras y previenen irregularidades, protegiendo a la institución.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, Ley de Participación Ciudadana Art. 84, CPCCS"
+      }
+    ]
+  },
+  {
+    "id": "NV028",
+    "title": "[INTERMEDIO] Comparado: gobierno digital de Colombia",
+    "description": "Tu equipo estudia la estrategia de Colombia (GOV.CO y la política de Gobierno Digital). Un colega pregunta qué se podría aprender de ese modelo para Ecuador.",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["comparado", "Colombia", "gobierno-digital", "buenas-prácticas"],
+    "options": [
+      {
+        "id": "NV028-A",
+        "text": "Un portal único (GOV.CO), servicios ciudadanos digitales y una política de Estado sostenida en el tiempo",
+        "delta": { "citizenSatisfaction": 12, "legality": 10, "institutionalReputation": 16 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Colombia integró sus servicios en GOV.CO y desarrolló 'Servicios Ciudadanos Digitales' (identidad, interoperabilidad, carpeta ciudadana). La clave es una política de Estado con continuidad, no proyectos aislados de cada gobierno.",
+        "isCorrect": true,
+        "legalReference": "Colombia - Política de Gobierno Digital, GOV.CO, CEPAL"
+      },
+      {
+        "id": "NV028-B",
+        "text": "Nada, cada país es diferente y no se puede comparar",
+        "delta": { "institutionalReputation": -8 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ Negarse a aprender de otros países desperdicia conocimiento valioso. El aprendizaje comparado, adaptado al contexto, es una herramienta clave en políticas públicas.",
+        "isCorrect": false,
+        "legalReference": "CEPAL Gobierno Digital América Latina"
+      },
+      {
+        "id": "NV028-C",
+        "text": "Copiar GOV.CO exactamente igual en Ecuador",
+        "delta": { "institutionalReputation": -4, "budget": -8 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Copiar sin adaptar ignora las diferencias de contexto (infraestructura, marco legal, conectividad). La buena práctica es inspirarse y adaptar, no trasplantar mecánicamente.",
+        "isCorrect": false,
+        "legalReference": "BID Transferencia de Políticas Digitales"
+      },
+      {
+        "id": "NV028-D",
+        "text": "Aprender de Colombia y adaptar: fortalecer Gob.ec, la PIDE y la identidad digital con visión de Estado",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 18 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Ecuador ya tiene los componentes equivalentes (Gob.ec, PIDE, identidad digital). Aprender del éxito colombiano significa darles continuidad como política de Estado, no reiniciar con cada gobierno. La sostenibilidad institucional es el factor decisivo.",
+        "isCorrect": true,
+        "legalReference": "Gob.ec, MINTEL - PIDE, CEPAL, Colombia GOV.CO"
+      }
+    ]
+  },
+  {
+    "id": "NV029",
+    "title": "[INTERMEDIO] Archivo y gestión documental",
+    "description": "Encuentras que expedientes importantes se guardan sin orden, algunos digitales y otros en papel, sin respaldo. Un compañero dice que 'el archivo no es prioridad'. ¿Qué corresponde?",
+    "category": "transparency",
+    "npcId": "citizen-003",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["gestión-documental", "archivo", "transparencia", "respaldo"],
+    "options": [
+      {
+        "id": "NV029-A",
+        "text": "Implementar gestión documental ordenada con respaldos, porque sustenta la transparencia y la rendición de cuentas",
+        "delta": { "legality": 14, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. La Ley del Sistema Nacional de Archivos y la LOTAIP exigen una gestión documental adecuada. Sin archivos ordenados no hay transparencia, ni acceso a la información, ni rendición de cuentas posible.",
+        "isCorrect": true,
+        "legalReference": "Ley del Sistema Nacional de Archivos, LOTAIP Art. 10"
+      },
+      {
+        "id": "NV029-B",
+        "text": "Dejar el archivo como está, total nadie lo revisa",
+        "delta": { "legality": -10, "institutionalReputation": -8 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ La mala gestión documental impide responder solicitudes de información, auditorías y procesos legales. La pérdida de expedientes puede generar responsabilidades. El archivo es la memoria institucional.",
+        "isCorrect": false,
+        "legalReference": "Ley del Sistema Nacional de Archivos"
+      },
+      {
+        "id": "NV029-C",
+        "text": "Digitalizar todo pero sin política de respaldo ni clasificación",
+        "delta": { "legality": 2, "institutionalReputation": 0 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Digitalizar sin clasificación ni respaldos solo traslada el desorden al mundo digital, con riesgo de pérdida total si falla un disco. La gestión documental requiere clasificación, respaldo y políticas de retención.",
+        "isCorrect": false,
+        "legalReference": "Ley del Sistema Nacional de Archivos, EGSI"
+      },
+      {
+        "id": "NV029-D",
+        "text": "Establecer un sistema de gestión documental con clasificación, respaldos periódicos y tabla de retención",
+        "delta": { "legality": 14, "institutionalReputation": 16, "citizenSatisfaction": 8 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. Un sistema con clasificación, respaldos y tabla de plazos de conservación (retención documental) garantiza disponibilidad, integridad y trazabilidad. Es la base de la transparencia y de la continuidad institucional.",
+        "isCorrect": true,
+        "legalReference": "Ley del Sistema Nacional de Archivos, LOTAIP Art. 10, EGSI"
+      }
+    ]
+  },
+  {
+    "id": "NV030",
+    "title": "[INTERMEDIO] Indicadores que no se deben manipular",
+    "description": "Te piden 'mejorar' las estadísticas de atención cerrando trámites como 'resueltos' aunque el ciudadano no recibió respuesta real, para subir el indicador de eficiencia.",
+    "category": "ethics-corruption",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": ["indicadores", "ética", "datos", "integridad"],
+    "options": [
+      {
+        "id": "NV030-A",
+        "text": "Negarse a manipular los datos: las estadísticas deben reflejar la realidad",
+        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Correcto. Manipular indicadores es falsear información pública, lo que viola la integridad de los datos y puede constituir falsedad. Las estadísticas sirven para tomar decisiones; si están infladas, las decisiones serán erróneas.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, COIP Art. 327, Código de Ética"
+      },
+      {
+        "id": "NV030-B",
+        "text": "Cerrar los trámites como resueltos para subir el indicador",
+        "delta": { "legality": -20, "institutionalReputation": -14, "citizenSatisfaction": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Falsear indicadores engaña a las autoridades, a la ciudadanía y a los órganos de control. Es una práctica corrupta que, además, deja al ciudadano sin la respuesta que necesita.",
+        "isCorrect": false,
+        "legalReference": "COIP Art. 327, LOTAIP"
+      },
+      {
+        "id": "NV030-C",
+        "text": "Cerrar solo algunos para que el cambio no se note",
+        "delta": { "legality": -16, "institutionalReputation": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Manipular 'un poco' sigue siendo falsear datos. La integridad de la información no admite grados: o los datos son veraces o no lo son.",
+        "isCorrect": false,
+        "legalReference": "COIP Art. 327"
+      },
+      {
+        "id": "NV030-D",
+        "text": "Reportar los datos reales y proponer mejoras de proceso para subir la eficiencia legítimamente",
+        "delta": { "legality": 16, "institutionalReputation": 16, "citizenSatisfaction": 12 },
+        "xpReward": 65,
+        "educationalFeedback": "✅ Excelente. La forma correcta de mejorar un indicador es mejorar el proceso real, no falsear el dato. Identificar cuellos de botella y rediseñar el flujo sube la eficiencia de verdad, beneficiando al ciudadano.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, SNAP Gestión por Procesos"
+      }
+    ]
+  },
+  {
+    "id": "NV031",
+    "title": "[AVANZADO] Evaluación de impacto algorítmico en decisiones automatizadas",
+    "description": "Tu institución quiere usar un algoritmo para priorizar automáticamente quién recibe un subsidio. El algoritmo se entrenó con datos históricos. ¿Qué precauciones son indispensables?",
+    "category": "ai-government",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["IA", "sesgo-algorítmico", "decisiones-automatizadas", "LOPDP", "derechos"],
+    "options": [
+      {
+        "id": "NV031-A",
+        "text": "Confiar en el algoritmo: los datos no mienten y eliminan la subjetividad humana",
+        "delta": { "legality": -18, "institutionalReputation": -14, "citizenSatisfaction": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Los algoritmos entrenados con datos históricos pueden reproducir y amplificar sesgos pasados (discriminación territorial, de género, etc.). 'Los datos no mienten' es un mito: los datos reflejan desigualdades existentes.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 16 (decisiones automatizadas), Principios de IA UNESCO"
+      },
+      {
+        "id": "NV031-B",
+        "text": "Hacer evaluación de impacto algorítmico, auditar sesgos, mantener supervisión humana y derecho a impugnar",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 14 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. Las decisiones automatizadas que afectan derechos exigen: evaluación de impacto, auditoría de sesgos, explicabilidad, supervisión humana significativa y derecho del ciudadano a impugnar (LOPDP Art. 16). La UE (AI Act) clasifica estos casos como de alto riesgo.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 16, UE AI Act, Recomendación UNESCO sobre Ética de la IA"
+      },
+      {
+        "id": "NV031-C",
+        "text": "Usar el algoritmo pero sin avisar a los ciudadanos para evitar confusión",
+        "delta": { "legality": -16, "institutionalReputation": -12 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ La opacidad agrava el problema. El ciudadano tiene derecho a saber que una decisión sobre él fue automatizada y a recibir una explicación. La transparencia algorítmica es un principio de la IA pública responsable.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 16, Principios de Transparencia Algorítmica"
+      },
+      {
+        "id": "NV031-D",
+        "text": "Usar el algoritmo solo como apoyo, con decisión final humana, auditoría externa de sesgos y publicación de criterios",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. El estándar más alto: la IA como apoyo (no sustituto) a la decisión humana, auditoría externa independiente de sesgos y publicación de los criterios. Esto combina eficiencia con derechos y rendición de cuentas algorítmica.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 16, UE AI Act, UNESCO, OCDE Principios de IA"
+      }
+    ]
+  },
+  {
+    "id": "NV032",
+    "title": "[AVANZADO] Captura regulatoria en una agencia de control",
+    "description": "Eres asesor de una agencia que regula el sector eléctrico. Notas que las normas técnicas las redactan casi exclusivamente las grandes empresas reguladas, sin contrapeso técnico independiente. ¿Qué corresponde?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["captura-regulatoria", "regulación", "interés-público", "gobernanza"],
+    "options": [
+      {
+        "id": "NV032-A",
+        "text": "Aceptarlo: las empresas son las que más saben del sector",
+        "delta": { "legality": -16, "institutionalReputation": -14, "citizenSatisfaction": -10 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Esto es captura regulatoria: cuando la industria regulada controla a su propio regulador. Aunque las empresas tengan conocimiento técnico, redactar las normas que las regulan crea un conflicto de interés estructural que perjudica el interés público.",
+        "isCorrect": false,
+        "legalReference": "OCDE Principios de Gobernanza Regulatoria"
+      },
+      {
+        "id": "NV032-B",
+        "text": "Establecer contrapesos: equipo técnico propio, consulta amplia y transparencia sobre quién influye en cada norma",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 14 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. Para prevenir la captura regulatoria se requiere: capacidad técnica independiente del regulador, consulta pública amplia (no solo a la industria), transparencia sobre la 'huella regulatoria' (quién influyó en la norma) y declaración de conflictos de interés.",
+        "isCorrect": true,
+        "legalReference": "OCDE Principios de Gobernanza Regulatoria, COA Art. 166"
+      },
+      {
+        "id": "NV032-C",
+        "text": "Invitar también a una empresa pequeña para 'equilibrar'",
+        "delta": { "legality": 4, "institutionalReputation": 2 },
+        "xpReward": 20,
+        "educationalFeedback": "⚠️ Un paso, pero insuficiente. Sumar a una empresa pequeña no rompe la captura si el regulador sigue sin capacidad técnica propia. Hace falta contrapeso institucional y participación de usuarios y academia, no solo de la industria.",
+        "isCorrect": false,
+        "legalReference": "OCDE Principios de Gobernanza Regulatoria"
+      },
+      {
+        "id": "NV032-D",
+        "text": "Crear capacidad técnica propia, consulta multiactor (usuarios, academia, industria) y publicar la huella regulatoria de cada norma",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La solución integral: fortalecer la capacidad técnica del regulador, abrir la consulta a todos los afectados (usuarios, academia, industria) y publicar la huella regulatoria para que se vea quién influyó en cada norma. Así el interés público prevalece sobre los intereses particulares.",
+        "isCorrect": true,
+        "legalReference": "OCDE Gobernanza Regulatoria, COA Art. 166, Ley de Participación Ciudadana"
+      }
+    ]
+  },
+  {
+    "id": "NV033",
+    "title": "[AVANZADO] Soberanía de datos y nube extranjera",
+    "description": "Tu Ministerio quiere migrar datos sensibles de salud de millones de ecuatorianos a una nube de un proveedor extranjero porque es más barata. ¿Qué consideraciones son críticas?",
+    "category": "data-protection",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["soberanía-datos", "nube", "LOPDP", "transferencia-internacional", "salud"],
+    "options": [
+      {
+        "id": "NV033-A",
+        "text": "Migrar de inmediato porque es más barato",
+        "delta": { "legality": -18, "institutionalReputation": -14, "budget": 5 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El costo no puede ser el único criterio para datos sensibles de salud de millones de personas. La transferencia internacional de datos personales tiene requisitos estrictos en la LOPDP. Decidir solo por precio ignora riesgos legales y de soberanía.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 56-60 (transferencias internacionales)"
+      },
+      {
+        "id": "NV033-B",
+        "text": "Evaluar el nivel de protección del país destino, garantías contractuales, datos sensibles y soberanía nacional",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 12 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La LOPDP exige que las transferencias internacionales solo se hagan a países con nivel adecuado de protección o con garantías contractuales suficientes. Los datos de salud son sensibles y requieren protección reforzada. La soberanía de datos es un tema estratégico de Estado.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 56-60, Constitución Art. 66.19"
+      },
+      {
+        "id": "NV033-C",
+        "text": "Migrar pero anonimizando los datos primero",
+        "delta": { "legality": 6, "institutionalReputation": 4 },
+        "xpReward": 25,
+        "educationalFeedback": "⚠️ La anonimización ayuda, pero si los datos deben usarse para atención médica individual no pueden anonimizarse completamente (se necesita identificar al paciente). Además, la 'anonimización' imperfecta puede revertirse. Hace falta un análisis integral de la transferencia.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 4, 56"
+      },
+      {
+        "id": "NV033-D",
+        "text": "Realizar evaluación de impacto, exigir garantías y cláusulas de soberanía, y comparar con opciones de nube nacional o híbrida",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 14, "budget": -4 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. Lo más completo: evaluación de impacto en protección de datos, garantías contractuales fuertes (ubicación de datos, acceso de terceros), cláusulas de soberanía y comparar con alternativas nacionales o híbridas. El menor precio no compensa el riesgo sobre datos sensibles de millones.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 56-60, EGSI, Estrategia de Soberanía Digital"
+      }
+    ]
+  },
+  {
+    "id": "NV034",
+    "title": "[AVANZADO] Tensión entre innovación y debido proceso",
+    "description": "Un sistema automatizado detecta posibles fraudes en subsidios y suspende los pagos automáticamente. Resulta que el 30% de las suspensiones son errores que dejan sin sustento a familias. ¿Qué corresponde?",
+    "category": "ai-government",
+    "npcId": "citizen-006",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["IA", "debido-proceso", "automatización", "derechos", "garantías"],
+    "options": [
+      {
+        "id": "NV034-A",
+        "text": "Suspender la automatización de cortes, restablecer pagos erróneos y exigir revisión humana antes de cualquier suspensión",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 16 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. Un 30% de error es inaceptable cuando afecta el sustento de familias. El debido proceso (Constitución Art. 76) exige notificación y oportunidad de defensa ANTES de suspender un derecho. La automatización no puede saltarse las garantías. El caso australiano 'Robodebt' es una advertencia mundial sobre esto.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 76, LOPDP Art. 16, Caso Robodebt (Australia)"
+      },
+      {
+        "id": "NV034-B",
+        "text": "Mantener el sistema: detecta fraude real y los errores son daño colateral aceptable",
+        "delta": { "legality": -22, "institutionalReputation": -16, "citizenSatisfaction": -16 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Considerar a familias inocentes 'daño colateral' viola el debido proceso y la dignidad humana. Un sistema con 30% de falsos positivos que corta el sustento sin defensa previa es ilegal e inhumano.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 76, 11"
+      },
+      {
+        "id": "NV034-C",
+        "text": "Dejar el sistema activo pero crear una línea de reclamos para corregir después",
+        "delta": { "legality": -8, "citizenSatisfaction": -8 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Corregir 'después' invierte la carga: la familia queda sin sustento mientras reclama. El debido proceso exige verificar ANTES de suspender, no suspender y luego ver quién reclama. La presunción debe favorecer al ciudadano.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 76"
+      },
+      {
+        "id": "NV034-D",
+        "text": "Usar el sistema solo para señalar casos a revisar por un humano, con notificación previa y derecho a defensa antes de suspender",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. El uso correcto: la IA detecta y prioriza casos, pero un humano decide, con notificación previa y derecho a defensa antes de cualquier suspensión. Así se aprovecha la tecnología sin sacrificar el debido proceso ni los derechos de las familias.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 76, LOPDP Art. 16, UE AI Act"
+      }
+    ]
+  },
+  {
+    "id": "NV035",
+    "title": "[AVANZADO] Continuidad institucional frente al cambio de gobierno",
+    "description": "Tras un cambio de autoridades, la nueva dirección quiere desmantelar una plataforma digital exitosa solo porque la creó la administración anterior. Funciona bien y la usan miles de ciudadanos.",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["continuidad", "política-de-estado", "gobierno-electrónico", "institucionalidad"],
+    "options": [
+      {
+        "id": "NV035-A",
+        "text": "Documentar el valor de la plataforma con datos y proponer mantenerla como política de Estado, no de gobierno",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 18 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La transformación digital exitosa requiere continuidad. Desmantelar lo que funciona por razones políticas desperdicia recursos públicos y perjudica a la ciudadanía. Presentar evidencia del impacto y posicionarla como política de Estado es lo profesional.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, Plan Nacional de Gobierno Digital"
+      },
+      {
+        "id": "NV035-B",
+        "text": "Desmantelarla porque la nueva dirección tiene la potestad de decidir",
+        "delta": { "citizenSatisfaction": -18, "legality": -10, "institutionalReputation": -14, "budget": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La potestad de dirigir no incluye destruir sin justificación técnica algo que funciona y sirve a miles. Sería un uso ineficiente de recursos públicos (la inversión ya hecha) y un retroceso para la ciudadanía.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227"
+      },
+      {
+        "id": "NV035-C",
+        "text": "Cambiarle el nombre y los colores para que parezca de la nueva administración",
+        "delta": { "citizenSatisfaction": 2, "legality": -4, "budget": -3 },
+        "xpReward": 20,
+        "educationalFeedback": "⚠️ Aunque preserva la plataforma, gastar recursos solo en rebranding político es cuestionable. Lo importante es que el servicio continúe; el mérito político no debería ser el criterio para decisiones técnicas sobre servicios públicos.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 227"
+      },
+      {
+        "id": "NV035-D",
+        "text": "Presentar evidencia de impacto, proponer mejoras concretas y blindar la plataforma con un marco normativo que asegure su continuidad",
+        "delta": { "citizenSatisfaction": 18, "legality": 14, "institutionalReputation": 20 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. Lo más sólido: demostrar el impacto con datos, ofrecer mejoras (para que la nueva dirección sienta autoría sobre la evolución) y blindar el servicio con normativa que garantice su continuidad más allá de los ciclos políticos. Así se institucionaliza el logro.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 227, Plan Nacional de Gobierno Digital, Política de Estado"
+      }
+    ]
+  },
+  {
+    "id": "NV036",
+    "title": "[AVANZADO] Interoperabilidad con protección de datos por diseño",
+    "description": "Diseñas la conexión entre el sistema de salud y el de identidad para evitar que los pacientes lleven papeles. ¿Cómo garantizas eficiencia sin crear un riesgo masivo de privacidad?",
+    "category": "data-protection",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["interoperabilidad", "privacy-by-design", "LOPDP", "PIDE", "minimización"],
+    "options": [
+      {
+        "id": "NV036-A",
+        "text": "Conectar todo con todo para máxima eficiencia, sin restricciones de acceso",
+        "delta": { "legality": -20, "institutionalReputation": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Conectar todo sin control crea un riesgo masivo de privacidad: cualquier funcionario podría ver todos los datos. La interoperabilidad sin gobernanza de datos es peligrosa. La LOPDP exige minimización y control de acceso.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 10, 37"
+      },
+      {
+        "id": "NV036-B",
+        "text": "Aplicar privacidad por diseño: intercambiar solo el dato necesario, con control de acceso, registro y consentimiento",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 14 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La privacidad por diseño (privacy by design) integra la protección desde el inicio: minimización (solo el dato necesario), control de acceso por roles, registro de auditoría (quién accedió a qué) y bases legales claras. La PIDE permite intercambios puntuales y trazables.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 39 (protección desde el diseño), PIDE"
+      },
+      {
+        "id": "NV036-C",
+        "text": "No conectar los sistemas para evitar todo riesgo",
+        "delta": { "citizenSatisfaction": -10, "institutionalReputation": -6 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ El extremo opuesto. No conectar mantiene la carga sobre el ciudadano (llevar papeles de un lado a otro). La solución no es evitar la interoperabilidad, sino hacerla de forma segura y con privacidad por diseño.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 42, LOPDP"
+      },
+      {
+        "id": "NV036-D",
+        "text": "Intercambio mínimo y trazable vía PIDE, con cifrado, control por roles, registro de auditoría y evaluación de impacto previa",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. El estándar de oro: intercambio mínimo y puntual por la PIDE, cifrado en tránsito y reposo, acceso por roles, registro de auditoría completo y una evaluación de impacto en protección de datos antes de implementar. Eficiencia y privacidad no se oponen: se diseñan juntas.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 39, 40; PIDE; EGSI"
+      }
+    ]
+  },
+  {
+    "id": "NV037",
+    "title": "[AVANZADO] Transparencia algorítmica en el sector público",
+    "description": "Un periodista solicita conocer cómo funciona el algoritmo que asigna cupos escolares. El proveedor dice que es 'secreto comercial'. ¿Cómo equilibras transparencia y propiedad intelectual?",
+    "category": "ai-government",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["IA", "transparencia-algorítmica", "secreto-comercial", "LOTAIP", "rendición-de-cuentas"],
+    "options": [
+      {
+        "id": "NV037-A",
+        "text": "Aceptar el 'secreto comercial' y negar toda información sobre el algoritmo",
+        "delta": { "legality": -18, "institutionalReputation": -14, "citizenSatisfaction": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Un algoritmo que toma decisiones públicas que afectan derechos (cupos escolares) no puede ser una caja negra. El 'secreto comercial' no puede usarse para evadir la rendición de cuentas sobre decisiones del Estado.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, Constitución Art. 18"
+      },
+      {
+        "id": "NV037-B",
+        "text": "Publicar los criterios, la lógica y los datos usados, aunque no necesariamente el código fuente propietario",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 14 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La transparencia algorítmica exige explicar QUÉ criterios usa el algoritmo, qué datos considera y cómo prioriza, aunque el código fuente sea propietario. El ciudadano tiene derecho a entender cómo se toman las decisiones que lo afectan. Francia obliga a publicar las reglas de los algoritmos públicos.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Ley Francesa de República Digital, Principios de IA Pública"
+      },
+      {
+        "id": "NV037-C",
+        "text": "Dar una explicación vaga para cumplir formalmente sin revelar la lógica real",
+        "delta": { "legality": -8, "citizenSatisfaction": -8 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Una explicación vaga no es transparencia real. La rendición de cuentas algorítmica requiere que el ciudadano y los órganos de control puedan entender y, si es necesario, auditar la lógica de decisión.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7"
+      },
+      {
+        "id": "NV037-D",
+        "text": "Exigir contractualmente transparencia, publicar criterios y lógica, y permitir auditoría independiente del algoritmo",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La mejor práctica: los contratos de algoritmos públicos deben incluir cláusulas de transparencia y auditabilidad desde el inicio. Publicar criterios y lógica, y permitir auditoría independiente, garantiza que el secreto comercial no se imponga sobre el derecho ciudadano y la rendición de cuentas.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, LOSNCP (cláusulas de transparencia), UE AI Act"
+      }
+    ]
+  },
+  {
+    "id": "NV038",
+    "title": "[AVANZADO] Crisis reputacional y comunicación de un error público",
+    "description": "Tu institución cometió un error que afectó a miles de ciudadanos (cobro indebido). Los medios ya lo publicaron. El director quiere minimizar el tema y no admitir nada. ¿Qué recomiendas?",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["comunicación-crisis", "transparencia", "rendición-de-cuentas", "confianza"],
+    "options": [
+      {
+        "id": "NV038-A",
+        "text": "Reconocer el error, explicar qué pasó, cómo se reparará y qué medidas evitarán que se repita",
+        "delta": { "citizenSatisfaction": 16, "legality": 14, "institutionalReputation": 18 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La transparencia en la gestión de crisis preserva la confianza. Reconocer, explicar, reparar y prevenir es el protocolo de comunicación responsable. Negar lo evidente erosiona aún más la credibilidad institucional.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Constitución Art. 208, Principios de Comunicación Pública"
+      },
+      {
+        "id": "NV038-B",
+        "text": "Negar el error y atacar la credibilidad de los medios",
+        "delta": { "citizenSatisfaction": -18, "legality": -12, "institutionalReputation": -18 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Negar lo evidente y atacar a los medios destruye la confianza y puede vulnerar la libertad de prensa. La rendición de cuentas exige reconocer los errores. El encubrimiento suele ser peor que el error original.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 18, 208"
+      },
+      {
+        "id": "NV038-C",
+        "text": "Guardar silencio y esperar a que el tema 'pase solo'",
+        "delta": { "citizenSatisfaction": -12, "institutionalReputation": -12 },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ El silencio ante una crisis pública es interpretado como ocultamiento. La ausencia de respuesta deja que otros narren la historia y profundiza la pérdida de confianza. La transparencia oportuna es clave.",
+        "isCorrect": false,
+        "legalReference": "Principios de Comunicación Pública"
+      },
+      {
+        "id": "NV038-D",
+        "text": "Reconocer públicamente, activar la reparación a los afectados, rendir cuentas y publicar el plan correctivo con seguimiento",
+        "delta": { "citizenSatisfaction": 18, "legality": 16, "institutionalReputation": 20 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La gestión integral de la crisis: reconocer, reparar a los afectados de inmediato, rendir cuentas de por qué ocurrió y publicar un plan correctivo con seguimiento verificable. Una institución que enfrenta sus errores con transparencia recupera y hasta fortalece la confianza.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, Constitución Art. 208"
+      }
+    ]
+  },
+  {
+    "id": "NV039",
+    "title": "[AVANZADO] Diseño de una política pública basada en evidencia",
+    "description": "El gobierno quiere reducir la deserción escolar. Un político propone una solución mediática sin sustento. Tú debes diseñar una política seria. ¿Cómo procedes?",
+    "category": "citizen-participation",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["política-pública", "evidencia", "evaluación", "diseño", "participación"],
+    "options": [
+      {
+        "id": "NV039-A",
+        "text": "Diagnosticar las causas con datos, revisar evidencia de qué funciona, pilotar y evaluar antes de escalar",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 18 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La política pública basada en evidencia sigue un ciclo: diagnóstico con datos, revisión de qué ha funcionado en otros lugares, diseño, pilotaje, evaluación de impacto y escalamiento. Esto evita el desperdicio de recursos en soluciones mediáticas sin sustento.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES Ciclo de Política Pública, Constitución Art. 280"
+      },
+      {
+        "id": "NV039-B",
+        "text": "Implementar la solución mediática del político porque tiene apoyo político",
+        "delta": { "citizenSatisfaction": -10, "institutionalReputation": -14, "budget": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Implementar soluciones sin sustento técnico desperdicia recursos y suele fracasar. El rol técnico es aportar evidencia, no validar decisiones políticas sin fundamento. La política pública debe basarse en evidencia, no en titulares.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 280, SENPLADES"
+      },
+      {
+        "id": "NV039-C",
+        "text": "Copiar una política de otro país sin diagnóstico local",
+        "delta": { "institutionalReputation": -4, "budget": -5 },
+        "xpReward": 20,
+        "educationalFeedback": "⚠️ La evidencia internacional es útil, pero sin diagnóstico de las causas locales de la deserción (que pueden diferir), la política puede no funcionar. El contexto importa: hay que adaptar, no trasplantar.",
+        "isCorrect": false,
+        "legalReference": "SENPLADES Ciclo de Política Pública"
+      },
+      {
+        "id": "NV039-D",
+        "text": "Diagnóstico con datos, evidencia comparada adaptada, co-diseño con la comunidad educativa, piloto y evaluación de impacto rigurosa",
+        "delta": { "citizenSatisfaction": 16, "legality": 12, "institutionalReputation": 20 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. Lo más completo: diagnóstico riguroso, evidencia comparada adaptada al contexto, co-diseño participativo con docentes, estudiantes y familias (quienes conocen el problema), pilotaje y evaluación de impacto. Esta combinación de evidencia y participación produce políticas legítimas y efectivas.",
+        "isCorrect": true,
+        "legalReference": "SENPLADES, Ley de Participación Ciudadana, Constitución Art. 280"
+      }
+    ]
+  },
+  {
+    "id": "NV040",
+    "title": "[AVANZADO] Resistencia interna a la integridad",
+    "description": "Implementaste un sistema de declaración de conflictos de interés. Un grupo de funcionarios influyentes se resiste y presiona para debilitarlo, alegando que 'genera desconfianza entre colegas'. ¿Qué haces?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["integridad", "conflicto-de-interés", "cultura-organizacional", "ética", "gestión-cambio"],
+    "options": [
+      {
+        "id": "NV040-A",
+        "text": "Mantener el sistema, explicar que la transparencia protege a todos y acompañar el cambio con formación en ética",
+        "delta": { "legality": 16, "institutionalReputation": 18, "citizenSatisfaction": 12 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La declaración de conflictos de interés es una herramienta de integridad estándar (OCDE). No genera desconfianza: previene la corrupción y protege a los honestos. La resistencia se gestiona con pedagogía y liderazgo ético, no cediendo.",
+        "isCorrect": true,
+        "legalReference": "OCDE Recomendación sobre Integridad Pública, LOSEP Art. 24"
+      },
+      {
+        "id": "NV040-B",
+        "text": "Debilitar el sistema para calmar a los funcionarios influyentes",
+        "delta": { "legality": -18, "institutionalReputation": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ceder ante la presión de quienes se resisten a la transparencia debilita la integridad institucional. Que personas influyentes se opongan a declarar conflictos de interés es, justamente, una señal de por qué el sistema es necesario.",
+        "isCorrect": false,
+        "legalReference": "OCDE Integridad Pública, LOSEP Art. 24"
+      },
+      {
+        "id": "NV040-C",
+        "text": "Aplicar el sistema solo a los funcionarios de menor rango para evitar el conflicto",
+        "delta": { "legality": -14, "institutionalReputation": -12, "citizenSatisfaction": -8 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Exonerar a los altos cargos del control de integridad es contradictorio: son ellos quienes manejan más recursos y decisiones, y por tanto donde más riesgo de conflicto existe. La integridad debe aplicarse a todos, especialmente a los de mayor poder.",
+        "isCorrect": false,
+        "legalReference": "OCDE Integridad Pública, Constitución Art. 11.2"
+      },
+      {
+        "id": "NV040-D",
+        "text": "Mantener el sistema, conseguir respaldo de la máxima autoridad, formar en ética y mostrar que la transparencia da seguridad jurídica a todos",
+        "delta": { "legality": 16, "institutionalReputation": 20, "citizenSatisfaction": 14 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La gestión del cambio cultural en integridad requiere: respaldo visible del liderazgo (tone at the top), formación, y comunicar que declarar conflictos PROTEGE al funcionario de acusaciones futuras. Cuando la integridad se entiende como seguridad jurídica, la resistencia disminuye.",
+        "isCorrect": true,
+        "legalReference": "OCDE Recomendación sobre Integridad Pública, LOSEP Art. 24"
+      }
+    ]
+  },
+  {
+    "id": "NV041",
+    "title": "[AVANZADO] Datos abiertos vs. seguridad nacional",
+    "description": "Una organización pide datos abiertos de ubicación exacta de toda la infraestructura crítica (plantas eléctricas, agua potable) 'por transparencia'. ¿Cómo equilibras apertura y seguridad?",
+    "category": "cybersecurity",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["datos-abiertos", "seguridad", "infraestructura-crítica", "LOTAIP", "equilibrio"],
+    "options": [
+      {
+        "id": "NV041-A",
+        "text": "Publicar datos agregados útiles para el control social, reservando ubicaciones exactas que comprometan la seguridad",
+        "delta": { "legality": 18, "institutionalReputation": 16, "citizenSatisfaction": 12 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La transparencia tiene un límite legítimo en la seguridad (LOTAIP Art. 17). Se puede publicar información sobre cobertura, inversión y desempeño (control social) sin exponer ubicaciones exactas que faciliten sabotajes a infraestructura crítica.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 17, EGSI, Ley de Seguridad Pública"
+      },
+      {
+        "id": "NV041-B",
+        "text": "Publicar todo, incluidas las ubicaciones exactas, porque la transparencia es absoluta",
+        "delta": { "legality": -18, "institutionalReputation": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La transparencia no es absoluta. Publicar ubicaciones exactas de infraestructura crítica puede facilitar ataques o sabotajes, comprometiendo servicios esenciales para millones. La seguridad es una causal legítima de reserva.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17"
+      },
+      {
+        "id": "NV041-C",
+        "text": "Negar toda la información alegando seguridad",
+        "delta": { "legality": -8, "citizenSatisfaction": -10 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ El extremo opuesto. Negar todo usa la 'seguridad' como excusa para la opacidad total. Hay mucha información (inversión, cobertura, calidad del servicio) que SÍ debe ser pública para el control social, sin comprometer la seguridad.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, 17"
+      },
+      {
+        "id": "NV041-D",
+        "text": "Publicar datos de gestión e inversión como datos abiertos, motivar la reserva de lo sensible y ofrecer acceso controlado a investigadores acreditados",
+        "delta": { "legality": 18, "institutionalReputation": 18, "citizenSatisfaction": 14 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. El equilibrio fino: máxima apertura de datos de gestión, reserva motivada y formal de lo verdaderamente sensible (ubicaciones críticas), y un mecanismo de acceso controlado para investigadores acreditados que necesiten más detalle bajo confidencialidad. Transparencia y seguridad coexisten con gobernanza de datos.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, 17; EGSI; Datos Abiertos con Niveles de Acceso"
+      }
+    ]
+  },
+  {
+    "id": "NV042",
+    "title": "[AVANZADO] Sostenibilidad financiera de un servicio digital",
+    "description": "Una plataforma digital se construyó con fondos de un préstamo internacional que ya terminó. No hay presupuesto para mantenerla y empieza a fallar. ¿Cómo aseguras su sostenibilidad?",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["sostenibilidad", "gobierno-electrónico", "presupuesto", "planificación"],
+    "options": [
+      {
+        "id": "NV042-A",
+        "text": "Incluir el costo de operación y mantenimiento en el presupuesto institucional permanente",
+        "delta": { "citizenSatisfaction": 12, "legality": 12, "institutionalReputation": 16, "budget": -4 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. Un error común en proyectos digitales es financiar la construcción pero no la operación. La sostenibilidad exige presupuestar el mantenimiento, las actualizaciones y el soporte de forma permanente, no solo la inversión inicial.",
+        "isCorrect": true,
+        "legalReference": "Código Orgánico de Planificación y Finanzas Públicas, Ciclo de Vida de Proyectos TI"
+      },
+      {
+        "id": "NV042-B",
+        "text": "Dejar que la plataforma falle hasta conseguir otro préstamo",
+        "delta": { "citizenSatisfaction": -16, "institutionalReputation": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Dejar fallar un servicio que usan los ciudadanos por falta de planificación financiera es negligente. La dependencia de préstamos sin plan de sostenibilidad propia es una mala práctica recurrente que hay que corregir.",
+        "isCorrect": false,
+        "legalReference": "Código Orgánico de Planificación y Finanzas Públicas"
+      },
+      {
+        "id": "NV042-C",
+        "text": "Cobrar una tarifa alta a los ciudadanos por usar la plataforma",
+        "delta": { "citizenSatisfaction": -12, "legality": -6 },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ Cobrar tarifas altas puede excluir a los ciudadanos y contradecir la universalidad del servicio. Si bien algunos servicios pueden tener tasas, no pueden convertirse en barreras de acceso. La sostenibilidad debe planificarse, no trasladarse como barrera al usuario.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 314"
+      },
+      {
+        "id": "NV042-D",
+        "text": "Presupuestar el mantenimiento permanente, optimizar costos (software libre/nube eficiente) y planificar el ciclo de vida completo de futuros proyectos",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 18, "budget": -2 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La solución integral: asegurar presupuesto permanente de operación, optimizar costos (software libre, arquitecturas eficientes) y, para el futuro, planificar el ciclo de vida COMPLETO de cada proyecto digital desde su concepción, incluyendo operación, mantenimiento y eventual retiro.",
+        "isCorrect": true,
+        "legalReference": "Código Orgánico de Planificación y Finanzas Públicas, Gobernanza de TI"
+      }
+    ]
+  },
+  {
+    "id": "NV043",
+    "title": "[AVANZADO] Participación que incomoda al poder",
+    "description": "Una asamblea ciudadana, usando mecanismos legales de participación, rechaza un proyecto que la autoridad considera prioritario. El director te pide encontrar la forma de 'ignorar legalmente' el resultado.",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["participación", "democracia", "COOTAD", "legitimidad", "ética"],
+    "options": [
+      {
+        "id": "NV043-A",
+        "text": "Explicar que la participación ciudadana legítima debe respetarse y proponer un diálogo para construir consensos",
+        "delta": { "citizenSatisfaction": 16, "legality": 16, "institutionalReputation": 14 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La participación ciudadana es un derecho constitucional, no un trámite a evadir. Si la ciudadanía rechazó el proyecto por mecanismos legales, lo correcto es dialogar, entender las razones y construir consensos, no buscar cómo ignorarla.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95, 100; COOTAD; Ley de Participación Ciudadana"
+      },
+      {
+        "id": "NV043-B",
+        "text": "Buscar tecnicismos legales para anular el resultado de la participación",
+        "delta": { "citizenSatisfaction": -18, "legality": -14, "institutionalReputation": -12 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Usar tecnicismos para vaciar de contenido la participación ciudadana es un fraude a la democracia. Erosiona la legitimidad y la confianza. La participación que solo se respeta cuando conviene no es participación real.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 95, 100"
+      },
+      {
+        "id": "NV043-C",
+        "text": "Hacer una nueva consulta con preguntas dirigidas hasta obtener el resultado deseado",
+        "delta": { "citizenSatisfaction": -14, "legality": -12 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Manipular consultas con preguntas dirigidas o repetirlas hasta 'ganar' es una manipulación antidemocrática. La participación debe ser genuina, con información veraz y respeto al resultado.",
+        "isCorrect": false,
+        "legalReference": "Ley de Participación Ciudadana"
+      },
+      {
+        "id": "NV043-D",
+        "text": "Respetar el resultado, sistematizar las preocupaciones ciudadanas y proponer rediseñar el proyecto para conciliar el interés público",
+        "delta": { "citizenSatisfaction": 18, "legality": 16, "institutionalReputation": 16 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. Lo más maduro: respetar el resultado, entender que el rechazo contiene información valiosa (preocupaciones legítimas) y usar esa retroalimentación para rediseñar el proyecto de modo que concilie el interés público con las inquietudes ciudadanas. La participación mejora las políticas, no las obstaculiza.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 100, COOTAD Art. 304, Ley de Participación Ciudadana"
+      }
+    ]
+  },
+  {
+    "id": "NV044",
+    "title": "[AVANZADO] Gobernanza de un incidente de ciberseguridad masivo",
+    "description": "Un atacante filtró una base de datos con información de 5 millones de ciudadanos y la publica gradualmente para presionar. Eres responsable de coordinar la respuesta institucional. ¿Cómo procedes?",
+    "category": "cybersecurity",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["incidente", "ciberseguridad", "LOPDP", "EcuCERT", "gestión-crisis", "notificación"],
+    "options": [
+      {
+        "id": "NV044-A",
+        "text": "Activar el comité de crisis, notificar al EcuCERT y a la autoridad de datos, e informar a los afectados conforme a la LOPDP",
+        "delta": { "legality": 18, "institutionalReputation": 16, "citizenSatisfaction": 12 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. Ante una brecha de esta magnitud: activar el comité de gestión de crisis, notificar al EcuCERT y a la autoridad de protección de datos, y comunicar a los afectados en el plazo legal (72 horas según la LOPDP) con recomendaciones para protegerse. La transparencia es obligatoria.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 44, EGSI, EcuCERT Protocolo de Incidentes"
+      },
+      {
+        "id": "NV044-B",
+        "text": "Ocultar la filtración para no generar pánico ni dañar la imagen",
+        "delta": { "legality": -22, "institutionalReputation": -18, "citizenSatisfaction": -14 },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ocultar una brecha que afecta a 5 millones de personas viola la LOPDP (notificación obligatoria) y deja a los ciudadanos indefensos ante el fraude. El encubrimiento agrava la responsabilidad legal y el daño reputacional cuando se descubre.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 44"
+      },
+      {
+        "id": "NV044-C",
+        "text": "Negociar con el atacante para que no siga publicando",
+        "delta": { "legality": -16, "institutionalReputation": -12 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Negociar o pagar a un atacante no garantiza nada y puede constituir un delito (financiamiento ilícito). La respuesta correcta es contener, notificar, investigar con la Fiscalía y proteger a los afectados, no negociar con el extorsionador.",
+        "isCorrect": false,
+        "legalReference": "COIP, EGSI, EcuCERT"
+      },
+      {
+        "id": "NV044-D",
+        "text": "Gestión integral: contención técnica, notificación legal, comunicación a afectados, investigación con la Fiscalía y plan de remediación con lecciones aprendidas",
+        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 14, "budget": -6 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La respuesta completa a un incidente mayor: contención técnica inmediata, cumplimiento de obligaciones legales de notificación, comunicación honesta y útil a los afectados, colaboración con la Fiscalía para perseguir al atacante, y un plan de remediación con lecciones aprendidas para fortalecer la seguridad futura.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 44, EGSI, COIP Art. 232, EcuCERT"
+      }
+    ]
+  },
+  {
+    "id": "NV045",
+    "title": "[AVANZADO] Modernización del Estado con visión de largo plazo",
+    "description": "Te piden liderar un plan de modernización del Estado. Hay presión por mostrar resultados rápidos antes de las próximas elecciones. ¿Cómo equilibras el corto y el largo plazo?",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": ["modernización", "política-de-estado", "planificación", "gobernanza", "sostenibilidad"],
+    "options": [
+      {
+        "id": "NV045-A",
+        "text": "Combinar victorias tempranas visibles con reformas estructurales sostenibles más allá del ciclo electoral",
+        "delta": { "citizenSatisfaction": 14, "legality": 12, "institutionalReputation": 18 },
+        "xpReward": 75,
+        "educationalFeedback": "✅ Correcto. La modernización seria combina 'quick wins' (mejoras rápidas y visibles que generan apoyo) con reformas estructurales de fondo que trascienden el ciclo político. Los resultados rápidos no deben sacrificar la sostenibilidad de largo plazo.",
+        "isCorrect": true,
+        "legalReference": "Plan Nacional de Desarrollo, SENPLADES, Gestión del Cambio"
+      },
+      {
+        "id": "NV045-B",
+        "text": "Enfocar todo en resultados mediáticos rápidos antes de las elecciones",
+        "delta": { "citizenSatisfaction": -8, "institutionalReputation": -12, "budget": -6 },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Priorizar solo lo mediático produce 'elefantes blancos' y reformas superficiales que colapsan después. La modernización del Estado requiere visión de largo plazo, no maquillaje electoral. Los problemas estructurales no se resuelven con anuncios.",
+        "isCorrect": false,
+        "legalReference": "SENPLADES Planificación"
+      },
+      {
+        "id": "NV045-C",
+        "text": "Enfocar todo en reformas de largo plazo e ignorar la presión por resultados visibles",
+        "delta": { "institutionalReputation": 4, "citizenSatisfaction": -4 },
+        "xpReward": 25,
+        "educationalFeedback": "⚠️ Las reformas de largo plazo son esenciales, pero ignorar totalmente la necesidad de mostrar avances puede hacer que el plan pierda apoyo político y se cancele antes de madurar. Hay que generar apoyo con logros visibles que sostengan las reformas profundas.",
+        "isCorrect": false,
+        "legalReference": "Gestión del Cambio, SENPLADES"
+      },
+      {
+        "id": "NV045-D",
+        "text": "Diseñar una hoja de ruta con quick wins, reformas estructurales, indicadores de impacto y un marco que asegure continuidad entre gobiernos",
+        "delta": { "citizenSatisfaction": 16, "legality": 14, "institutionalReputation": 20 },
+        "xpReward": 80,
+        "educationalFeedback": "✅ Excelente. La estrategia óptima: una hoja de ruta que entregue victorias tempranas para generar apoyo, avance en reformas estructurales de fondo, mida impacto real (no solo actividad) y se ancle en un marco normativo e institucional que garantice su continuidad más allá de un solo gobierno. Así la modernización se vuelve política de Estado.",
+        "isCorrect": true,
+        "legalReference": "Plan Nacional de Desarrollo, SENPLADES, Política de Estado, OCDE"
+      }
+    ]
+  }
+]

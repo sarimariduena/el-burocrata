@@ -7,12 +7,23 @@
     "npcId": "business-001",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["LOPDP", "datos-personales", "SRI", "privacidad", "consentimiento"],
+    "tags": [
+      "LOPDP",
+      "datos-personales",
+      "SRI",
+      "privacidad",
+      "consentimiento"
+    ],
     "options": [
       {
         "id": "DP001-A",
         "text": "Vender los datos, el ingreso ayuda al presupuesto institucional",
-        "delta": { "legality": -35, "citizenSatisfaction": -28, "institutionalReputation": -25, "budget": 8 },
+        "delta": {
+          "legality": -35,
+          "citizenSatisfaction": -28,
+          "institutionalReputation": -25,
+          "budget": 8
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Gravísimo. La Ley Orgánica de Protección de Datos Personales (LOPDP, 2021) del Ecuador prohíbe en su Art. 15 el tratamiento de datos personales sin consentimiento del titular. Los datos tributarios del SRI tienen protección adicional por el Art. 101 del Código Tributario. La sanción puede llegar hasta el 2% de la facturación anual (LOPDP Art. 68).",
         "isCorrect": false,
@@ -21,7 +32,11 @@
       {
         "id": "DP001-B",
         "text": "Rechazar: los datos tributarios son confidenciales por el Código Tributario y la LOPDP",
-        "delta": { "legality": 20, "citizenSatisfaction": 14, "institutionalReputation": 16 },
+        "delta": {
+          "legality": 20,
+          "citizenSatisfaction": 14,
+          "institutionalReputation": 16
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Correcto. El Art. 101 del Código Tributario establece la reserva tributaria: los datos del SRI son confidenciales y no pueden divulgarse a terceros. La LOPDP Art. 15 exige base legal o consentimiento para tratar datos personales. Ninguna de las dos condiciones se cumple aquí.",
         "isCorrect": true,
@@ -30,7 +45,11 @@
       {
         "id": "DP001-C",
         "text": "Proporcionar datos anonimizados sin identificadores personales",
-        "delta": { "legality": 6, "citizenSatisfaction": 4, "institutionalReputation": 4 },
+        "delta": {
+          "legality": 6,
+          "citizenSatisfaction": 4,
+          "institutionalReputation": 4
+        },
         "xpReward": 25,
         "educationalFeedback": "Riesgoso sin evaluación adecuada. La LOPDP Art. 5 establece que los datos verdaderamente anonimizados quedan fuera de su ámbito. Sin embargo, la anonimización efectiva es técnicamente compleja — datos aparentemente anonimizados pueden re-identificarse. Requiere evaluación de impacto (LOPDP Art. 26) antes de proceder.",
         "isCorrect": false,
@@ -39,7 +58,11 @@
       {
         "id": "DP001-D",
         "text": "Rechazar y reportar el intento a la Superintendencia de Protección de Datos Personales",
-        "delta": { "legality": 24, "citizenSatisfaction": 16, "institutionalReputation": 20 },
+        "delta": {
+          "legality": 24,
+          "citizenSatisfaction": 16,
+          "institutionalReputation": 20
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ Excelente. La LOPDP Art. 66 crea la Superintendencia de Protección de Datos Personales como autoridad de control. Reportar intrusiones como esta permite mapear patrones de acceso indebido. El Art. 68 establece sanciones de hasta el 2% de la facturación anual para quienes intenten obtener datos ilegalmente.",
         "isCorrect": true,
@@ -55,12 +78,22 @@
     "npcId": "citizen-005",
     "requiredRank": "analyst",
     "difficulty": "hard",
-    "tags": ["LOPDP", "brecha-datos", "datos-sensibles", "MSP", "notificación-72h"],
+    "tags": [
+      "LOPDP",
+      "brecha-datos",
+      "datos-sensibles",
+      "MSP",
+      "notificación-72h"
+    ],
     "options": [
       {
         "id": "DP002-A",
         "text": "No comunicar nada: ya está corregido y el riesgo fue mínimo",
-        "delta": { "legality": -28, "institutionalReputation": -22, "citizenSatisfaction": -18 },
+        "delta": {
+          "legality": -28,
+          "institutionalReputation": -22,
+          "citizenSatisfaction": -18
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Grave error. La LOPDP Art. 42 del Ecuador obliga a notificar brechas de datos sensibles a la Superintendencia de Protección de Datos en máximo 72 horas. Los datos médicos son datos sensibles (LOPDP Art. 23). No notificar es infracción muy grave sancionada con hasta el 2% del presupuesto institucional (Art. 68).",
         "isCorrect": false,
@@ -69,7 +102,12 @@
       {
         "id": "DP002-B",
         "text": "Notificar en 72 horas a la Superintendencia de Protección de Datos y a los 10.000 afectados",
-        "delta": { "legality": 22, "institutionalReputation": 16, "citizenSatisfaction": 10, "budget": -8 },
+        "delta": {
+          "legality": 22,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 10,
+          "budget": -8
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ Correcto. La LOPDP Art. 42 establece la notificación a la autoridad de control en 72 horas. Los afectados deben ser notificados también (Art. 42 inc. 3) para que tomen medidas de protección. Los datos médicos son 'datos sensibles' con protección reforzada (LOPDP Art. 23).",
         "isCorrect": true,
@@ -78,7 +116,11 @@
       {
         "id": "DP002-C",
         "text": "Notificar solo a la Superintendencia pero no a los ciudadanos afectados",
-        "delta": { "legality": 8, "institutionalReputation": -6, "citizenSatisfaction": -10 },
+        "delta": {
+          "legality": 8,
+          "institutionalReputation": -6,
+          "citizenSatisfaction": -10
+        },
         "xpReward": 18,
         "educationalFeedback": "❌ Incompleto. La LOPDP Art. 42 exige notificar también a los titulares afectados cuando la brecha represente alto riesgo para sus derechos. Las historias clínicas expuestas representan ese riesgo. Los ciudadanos necesitan saber para monitorear posibles usos fraudulentos de su información médica.",
         "isCorrect": false,
@@ -87,7 +129,12 @@
       {
         "id": "DP002-D",
         "text": "Notificar a la Superintendencia y afectados, investigar la causa raíz y publicar el informe del incidente",
-        "delta": { "legality": 26, "institutionalReputation": 22, "citizenSatisfaction": 14, "budget": -12 },
+        "delta": {
+          "legality": 26,
+          "institutionalReputation": 22,
+          "citizenSatisfaction": 14,
+          "budget": -12
+        },
         "xpReward": 85,
         "educationalFeedback": "✅ Excelente. Cumples la LOPDP Art. 42 y además publicas el informe de incidente — práctica de madurez en ciberseguridad gubernamental. Ecuador suscribió los marcos de la OEA sobre gestión de incidentes cibernéticos. La Agencia de Regulación y Control de las Telecomunicaciones (ARCOTEL) promueve estas buenas prácticas.",
         "isCorrect": true,
@@ -102,13 +149,22 @@
     "category": "data-protection",
     "npcId": "comptroller-001",
     "requiredRank": "analyst",
-    "difficulty": "expert",
-    "tags": ["LOPDP", "COIP", "orden-judicial", "Fiscalía", "debido-proceso"],
+    "difficulty": "hard",
+    "tags": [
+      "LOPDP",
+      "COIP",
+      "orden-judicial",
+      "Fiscalía",
+      "debido-proceso"
+    ],
     "options": [
       {
         "id": "DP003-A",
         "text": "Entregar inmediatamente todo para cooperar con la Fiscalía",
-        "delta": { "legality": -20, "institutionalReputation": -12 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -12
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Aunque la intención sea cooperar, entregar datos sin orden judicial viola la Constitución Art. 66 num. 19 (protección de datos) y el Art. 76 (debido proceso). El COIP Art. 476 establece que el acceso a datos de comunicaciones requiere autorización judicial. La Fiscalía tiene el procedimiento para obtenerla.",
         "isCorrect": false,
@@ -117,7 +173,11 @@
       {
         "id": "DP003-B",
         "text": "Solicitar la orden judicial y preservar los datos con cadena de custodia mientras llega",
-        "delta": { "legality": 22, "institutionalReputation": 16, "citizenSatisfaction": 6 },
+        "delta": {
+          "legality": 22,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 6
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ Correcto. El COIP Art. 476 exige autorización judicial para acceder a datos de comunicaciones. Preservar los datos con cadena de custodia (procedimiento técnico-legal) garantiza que sean válidos como evidencia. La Contraloría General también puede solicitar esta información con sus propios procedimientos de control.",
         "isCorrect": true,
@@ -126,7 +186,10 @@
       {
         "id": "DP003-C",
         "text": "Negarse completamente alegando LOPDP y protección de datos personales",
-        "delta": { "legality": -8, "institutionalReputation": -6 },
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -6
+        },
         "xpReward": 8,
         "educationalFeedback": "❌ La LOPDP no es absoluta. El Art. 21 permite tratar datos sin consentimiento cuando existe obligación legal o requerimiento de autoridad competente con orden judicial. Negarse completamente puede configurar obstrucción a la justicia (COIP Art. 272). La respuesta correcta es pedir la orden judicial, no negarse definitivamente.",
         "isCorrect": false,
@@ -135,7 +198,11 @@
       {
         "id": "DP003-D",
         "text": "Consultar al área jurídica y al Delegado de Protección de Datos (DPD) antes de actuar",
-        "delta": { "legality": 20, "institutionalReputation": 14, "citizenSatisfaction": 6 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 6
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Prudente y correcto. La LOPDP Art. 37 obliga a ciertas instituciones públicas a designar un Delegado de Protección de Datos (DPD). Este caso requiere análisis jurídico: ¿hay orden judicial? ¿los correos institucionales son datos personales del empleado o datos del empleador? Consultar antes protege a la institución.",
         "isCorrect": true,

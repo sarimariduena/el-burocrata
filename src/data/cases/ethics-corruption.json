@@ -7,12 +7,22 @@
     "npcId": "supplier-001",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["COIP", "cohecho", "LOSNCP", "SERCOP", "ética-pública"],
+    "tags": [
+      "COIP",
+      "cohecho",
+      "LOSNCP",
+      "SERCOP",
+      "ética-pública"
+    ],
     "options": [
       {
         "id": "EC001-A",
         "text": "Rechazar inmediatamente y reportar el ofrecimiento a la Contraloría y Fiscalía",
-        "delta": { "legality": 20, "institutionalReputation": 18, "citizenSatisfaction": 10 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 10
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Correcto. El ofrecimiento de dádivas a funcionarios públicos es cohecho activo (COIP Art. 280). El funcionario que lo acepta comete cohecho pasivo. El COIP Art. 422 establece la obligación de denuncia para servidores públicos. Reportar a la Contraloría General y a la Fiscalía General del Estado es el procedimiento correcto.",
         "isCorrect": true,
@@ -21,7 +31,11 @@
       {
         "id": "EC001-B",
         "text": "Rechazar el ofrecimiento pero no reportarlo para 'no crear conflictos'",
-        "delta": { "legality": -5, "institutionalReputation": -5, "citizenSatisfaction": 2 },
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -5,
+          "citizenSatisfaction": 2
+        },
         "xpReward": 15,
         "educationalFeedback": "Insuficiente. Aunque rechazaste la corrupción, el COIP Art. 422 establece que los servidores públicos tienen obligación de denunciar actos de corrupción. No reportarlo puede derivar en responsabilidad penal por omisión. La LOSEP Art. 83 establece que denunciar irregularidades es deber del servidor.",
         "isCorrect": false,
@@ -30,7 +44,12 @@
       {
         "id": "EC001-C",
         "text": "Aceptar la comisión y dirigir el proceso SERCOP hacia ese proveedor",
-        "delta": { "legality": -40, "institutionalReputation": -35, "citizenSatisfaction": -20, "budget": -10 },
+        "delta": {
+          "legality": -40,
+          "institutionalReputation": -35,
+          "citizenSatisfaction": -20,
+          "budget": -10
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Grave. Aceptar dádivas y manipular el SERCOP constituye cohecho pasivo (COIP Art. 280, pena 3-5 años) y concusión (COIP Art. 281). Si hay perjuicio al Estado puede ser peculado (COIP Art. 278, pena 10-13 años). La Contraloría establece responsabilidad civil culposa y el SERCOP puede inhabilitar al proveedor.",
         "isCorrect": false,
@@ -39,7 +58,11 @@
       {
         "id": "EC001-D",
         "text": "Documentar el ofrecimiento por escrito, rechazarlo formalmente y notificar a tu superior",
-        "delta": { "legality": 22, "institutionalReputation": 20, "citizenSatisfaction": 12 },
+        "delta": {
+          "legality": 22,
+          "institutionalReputation": 20,
+          "citizenSatisfaction": 12
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ Excelente. Documentar el ofrecimiento crea evidencia para el proceso penal. El rechazo formal y por escrito protege al funcionario. Notificar al superior activa los mecanismos institucionales. Esta actuación merece reconocimiento del CPCCS (Consejo de Participación Ciudadana y Control Social).",
         "isCorrect": true,
@@ -55,12 +78,23 @@
     "npcId": "comptroller-001",
     "requiredRank": "analyst",
     "difficulty": "hard",
-    "tags": ["LOSNCP", "SERCOP", "contratación-pública", "concurrencia", "ética"],
+    "tags": [
+      "LOSNCP",
+      "SERCOP",
+      "contratación-pública",
+      "concurrencia",
+      "ética"
+    ],
     "options": [
       {
         "id": "EC002-A",
         "text": "Suspender el proceso y reformar los pliegos para garantizar libre concurrencia",
-        "delta": { "legality": 20, "institutionalReputation": 16, "citizenSatisfaction": 8, "budget": -3 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 8,
+          "budget": -3
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Correcto. La LOSNCP Art. 4 establece principios de libre concurrencia, igualdad de trato y transparencia. Pliegos que favorecen a un solo proveedor violan estos principios. El SERCOP puede declarar nulo el proceso (LOSNCP Art. 102). Reformar los pliegos antes de que la Contraloría los observe demuestra probidad.",
         "isCorrect": true,
@@ -69,7 +103,11 @@
       {
         "id": "EC002-B",
         "text": "Firmar los pliegos sin intervenir porque 'ya fueron aprobados por el área técnica'",
-        "delta": { "legality": -15, "institutionalReputation": -12, "citizenSatisfaction": -5 },
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -5
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Como firmante, tienes responsabilidad solidaria. La Contraloría puede establecer responsabilidad administrativa culposa aunque otros aprobaron los pliegos (Ley Orgánica de la Contraloría Art. 39). En Ecuador, 'lo aprobó otro' no exime de responsabilidad al servidor que suscribe documentos.",
         "isCorrect": false,
@@ -78,7 +116,11 @@
       {
         "id": "EC002-C",
         "text": "Denunciar al SNAP y en el portal de denuncias de la Contraloría General",
-        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 10 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 10
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ Correcto. La Contraloría General tiene portal de denuncias ciudadanas y el SNAP supervisa la gestión institucional. La LOSEP Art. 83 protege a los servidores que denuncian de buena fe. El CPCCS también puede iniciar investigaciones sobre procesos de contratación sospechosos.",
         "isCorrect": true,
@@ -87,7 +129,11 @@
       {
         "id": "EC002-D",
         "text": "Continuar el proceso y mencionar la irregularidad solo si la Contraloría pregunta",
-        "delta": { "legality": -20, "institutionalReputation": -18, "citizenSatisfaction": -8 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -18,
+          "citizenSatisfaction": -8
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Callar una irregularidad conocida puede configurar encubrimiento (COIP Art. 272) o complicidad por omisión. El COIP Art. 422 hace obligatoria la denuncia del servidor público. Esperar a que la Contraloría pregunte no exime de responsabilidad y puede agravar la sanción.",
         "isCorrect": false,
@@ -103,12 +149,22 @@
     "npcId": "minister-002",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["LOSEP", "Ley-Electoral", "recursos-públicos", "campaña-política", "TCE"],
+    "tags": [
+      "LOSEP",
+      "Ley-Electoral",
+      "recursos-públicos",
+      "campaña-política",
+      "TCE"
+    ],
     "options": [
       {
         "id": "EC003-A",
         "text": "Negarse citando la Ley Orgánica Electoral que prohíbe usar recursos del Estado en campaña",
-        "delta": { "legality": 20, "institutionalReputation": 15, "citizenSatisfaction": 8 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 15,
+          "citizenSatisfaction": 8
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Correcto. El Art. 212 de la Ley Orgánica Electoral y de Organizaciones Políticas (LOEOPP) prohíbe usar recursos del Estado en campaña electoral. La LOSEP Art. 24 prohíbe actividades político-partidistas en horario laboral. El Tribunal Contencioso Electoral (TCE) sanciona con multa y puede descalificar la candidatura.",
         "isCorrect": true,
@@ -117,7 +173,11 @@
       {
         "id": "EC003-B",
         "text": "Aceptar para no tener conflictos con la autoridad nominadora",
-        "delta": { "legality": -18, "institutionalReputation": -15, "citizenSatisfaction": -8 },
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -15,
+          "citizenSatisfaction": -8
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ El servidor que ejecuta la orden ilegal también tiene responsabilidad. La LOSEP Art. 48 incluye como causal de sanción participar en actividades político-partidistas en función pública. El TCE puede sancionar directamente al funcionario. La LOSEP reconoce el derecho a objetar órdenes ilegales (Art. 83).",
         "isCorrect": false,
@@ -126,7 +186,11 @@
       {
         "id": "EC003-C",
         "text": "Reportar el pedido al Tribunal Contencioso Electoral y al SNAP",
-        "delta": { "legality": 22, "institutionalReputation": 18, "citizenSatisfaction": 10 },
+        "delta": {
+          "legality": 22,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 10
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ Excelente. El TCE es el organismo competente para investigar el uso de recursos del Estado en campaña. La Contraloría puede auditar el uso de vehículos. Denunciar protege al servidor y a la institución. El CPCCS también tiene atribución de investigar actos de abuso de poder.",
         "isCorrect": true,
@@ -135,7 +199,11 @@
       {
         "id": "EC003-D",
         "text": "Realizar la actividad fuera del horario laboral 'de forma voluntaria'",
-        "delta": { "legality": -8, "institutionalReputation": -6, "citizenSatisfaction": -3 },
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -6,
+          "citizenSatisfaction": -3
+        },
         "xpReward": 8,
         "educationalFeedback": "Aún problemático. La LOSEP Art. 24 restringe la participación política del servidor aunque sea fuera del horario. Si se usan vehículos institucionales en cualquier momento para campaña, sigue siendo infracción. El criterio determinante no es el horario sino el uso de bienes del Estado.",
         "isCorrect": false,
@@ -151,12 +219,22 @@
     "npcId": "minister-001",
     "requiredRank": "auxiliary",
     "difficulty": "hard",
-    "tags": ["LOSEP", "nepotismo", "meritocracia", "MDT", "Constitución"],
+    "tags": [
+      "LOSEP",
+      "nepotismo",
+      "meritocracia",
+      "MDT",
+      "Constitución"
+    ],
     "options": [
       {
         "id": "EC004-A",
         "text": "Negarse explicando que la LOSEP prohíbe el nepotismo y exige concurso de méritos",
-        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 8 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 8
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ Correcto. La LOSEP Art. 6 num. 9 prohíbe el nepotismo. La Constitución Art. 228 exige concurso de méritos y oposición para el ingreso al servicio público. Contratar directamente a un familiar constituye nepotismo sancionado con destitución del nominador (LOSEP Art. 48 lit. m).",
         "isCorrect": true,
@@ -165,7 +243,11 @@
       {
         "id": "EC004-B",
         "text": "Procesarlo como contrato de servicios ocasionales que tiene 'menos restricciones'",
-        "delta": { "legality": -15, "institutionalReputation": -12, "citizenSatisfaction": -5 },
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -5
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Los contratos de servicios ocasionales (LOSEP Art. 58) tampoco pueden celebrarse con parientes del nominador. La Contraloría General ha emitido pronunciamientos específicos sobre este caso. El MDT puede declarar nula la contratación y sancionar administrativamente.",
         "isCorrect": false,
@@ -174,7 +256,11 @@
       {
         "id": "EC004-C",
         "text": "Aceptar pero registrar correctamente en el SPRYN del MDT",
-        "delta": { "legality": -20, "institutionalReputation": -16, "citizenSatisfaction": -8 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -16,
+          "citizenSatisfaction": -8
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Registrar en el SPRYN (Sistema de Remuneraciones) no legaliza una contratación prohibida. El MDT tiene acceso directo al sistema y puede detectar el nepotismo. La Contraloría audita el SPRYN regularmente. El funcionario que procesa la contratación ilegal también es sancionable.",
         "isCorrect": false,
@@ -183,7 +269,11 @@
       {
         "id": "EC004-D",
         "text": "Informar que el familiar puede participar en el concurso de méritos del MDT como cualquier ciudadano",
-        "delta": { "legality": 16, "institutionalReputation": 12, "citizenSatisfaction": 6 },
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 6
+        },
         "xpReward": 45,
         "educationalFeedback": "✅ Correcto. Orientar hacia el proceso legal es la respuesta profesional. Si el cuñado tiene los méritos y calificaciones, puede participar en el concurso del MDT. La meritocracia protege la calidad del servicio público y cumple el mandato constitucional del Art. 228. El IAEN ofrece cursos de preparación para estos concursos.",
         "isCorrect": true,
@@ -198,13 +288,23 @@
     "category": "public-ethics",
     "npcId": "business-001",
     "requiredRank": "analyst",
-    "difficulty": "expert",
-    "tags": ["COIP", "información-privilegiada", "MAATE", "LOSEP", "Registro-Oficial"],
+    "difficulty": "hard",
+    "tags": [
+      "COIP",
+      "información-privilegiada",
+      "MAATE",
+      "LOSEP",
+      "Registro-Oficial"
+    ],
     "options": [
       {
         "id": "EC005-A",
         "text": "Negar la información y reportar el pedido formalmente a tu superior",
-        "delta": { "legality": 20, "institutionalReputation": 16, "citizenSatisfaction": 8 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 8
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Correcto. Filtrar información reservada sobre decisiones gubernamentales puede ser revelación de secreto de Estado (COIP Art. 329). La LOSEP Art. 22 obliga a guardar reserva de información confidencial hasta su publicación oficial. Reportar el pedido protege al funcionario de futura imputación.",
         "isCorrect": true,
@@ -213,7 +313,11 @@
       {
         "id": "EC005-B",
         "text": "Filtrar la información al inversionista sin dejar rastro",
-        "delta": { "legality": -35, "institutionalReputation": -30, "citizenSatisfaction": -15 },
+        "delta": {
+          "legality": -35,
+          "institutionalReputation": -30,
+          "citizenSatisfaction": -15
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Grave. Revelar información reservada es delito (COIP Art. 329, pena hasta 3 años). Si el inversionista usa esa información para transacciones bursátiles, configura uso de información privilegiada (Ley de Mercado de Valores Art. 97). La Fiscalía puede rastrear comunicaciones y movimientos bancarios con orden judicial.",
         "isCorrect": false,
@@ -222,7 +326,11 @@
       {
         "id": "EC005-C",
         "text": "Decirle que espere a la publicación en el Registro Oficial",
-        "delta": { "legality": 12, "institutionalReputation": 8, "citizenSatisfaction": 5 },
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 8,
+          "citizenSatisfaction": 5
+        },
         "xpReward": 35,
         "educationalFeedback": "Aceptable pero insuficiente. Remitir al Registro Oficial es correcto. Sin embargo, un pedido de este tipo debería reportarse formalmente por escrito. El LOSEP Art. 83 fomenta denunciar conductas que comprometan la integridad institucional. Documentar protege al funcionario.",
         "isCorrect": false,
@@ -231,7 +339,11 @@
       {
         "id": "EC005-D",
         "text": "Cortar la comunicación, documentarla y presentar informe escrito a tu superior y al área jurídica",
-        "delta": { "legality": 25, "institutionalReputation": 20, "citizenSatisfaction": 10 },
+        "delta": {
+          "legality": 25,
+          "institutionalReputation": 20,
+          "citizenSatisfaction": 10
+        },
         "xpReward": 75,
         "educationalFeedback": "✅ Excelente. Documentar la comunicación crea evidencia. El informe escrito al superior y al área jurídica activa el sistema de control institucional. Si hay una red de tráfico de influencias, esta denuncia puede ser crucial. El CPCCS y la Fiscalía ofrecen mecanismos de protección al denunciante (Ley CPCCS Art. 25).",
         "isCorrect": true,

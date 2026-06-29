@@ -7,12 +7,22 @@
     "npcId": "citizen-003",
     "requiredRank": "auxiliary",
     "difficulty": "easy",
-    "tags": ["modelo-burocrático", "transformación-digital", "SNAP", "COA"],
+    "tags": [
+      "modelo-burocrático",
+      "transformación-digital",
+      "SNAP",
+      "COA"
+    ],
     "options": [
       {
         "id": "PA001-A",
         "text": "Informar al Alcalde que el COA obliga a aceptar documentos digitales y proponer migrar al sistema del SNAP",
-        "delta": { "citizenSatisfaction": 10, "legality": 15, "institutionalReputation": 8, "budget": 5 },
+        "delta": {
+          "citizenSatisfaction": 10,
+          "legality": 15,
+          "institutionalReputation": 8,
+          "budget": 5
+        },
         "xpReward": 45,
         "educationalFeedback": "✅ Correcto. El COA (Art. 162) reconoce plena validez a los documentos electrónicos. El modelo burocrático clásico basado en papel es ineficiente frente al modelo gerencial que privilegia resultados y simplificación. El SNAP emite normas técnicas de obligatorio cumplimiento.",
         "isCorrect": true,
@@ -21,7 +31,12 @@
       {
         "id": "PA001-B",
         "text": "Acatar la orden del Alcalde porque es la autoridad jerárquica",
-        "delta": { "citizenSatisfaction": -12, "legality": -10, "institutionalReputation": -8, "budget": -5 },
+        "delta": {
+          "citizenSatisfaction": -12,
+          "legality": -10,
+          "institutionalReputation": -8,
+          "budget": -5
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ La jerarquía no puede usarse para violar normas constitucionales. El principio de legalidad (Constitución Art. 226) obliga a todo servidor a actuar en el marco de la ley, no de órdenes ilegales.",
         "isCorrect": false,
@@ -30,7 +45,12 @@
       {
         "id": "PA001-C",
         "text": "Implementar un sistema híbrido: papel para mayores de 60 años y digital para el resto",
-        "delta": { "citizenSatisfaction": 5, "legality": 3, "institutionalReputation": 3, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": 3,
+          "institutionalReputation": 3,
+          "budget": -3
+        },
         "xpReward": 20,
         "educationalFeedback": "⚠️ Parcialmente válido. La inclusión digital es importante para grupos vulnerables, pero no justifica mantener el papel como canal principal. La solución es digitalizar y mantener atención presencial asistida para quienes lo necesiten.",
         "isCorrect": false,
@@ -39,7 +59,12 @@
       {
         "id": "PA001-D",
         "text": "Elevar un informe técnico-jurídico al Concejo Municipal y al SNAP documentando el incumplimiento",
-        "delta": { "citizenSatisfaction": 8, "legality": 18, "institutionalReputation": 12, "budget": 3 },
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 18,
+          "institutionalReputation": 12,
+          "budget": 3
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ El enfoque de gobernanza exige rendición de cuentas horizontal. El SNAP tiene competencia para emitir directrices vinculantes sobre simplificación de trámites. Esta acción protege al funcionario y a la institución.",
         "isCorrect": true,
@@ -55,12 +80,22 @@
     "npcId": "citizen-005",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["modelo-gerencial", "LOSNCP", "contratación-pública", "ética"],
+    "tags": [
+      "modelo-gerencial",
+      "LOSNCP",
+      "contratación-pública",
+      "ética"
+    ],
     "options": [
       {
         "id": "PA002-A",
         "text": "Usar el Régimen Especial justificado técnicamente y publicar todo en el portal SERCOP",
-        "delta": { "legality": 12, "institutionalReputation": 10, "budget": 5, "citizenSatisfaction": 6 },
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 10,
+          "budget": 5,
+          "citizenSatisfaction": 6
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ La LOSNCP permite regímenes especiales con causales técnicas justificadas. El modelo gerencial prioriza resultados con eficiencia, sin sacrificar legalidad. Todo proceso debe publicarse en el SERCOP.",
         "isCorrect": true,
@@ -69,7 +104,12 @@
       {
         "id": "PA002-B",
         "text": "Contratar directamente al proveedor conocido sin proceso",
-        "delta": { "legality": -30, "institutionalReputation": -20, "budget": -10, "citizenSatisfaction": -8 },
+        "delta": {
+          "legality": -30,
+          "institutionalReputation": -20,
+          "budget": -10,
+          "citizenSatisfaction": -8
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Esto es un delito. El COIP (Art. 278) tipifica el peculado. Contratar sin proceso es causal de destitución y puede derivar en proceso penal. El SERCOP tiene sistemas de alerta automática para contrataciones irregulares.",
         "isCorrect": false,
@@ -78,7 +118,12 @@
       {
         "id": "PA002-C",
         "text": "Seguir el proceso ordinario de 8 meses aunque el proyecto se retrase",
-        "delta": { "legality": 8, "institutionalReputation": 3, "budget": -3, "citizenSatisfaction": -5 },
+        "delta": {
+          "legality": 8,
+          "institutionalReputation": 3,
+          "budget": -3,
+          "citizenSatisfaction": -5
+        },
         "xpReward": 15,
         "educationalFeedback": "⚠️ Cumple la ley pero ignora el principio de eficiencia. El Art. 227 de la Constitución exige gestión por resultados. Si existe una alternativa legal más ágil y no se usa, puede considerarse ineficiencia administrativa.",
         "isCorrect": false,
@@ -87,7 +132,12 @@
       {
         "id": "PA002-D",
         "text": "Consultar a la Contraloría y al SERCOP antes de decidir el procedimiento",
-        "delta": { "legality": 15, "institutionalReputation": 14, "budget": 2, "citizenSatisfaction": 5 },
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 14,
+          "budget": 2,
+          "citizenSatisfaction": 5
+        },
         "xpReward": 45,
         "educationalFeedback": "✅ El enfoque de gobernanza fomenta la consulta a órganos de control. La Contraloría emite dictámenes vinculantes y el SERCOP tiene asesoría para entidades contratantes. Esta práctica protege al funcionario de acusaciones futuras.",
         "isCorrect": true,
@@ -103,12 +153,22 @@
     "npcId": "citizen-002",
     "requiredRank": "auxiliary",
     "difficulty": "easy",
-    "tags": ["transparencia-activa", "LOTAIP", "CPCCS", "gobierno-abierto"],
+    "tags": [
+      "transparencia-activa",
+      "LOTAIP",
+      "CPCCS",
+      "gobierno-abierto"
+    ],
     "options": [
       {
         "id": "PA003-A",
         "text": "Actualizar el portal inmediatamente y establecer un proceso mensual automatizado",
-        "delta": { "legality": 18, "institutionalReputation": 12, "citizenSatisfaction": 10, "budget": -2 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 10,
+          "budget": -2
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ La LOTAIP Art. 7 obliga a la transparencia activa con actualización permanente. El gobierno abierto (OGP) del que Ecuador es miembro exige datos accesibles, oportunos y reutilizables. La automatización es la solución sostenible.",
         "isCorrect": true,
@@ -117,7 +177,12 @@
       {
         "id": "PA003-B",
         "text": "Aceptar el argumento del jefe: si nadie lo revisa, no es prioritario",
-        "delta": { "legality": -20, "institutionalReputation": -15, "citizenSatisfaction": -8, "budget": 0 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -15,
+          "citizenSatisfaction": -8,
+          "budget": 0
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ La transparencia activa es una obligación legal, no discrecional. El CPCCS puede iniciar sanciones con multas. El argumento de 'nadie lo revisa' no tiene valor jurídico: la ley se cumple por ser ley.",
         "isCorrect": false,
@@ -126,7 +191,12 @@
       {
         "id": "PA003-C",
         "text": "Subir solo la información mínima requerida para salir de la observación",
-        "delta": { "legality": 5, "institutionalReputation": -3, "citizenSatisfaction": 2, "budget": 0 },
+        "delta": {
+          "legality": 5,
+          "institutionalReputation": -3,
+          "citizenSatisfaction": 2,
+          "budget": 0
+        },
         "xpReward": 10,
         "educationalFeedback": "⚠️ Cumple formalmente pero traiciona el gobierno abierto. Los datos deben ser completos, en formatos reutilizables (CSV, JSON) y oportunos. Publicar solo lo mínimo no permite control social real.",
         "isCorrect": false,
@@ -135,7 +205,12 @@
       {
         "id": "PA003-D",
         "text": "Proponer un portal de datos abiertos con búsqueda avanzada y descarga en múltiples formatos",
-        "delta": { "legality": 15, "institutionalReputation": 18, "citizenSatisfaction": 14, "budget": -4 },
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 14,
+          "budget": -4
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Los portales de datos abiertos son un pilar del gobierno abierto. Ecuador tiene el portal datos.gob.ec. Publicar en formatos reutilizables permite a academia, periodistas y ciudadanos hacer auditoría social.",
         "isCorrect": true,
@@ -151,12 +226,22 @@
     "npcId": "citizen-004",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["transformación-digital", "gobierno-electrónico", "MINTEL", "gestión-del-cambio"],
+    "tags": [
+      "transformación-digital",
+      "gobierno-electrónico",
+      "MINTEL",
+      "gestión-del-cambio"
+    ],
     "options": [
       {
         "id": "PA004-A",
         "text": "Implementar con capacitación para funcionarios y ciudadanos, manteniendo atención presencial",
-        "delta": { "citizenSatisfaction": 14, "legality": 8, "institutionalReputation": 12, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 8,
+          "institutionalReputation": 12,
+          "budget": -3
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ El gobierno electrónico tiene cuatro fases: presencia, interacción, transacción e integración. La transición requiere gestión del cambio. El Decreto Ejecutivo 1384 obliga a digitalizar servicios. Mantener canal presencial garantiza inclusión.",
         "isCorrect": true,
@@ -165,7 +250,12 @@
       {
         "id": "PA004-B",
         "text": "Suspender la implementación hasta que haya consenso total",
-        "delta": { "citizenSatisfaction": -8, "legality": -5, "institutionalReputation": -10, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": -8,
+          "legality": -5,
+          "institutionalReputation": -10,
+          "budget": -2
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ La transformación digital del Estado es mandato legal, no opcional. El MINTEL establece plazos obligatorios. Esperar consenso total bloquea la modernización. La resistencia al cambio se gestiona, no se veta.",
         "isCorrect": false,
@@ -174,7 +264,12 @@
       {
         "id": "PA004-C",
         "text": "Imponer el sistema sin capacitación porque la ley lo exige y es más rápido",
-        "delta": { "citizenSatisfaction": -6, "legality": 5, "institutionalReputation": -8, "budget": 2 },
+        "delta": {
+          "citizenSatisfaction": -6,
+          "legality": 5,
+          "institutionalReputation": -8,
+          "budget": 2
+        },
         "xpReward": 10,
         "educationalFeedback": "❌ Implementar sin gestión del cambio fracasa en práctica. La experiencia latinoamericana muestra que la transformación digital exitosa requiere 40% tecnología y 60% cambio cultural. La LOSEP obliga al Estado a proveer capacitación.",
         "isCorrect": false,
@@ -183,7 +278,12 @@
       {
         "id": "PA004-D",
         "text": "Hacer un piloto en un departamento, medir resultados y escalar con evidencia",
-        "delta": { "citizenSatisfaction": 10, "legality": 10, "institutionalReputation": 15, "budget": -1 },
+        "delta": {
+          "citizenSatisfaction": 10,
+          "legality": 10,
+          "institutionalReputation": 15,
+          "budget": -1
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ El enfoque de gobernanza basado en evidencia recomienda pilotos antes de implementaciones masivas. Estonia y Uruguay usaron este método. El SNAP tiene el Laboratorio de Gobierno para probar innovaciones. Este enfoque reduce riesgos y genera datos reales.",
         "isCorrect": true,
@@ -199,12 +299,22 @@
     "npcId": "citizen-006",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["participación-ciudadana", "gobierno-abierto", "COOTAD", "presupuesto-participativo"],
+    "tags": [
+      "participación-ciudadana",
+      "gobierno-abierto",
+      "COOTAD",
+      "presupuesto-participativo"
+    ],
     "options": [
       {
         "id": "PA005-A",
         "text": "Procesar todas las propuestas, publicar respuestas y establecer plazo máximo de 30 días",
-        "delta": { "citizenSatisfaction": 20, "legality": 15, "institutionalReputation": 15, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": 20,
+          "legality": 15,
+          "institutionalReputation": 15,
+          "budget": -2
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ El COOTAD (Art. 304) obliga a los GAD a implementar presupuestos participativos. La Constitución (Art. 100) reconoce la participación ciudadana como derecho fundamental. El gobierno abierto exige escucha activa y retroalimentación obligatoria.",
         "isCorrect": true,
@@ -213,7 +323,12 @@
       {
         "id": "PA005-B",
         "text": "Cerrar la plataforma porque genera más problemas que soluciones",
-        "delta": { "citizenSatisfaction": -25, "legality": -20, "institutionalReputation": -18, "budget": 2 },
+        "delta": {
+          "citizenSatisfaction": -25,
+          "legality": -20,
+          "institutionalReputation": -18,
+          "budget": 2
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Inconstitucional. La Ley Orgánica de Participación Ciudadana (Art. 76) obliga a los GAD a mantener mecanismos de participación. Cerrar la plataforma puede dar lugar a una acción de protección. Contradice el Plan de Acción de Ecuador en la OGP.",
         "isCorrect": false,
@@ -222,7 +337,12 @@
       {
         "id": "PA005-C",
         "text": "Publicar un mensaje genérico agradeciendo las propuestas sin procesarlas",
-        "delta": { "citizenSatisfaction": -10, "legality": -8, "institutionalReputation": -5, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -10,
+          "legality": -8,
+          "institutionalReputation": -5,
+          "budget": 0
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ La participación simbólica o 'tokenismo' es una de las formas más dañinas de simulación democrática. La co-creación de políticas requiere procesar propuestas y dar respuesta fundamentada, no mensajes genéricos.",
         "isCorrect": false,
@@ -231,7 +351,12 @@
       {
         "id": "PA005-D",
         "text": "Crear un comité ciudadano que clasifique las propuestas y las presente al Concejo Municipal",
-        "delta": { "citizenSatisfaction": 18, "legality": 12, "institutionalReputation": 18, "budget": -1 },
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 12,
+          "institutionalReputation": 18,
+          "budget": -1
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ La co-creación de políticas es el nivel más alto del gobierno abierto. El COOTAD (Art. 306) permite Asambleas Ciudadanas para este fin. Experiencias como el presupuesto participativo de Porto Alegre y Medellín Cómo Vamos son referentes en América Latina.",
         "isCorrect": true,
@@ -247,12 +372,22 @@
     "npcId": "citizen-001",
     "requiredRank": "auxiliary",
     "difficulty": "hard",
-    "tags": ["principios-constitucionales", "conflicto-de-interés", "LOSEP", "rendición-de-cuentas"],
+    "tags": [
+      "principios-constitucionales",
+      "conflicto-de-interés",
+      "LOSEP",
+      "rendición-de-cuentas"
+    ],
     "options": [
       {
         "id": "PA006-A",
         "text": "Firmar el informe porque el director tiene la responsabilidad",
-        "delta": { "legality": -25, "institutionalReputation": -15, "citizenSatisfaction": -10, "budget": -5 },
+        "delta": {
+          "legality": -25,
+          "institutionalReputation": -15,
+          "citizenSatisfaction": -10,
+          "budget": -5
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ El principio de responsabilidad individual (Constitución Art. 233) establece que cada funcionario responde por sus actos. 'Cumplir órdenes' no es excusa legal. Firmar un informe con datos falsos puede configurar falsedad ideológica (COIP Art. 338).",
         "isCorrect": false,
@@ -261,7 +396,12 @@
       {
         "id": "PA006-B",
         "text": "Negarse a firmar, dejar constancia escrita y denunciar a la Contraloría",
-        "delta": { "legality": 25, "institutionalReputation": 20, "citizenSatisfaction": 12, "budget": 5 },
+        "delta": {
+          "legality": 25,
+          "institutionalReputation": 20,
+          "citizenSatisfaction": 12,
+          "budget": 5
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ El Art. 226 de la Constitución obliga a actuar en el marco de la ley, no de órdenes ilegales. La Contraloría tiene línea de denuncia confidencial. La LOSEP protege a servidores que denuncian irregularidades de represalias (Art. 90).",
         "isCorrect": true,
@@ -270,7 +410,12 @@
       {
         "id": "PA006-C",
         "text": "Pedir consejo informal a un colega y esperar que el problema se resuelva",
-        "delta": { "legality": -10, "institutionalReputation": -5, "citizenSatisfaction": -3, "budget": -2 },
+        "delta": {
+          "legality": -10,
+          "institutionalReputation": -5,
+          "citizenSatisfaction": -3,
+          "budget": -2
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ La inacción ante un acto corrupto puede configurar complicidad por omisión (COIP Art. 42). La ética pública no admite neutralidad ante la corrupción. El modelo de gobernanza exige que los servidores sean agentes activos de integridad.",
         "isCorrect": false,
@@ -279,7 +424,12 @@
       {
         "id": "PA006-D",
         "text": "Redactar el informe excluyendo los documentos comprometedores para evitar conflictos",
-        "delta": { "legality": -20, "institutionalReputation": -12, "citizenSatisfaction": -8, "budget": -4 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -8,
+          "budget": -4
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Omitir documentos es falsedad material (COIP Art. 327). La Contraloría detecta omisiones en auditorías posteriores. La rendición de cuentas exige expedientes completos e íntegros.",
         "isCorrect": false,
@@ -295,12 +445,22 @@
     "npcId": "citizen-002",
     "requiredRank": "auxiliary",
     "difficulty": "easy",
-    "tags": ["datos-abiertos", "LOTAIP", "gobierno-abierto", "academia"],
+    "tags": [
+      "datos-abiertos",
+      "LOTAIP",
+      "gobierno-abierto",
+      "academia"
+    ],
     "options": [
       {
         "id": "PA007-A",
         "text": "Entregar los datos en formato CSV sin datos personales en 10 días según la LOTAIP",
-        "delta": { "citizenSatisfaction": 15, "legality": 14, "institutionalReputation": 10, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 14,
+          "institutionalReputation": 10,
+          "budget": 0
+        },
         "xpReward": 45,
         "educationalFeedback": "✅ La información pública pertenece a la ciudadanía, no a las instituciones (Constitución Art. 18). La LOTAIP obliga a entregar datos en formatos accesibles. Los datos abiertos permiten auditoría social independiente.",
         "isCorrect": true,
@@ -309,7 +469,12 @@
       {
         "id": "PA007-B",
         "text": "Exigir los 50 formularios porque son el procedimiento interno",
-        "delta": { "citizenSatisfaction": -12, "legality": -15, "institutionalReputation": -8, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -12,
+          "legality": -15,
+          "institutionalReputation": -8,
+          "budget": 0
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ El COA Art. 42 prohíbe exigir requisitos no previstos en la ley. 50 formularios para acceder a información pública es una barrera burocrática ilegal, sancionable por la Defensoría del Pueblo.",
         "isCorrect": false,
@@ -318,7 +483,12 @@
       {
         "id": "PA007-C",
         "text": "Publicar proactivamente todos los datasets en datos.gob.ec con licencia abierta",
-        "delta": { "citizenSatisfaction": 18, "legality": 15, "institutionalReputation": 16, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 15,
+          "institutionalReputation": 16,
+          "budget": -2
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Ecuador firmó la Carta Internacional de Datos Abiertos (2015) comprometiéndose a publicar por defecto. Esto elimina solicitudes individuales y posiciona al Ministerio como líder en gobierno abierto.",
         "isCorrect": true,
@@ -327,7 +497,12 @@
       {
         "id": "PA007-D",
         "text": "Negar los datos porque podrían usarse para criticar al Ministerio",
-        "delta": { "citizenSatisfaction": -18, "legality": -22, "institutionalReputation": -15, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -18,
+          "legality": -22,
+          "institutionalReputation": -15,
+          "budget": 0
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ El miedo a la crítica no es causal legal de reserva. La Constitución Art. 91 garantiza la acción de acceso a la información. Negar datos para evitar escrutinio es censura institucional sancionada con destitución.",
         "isCorrect": false,
@@ -343,12 +518,22 @@
     "npcId": "citizen-003",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["rendición-de-cuentas", "CPCCS", "eficiencia", "constitución"],
+    "tags": [
+      "rendición-de-cuentas",
+      "CPCCS",
+      "eficiencia",
+      "constitución"
+    ],
     "options": [
       {
         "id": "PA008-A",
         "text": "Presentar rendición completa con logros Y fracasos, incluyendo todos los gastos",
-        "delta": { "legality": 18, "institutionalReputation": 14, "citizenSatisfaction": 12, "budget": 2 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 12,
+          "budget": 2
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ La rendición de cuentas (Art. 208 Constitución) es obligación de todas las entidades ante el CPCCS. Omitir fracasos o gastos es falsedad sancionada por la Contraloría. La eficiencia real se demuestra con transparencia total.",
         "isCorrect": true,
@@ -357,7 +542,12 @@
       {
         "id": "PA008-B",
         "text": "Seguir la instrucción del Director: presentar solo logros",
-        "delta": { "legality": -18, "institutionalReputation": -10, "citizenSatisfaction": -8, "budget": -2 },
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -8,
+          "budget": -2
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ El CPCCS tiene acceso al e-SIGEF y puede verificar inconsistencias. La Contraloría puede iniciar un examen especial por omisiones. El Art. 233 establece responsabilidad personal del funcionario.",
         "isCorrect": false,
@@ -366,7 +556,12 @@
       {
         "id": "PA008-C",
         "text": "Incluir los viáticos en un anexo técnico de difícil acceso",
-        "delta": { "legality": 3, "institutionalReputation": -8, "citizenSatisfaction": -5, "budget": 0 },
+        "delta": {
+          "legality": 3,
+          "institutionalReputation": -8,
+          "citizenSatisfaction": -5,
+          "budget": 0
+        },
         "xpReward": 8,
         "educationalFeedback": "⚠️ Ocultar información en anexos complejos es transparencia de baja calidad. El gobierno abierto exige que la rendición sea comprensible para el ciudadano común, no solo formal.",
         "isCorrect": false,
@@ -375,7 +570,12 @@
       {
         "id": "PA008-D",
         "text": "Presentar la rendición completa y organizar un evento público con participación ciudadana",
-        "delta": { "legality": 15, "institutionalReputation": 20, "citizenSatisfaction": 16, "budget": -2 },
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 20,
+          "citizenSatisfaction": 16,
+          "budget": -2
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ La rendición de cuentas participativa es el máximo estándar de gobierno abierto. La Ley de Participación Ciudadana (Art. 9) promueve estos espacios. Uruguay y Costa Rica son referentes en este modelo en América Latina.",
         "isCorrect": true,
@@ -390,13 +590,23 @@
     "category": "transparency",
     "npcId": "citizen-004",
     "requiredRank": "analyst",
-    "difficulty": "normal",
-    "tags": ["modelo-gerencial", "modelo-burocrático", "LOSEP", "evaluación-desempeño"],
+    "difficulty": "easy",
+    "tags": [
+      "modelo-gerencial",
+      "modelo-burocrático",
+      "LOSEP",
+      "evaluación-desempeño"
+    ],
     "options": [
       {
         "id": "PA009-A",
         "text": "Implementar la evaluación por resultados según la LOSEP con indicadores claros y metas medibles",
-        "delta": { "citizenSatisfaction": 12, "legality": 14, "institutionalReputation": 14, "budget": 2 },
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 14,
+          "institutionalReputation": 14,
+          "budget": 2
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ La LOSEP Art. 76-80 obliga a evaluar el desempeño de todos los servidores públicos basándose en resultados. El modelo gerencial (Nueva Gestión Pública) reemplaza la evaluación por antigüedad con indicadores de eficacia, eficiencia e impacto. El Ministerio del Trabajo regula los instrumentos de evaluación.",
         "isCorrect": true,
@@ -405,7 +615,12 @@
       {
         "id": "PA009-B",
         "text": "Mantener el sistema actual para evitar conflictos con el sindicato",
-        "delta": { "citizenSatisfaction": -8, "legality": -10, "institutionalReputation": -10, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": -8,
+          "legality": -10,
+          "institutionalReputation": -10,
+          "budget": -3
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ La LOSEP es norma imperativa y no puede suspenderse por presión sindical. Mantener evaluación por antigüedad vulnera el principio de mérito y eficiencia (Constitución Art. 227). Además, el Ministerio del Trabajo puede sancionar al GAD por incumplir las normas de evaluación.",
         "isCorrect": false,
@@ -414,7 +629,12 @@
       {
         "id": "PA009-C",
         "text": "Negociar con el sindicato un período de transición de 2 años con indicadores progresivos",
-        "delta": { "citizenSatisfaction": 8, "legality": 8, "institutionalReputation": 10, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 8,
+          "institutionalReputation": 10,
+          "budget": 0
+        },
         "xpReward": 35,
         "educationalFeedback": "⚠️ La negociación es válida en gestión del cambio, pero los plazos de la LOSEP son vinculantes. Un período de transición razonable puede facilitar la adopción siempre que no retrase indefinidamente el cumplimiento legal. El enfoque gerencial favorece la co-construcción de sistemas de evaluación con los servidores.",
         "isCorrect": false,
@@ -423,7 +643,12 @@
       {
         "id": "PA009-D",
         "text": "Vincular la evaluación a metas institucionales del Plan Nacional de Desarrollo y capacitar a los evaluadores",
-        "delta": { "citizenSatisfaction": 15, "legality": 15, "institutionalReputation": 18, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 15,
+          "institutionalReputation": 18,
+          "budget": -2
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ La alineación entre evaluación individual y metas institucionales es la mejor práctica del modelo gerencial. La SENPLADES promueve indicadores vinculados al Plan Nacional. Capacitar evaluadores reduce sesgos y garantiza objetividad, lo que legitima el proceso ante el sindicato.",
         "isCorrect": true,
@@ -439,12 +664,22 @@
     "npcId": "citizen-006",
     "requiredRank": "auxiliary",
     "difficulty": "easy",
-    "tags": ["firma-electrónica", "Ley-Comercio-Electrónico", "transformación-digital", "gobierno-electrónico"],
+    "tags": [
+      "firma-electrónica",
+      "Ley-Comercio-Electrónico",
+      "transformación-digital",
+      "gobierno-electrónico"
+    ],
     "options": [
       {
         "id": "PA010-A",
         "text": "Aceptar los documentos: la firma electrónica del BCE tiene la misma validez que la manuscrita",
-        "delta": { "citizenSatisfaction": 18, "legality": 16, "institutionalReputation": 12, "budget": 1 },
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 16,
+          "institutionalReputation": 12,
+          "budget": 1
+        },
         "xpReward": 50,
         "educationalFeedback": "✅ La Ley de Comercio Electrónico, Firmas Electrónicas y Mensajes de Datos (Art. 14) establece que la firma electrónica certificada por el BCE tiene igual validez jurídica que la manuscrita. El COA Art. 162 obliga a las entidades públicas a aceptar documentos digitales. Rechazarlos es una infracción sancionable.",
         "isCorrect": true,
@@ -453,7 +688,12 @@
       {
         "id": "PA010-B",
         "text": "Rechazar los documentos porque el Registro tiene su propio reglamento interno",
-        "delta": { "citizenSatisfaction": -15, "legality": -18, "institutionalReputation": -12, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -15,
+          "legality": -18,
+          "institutionalReputation": -12,
+          "budget": 0
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Los reglamentos internos no pueden contradecir a la ley. El principio de jerarquía normativa (Constitución Art. 425) establece que la ley prevalece sobre reglamentos. Rechazar firma electrónica válida puede dar lugar a una queja ante la Defensoría del Pueblo y una acción de protección.",
         "isCorrect": false,
@@ -462,7 +702,12 @@
       {
         "id": "PA010-C",
         "text": "Pedir al jefe una circular que autorice la firma electrónica antes de aceptarla",
-        "delta": { "citizenSatisfaction": -8, "legality": -5, "institutionalReputation": -5, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -8,
+          "legality": -5,
+          "institutionalReputation": -5,
+          "budget": 0
+        },
         "xpReward": 8,
         "educationalFeedback": "⚠️ Innecesario. La ley ya autoriza la firma electrónica; no se requiere circular adicional. Pedir autorización interna para cumplir una ley vigente es burocracia innecesaria y dilata el servicio al ciudadano.",
         "isCorrect": false,
@@ -471,7 +716,12 @@
       {
         "id": "PA010-D",
         "text": "Aceptar los documentos y capacitar a todos los funcionarios del Registro sobre firma electrónica",
-        "delta": { "citizenSatisfaction": 20, "legality": 15, "institutionalReputation": 16, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": 20,
+          "legality": 15,
+          "institutionalReputation": 16,
+          "budget": -2
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Además de cumplir la ley, capacitar al equipo evita que el problema se repita. El MINTEL ofrece programas de capacitación en firma electrónica para servidores públicos. Esta acción contribuye a la fase de 'transacción' del gobierno electrónico, donde los trámites completos se realizan en línea.",
         "isCorrect": true,
@@ -486,13 +736,23 @@
     "category": "citizen-participation",
     "npcId": "citizen-006",
     "requiredRank": "auxiliary",
-    "difficulty": "normal",
-    "tags": ["eficiencia", "constitución", "DIGERCIC", "grupos-prioritarios"],
+    "difficulty": "easy",
+    "tags": [
+      "eficiencia",
+      "constitución",
+      "DIGERCIC",
+      "grupos-prioritarios"
+    ],
     "options": [
       {
         "id": "PA011-A",
         "text": "Aplicar el protocolo de atención prioritaria para adultos mayores sin cita previa",
-        "delta": { "citizenSatisfaction": 22, "legality": 14, "institutionalReputation": 15, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": 22,
+          "legality": 14,
+          "institutionalReputation": 15,
+          "budget": 0
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ La Constitución (Art. 35-38) garantiza atención prioritaria e inmediata a adultos mayores en servicios públicos. El DIGERCIC tiene protocolo especial para grupos vulnerables. La eficiencia constitucional no puede sacrificarse por sistemas de citas que crean barreras para quienes más necesitan el servicio.",
         "isCorrect": true,
@@ -501,7 +761,12 @@
       {
         "id": "PA011-B",
         "text": "Decirle que espere los 45 días porque el sistema no permite excepciones",
-        "delta": { "citizenSatisfaction": -20, "legality": -15, "institutionalReputation": -14, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -20,
+          "legality": -15,
+          "institutionalReputation": -14,
+          "budget": 0
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ El principio de eficacia (Constitución Art. 227) obliga a que los servicios públicos satisfagan las necesidades reales de los ciudadanos. Aplicar el sistema de forma rígida que vulnera derechos constitucionales de grupos prioritarios es anticonstitucional. Un sistema que no sirve a quienes más lo necesitan ha fallado.",
         "isCorrect": false,
@@ -510,7 +775,12 @@
       {
         "id": "PA011-C",
         "text": "Sugerirle que pida ayuda a un familiar para manejar el sistema de citas en línea",
-        "delta": { "citizenSatisfaction": -12, "legality": -8, "institutionalReputation": -10, "budget": 0 },
+        "delta": {
+          "citizenSatisfaction": -12,
+          "legality": -8,
+          "institutionalReputation": -10,
+          "budget": 0
+        },
         "xpReward": 3,
         "educationalFeedback": "❌ La brecha digital es una realidad que el Estado debe resolver, no trasladar al ciudadano. El Plan Nacional de Gobierno Digital incluye la universalidad como principio. El Estado tiene la obligación de asistir digitalmente a grupos vulnerables, no de suponer que todos tienen familiares que les ayuden.",
         "isCorrect": false,
@@ -519,7 +789,12 @@
       {
         "id": "PA011-D",
         "text": "Atenderle de inmediato y reportar el caso al DIGERCIC para rediseñar el sistema de citas con prioridad para grupos vulnerables",
-        "delta": { "citizenSatisfaction": 25, "legality": 16, "institutionalReputation": 18, "budget": -1 },
+        "delta": {
+          "citizenSatisfaction": 25,
+          "legality": 16,
+          "institutionalReputation": 18,
+          "budget": -1
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ Resolver el caso inmediato Y reportarlo para mejorar el sistema es la mejor práctica de gobernanza. El diseño de servicios públicos centrado en el ciudadano (human-centered design) exige identificar y corregir barreras sistémicas. El Laboratorio de Gobierno del SNAP promueve esta mejora continua.",
         "isCorrect": true,
@@ -535,12 +810,23 @@
     "npcId": "citizen-005",
     "requiredRank": "analyst",
     "difficulty": "hard",
-    "tags": ["gobierno-electrónico", "Estonia", "interoperabilidad", "transformación-digital", "comparado"],
+    "tags": [
+      "gobierno-electrónico",
+      "Estonia",
+      "interoperabilidad",
+      "transformación-digital",
+      "comparado"
+    ],
     "options": [
       {
         "id": "PA012-A",
         "text": "Adoptar el modelo de interoperabilidad: los sistemas del Estado deben comunicarse para eliminar trámites duplicados",
-        "delta": { "citizenSatisfaction": 15, "legality": 10, "institutionalReputation": 18, "budget": -8 },
+        "delta": {
+          "citizenSatisfaction": 15,
+          "legality": 10,
+          "institutionalReputation": 18,
+          "budget": -8
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Estonia es el referente mundial de gobierno digital: el 99% de sus servicios están en línea gracias a X-Road, su plataforma de interoperabilidad. En Ecuador, el Ministerio de Telecomunicaciones impulsa la Plataforma de Interoperabilidad del Estado (PIDE) con el mismo principio: cada ciudadano no debería presentar un documento que el Estado ya tiene.",
         "isCorrect": true,
@@ -549,7 +835,12 @@
       {
         "id": "PA012-B",
         "text": "Mantener sistemas aislados porque la integración es cara y riesgosa",
-        "delta": { "citizenSatisfaction": -10, "legality": -5, "institutionalReputation": -12, "budget": 5 },
+        "delta": {
+          "citizenSatisfaction": -10,
+          "legality": -5,
+          "institutionalReputation": -12,
+          "budget": 5
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Los sistemas aislados obligan al ciudadano a llevar documentos de institución en institución, vulnerando el principio de eficiencia. El costo de mantener sistemas desconectados supera al de integrarlos. El COA Art. 42 ya prohíbe pedir documentos que el Estado tiene: esto requiere interoperabilidad técnica para cumplirse.",
         "isCorrect": false,
@@ -558,7 +849,12 @@
       {
         "id": "PA012-C",
         "text": "Copiar el modelo de Estonia exactamente sin adaptaciones al contexto ecuatoriano",
-        "delta": { "citizenSatisfaction": 5, "legality": 5, "institutionalReputation": 3, "budget": -10 },
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": 5,
+          "institutionalReputation": 3,
+          "budget": -10
+        },
         "xpReward": 15,
         "educationalFeedback": "⚠️ Aprender de Estonia es valioso, pero copiar sin adaptar es un error común. Ecuador tiene diferente infraestructura, conectividad rural, marcos legales y niveles de alfabetización digital. La transferencia de políticas públicas exitosa requiere análisis de contexto. El BID recomienda 'inspirarse, no trasplantar'.",
         "isCorrect": false,
@@ -567,7 +863,12 @@
       {
         "id": "PA012-D",
         "text": "Desarrollar un modelo propio basado en X-Road pero adaptado a la realidad ecuatoriana, con la PIDE como eje",
-        "delta": { "citizenSatisfaction": 18, "legality": 14, "institutionalReputation": 20, "budget": -5 },
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 14,
+          "institutionalReputation": 20,
+          "budget": -5
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ La mejor práctica internacional es aprender de modelos exitosos y adaptarlos al contexto local. Ecuador ya tiene la PIDE (Plataforma de Interoperabilidad del Estado) que sigue este principio. Uruguay con su Agencia de Gobierno Electrónico (AGESIC) y Colombia con GovTech son referentes latinoamericanos que adaptaron exitosamente modelos nórdicos.",
         "isCorrect": true,
@@ -582,13 +883,23 @@
     "category": "citizen-participation",
     "npcId": "citizen-001",
     "requiredRank": "analyst",
-    "difficulty": "hard",
-    "tags": ["innovación-cívica", "datos-abiertos", "gobierno-abierto", "co-creación"],
+    "difficulty": "normal",
+    "tags": [
+      "innovación-cívica",
+      "datos-abiertos",
+      "gobierno-abierto",
+      "co-creación"
+    ],
     "options": [
       {
         "id": "PA013-A",
         "text": "Apoyar el hackatón: es una forma legítima de co-creación de políticas y servicios públicos",
-        "delta": { "citizenSatisfaction": 18, "legality": 10, "institutionalReputation": 18, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": 18,
+          "legality": 10,
+          "institutionalReputation": 18,
+          "budget": -3
+        },
         "xpReward": 60,
         "educationalFeedback": "✅ Los hackatones de datos abiertos son una herramienta de innovación cívica reconocida internacionalmente. Chile, México y Colombia han desarrollado soluciones ciudadanas que luego el Estado adoptó. El Plan de Acción de Ecuador en la OGP incluye la co-creación de servicios como compromiso formal. Los datos públicos no son confidenciales.",
         "isCorrect": true,
@@ -597,7 +908,12 @@
       {
         "id": "PA013-B",
         "text": "Cancelar el evento: el director tiene razón en que los datos son riesgosos",
-        "delta": { "citizenSatisfaction": -14, "legality": -12, "institutionalReputation": -15, "budget": 2 },
+        "delta": {
+          "citizenSatisfaction": -14,
+          "legality": -12,
+          "institutionalReputation": -15,
+          "budget": 2
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Los datos públicos no son confidenciales. El director confunde datos personales (protegidos por la LOPDP) con datos institucionales abiertos. El gobierno abierto requiere que los datos públicos sean accesibles por defecto. Cancelar vulnera compromisos internacionales de Ecuador en la OGP.",
         "isCorrect": false,
@@ -606,7 +922,12 @@
       {
         "id": "PA013-C",
         "text": "Organizar el hackatón pero solo con datos ya publicados en el portal, sin añadir nuevos datasets",
-        "delta": { "citizenSatisfaction": 8, "legality": 8, "institutionalReputation": 8, "budget": -1 },
+        "delta": {
+          "citizenSatisfaction": 8,
+          "legality": 8,
+          "institutionalReputation": 8,
+          "budget": -1
+        },
         "xpReward": 25,
         "educationalFeedback": "⚠️ Un primer paso válido pero limitado. Los hackatones más exitosos combinan datos existentes con nuevos datasets especialmente preparados para el evento. Usar solo datos publicados puede limitar la innovación. La LOTAIP obliga a publicar más datos de los que están actualmente en el portal.",
         "isCorrect": false,
@@ -615,7 +936,12 @@
       {
         "id": "PA013-D",
         "text": "Organizar el hackatón, involucrar universidades y comprometerse a implementar las mejores soluciones",
-        "delta": { "citizenSatisfaction": 22, "legality": 12, "institutionalReputation": 22, "budget": -4 },
+        "delta": {
+          "citizenSatisfaction": 22,
+          "legality": 12,
+          "institutionalReputation": 22,
+          "budget": -4
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ Involucrar universidades fortalece el ecosistema de innovación pública. ESPOL, UDLA y la UEES han participado en iniciativas similares. Comprometerse a implementar las mejores soluciones es la diferencia entre un hackatón simbólico y uno transformador. El SNAP puede certificar las soluciones adoptadas como buenas prácticas de gobierno abierto.",
         "isCorrect": true,
@@ -631,12 +957,23 @@
     "npcId": "citizen-003",
     "requiredRank": "analyst",
     "difficulty": "hard",
-    "tags": ["gobernanza-multinivel", "COOTAD", "MINTEL", "autonomía", "interoperabilidad"],
+    "tags": [
+      "gobernanza-multinivel",
+      "COOTAD",
+      "MINTEL",
+      "autonomía",
+      "interoperabilidad"
+    ],
     "options": [
       {
         "id": "PA014-A",
         "text": "Apoyar la posición del Alcalde: la autonomía municipal permite sistemas propios",
-        "delta": { "citizenSatisfaction": -5, "legality": -8, "institutionalReputation": -10, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": -5,
+          "legality": -8,
+          "institutionalReputation": -10,
+          "budget": -3
+        },
         "xpReward": 8,
         "educationalFeedback": "❌ La autonomía municipal (COOTAD Art. 5) no es absoluta. El Art. 238 de la Constitución establece que los GAD son autónomos pero forman parte del Estado unitario. Las normas técnicas del MINTEL sobre interoperabilidad son de cumplimiento nacional. La fragmentación de sistemas perjudica al ciudadano que usa servicios de múltiples niveles de gobierno.",
         "isCorrect": false,
@@ -645,7 +982,12 @@
       {
         "id": "PA014-B",
         "text": "Obligar al GAD a migrar inmediatamente al sistema nacional sin transición",
-        "delta": { "citizenSatisfaction": -8, "legality": 5, "institutionalReputation": -5, "budget": -5 },
+        "delta": {
+          "citizenSatisfaction": -8,
+          "legality": 5,
+          "institutionalReputation": -5,
+          "budget": -5
+        },
         "xpReward": 10,
         "educationalFeedback": "⚠️ Aunque el sistema nacional es obligatorio, imponer la migración sin transición puede interrumpir servicios ciudadanos. El enfoque de gobernanza multinivel requiere negociación y coordinación. El MINTEL puede establecer plazos razonables respetando los procesos del GAD.",
         "isCorrect": false,
@@ -654,7 +996,12 @@
       {
         "id": "PA014-C",
         "text": "Negociar un período de interoperabilidad temporal mientras el GAD migra gradualmente",
-        "delta": { "citizenSatisfaction": 12, "legality": 12, "institutionalReputation": 14, "budget": -2 },
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 12,
+          "institutionalReputation": 14,
+          "budget": -2
+        },
         "xpReward": 45,
         "educationalFeedback": "✅ El enfoque de gobernanza reconoce que los cambios sistémicos requieren tiempo. Una solución de interoperabilidad temporal que permita que ambos sistemas compartan datos mientras se realiza la migración gradual es técnica y políticamente viable. El MINTEL puede suscribir un convenio específico con el GAD de Cuenca.",
         "isCorrect": true,
@@ -663,7 +1010,12 @@
       {
         "id": "PA014-D",
         "text": "Usar el modelo de gobernanza multinivel: mesa técnica MINTEL-GAD-SNAP para diseñar una solución conjunta",
-        "delta": { "citizenSatisfaction": 16, "legality": 15, "institutionalReputation": 20, "budget": -3 },
+        "delta": {
+          "citizenSatisfaction": 16,
+          "legality": 15,
+          "institutionalReputation": 20,
+          "budget": -3
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ El enfoque de gobernanza en red reemplaza la jerarquía vertical con coordinación horizontal. Una mesa técnica entre MINTEL, SNAP y el GAD puede generar una solución que respete la inversión municipal y cumpla los estándares nacionales. España con su modelo de federalismo digital y Colombia con Govtech son referentes de esta coordinación multinivel.",
         "isCorrect": true,

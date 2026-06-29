@@ -1,0 +1,1047 @@
+[
+  {
+    "id": "EX001",
+    "title": "[FÁCIL] ¿Qué hace el SNAP?",
+    "description": "Un ciudadano recién graduado que aplicó a un cargo público te pregunta: '¿Para qué sirve el SNAP y qué relación tiene con mi trabajo como servidor público?'",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "SNAP",
+      "función-pública",
+      "fundamentos",
+      "LOSEP"
+    ],
+    "options": [
+      {
+        "id": "EX001-A",
+        "text": "El SNAP rectora la gestión del talento humano y la calidad del servicio público en Ecuador",
+        "delta": {
+          "citizenSatisfaction": 10,
+          "legality": 12,
+          "institutionalReputation": 8
+        },
+        "xpReward": 40,
+        "educationalFeedback": "✅ La Secretaría Nacional de la Administración Pública (SNAP) norma y regula la gestión del servicio público: simplificación de trámites, calidad de atención, tecnología institucional y cultura organizacional. Todo servidor público está sujeto a sus normas técnicas y directrices.",
+        "isCorrect": true,
+        "legalReference": "Ley del SNAP, LOSEP Art. 51"
+      },
+      {
+        "id": "EX001-B",
+        "text": "El SNAP controla los ingresos del Estado como el SRI",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El SRI recauda impuestos. El SNAP gestiona la calidad y organización del servicio público, no las finanzas del Estado. Son instituciones completamente distintas con mandatos diferentes.",
+        "isCorrect": false,
+        "legalReference": "Ley del SNAP, Ley del SRI"
+      },
+      {
+        "id": "EX001-C",
+        "text": "El SNAP sanciona a los funcionarios que cometen delitos",
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -4
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Las sanciones penales las aplica la Fiscalía. La Contraloría aplica responsabilidad administrativa-civil. El SNAP emite normas de calidad y gestión, pero no es un organismo sancionador.",
+        "isCorrect": false,
+        "legalReference": "COIP, Ley de la Contraloría, Ley del SNAP"
+      },
+      {
+        "id": "EX001-D",
+        "text": "El SNAP establece normas de calidad del servicio que como funcionario debo conocer y cumplir",
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 10,
+          "institutionalReputation": 10
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ Todo servidor público debe conocer las normas del SNAP: simplificación de trámites, gestión por procesos, calidad de atención y gobierno digital. Son de cumplimiento obligatorio para todas las instituciones de la función ejecutiva.",
+        "isCorrect": true,
+        "legalReference": "Ley del SNAP Art. 51, LOSEP Art. 22"
+      }
+    ]
+  },
+  {
+    "id": "EX002",
+    "title": "[FÁCIL] Derechos del servidor público",
+    "description": "Llevas 6 meses trabajando en una institución pública. Tu jefe te dice que trabajes los sábados sin pago adicional porque 'el Estado no tiene presupuesto'. ¿Qué dice la LOSEP?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "LOSEP",
+      "derechos-servidor",
+      "jornada-laboral",
+      "función-pública"
+    ],
+    "options": [
+      {
+        "id": "EX002-A",
+        "text": "La LOSEP protege tu jornada laboral; el trabajo en días adicionales debe ser remunerado o compensado",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 10,
+          "citizenSatisfaction": 8
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ La LOSEP Art. 25 establece la jornada ordinaria de 40 horas semanales. El trabajo extraordinario o suplementario debe ser autorizado y remunerado conforme a la ley. Ningún funcionario puede ser obligado a trabajar horas adicionales sin compensación económica o compensatoria.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 25, 26; Ministerio del Trabajo"
+      },
+      {
+        "id": "EX002-B",
+        "text": "Debes obedecer: el servidor público no tiene los mismos derechos que el sector privado",
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Los servidores públicos tienen derechos laborales garantizados por la LOSEP y la Constitución. Aunque el régimen es diferente al Código del Trabajo, la LOSEP protege expresamente la jornada, el descanso y la remuneración. Violar estos derechos puede dar lugar a queja ante el Ministerio del Trabajo.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 22-26, Constitución Art. 326"
+      },
+      {
+        "id": "EX002-C",
+        "text": "Trabajar los sábados voluntariamente para demostrar compromiso con la institución",
+        "delta": {
+          "institutionalReputation": 3,
+          "legality": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ El compromiso es valioso, pero aceptar trabajar sin remuneración en forma habitual normaliza una práctica ilegal. La LOSEP protege tanto al servidor como al Estado: el trabajo sin pago puede interpretarse como un favor que genera obligaciones informales.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 25"
+      },
+      {
+        "id": "EX002-D",
+        "text": "Informarte de tus derechos, conversar con el jefe y si persiste, presentar una queja al Ministerio del Trabajo",
+        "delta": {
+          "legality": 14,
+          "institutionalReputation": 10,
+          "citizenSatisfaction": 5
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El Ministerio del Trabajo tiene competencia sobre el régimen laboral del sector público. Conocer tus derechos y ejercerlos por los canales correctos es lo apropiado. La LOSEP también permite presentar quejas ante la Defensoría del Pueblo si hay vulneración de derechos.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 22, 25; Ministerio del Trabajo; Defensoría del Pueblo"
+      }
+    ]
+  },
+  {
+    "id": "EX003",
+    "title": "[FÁCIL] Concepto de transparencia activa",
+    "description": "Tu institución acaba de publicar en su sitio web los contratos firmados este año, el presupuesto ejecutado y la nómina de servidores, sin que nadie lo haya pedido. Un colega dice que eso es 'innecesario porque nadie lo solicita'.",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "LOTAIP",
+      "transparencia-activa",
+      "obligación-legal",
+      "gobierno-abierto"
+    ],
+    "options": [
+      {
+        "id": "EX003-A",
+        "text": "Tu colega está equivocado: la LOTAIP obliga a publicar esa información aunque nadie la pida",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 10
+        },
+        "xpReward": 45,
+        "educationalFeedback": "✅ El Art. 7 de la LOTAIP lista 25 categorías de información que las instituciones deben publicar proactivamente sin esperar solicitud. Contratos, presupuesto y nómina están entre ellas. La transparencia activa es una obligación legal permanente, no una decisión discrecional.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7"
+      },
+      {
+        "id": "EX003-B",
+        "text": "Tu colega tiene razón: publicar sin que nadie pida es una pérdida de tiempo",
+        "delta": {
+          "legality": -14,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La transparencia activa no es opcional. No publicar la información del Art. 7 de la LOTAIP es una infracción que puede sancionarse con destitución del responsable. El CPCCS supervisa el cumplimiento de esta obligación.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7, 22"
+      },
+      {
+        "id": "EX003-C",
+        "text": "Solo es necesario publicar cuando la Contraloría lo pida en una auditoría",
+        "delta": {
+          "legality": -10,
+          "institutionalReputation": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La publicación es permanente y proactiva, no reactiva. La LOTAIP exige actualización continua sin esperar auditorías. La Contraloría puede verificar el cumplimiento, pero la obligación no depende de que ella lo solicite.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 7"
+      },
+      {
+        "id": "EX003-D",
+        "text": "La publicación es correcta y además debería incluir los planes institucionales y los informes de gestión",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 14,
+          "institutionalReputation": 14
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El Art. 7 de la LOTAIP incluye también planes institucionales, informes de auditoría, convenios, y mucho más. La lista completa tiene 25 tipos de información de obligatoria publicación. Ir más allá del mínimo legal es una buena práctica de gobierno abierto.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, OGP Ecuador"
+      }
+    ]
+  },
+  {
+    "id": "EX004",
+    "title": "[FÁCIL] Conflicto de interés básico",
+    "description": "Tu institución recibe una solicitud de permiso de funcionamiento de una empresa. Al revisar, notas que la empresa pertenece a tu prima. ¿Qué debes hacer?",
+    "category": "ethics-corruption",
+    "npcId": "citizen-004",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "conflicto-de-interés",
+      "LOSEP",
+      "ética",
+      "excusa"
+    ],
+    "options": [
+      {
+        "id": "EX004-A",
+        "text": "Declararte en conflicto de interés y transferir el caso a otro funcionario",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 8
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La LOSEP Art. 43 prohíbe a los servidores públicos actuar en asuntos donde tengan interés personal o familiar. La excusa (recusación) es obligatoria: debes comunicar el conflicto a tu superior y transferir el caso. Esta práctica protege la imparcialidad y tu propia integridad.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 43, COA Art. 31, Código de Ética de la Función Pública"
+      },
+      {
+        "id": "EX004-B",
+        "text": "Aprobar el permiso normalmente porque eres imparcial y tu prima cumple los requisitos",
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ No importa si eres imparcial: el solo hecho del vínculo familiar crea apariencia de conflicto de interés. La LOSEP prohíbe esta actuación aunque el resultado sea correcto. Un tercero podría impugnar el permiso por este motivo, causando daño a la institución y a tu prima.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 43"
+      },
+      {
+        "id": "EX004-C",
+        "text": "Negar el permiso a tu prima para demostrar imparcialidad",
+        "delta": {
+          "legality": -12,
+          "institutionalReputation": -8,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Negar injustificadamente tampoco es correcto. Si tu prima cumple los requisitos, tiene derecho al permiso. El problema no es el resultado sino que TÚ seas quien decida. La solución es transferir el caso, no sesgar la decisión en ninguna dirección.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 43, Constitución Art. 76"
+      },
+      {
+        "id": "EX004-D",
+        "text": "Consultar a la unidad jurídica y al superior sobre cómo proceder antes de actuar",
+        "delta": {
+          "legality": 14,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 6
+        },
+        "xpReward": 40,
+        "educationalFeedback": "✅ Consultar antes de actuar en situaciones dudosas es siempre recomendable. La unidad jurídica puede orientarte sobre el procedimiento correcto de excusa. Sin embargo, la respuesta más completa es ya saber que debes declararte en conflicto de interés y transferir el caso.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 43, COA Art. 31"
+      }
+    ]
+  },
+  {
+    "id": "EX005",
+    "title": "[FÁCIL] Servicio de calidad: el ciudadano como centro",
+    "description": "Una adulta mayor llega a tu ventanilla sin cita. El reglamento dice que se necesita cita previa. La señora vive a 2 horas del Municipio y tiene dificultad para usar el sistema de citas en línea.",
+    "category": "citizen-participation",
+    "npcId": "citizen-006",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "servicio-ciudadano",
+      "grupos-prioritarios",
+      "constitución",
+      "calidad"
+    ],
+    "options": [
+      {
+        "id": "EX005-A",
+        "text": "Atenderla inmediatamente: la Constitución garantiza atención prioritaria a adultos mayores",
+        "delta": {
+          "citizenSatisfaction": 22,
+          "legality": 14,
+          "institutionalReputation": 14
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ El Art. 35 de la Constitución garantiza atención prioritaria e inmediata a adultos mayores en todos los servicios públicos. Este mandato constitucional prevalece sobre el reglamento de citas previas. El servicio público centrado en el ciudadano adapta sus procesos a las necesidades reales de las personas.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 35-38, Ley del Anciano Art. 9"
+      },
+      {
+        "id": "EX005-B",
+        "text": "Negarle la atención: las reglas existen para todos por igual",
+        "delta": {
+          "citizenSatisfaction": -20,
+          "legality": -15,
+          "institutionalReputation": -15
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La igualdad formal no significa tratar igual a quienes son desiguales. La Constitución (Art. 35) establece un trato diferenciado para grupos de atención prioritaria precisamente porque sus circunstancias son distintas. Negarle atención es inconstitucional.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 35, 66"
+      },
+      {
+        "id": "EX005-C",
+        "text": "Pedirle que llame a un familiar para que saque la cita en línea por ella",
+        "delta": {
+          "citizenSatisfaction": -12,
+          "legality": -8,
+          "institutionalReputation": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Trasladar la responsabilidad al ciudadano por las limitaciones del sistema institucional es inaceptable. El Estado debe adaptar sus procesos a las capacidades reales de los ciudadanos, especialmente los más vulnerables.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 35, COA Art. 31"
+      },
+      {
+        "id": "EX005-D",
+        "text": "Atenderla y luego ayudarle a sacar la cita para una próxima visita",
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 20
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Atender la necesidad inmediata Y resolver la causa raíz (la dificultad para sacar citas) es la práctica más completa. Enseñarle a usar el sistema o registrar su información para ayuda futura es servicio público de calidad.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 35, SNAP Norma de Calidad del Servicio"
+      }
+    ]
+  },
+  {
+    "id": "EX006",
+    "title": "[NORMAL] Indicadores de gobierno abierto",
+    "description": "El CPCCS evalúa a tu institución en tres dimensiones: transparencia (60%), participación (30%) y rendición de cuentas (10%). El director quiere enfocar todos los esfuerzos solo en transparencia porque tiene mayor ponderación.",
+    "category": "citizen-participation",
+    "npcId": "citizen-005",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "gobierno-abierto",
+      "CPCCS",
+      "indicadores",
+      "participación",
+      "rendición-de-cuentas"
+    ],
+    "options": [
+      {
+        "id": "EX006-A",
+        "text": "Seguir al director: maximizar transparencia para subir el puntaje total",
+        "delta": {
+          "legality": 5,
+          "institutionalReputation": -5,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 10,
+        "educationalFeedback": "⚠️ Optimizar solo para la ponderación ignora que gobierno abierto es un concepto integral. Una institución con transparencia perfecta pero sin participación ciudadana real no cumple el espíritu de la OGP. Además, el CPCCS puede notar el desequilibrio y cuestionarlo en evaluaciones cualitativas.",
+        "isCorrect": false,
+        "legalReference": "OGP Plan de Acción, CPCCS Metodología de Evaluación"
+      },
+      {
+        "id": "EX006-B",
+        "text": "Trabajar los tres pilares equilibradamente: los tres son obligaciones constitucionales",
+        "delta": {
+          "legality": 14,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 14
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Los tres pilares del gobierno abierto son obligaciones constitucionales independientes, no solo criterios de puntaje. La Ley de Participación Ciudadana y la LOTAIP regulan cada uno por separado. Una estrategia equilibrada construye confianza institucional real, no solo métricas.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 95, 100, 208; LOTAIP; Ley Orgánica de Participación Ciudadana"
+      },
+      {
+        "id": "EX006-C",
+        "text": "Ignorar los indicadores: lo importante es servir bien al ciudadano",
+        "delta": {
+          "institutionalReputation": -8,
+          "legality": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ Aunque la intención es buena, ignorar los indicadores formales tiene consecuencias: el CPCCS puede calificar negativamente a la institución, lo que afecta su imagen y presupuesto. Los indicadores, bien diseñados, miden precisamente si se sirve bien al ciudadano.",
+        "isCorrect": false,
+        "legalReference": "Ley CPCCS Art. 10, Plan de Evaluación Institucional"
+      },
+      {
+        "id": "EX006-D",
+        "text": "Proponer al director un plan que mejore los tres pilares, comenzando por los más débiles",
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 12,
+          "budget": -2
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Comenzar por los pilares más débiles es estratégicamente correcto: mejora el puntaje global más eficientemente y corrige brechas reales. Un plan con metas específicas para cada pilar, con responsables y cronograma, es la mejor práctica de gestión institucional.",
+        "isCorrect": true,
+        "legalReference": "OGP Plan de Acción, CPCCS Metodología, SENPLADES Planificación"
+      }
+    ]
+  },
+  {
+    "id": "EX007",
+    "title": "[NORMAL] Transformación digital: resistencia institucional",
+    "description": "Has implementado un sistema de turnos digitales que redujo el tiempo de espera de 3 horas a 20 minutos. El sindicato de trabajadores protesta porque 'las máquinas están reemplazando a las personas' y amenaza con una huelga.",
+    "category": "digital-government",
+    "npcId": "citizen-003",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "transformación-digital",
+      "gestión-del-cambio",
+      "LOSEP",
+      "sindicato",
+      "tecnología"
+    ],
+    "options": [
+      {
+        "id": "EX007-A",
+        "text": "Explicar que la tecnología libera a los servidores de tareas repetitivas para enfocarse en trabajo de mayor valor",
+        "delta": {
+          "citizenSatisfaction": 14,
+          "legality": 10,
+          "institutionalReputation": 12
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La transformación digital bien gestionada no elimina empleos públicos sino que los transforma. El sistema de turnos libera a los funcionarios de la cola para hacer trabajo de mayor complejidad: orientación, resolución de casos difíciles, atención especializada. La LOSEP garantiza estabilidad laboral en el sector público.",
+        "isCorrect": true,
+        "legalReference": "LOSEP Art. 47, Plan Nacional de Gobierno Digital, BID Transformación Digital del Estado"
+      },
+      {
+        "id": "EX007-B",
+        "text": "Retirar el sistema digital para evitar el conflicto laboral",
+        "delta": {
+          "citizenSatisfaction": -15,
+          "legality": -5,
+          "institutionalReputation": -12
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Retirar una mejora que beneficia a miles de ciudadanos por presión sindical va contra el principio de eficiencia y el mandato digital. El Decreto 1384 obliga a digitalizar servicios. La resistencia al cambio debe gestionarse con diálogo y capacitación, no cediendo ante ella.",
+        "isCorrect": false,
+        "legalReference": "Decreto 1384, Constitución Art. 227"
+      },
+      {
+        "id": "EX007-C",
+        "text": "Ignorar al sindicato: la ley obliga a digitalizar y punto",
+        "delta": {
+          "citizenSatisfaction": 5,
+          "legality": 5,
+          "institutionalReputation": -8
+        },
+        "xpReward": 8,
+        "educationalFeedback": "⚠️ Aunque la digitalización es obligatoria, ignorar al sindicato puede escalar el conflicto y afectar el servicio ciudadano. La gestión del cambio organizacional requiere comunicación, explicación de beneficios y plan de reskilling para los servidores afectados.",
+        "isCorrect": false,
+        "legalReference": "LOSEP Art. 47, Código del Trabajo Art. 220"
+      },
+      {
+        "id": "EX007-D",
+        "text": "Dialogar con el sindicato, mostrar datos de mejora y proponer capacitación para los nuevos roles",
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 16,
+          "budget": -2,
+          "citizenSatisfaction": 16
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ El diálogo con datos concretos (tiempo de espera 3h → 20min) y un plan de reskilling es la estrategia correcta. La transformación digital exitosa requiere 40% tecnología y 60% gestión del cambio. El BID recomienda crear 'champions digitales' dentro de los equipos para facilitar la adopción.",
+        "isCorrect": true,
+        "legalReference": "BID Transformación Digital, LOSEP Art. 22, Decreto 1384"
+      }
+    ]
+  },
+  {
+    "id": "EX008",
+    "title": "[NORMAL] Uso de datos personales en trámites públicos",
+    "description": "Tu institución quiere compartir la base de datos de ciudadanos (nombres, cédulas, teléfonos) con una empresa privada de marketing 'para mejorar la comunicación institucional'. El director dice que es para el bien de los ciudadanos.",
+    "category": "data-protection",
+    "npcId": "citizen-001",
+    "requiredRank": "auxiliary",
+    "difficulty": "easy",
+    "tags": [
+      "LOPDP",
+      "datos-personales",
+      "privacidad",
+      "consentimiento",
+      "sector-público"
+    ],
+    "options": [
+      {
+        "id": "EX008-A",
+        "text": "Compartir los datos porque el director tiene autoridad para decidir",
+        "delta": {
+          "legality": -25,
+          "institutionalReputation": -18,
+          "citizenSatisfaction": -12
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Compartir datos personales de ciudadanos con empresas privadas sin consentimiento viola la LOPDP (Art. 22). Los datos recopilados para un trámite público solo pueden usarse para ese fin específico. Esta acción puede generar sanciones de hasta el 2% de la facturación anual de la institución.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 22, 66; ARCOTEL Resolución de Protección de Datos"
+      },
+      {
+        "id": "EX008-B",
+        "text": "Negarse: los datos personales solo pueden usarse para el fin para el que fueron recopilados",
+        "delta": {
+          "legality": 22,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 10
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ El principio de finalidad de la LOPDP establece que los datos personales solo pueden tratarse para el fin específico por el que fueron recopilados. Compartir datos de trámites con empresas de marketing viola este principio fundamentalmente. El Ministerio de Telecomunicaciones es el ente rector de protección de datos en Ecuador.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 11, 22; Constitución Art. 66 numeral 19"
+      },
+      {
+        "id": "EX008-C",
+        "text": "Compartir solo nombre y correo electrónico porque esos no son datos sensibles",
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Nombre, cédula, teléfono y correo son datos personales básicos protegidos por la LOPDP. No hay datos 'menores' que puedan compartirse sin consentimiento. El principio de minimización y finalidad prohíbe cualquier cesión no consentida.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 4, 11"
+      },
+      {
+        "id": "EX008-D",
+        "text": "Reportar la situación a la unidad jurídica y al Ministerio de Telecomunicaciones",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 8
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ Reportar una instrucción ilegal es la respuesta correcta. El Ministerio de Telecomunicaciones supervisa el cumplimiento de la LOPDP. El funcionario que reporta está protegido por la LOSEP Art. 90 de represalias. Esta acción también protege a la institución de sanciones.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 22, LOSEP Art. 90, MINTEL Supervisión LOPDP"
+      }
+    ]
+  },
+  {
+    "id": "EX009",
+    "title": "[NORMAL] Plataformas comparadas: Uruguay.gob.uy",
+    "description": "Ecuador quiere mejorar su portal de servicios en línea. Se estudia el modelo de Uruguay (uruguay.gob.uy) donde el 95% de trámites estatales están disponibles digitalmente. Tu jefe pregunta cuál es el factor clave del éxito uruguayo.",
+    "category": "digital-government",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": [
+      "gobierno-electrónico",
+      "Uruguay",
+      "comparado",
+      "buenas-prácticas",
+      "AGESIC"
+    ],
+    "options": [
+      {
+        "id": "EX009-A",
+        "text": "Uruguay tiene más presupuesto tecnológico que Ecuador",
+        "delta": {
+          "institutionalReputation": -3
+        },
+        "xpReward": 5,
+        "educationalFeedback": "⚠️ El presupuesto ayuda pero no es el factor principal. Ecuador tiene mayor PIB que Uruguay. El éxito uruguayo se debe principalmente a institucionalidad sólida: la AGESIC (Agencia de Gobierno Electrónico) con mandato claro, autonomía y apoyo político sostenido por múltiples gobiernos.",
+        "isCorrect": false,
+        "legalReference": "AGESIC Uruguay, CEPAL Gobierno Digital América Latina 2023"
+      },
+      {
+        "id": "EX009-B",
+        "text": "Una agencia especializada (AGESIC) con mandato legal claro, interoperabilidad y un portal único para todos los trámites",
+        "delta": {
+          "citizenSatisfaction": 12,
+          "legality": 10,
+          "institutionalReputation": 16
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ El modelo uruguayo se basa en tres pilares: 1) AGESIC con mandato y presupuesto propios, 2) Plataforma de interoperabilidad que conecta todas las instituciones, 3) Portal único (uruguay.gob.uy) donde el ciudadano accede a todos los trámites. Ecuador tiene el MINTEL y la PIDE como equivalentes, pero aún en desarrollo.",
+        "isCorrect": true,
+        "legalReference": "AGESIC Uruguay, MINTEL Ecuador - PIDE, CEPAL 2023"
+      },
+      {
+        "id": "EX009-C",
+        "text": "Uruguay obligó a los ciudadanos a usar los servicios digitales bajo multa",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -5,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Falso. Uruguay adoptó un modelo inclusivo que mantiene canales presenciales para quien los necesite. La adopción masiva se logró por calidad del servicio digital, no por coerción. Un sistema digital que funciona mejor que el presencial se adopta voluntariamente.",
+        "isCorrect": false,
+        "legalReference": "AGESIC Uruguay - Modelo de Inclusión Digital"
+      },
+      {
+        "id": "EX009-D",
+        "text": "Aplicar el modelo uruguayo adaptado: fortalecer el MINTEL, completar la PIDE y crear un portal único",
+        "delta": {
+          "citizenSatisfaction": 16,
+          "legality": 12,
+          "institutionalReputation": 18,
+          "budget": -4
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Aprender del modelo uruguayo y adaptarlo al contexto ecuatoriano es la estrategia correcta. Ecuador ya tiene los elementos base: MINTEL como coordinador, PIDE como plataforma de interoperabilidad, y el Decreto 1384 como mandato legal. Completar y fortalecer estos elementos puede llevar a Ecuador al nivel de Uruguay en 3-5 años.",
+        "isCorrect": true,
+        "legalReference": "Decreto 1384, MINTEL - PIDE, AGESIC Uruguay, CEPAL 2023"
+      }
+    ]
+  },
+  {
+    "id": "EX010",
+    "title": "[NORMAL] Acceso a información reservada",
+    "description": "Un ciudadano solicita acceso a un informe de inteligencia policial sobre investigaciones en curso. Tu institución tiene el documento. La LOTAIP permite reservar ciertos tipos de información. ¿Cómo actúas?",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "auxiliary",
+    "difficulty": "normal",
+    "tags": [
+      "LOTAIP",
+      "información-reservada",
+      "seguridad",
+      "derecho-información",
+      "procedimiento"
+    ],
+    "options": [
+      {
+        "id": "EX010-A",
+        "text": "Negar sin explicación porque 'la información es confidencial'",
+        "delta": {
+          "legality": -14,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Negar sin motivación jurídica viola el derecho al debido proceso (Constitución Art. 76). Aunque la información sea reservada, la institución debe notificar formalmente la negativa, citando la causal legal específica del Art. 17 de la LOTAIP, y el ciudadano tiene derecho a impugnar.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, Constitución Art. 76"
+      },
+      {
+        "id": "EX010-B",
+        "text": "Entregar el informe completo: la LOTAIP garantiza el acceso a toda información pública",
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -15
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La LOTAIP tiene excepciones expresas. El Art. 17 permite reservar información cuando su revelación puede comprometer la seguridad del Estado, investigaciones penales en curso, o datos personales de terceros. Los informes de inteligencia en investigaciones activas están típicamente en esa categoría.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17"
+      },
+      {
+        "id": "EX010-C",
+        "text": "Notificar formalmente la negativa citando la causal del Art. 17 de la LOTAIP e informar sobre el recurso ante la Defensoría",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 8
+        },
+        "xpReward": 55,
+        "educationalFeedback": "✅ La negativa debe ser formal, motivada y citar la causal legal específica. El ciudadano tiene derecho a conocer por qué se niega su solicitud y puede recurrir ante la Defensoría del Pueblo. Esta práctica cumple la ley y protege a la institución de acusaciones de arbitrariedad.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 17, 22; Defensoría del Pueblo - Acción de Acceso"
+      },
+      {
+        "id": "EX010-D",
+        "text": "Entregar una versión redactada del informe, ocultando solo los datos que comprometen la investigación",
+        "delta": {
+          "legality": 14,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 12
+        },
+        "xpReward": 50,
+        "educationalFeedback": "✅ La redacción parcial (o 'anonimización') es una buena práctica cuando parte del documento es reservada y parte es pública. La LOTAIP no exige negar todo un documento si solo parte de él es reservada. Muchos países usan esta técnica para maximizar la transparencia sin comprometer intereses legítimos.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 17, Estándares Internacionales de Acceso a Información"
+      }
+    ]
+  },
+  {
+    "id": "EX011",
+    "title": "[DIFÍCIL] Reforma regulatoria y análisis de impacto",
+    "description": "El Ministerio prepara una regulación que obligará a todas las empresas de logística a reportar sus rutas en tiempo real al Estado. Las empresas estiman un costo de implementación de $50M. ¿Qué proceso debe seguir antes de aprobar la regulación?",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": [
+      "regulación",
+      "análisis-impacto",
+      "gobierno-abierto",
+      "consulta-pública",
+      "COA"
+    ],
+    "options": [
+      {
+        "id": "EX011-A",
+        "text": "Aprobar directamente: el Ministerio tiene competencia regulatoria sin necesidad de consultar",
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -8,
+          "budget": -5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ El COA (Art. 166) obliga a realizar consulta pública previa para regulaciones que afectan derechos. Ignorarla puede dar lugar a la impugnación de la norma. Además, sin análisis de impacto, una regulación de $50M puede ser desproporcional o tener alternativas más eficientes.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 166, Ley Orgánica de Participación Ciudadana Art. 9"
+      },
+      {
+        "id": "EX011-B",
+        "text": "Hacer análisis de impacto regulatorio, consulta pública de 30 días y ajustar según los comentarios",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 14,
+          "budget": 5
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ El Análisis de Impacto Regulatorio (AIR o RIA por sus siglas en inglés) es la mejor práctica internacional para normas con impacto significativo. Evalúa costos, beneficios y alternativas. Ecuador lo usa en el COMEX para regulaciones de comercio exterior. La consulta pública de 30 días es obligatoria por el COA para regulaciones que afectan derechos.",
+        "isCorrect": true,
+        "legalReference": "COA Art. 166, OCDE Principios de Política Regulatoria, COMEX Análisis de Impacto"
+      },
+      {
+        "id": "EX011-C",
+        "text": "Hacer una reunión con las empresas más grandes del sector para obtener su aprobación",
+        "delta": {
+          "legality": -8,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ Consultar solo con grandes empresas excluye a las pequeñas y medianas, a los trabajadores y a los ciudadanos que usan los servicios de logística. Puede configurar captura regulatoria (cuando la industria influye desproporcionadamente en la norma que la regula). La consulta pública debe ser abierta e incluyente.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 166, Ley Orgánica de Participación Ciudadana Art. 9"
+      },
+      {
+        "id": "EX011-D",
+        "text": "Proponer una implementación gradual con subsidios para PYMEs, basada en consulta pública amplia",
+        "delta": {
+          "legality": 14,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 16,
+          "budget": -3
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ La implementación gradual y diferenciada (grandes empresas primero, luego medianas y pequeñas) reduce el impacto económico sin sacrificar el objetivo regulatorio. Los subsidios para PYMEs garantizan equidad. Esta es la práctica del modelo de gobernanza regulatoria recomendado por la OCDE y el BID para América Latina.",
+        "isCorrect": true,
+        "legalReference": "OCDE Principios Regulatorios, BID Regulación Inteligente, COA Art. 166"
+      }
+    ]
+  },
+  {
+    "id": "EX012",
+    "title": "[DIFÍCIL] Ciberseguridad en infraestructura crítica del Estado",
+    "description": "Un ataque ransomware cifró todos los servidores del sistema de recaudación tributaria del SRI. El atacante pide $2M en criptomonedas o publicará los datos de 14 millones de contribuyentes. Como director de TI, ¿qué haces?",
+    "category": "cybersecurity",
+    "npcId": "citizen-004",
+    "requiredRank": "analyst",
+    "difficulty": "normal",
+    "tags": [
+      "ransomware",
+      "ciberseguridad",
+      "EGSI",
+      "EcuCERT",
+      "infraestructura-crítica",
+      "LOPDP"
+    ],
+    "options": [
+      {
+        "id": "EX012-A",
+        "text": "Pagar el rescate para recuperar los datos rápidamente y evitar la publicación",
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -18,
+          "budget": -15
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Pagar rescates a atacantes está prohibido en muchos países y puede violar leyes antilavado. No garantiza recuperar los datos ni que el atacante no los publique igualmente. Además, el pago en criptomonedas puede constituir financiamiento de actividades ilícitas (COIP Art. 317). La EGSI prohíbe esta práctica.",
+        "isCorrect": false,
+        "legalReference": "EGSI 2, COIP Art. 317, EcuCERT Protocolo de Incidentes"
+      },
+      {
+        "id": "EX012-B",
+        "text": "Activar el protocolo de incidentes: aislar sistemas, notificar al EcuCERT y restaurar desde backups",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "budget": -5
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ El Esquema Gubernamental de Seguridad de la Información (EGSI 2) establece que ante incidentes críticos se debe: 1) Aislar los sistemas comprometidos, 2) Notificar al EcuCERT (Equipo de Respuesta a Incidentes del Estado), 3) Restaurar desde backups seguros, 4) Investigar el vector de ataque. La LOPDP exige notificar la brecha de datos en 72 horas.",
+        "isCorrect": true,
+        "legalReference": "EGSI 2 Numeral 16, EcuCERT, LOPDP Art. 44"
+      },
+      {
+        "id": "EX012-C",
+        "text": "Mantener el incidente en secreto para evitar pánico y pérdida de confianza en el SRI",
+        "delta": {
+          "legality": -22,
+          "institutionalReputation": -20,
+          "citizenSatisfaction": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Ocultar una brecha de datos que afecta a 14 millones de ciudadanos viola la LOPDP (Art. 44), que obliga a notificar brechas en 72 horas. El encubrimiento de un incidente de esta magnitud es peor que el incidente mismo y puede dar lugar a responsabilidad penal del director. La transparencia en ciberseguridad es obligatoria.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 44, EGSI 2, COIP Art. 232"
+      },
+      {
+        "id": "EX012-D",
+        "text": "Notificar públicamente, activar el plan de continuidad de negocio y colaborar con la Fiscalía en la investigación",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 10,
+          "budget": -8
+        },
+        "xpReward": 70,
+        "educationalFeedback": "✅ La respuesta completa: notificación pública cumple la LOPDP, el plan de continuidad mantiene servicios críticos, y la colaboración con la Fiscalía puede llevar a la identificación de los atacantes. El COIP Art. 232 tipifica los ataques a infraestructura crítica con penas de 5 a 7 años. Ecuador investiga estos casos con apoyo de Interpol.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 44, COIP Art. 232, EGSI 2, EcuCERT"
+      }
+    ]
+  },
+  {
+    "id": "EX013",
+    "title": "[DIFÍCIL] Autonomía universitaria vs. control público",
+    "description": "Una universidad pública recibe fondos del Estado pero se niega a entregar información sobre sus contratos de consultoría alegando 'autonomía universitaria'. Como funcionario del CPCCS, ¿cómo actúas?",
+    "category": "transparency",
+    "npcId": "citizen-002",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "LOTAIP",
+      "autonomía-universitaria",
+      "CPCCS",
+      "rendición-de-cuentas",
+      "fondos-públicos"
+    ],
+    "options": [
+      {
+        "id": "EX013-A",
+        "text": "Respetar la autonomía: las universidades no están sujetas a la LOTAIP",
+        "delta": {
+          "legality": -18,
+          "institutionalReputation": -12
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Las universidades públicas son entidades del sector público que reciben fondos estatales. La LOTAIP (Art. 3) las incluye expresamente en su ámbito de aplicación. La autonomía universitaria (Constitución Art. 355) protege la academia, no la opacidad financiera.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 3, Constitución Art. 355"
+      },
+      {
+        "id": "EX013-B",
+        "text": "Iniciar un proceso de verificación del CPCCS: la autonomía no exime de transparencia sobre fondos públicos",
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 16,
+          "citizenSatisfaction": 12
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ La autonomía universitaria protege la libertad académica e investigativa, no el manejo opaco de fondos públicos. El CPCCS puede iniciar procesos de verificación y el Contralor tiene competencia para auditar cualquier institución que use fondos del Estado. La rendición de cuentas y la autonomía son compatibles.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 355, LOTAIP Art. 3, Ley Orgánica de la Contraloría Art. 3"
+      },
+      {
+        "id": "EX013-C",
+        "text": "Demandar a la universidad ante el juez constitucional por violación de la LOTAIP",
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 8,
+          "citizenSatisfaction": 6
+        },
+        "xpReward": 30,
+        "educationalFeedback": "⚠️ La acción judicial es posible (acción de acceso a la información pública, Constitución Art. 91), pero el CPCCS tiene mecanismos administrativos más ágiles. La vía judicial se usa cuando fallan los mecanismos administrativos. Es válida pero no es el primer paso correcto.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 91, LOTAIP Art. 22"
+      },
+      {
+        "id": "EX013-D",
+        "text": "Emitir un informe público que documente la negativa y enviarlo a la Contraloría y a la Asamblea Nacional",
+        "delta": {
+          "legality": 16,
+          "institutionalReputation": 18,
+          "citizenSatisfaction": 14
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ El CPCCS tiene la función de transparentar el uso del poder público. Un informe público sobre la negativa de la universidad genera presión institucional y ciudadana. La Contraloría puede iniciar una auditoría y la Asamblea puede citar a las autoridades universitarias. El control social múltiple es más efectivo.",
+        "isCorrect": true,
+        "legalReference": "Constitución Art. 208, Ley CPCCS, Ley Orgánica de la Contraloría"
+      }
+    ]
+  },
+  {
+    "id": "EX014",
+    "title": "[DIFÍCIL] Innovación pública y sandbox regulatorio",
+    "description": "Una startup ecuatoriana desarrolló un sistema de IA que puede procesar solicitudes de jubilación del IESS en 24 horas (actualmente tarda 6 meses). Para desplegarlo necesitan acceder a datos del IESS. No existe regulación específica de IA en el sector público ecuatoriano.",
+    "category": "digital-government",
+    "npcId": "citizen-005",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "IA",
+      "innovación-pública",
+      "regulación",
+      "sandbox",
+      "datos-públicos",
+      "IESS"
+    ],
+    "options": [
+      {
+        "id": "EX014-A",
+        "text": "Rechazar: no existe regulación de IA, por lo que no se puede proceder",
+        "delta": {
+          "legality": 3,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -10
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ La ausencia de regulación específica no prohíbe la innovación. El COA (Art. 14) permite aplicar principios generales cuando hay vacíos normativos. La Unión Europea y Colombia desarrollaron sandboxes regulatorios para probar IA en sectores sin regulación previa. Rechazar paraliza la innovación que puede beneficiar a millones.",
+        "isCorrect": false,
+        "legalReference": "COA Art. 14, UE AI Act, Colombia Sandbox IA Sector Público"
+      },
+      {
+        "id": "EX014-B",
+        "text": "Implementar sin restricciones: si mejora el servicio, todo está permitido",
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": 5
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Implementar IA con acceso a datos sensibles del IESS sin marco legal es un riesgo enorme. La LOPDP exige bases legales para el tratamiento de datos. Si el sistema tiene errores, puede afectar pensiones de miles de personas sin mecanismo de recurso. La prisa puede causar daños irreparables.",
+        "isCorrect": false,
+        "legalReference": "LOPDP Art. 22, Constitución Art. 226"
+      },
+      {
+        "id": "EX014-C",
+        "text": "Crear un piloto sandbox con datos anonimizados, supervisión humana obligatoria y evaluación de impacto antes del despliegue masivo",
+        "delta": {
+          "citizenSatisfaction": 16,
+          "legality": 14,
+          "institutionalReputation": 18,
+          "budget": -4
+        },
+        "xpReward": 65,
+        "educationalFeedback": "✅ El sandbox regulatorio permite probar innovaciones en entornos controlados. Datos anonimizados protegen la privacidad (LOPDP), la supervisión humana evita errores sistémicos y la evaluación de impacto permite identificar sesgos. España, Colombia y Chile usan este modelo para IA en sector público. El SNAP podría regular el piloto.",
+        "isCorrect": true,
+        "legalReference": "LOPDP Art. 11, SNAP Laboratorio de Gobierno, Carta Iberoamericana de IA Pública 2023"
+      },
+      {
+        "id": "EX014-D",
+        "text": "Proponer que la Asamblea Nacional legisle urgentemente sobre IA antes de proceder",
+        "delta": {
+          "legality": 8,
+          "institutionalReputation": 5,
+          "citizenSatisfaction": -5
+        },
+        "xpReward": 15,
+        "educationalFeedback": "⚠️ La legislación es necesaria a largo plazo, pero esperar a la Asamblea puede tomar años mientras 6 millones de afiliados siguen esperando 6 meses por sus jubilaciones. El enfoque correcto es usar el marco existente (LOPDP, COA) para un piloto regulado, simultáneamente con el proceso legislativo.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 120, COA Art. 14, LOPDP"
+      }
+    ]
+  },
+  {
+    "id": "EX015",
+    "title": "[DIFÍCIL] Control social ante política de austeridad",
+    "description": "El Gobierno anuncia un recorte del 30% en el presupuesto de salud pública. Organizaciones ciudadanas piden información sobre cómo se tomó la decisión, los estudios técnicos y quiénes participaron en la definición. El Ministerio de Finanzas se niega.",
+    "category": "transparency",
+    "npcId": "citizen-001",
+    "requiredRank": "analyst",
+    "difficulty": "hard",
+    "tags": [
+      "control-social",
+      "LOTAIP",
+      "presupuesto-público",
+      "participación",
+      "rendición-de-cuentas"
+    ],
+    "options": [
+      {
+        "id": "EX015-A",
+        "text": "El Ministerio puede reservar decisiones de política fiscal por razones de Estado",
+        "delta": {
+          "legality": -14,
+          "institutionalReputation": -12,
+          "citizenSatisfaction": -10
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ Las razones de Estado solo pueden invocar las causales taxativas del Art. 17 de la LOTAIP (seguridad nacional, procesos judiciales activos, datos personales). Una política presupuestaria es información pública. El Código Orgánico de Planificación y Finanzas Públicas obliga a transparentar la metodología del presupuesto.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 17, Código Orgánico de Planificación y Finanzas Públicas Art. 167"
+      },
+      {
+        "id": "EX015-B",
+        "text": "Las organizaciones tienen derecho a la información; el Ministerio debe entregar los estudios técnicos en 10 días",
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 14,
+          "citizenSatisfaction": 15
+        },
+        "xpReward": 60,
+        "educationalFeedback": "✅ Los estudios técnicos que sustentan decisiones de política pública son información pública (LOTAIP Art. 7). El Código Orgánico de Planificación y Finanzas obliga a justificar técnicamente los recortes presupuestarios. Las organizaciones ciudadanas pueden interponer acción de acceso a la información ante la Defensoría del Pueblo.",
+        "isCorrect": true,
+        "legalReference": "LOTAIP Art. 7, 9; Código Orgánico de Planificación Art. 167; Defensoría del Pueblo"
+      },
+      {
+        "id": "EX015-C",
+        "text": "El Ministerio puede negarse porque la política fiscal es competencia exclusiva del Ejecutivo",
+        "delta": {
+          "legality": -12,
+          "institutionalReputation": -10,
+          "citizenSatisfaction": -8
+        },
+        "xpReward": 0,
+        "educationalFeedback": "❌ La competencia para decidir no implica el derecho a opacidad. El Ejecutivo tiene potestad presupuestaria, pero los ciudadanos tienen derecho a conocer los fundamentos técnicos de esas decisiones. La rendición de cuentas (Constitución Art. 208) aplica a todas las funciones del Estado.",
+        "isCorrect": false,
+        "legalReference": "Constitución Art. 208, LOTAIP Art. 3"
+      },
+      {
+        "id": "EX015-D",
+        "text": "Las organizaciones deben solicitar una audiencia con el Ministro, no información técnica",
+        "delta": {
+          "legality": -8,
+          "citizenSatisfaction": -6,
+          "institutionalReputation": -5
+        },
+        "xpReward": 5,
+        "educationalFeedback": "❌ La audiencia es un mecanismo de participación válido pero no reemplaza el derecho de acceso a la información. Tanto la audiencia como la entrega de documentos técnicos son derechos distintos reconocidos en la LOTAIP y la Ley de Participación Ciudadana. No son excluyentes.",
+        "isCorrect": false,
+        "legalReference": "LOTAIP Art. 9, Ley Orgánica de Participación Ciudadana Art. 9"
+      }
+    ]
+  }
+]

@@ -7,12 +7,22 @@
     "npcId": "minister-001",
     "requiredRank": "auxiliary",
     "difficulty": "hard",
-    "tags": ["phishing", "seguridad", "respuesta-incidentes", "COIP", "EcuCERT"],
+    "tags": [
+      "phishing",
+      "seguridad",
+      "respuesta-incidentes",
+      "COIP",
+      "EcuCERT"
+    ],
     "options": [
       {
         "id": "CS001-A",
         "text": "Cambiar inmediatamente las contraseñas de los afectados y activar autenticación multifactor",
-        "delta": { "legality": 15, "institutionalReputation": 10, "budget": -8 },
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 10,
+          "budget": -8
+        },
         "xpReward": 50,
         "educationalFeedback": "Respuesta correcta de contención. Ante credenciales comprometidas, la acción inmediata es invalidarlas y activar MFA. El COIP Art. 229 tipifica el acceso no autorizado a sistemas informáticos como delito. Reportar a EcuCERT (Ecuador CERT, adscrito al MINTEL) activa el apoyo técnico del Estado ecuatoriano para la respuesta.",
         "isCorrect": true,
@@ -21,7 +31,11 @@
       {
         "id": "CS001-B",
         "text": "Investigar internamente quién fue responsable antes de actuar",
-        "delta": { "legality": -15, "institutionalReputation": -12, "budget": -5 },
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -12,
+          "budget": -5
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Error grave. En un incidente activo, investigar antes de contener permite que el ataque continúe. El COIP Art. 234 tipifica el ataque a infraestructura crítica de información. La respuesta a incidentes prioriza contención, erradicación y recuperación según el marco de EcuCERT del Ecuador.",
         "isCorrect": false,
@@ -30,7 +44,11 @@
       {
         "id": "CS001-C",
         "text": "Notificar a todos los funcionarios sobre el ataque y dar capacitación emergente",
-        "delta": { "legality": 8, "institutionalReputation": 8, "citizenSatisfaction": 3 },
+        "delta": {
+          "legality": 8,
+          "institutionalReputation": 8,
+          "citizenSatisfaction": 3
+        },
         "xpReward": 30,
         "educationalFeedback": "Parcialmente correcto. La comunicación interna es necesaria pero insuficiente. Primero debes contener el incidente activo (cambio de credenciales) y luego comunicar. El Esquema Gubernamental de Seguridad de la Información (EGSI) emitido por MINTEL establece el orden correcto de respuesta.",
         "isCorrect": false,
@@ -39,7 +57,12 @@
       {
         "id": "CS001-D",
         "text": "Activar el plan de respuesta a incidentes, contener, notificar y reportar a EcuCERT",
-        "delta": { "legality": 20, "institutionalReputation": 15, "budget": -12, "citizenSatisfaction": 5 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 15,
+          "budget": -12,
+          "citizenSatisfaction": 5
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ Respuesta modelo. El EGSI (Esquema Gubernamental de Seguridad de la Información del Ecuador, MINTEL 2014 actualizado 2019) establece el protocolo: Contener → Erradicar → Recuperar → Notificar. EcuCERT es el equipo de respuesta nacional. El COIP Art. 229 y 230 tipifican estos delitos informáticos con penas de 1 a 3 años.",
         "isCorrect": true,
@@ -55,12 +78,22 @@
     "npcId": "citizen-004",
     "requiredRank": "analyst",
     "difficulty": "hard",
-    "tags": ["vulnerabilidad", "datos-personales", "divulgación-responsable", "LOPDP", "COIP"],
+    "tags": [
+      "vulnerabilidad",
+      "datos-personales",
+      "divulgación-responsable",
+      "LOPDP",
+      "COIP"
+    ],
     "options": [
       {
         "id": "CS002-A",
         "text": "Ignorar el reporte, el investigador puede estar mintiendo",
-        "delta": { "legality": -25, "institutionalReputation": -20, "citizenSatisfaction": -15 },
+        "delta": {
+          "legality": -25,
+          "institutionalReputation": -20,
+          "citizenSatisfaction": -15
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Negligencia grave. La LOPDP Art. 42 obliga a notificar brechas de datos en 72 horas. Si los datos se filtran por no actuar, la institución tiene responsabilidad directa. La Superintendencia de Protección de Datos puede imponer multas de hasta el 2% del presupuesto institucional (LOPDP Art. 68).",
         "isCorrect": false,
@@ -69,7 +102,10 @@
       {
         "id": "CS002-B",
         "text": "Corregir silenciosamente la vulnerabilidad sin reconocer el reporte",
-        "delta": { "legality": 5, "institutionalReputation": -8 },
+        "delta": {
+          "legality": 5,
+          "institutionalReputation": -8
+        },
         "xpReward": 15,
         "educationalFeedback": "Incompleto. No reconocer desincentiva la divulgación responsable futura. Ecuador no tiene aún programa formal de Bug Bounty gubernamental, pero el MINTEL y EcuCERT promueven la divulgación coordinada. Silenciar el reporte cuando ya hubo exposición potencial puede igualmente activar obligaciones de notificación de la LOPDP Art. 42.",
         "isCorrect": false,
@@ -78,7 +114,12 @@
       {
         "id": "CS002-C",
         "text": "Corregir la vulnerabilidad, notificar a los ciudadanos afectados y agradecer al investigador",
-        "delta": { "legality": 18, "institutionalReputation": 20, "citizenSatisfaction": 12, "budget": -8 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 20,
+          "citizenSatisfaction": 12,
+          "budget": -8
+        },
         "xpReward": 65,
         "educationalFeedback": "✅ Correcto. La LOPDP Art. 42 exige notificar a la Superintendencia de Protección de Datos y a los titulares afectados ante una brecha. Reconocer al investigador fomenta el reporte responsable. El COIP Art. 229 exime de responsabilidad penal a quienes actúan con autorización del titular del sistema.",
         "isCorrect": true,
@@ -87,7 +128,11 @@
       {
         "id": "CS002-D",
         "text": "Amenazar legalmente al investigador por acceder sin autorización",
-        "delta": { "legality": -20, "institutionalReputation": -25, "citizenSatisfaction": -10 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -25,
+          "citizenSatisfaction": -10
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Gravísimo error. Aunque el COIP Art. 229 tipifica el acceso no autorizado, perseguir a investigadores de buena fe cuando hay exposición real de datos desvía la atención del verdadero problema. Ecuador y la comunidad internacional reconocen la divulgación responsable como práctica legítima. Esto destruiría la reputación institucional.",
         "isCorrect": false,
@@ -102,13 +147,23 @@
     "category": "cybersecurity",
     "npcId": "minister-003",
     "requiredRank": "viceminister",
-    "difficulty": "expert",
-    "tags": ["ransomware", "infraestructura-crítica", "MSP", "COIP", "EcuCERT"],
+    "difficulty": "hard",
+    "tags": [
+      "ransomware",
+      "infraestructura-crítica",
+      "MSP",
+      "COIP",
+      "EcuCERT"
+    ],
     "options": [
       {
         "id": "CS003-A",
         "text": "Pagar el rescate para recuperar los datos rápidamente",
-        "delta": { "legality": -20, "institutionalReputation": -15, "budget": -30 },
+        "delta": {
+          "legality": -20,
+          "institutionalReputation": -15,
+          "budget": -30
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ No se debe pagar rescates. El COIP Art. 232 tipifica los ataques a infraestructura crítica con penas de 7 a 10 años. Pagar financia el crimen organizado y puede configurar responsabilidad por uso indebido de fondos públicos bajo la Contraloría General. El pago tampoco garantiza recuperación de datos.",
         "isCorrect": false,
@@ -117,7 +172,12 @@
       {
         "id": "CS003-B",
         "text": "Activar protocolos de continuidad, restaurar desde backups y reportar a EcuCERT y Fiscalía",
-        "delta": { "legality": 18, "institutionalReputation": 12, "budget": -15, "citizenSatisfaction": 5 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 12,
+          "budget": -15,
+          "citizenSatisfaction": 5
+        },
         "xpReward": 70,
         "educationalFeedback": "✅ Correcto. La resiliencia depende de backups aislados. Reportar a EcuCERT activa el equipo de respuesta del MINTEL. La Fiscalía debe conocer el caso pues el COIP Art. 232 tipifica los ataques a infraestructura crítica de información (sistemas de salud pública) con penas de 7 a 10 años.",
         "isCorrect": true,
@@ -126,7 +186,11 @@
       {
         "id": "CS003-C",
         "text": "Negociar con los atacantes para reducir el monto del rescate",
-        "delta": { "legality": -15, "institutionalReputation": -20, "budget": -20 },
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -20,
+          "budget": -20
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Negociar legitima el crimen y expone al Estado a responsabilidades. El uso de fondos públicos en pago de rescates puede ser investigado por la Contraloría General. No hay garantía de recuperación de datos. El COIP Art. 232 establece que estos son crímenes graves contra el Estado.",
         "isCorrect": false,
@@ -135,7 +199,12 @@
       {
         "id": "CS003-D",
         "text": "Activar plan de continuidad, contratar respuesta forense, reportar a Fiscalía y revisar estrategia de backups",
-        "delta": { "legality": 20, "institutionalReputation": 18, "budget": -18, "citizenSatisfaction": 8 },
+        "delta": {
+          "legality": 20,
+          "institutionalReputation": 18,
+          "budget": -18,
+          "citizenSatisfaction": 8
+        },
         "xpReward": 80,
         "educationalFeedback": "✅ Excelente respuesta integral. La pericia forense digital es necesaria para la investigación penal bajo el COIP Art. 232 y 500 (delitos informáticos). La Fiscalía General del Estado puede solicitar colaboración técnica de ARCOTEL y EcuCERT. Revisar backups (regla 3-2-1) cumple con el EGSI del MINTEL.",
         "isCorrect": true,
@@ -151,12 +220,22 @@
     "npcId": "supplier-001",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["contraseñas", "EGSI", "MINTEL", "gestión-accesos", "LOSEP"],
+    "tags": [
+      "contraseñas",
+      "EGSI",
+      "MINTEL",
+      "gestión-accesos",
+      "LOSEP"
+    ],
     "options": [
       {
         "id": "CS004-A",
         "text": "Aprobar el gestor de contraseñas y hacer la adopción obligatoria",
-        "delta": { "legality": 12, "institutionalReputation": 8, "budget": -5 },
+        "delta": {
+          "legality": 12,
+          "institutionalReputation": 8,
+          "budget": -5
+        },
         "xpReward": 40,
         "educationalFeedback": "✅ Correcto. El EGSI (Esquema Gubernamental de Seguridad de la Información, MINTEL) establece controles obligatorios para la gestión de accesos en entidades públicas. El uso de contraseñas seguras es un control A.9 del EGSI. La adopción obligatoria garantiza cumplimiento de la normativa técnica.",
         "isCorrect": true,
@@ -165,7 +244,10 @@
       {
         "id": "CS004-B",
         "text": "Emitir una circular pidiendo a los funcionarios mejorar sus contraseñas voluntariamente",
-        "delta": { "legality": 3, "institutionalReputation": 2 },
+        "delta": {
+          "legality": 3,
+          "institutionalReputation": 2
+        },
         "xpReward": 10,
         "educationalFeedback": "❌ Insuficiente. El EGSI es de cumplimiento obligatorio para las instituciones del sector público ecuatoriano (MINTEL Resolución). Las circulares voluntarias no cumplen con el control A.9. La LOSEP Art. 22 obliga a los servidores públicos a cumplir las disposiciones institucionales.",
         "isCorrect": false,
@@ -174,7 +256,11 @@
       {
         "id": "CS004-C",
         "text": "Implementar autenticación multifactor además del gestor de contraseñas",
-        "delta": { "legality": 18, "institutionalReputation": 15, "budget": -10 },
+        "delta": {
+          "legality": 18,
+          "institutionalReputation": 15,
+          "budget": -10
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Excelente. El EGSI incluye controles para autenticación robusta. MFA + gestor de contraseñas es la combinación recomendada. ARCOTEL y el MINTEL promueven el MFA para sistemas gubernamentales críticos. Reduce el 99% del riesgo de compromisos por credenciales según estudios de ciberseguridad.",
         "isCorrect": true,
@@ -183,7 +269,11 @@
       {
         "id": "CS004-D",
         "text": "Rechazar por el costo y establecer requisitos mínimos de longitud de contraseña",
-        "delta": { "legality": -5, "institutionalReputation": -3, "budget": 2 },
+        "delta": {
+          "legality": -5,
+          "institutionalReputation": -3,
+          "budget": 2
+        },
         "xpReward": 5,
         "educationalFeedback": "❌ Incumplimiento del EGSI. El Esquema Gubernamental de Seguridad de la Información no es optativo — su cumplimiento es obligatorio para todas las entidades del sector público. Rechazar herramientas necesarias por costo cuando el EGSI las exige genera responsabilidad ante la Contraloría General del Estado.",
         "isCorrect": false,
@@ -199,12 +289,22 @@
     "npcId": "citizen-001",
     "requiredRank": "auxiliary",
     "difficulty": "normal",
-    "tags": ["shadow-IT", "LOPDP", "LOSEP", "comunicaciones-seguras", "datos-personales"],
+    "tags": [
+      "shadow-IT",
+      "LOPDP",
+      "LOSEP",
+      "comunicaciones-seguras",
+      "datos-personales"
+    ],
     "options": [
       {
         "id": "CS005-A",
         "text": "Prohibir formalmente el uso de WhatsApp para asuntos institucionales",
-        "delta": { "legality": 8, "institutionalReputation": 3, "citizenSatisfaction": -5 },
+        "delta": {
+          "legality": 8,
+          "institutionalReputation": 3,
+          "citizenSatisfaction": -5
+        },
         "xpReward": 20,
         "educationalFeedback": "Parcialmente correcto. La prohibición es necesaria: la LOSEP Art. 24 lit. g) obliga a los servidores públicos a mantener la reserva de información. La LOPDP Art. 15 prohíbe tratar datos personales sin base legal en plataformas sin garantías. Sin embargo, la prohibición sin alternativa no resuelve el problema raíz.",
         "isCorrect": false,
@@ -213,7 +313,12 @@
       {
         "id": "CS005-B",
         "text": "Implementar una plataforma de mensajería segura institucional y capacitar al equipo",
-        "delta": { "legality": 15, "institutionalReputation": 12, "citizenSatisfaction": 8, "budget": -8 },
+        "delta": {
+          "legality": 15,
+          "institutionalReputation": 12,
+          "citizenSatisfaction": 8,
+          "budget": -8
+        },
         "xpReward": 55,
         "educationalFeedback": "✅ Correcto. Solucionar la causa raíz con una alternativa segura cumple con el EGSI del MINTEL y la LOPDP. La plataforma institucional debe garantizar cifrado y mantener los datos en servidores bajo control estatal ecuatoriano. La LOPDP Art. 37 exige que los responsables implementen medidas técnicas de seguridad.",
         "isCorrect": true,
@@ -222,7 +327,11 @@
       {
         "id": "CS005-C",
         "text": "Ignorar el problema, es solo para comunicación interna sin importancia",
-        "delta": { "legality": -15, "institutionalReputation": -8, "citizenSatisfaction": 2 },
+        "delta": {
+          "legality": -15,
+          "institutionalReputation": -8,
+          "citizenSatisfaction": 2
+        },
         "xpReward": 0,
         "educationalFeedback": "❌ Grave error. Transmitir datos personales de ciudadanos por aplicaciones de terceros sin control viola la LOPDP Art. 15 (base legal para tratamiento) y Art. 37 (medidas de seguridad). La Superintendencia de Protección de Datos puede sancionar con hasta el 2% del presupuesto (LOPDP Art. 68). Además, el COIP Art. 229 puede aplicar si hay acceso indebido.",
         "isCorrect": false,
@@ -231,7 +340,11 @@
       {
         "id": "CS005-D",
         "text": "Sancionar a los funcionarios e informar a la Superintendencia de Protección de Datos",
-        "delta": { "legality": 10, "institutionalReputation": 5, "citizenSatisfaction": -5 },
+        "delta": {
+          "legality": 10,
+          "institutionalReputation": 5,
+          "citizenSatisfaction": -5
+        },
         "xpReward": 30,
         "educationalFeedback": "Parcialmente correcto. La LOSEP Art. 48 lit. b) permite sancionar el incumplimiento de normas institucionales. Sin embargo, sancionar sin proveer alternativas no resuelve el problema estructural. Informar a la Superintendencia de Protección de Datos (LOPDP Art. 66) es correcto cuando hay potencial afectación de datos ciudadanos.",
         "isCorrect": false,
