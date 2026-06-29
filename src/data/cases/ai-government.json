@@ -5,7 +5,7 @@
     "description": "IA-Pública Labs propone un sistema de IA para detectar solicitudes fraudulentas del Bono de Desarrollo Humano (BDH). El sistema tiene 85% de precisión pero 15% de falsos positivos que negarían beneficios a personas pobres.",
     "category": "ai-government",
     "npcId": "supplier-002",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["inteligencia-artificial", "LOPDP", "BDH", "MIES", "sesgos-algorítmicos", "Constitución"],
     "options": [
@@ -53,7 +53,7 @@
     "description": "El ministerio evalúa un chatbot de IA para responder consultas de ciudadanos fuera del horario laboral. Verónica Paredes, ciudadana digital activa, lo demanda. Algunos funcionarios temen por sus empleos.",
     "category": "ai-government",
     "npcId": "citizen-002",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["chatbot", "LOSEP", "Agenda-Digital", "MINTEL", "atención-ciudadana", "automatización"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "IA-Pública Labs ofrece un algoritmo de priorización de trámites. Al revisar el código, notas que da menor prioridad a solicitudes de provincias rurales de la Amazonía y Sierra rural, reproduciendo brechas históricas.",
     "category": "ai-government",
     "npcId": "supplier-003",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "expert",
     "tags": ["sesgo-algorítmico", "Constitución", "LOPDP", "equidad", "pueblos-indígenas", "SERCOP"],
     "options": [
@@ -197,7 +197,7 @@
     "description": "Un funcionario del MSP usa IA generativa para redactar informes epidemiológicos oficiales que firma sin revisar. Los informes contienen datos incorrectos que fueron publicados y causaron pánico en redes sociales.",
     "category": "ai-government",
     "npcId": "citizen-005",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["IA-generativa", "LOSEP", "COA", "responsabilidad", "documentos-oficiales", "COIP"],
     "options": [

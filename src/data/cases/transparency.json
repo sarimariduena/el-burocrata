@@ -53,7 +53,7 @@
     "description": "Debes publicar el presupuesto detallado del ministerio en el portal. El director de comunicación pide omitir los rubros de viáticos al exterior de las autoridades.",
     "category": "transparency",
     "npcId": "minister-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["LOTAIP", "presupuesto", "transparencia-fiscal", "viáticos"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "La periodista Ana Valverde solicita todos los contratos con proveedores TI de los últimos 3 años. Algunos fueron adjudicados por contratación directa y el Director teme la publicación.",
     "category": "transparency",
     "npcId": "journalist-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["LOTAIP", "LOSNCP", "SERCOP", "contratación-pública", "periodismo"],
     "options": [
@@ -149,7 +149,7 @@
     "description": "La Contraloría General del Estado emitió un informe con observaciones sobre gastos de representación. El Ministro pide clasificarlo como reservado para evitar cobertura mediática.",
     "category": "accountability",
     "npcId": "comptroller-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["Contraloría", "rendición-de-cuentas", "LOTAIP", "ética-pública"],
     "options": [
@@ -197,7 +197,7 @@
     "description": "El Municipio de Quito tiene 12 meses de datos de monitoreo de calidad del aire que muestran niveles de PM2.5 por encima de normas OMS. El Alcalde pide retrasar la publicación.",
     "category": "open-data",
     "npcId": "citizen-002",
-    "requiredRank": "analyst",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["datos-abiertos", "salud-pública", "Municipio-Quito", "TULSMA"],
     "options": [

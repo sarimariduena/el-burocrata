@@ -5,7 +5,7 @@
     "description": "El representante de DataCorp Ecuador te llama y ofrece el 5% del valor del contrato como 'agradecimiento' si la licitación se dirige a su empresa. El contrato vale $200.000.",
     "category": "corruption",
     "npcId": "supplier-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["COIP", "cohecho", "LOSNCP", "SERCOP", "ética-pública"],
     "options": [
@@ -53,7 +53,7 @@
     "description": "Revisando los pliegos de una licitación de $500.000 para software institucional, notas que las especificaciones técnicas parecen diseñadas para que solo pueda ganar un proveedor específico.",
     "category": "public-ethics",
     "npcId": "comptroller-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["LOSNCP", "SERCOP", "contratación-pública", "concurrencia", "ética"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "El Prefecto Provincial te pide usar los vehículos institucionales y funcionarios del departamento para distribuir materiales de su campaña de reelección el próximo fin de semana.",
     "category": "public-ethics",
     "npcId": "minister-002",
-    "requiredRank": "analyst",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["LOSEP", "Ley-Electoral", "recursos-públicos", "campaña-política", "TCE"],
     "options": [
@@ -149,7 +149,7 @@
     "description": "El nuevo Director General pide incorporar a su cuñado como 'asesor técnico' por servicios ocasionales, sin concurso de méritos del Ministerio de Trabajo.",
     "category": "public-ethics",
     "npcId": "minister-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "hard",
     "tags": ["LOSEP", "nepotismo", "meritocracia", "MDT", "Constitución"],
     "options": [
@@ -197,7 +197,7 @@
     "description": "Antes de la publicación en el Registro Oficial de una resolución ministerial sobre una concesión minera en la Amazonía, un inversionista conocido te pide confirmar si fue aprobada.",
     "category": "public-ethics",
     "npcId": "business-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "expert",
     "tags": ["COIP", "información-privilegiada", "MAATE", "LOSEP", "Registro-Oficial"],
     "options": [

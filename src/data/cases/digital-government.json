@@ -5,7 +5,7 @@
     "description": "El ministerio tiene 47 trámites que requieren presencia física, incumpliendo el Plan Nacional de Gobierno Digital del Ecuador. Un consultor propone digitalizar los 10 más frecuentes como piloto.",
     "category": "digital-government",
     "npcId": "minister-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "normal",
     "tags": ["ventanilla-única", "SNAP", "Ley-Comercio-Electrónico", "trámites", "MINTEL"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "Un proveedor rechaza el contrato con firma electrónica alegando que 'no tiene validez legal'. El contrato por 200.000 USD con el Estado está paralizado. El SERCOP ya aprobó el proceso.",
     "category": "electronic-signature",
     "npcId": "supplier-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["firma-electrónica", "Ley-Comercio-Electrónico", "SERCOP", "contratos", "BCE"],
     "options": [
@@ -197,7 +197,7 @@
     "description": "El contrato de servidores físicos termina en 3 meses. El MINTEL acaba de certificar a NubeGov Solutions para el sector público ecuatoriano. Debes decidir entre renovar contrato, comprar equipos o migrar a la nube.",
     "category": "digital-government",
     "npcId": "supplier-002",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "expert",
     "tags": ["nube", "MINTEL", "LOPDP", "infraestructura", "continuidad", "soberanía-datos"],
     "options": [

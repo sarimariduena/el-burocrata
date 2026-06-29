@@ -5,7 +5,7 @@
     "description": "Varios funcionarios del Servicio Nacional de Atención Ciudadana recibieron correos falsos suplantando al departamento de TI pidiendo sus contraseñas. Tres ya las entregaron. Los sistemas están comprometidos.",
     "category": "cybersecurity",
     "npcId": "minister-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "hard",
     "tags": ["phishing", "seguridad", "respuesta-incidentes", "COIP", "EcuCERT"],
     "options": [
@@ -53,7 +53,7 @@
     "description": "Diego Villacís, investigador de ciberseguridad ecuatoriano, reporta una vulnerabilidad en el portal de trámites que expone datos de 50.000 ciudadanos. Pide reconocimiento público y señala que actuó de buena fe.",
     "category": "cybersecurity",
     "npcId": "citizen-004",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["vulnerabilidad", "datos-personales", "divulgación-responsable", "LOPDP", "COIP"],
     "options": [
@@ -149,7 +149,7 @@
     "description": "El 60% de los funcionarios usa contraseñas débiles o compartidas, incumpliendo el Esquema Gubernamental de Seguridad de la Información (EGSI). El área de TI propone implementar un gestor de contraseñas corporativo.",
     "category": "cybersecurity",
     "npcId": "supplier-001",
-    "requiredRank": "analyst",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["contraseñas", "EGSI", "MINTEL", "gestión-accesos", "LOSEP"],
     "options": [
@@ -197,7 +197,7 @@
     "description": "Funcionarios usan WhatsApp personal para comunicar información institucional confidencial porque el sistema oficial es lento. Esto incluye datos de ciudadanos protegidos por la LOPDP.",
     "category": "cybersecurity",
     "npcId": "citizen-001",
-    "requiredRank": "analyst",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["shadow-IT", "LOPDP", "LOSEP", "comunicaciones-seguras", "datos-personales"],
     "options": [

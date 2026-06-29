@@ -5,7 +5,7 @@
     "description": "Una empresa de marketing solicita la base de datos de contribuyentes del SRI para 'análisis estadísticos'. Ofrecen $50.000 por los datos. Invocan la Constitución Art. 16.",
     "category": "data-protection",
     "npcId": "business-001",
-    "requiredRank": "coordinator",
+    "requiredRank": "auxiliary",
     "difficulty": "normal",
     "tags": ["LOPDP", "datos-personales", "SRI", "privacidad", "consentimiento"],
     "options": [
@@ -53,7 +53,7 @@
     "description": "Un error de configuración en el portal del Ministerio de Salud Pública expuso historias clínicas de 10.000 ciudadanos por 6 horas. El fallo ya está corregido pero los datos son sensibles.",
     "category": "data-protection",
     "npcId": "citizen-005",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "hard",
     "tags": ["LOPDP", "brecha-datos", "datos-sensibles", "MSP", "notificación-72h"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "La Fiscalía General del Estado solicita el historial de correos institucionales y logs de acceso de un ex-funcionario investigado por peculado. No adjuntan orden judicial aún.",
     "category": "data-protection",
     "npcId": "comptroller-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "expert",
     "tags": ["LOPDP", "COIP", "orden-judicial", "Fiscalía", "debido-proceso"],
     "options": [

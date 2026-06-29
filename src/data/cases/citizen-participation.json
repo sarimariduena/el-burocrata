@@ -5,7 +5,7 @@
     "description": "Debes aprobar un reglamento de uso de datos personales. La Fundación Ciudadanía Digital EC pide consulta pública digital previa, invocando la Constitución Art. 85. El plazo institucional es ajustado.",
     "category": "citizen-participation",
     "npcId": "ngo-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "normal",
     "tags": ["consulta-pública", "Constitución", "CPCCS", "Ley-Participación-Ciudadana", "LOPDP"],
     "options": [
@@ -101,7 +101,7 @@
     "description": "El Municipio tiene $2 millones para inversión comunitaria bajo el mandato del COOTAD. El Prefecto Moreira propone presupuesto participativo digital. La Ley establece la obligatoriedad de la participación en los GAD.",
     "category": "citizen-participation",
     "npcId": "mayor-001",
-    "requiredRank": "director",
+    "requiredRank": "analyst",
     "difficulty": "normal",
     "tags": ["presupuesto-participativo", "COOTAD", "GAD", "CPCCS", "democracia-directa"],
     "options": [
