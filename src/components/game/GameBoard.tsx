@@ -43,13 +43,14 @@ export function GameBoard() {
         triggerRandomEvent(event);
         recentEventIdsRef.current = [...recentEventIdsRef.current.slice(-4), event.id];
         casesSinceLastEventRef.current = 0;
+        setTimeout(() => { loadingRef.current = false; }, 500);
         return;
       }
     }
 
     // Reciclar IDs resueltos para que los casos se repitan (excepto el último lote)
-    const resolvedIds = save.resolvedCaseIds.length >= 10
-      ? save.resolvedCaseIds.slice(-6)
+    const resolvedIds = save.resolvedCaseIds.length >= 6
+      ? save.resolvedCaseIds.slice(-4)
       : save.resolvedCaseIds;
 
     const nextCase = pickNextCase(
