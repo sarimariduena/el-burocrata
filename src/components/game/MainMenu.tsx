@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
+import { useIsMobile } from '@/hooks/useIsMobile';
 import type { Difficulty } from '@/types';
 
 const CHARS = [
@@ -15,15 +16,15 @@ const CHARS = [
 ];
 
 const DIFFS: { id: Difficulty; emoji: string; label: string; desc: string; color: string }[] = [
-  { id: 'easy',   emoji: '😊', label: 'FÁCIL',    desc: 'Para aprender tranquilo',      color: '#22c55e' },
-  { id: 'normal', emoji: '🎯', label: 'NORMAL',   desc: 'Equilibrado',                  color: '#3b82f6' },
-  { id: 'hard',   emoji: '🔥', label: 'DIFÍCIL',  desc: 'Más presión y eventos',        color: '#f97316' },
-  { id: 'expert', emoji: '💀', label: 'EXPERTO',  desc: 'Sin margen de error',          color: '#ef4444' },
+  { id: 'easy',   emoji: '😊', label: 'FÁCIL',    desc: 'Para aprender tranquilo', color: '#22c55e' },
+  { id: 'normal', emoji: '🎯', label: 'INTERMEDIO', desc: 'Equilibrado',           color: '#3b82f6' },
+  { id: 'hard',   emoji: '🔥', label: 'AVANZADO', desc: 'Más presión y eventos',  color: '#f97316' },
 ];
 
 export function MainMenu() {
   const initGame = useGameStore((s) => s.initGame);
   const save     = useGameStore((s) => s.save);
+  const isMobile = useIsMobile();
 
   const [step,       setStep]       = useState<'home' | 'new'>('home');
   const [name,       setName]       = useState('');
@@ -39,18 +40,18 @@ export function MainMenu() {
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 24, background: 'linear-gradient(160deg, #0f172a 0%, #1e1b4b 100%)' }}>
 
       {/* Título */}
-      <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} style={{ textAlign: 'center', marginBottom: 32 }}>
-        <div style={{ fontSize: 72, marginBottom: 8 }}>🏛️</div>
-        <h1 style={{ fontSize: 48, fontWeight: 900, color: '#fff', letterSpacing: 4, textShadow: '0 0 40px rgba(99,102,241,0.8)' }}>
+      <motion.div initial={{ opacity: 0, y: -30 }} animate={{ opacity: 1, y: 0 }} style={{ textAlign: 'center', marginBottom: isMobile ? 24 : 32 }}>
+        <div style={{ fontSize: isMobile ? 52 : 72, marginBottom: 8 }}>🏛️</div>
+        <h1 style={{ fontSize: isMobile ? 32 : 48, fontWeight: 900, color: '#fff', letterSpacing: isMobile ? 2 : 4, textShadow: '0 0 40px rgba(99,102,241,0.8)' }}>
           EL BURÓCRATA
         </h1>
-        <p style={{ color: '#94a3b8', fontSize: 13, letterSpacing: 3, marginTop: 6 }}>
+        <p style={{ color: '#94a3b8', fontSize: isMobile ? 11 : 13, letterSpacing: isMobile ? 1.5 : 3, marginTop: 6 }}>
           VIDEOJUEGO EDUCATIVO · NORMATIVA ECUATORIANA
         </p>
       </motion.div>
 
       {/* Personajes animados */}
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ display: 'flex', gap: 16, marginBottom: 40 }}>
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: isMobile ? 10 : 16, marginBottom: isMobile ? 28 : 40, maxWidth: 420 }}>
         {CHARS.map((c, i) => (
           <motion.div
             key={i}
@@ -59,7 +60,7 @@ export function MainMenu() {
             style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}
           >
             <div style={{
-              width: 64, height: 64, borderRadius: '50%', fontSize: 32,
+              width: isMobile ? 52 : 64, height: isMobile ? 52 : 64, borderRadius: '50%', fontSize: isMobile ? 26 : 32,
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               background: `radial-gradient(circle, ${c.color}44, #1e293b)`,
               border: `2px solid ${c.color}`,

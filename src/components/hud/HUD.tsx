@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useGameStore } from '@/store/gameStore';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 function Bar({ value, color, label, emoji }: { value: number; color: string; label: string; emoji: string }) {
   const isLow = value <= 25;
@@ -27,10 +28,77 @@ export function HUD() {
   const save = useGameStore((s) => s.save);
   const resetGame = useGameStore((s) => s.resetGame);
   const [confirm, setConfirm] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const isMobile = useIsMobile();
   if (!save) return null;
 
   const { indicators, statistics, currentYear, currentDay, xp, currentRank, playerName } = save;
 
+  const menuButton = !confirm ? (
+    <button onClick={() => setConfirm(true)} style={{ width: '100%', padding: 10, borderRadius: 10, border: '1px solid #475569', background: '#0f172a', color: '#94a3b8', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>
+      🏠 Menú principal
+    </button>
+  ) : (
+    <div style={{ padding: 12, background: '#0f172a', borderRadius: 10, border: '1px solid #ef4444' }}>
+      <p style={{ fontSize: 12, color: '#fca5a5', marginBottom: 8, textAlign: 'center', fontWeight: 700 }}>¿Volver al menú?</p>
+      <p style={{ fontSize: 11, color: '#64748b', marginBottom: 10, textAlign: 'center' }}>Se perderá la partida actual</p>
+      <div style={{ display: 'flex', gap: 6 }}>
+        <button onClick={resetGame} style={{ flex: 1, padding: 8, borderRadius: 8, border: 'none', background: '#ef4444', color: '#fff', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>Sí, salir</button>
+        <button onClick={() => setConfirm(false)} style={{ flex: 1, padding: 8, borderRadius: 8, border: '1px solid #334155', background: 'transparent', color: '#94a3b8', cursor: 'pointer', fontSize: 12 }}>Cancelar</button>
+      </div>
+    </div>
+  );
+
+  // ── Versión MÓVIL: barra compacta arriba, plegable ──
+  if (isMobile) {
+    return (
+      <div style={{ width: '100%', background: '#1e293b', borderBottom: '1px solid #334155', padding: 12, flexShrink: 0 }}>
+        {/* Fila superior: jugador + año/día */}
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, minWidth: 0 }}>
+            <span style={{ fontSize: 11, padding: '2px 8px', borderRadius: 20, background: 'rgba(99,102,241,0.2)', color: '#818cf8', border: '1px solid rgba(99,102,241,0.3)', fontWeight: 700, whiteSpace: 'nowrap' }}>🏅 {currentRank.toUpperCase()}</span>
+            <span style={{ fontWeight: 800, fontSize: 14, color: '#fff', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{playerName}</span>
+          </div>
+          <span style={{ fontSize: 11, color: '#94a3b8', whiteSpace: 'nowrap' }}>📅 {currentYear}/4 · D{currentDay}</span>
+        </div>
+
+        {/* Indicadores en cuadrícula 2x2 */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4px 16px', marginTop: 10 }}>
+          <Bar value={indicators.citizenSatisfaction}     color="#22c55e" label="Ciudadanía"  emoji="👥" />
+          <Bar value={indicators.budget}                  color="#3b82f6" label="Presupuesto" emoji="💰" />
+          <Bar value={indicators.legality}                color="#a855f7" label="Legalidad"   emoji="⚖️" />
+          <Bar value={indicators.institutionalReputation} color="#f97316" label="Reputación"  emoji="🏛️" />
+        </div>
+
+        {/* Detalles plegables: estadísticas + menú */}
+        {expanded && (
+          <div style={{ marginTop: 10 }}>
+            <div style={{ padding: 12, background: '#0f172a', borderRadius: 10, border: '1px solid #334155', marginBottom: 10 }}>
+              <div style={{ fontSize: 11, fontWeight: 700, color: '#64748b', letterSpacing: 1, marginBottom: 8 }}>ESTADÍSTICAS</div>
+              {[
+                { label: 'Casos resueltos',      value: statistics.totalCasesResolved, color: '#fff' },
+                { label: 'Decisiones correctas', value: statistics.correctDecisions,   color: '#22c55e' },
+                { label: 'Transparencia',        value: `${statistics.transparencyIndex}%`, color: '#06b6d4' },
+                { label: 'Corrupción',           value: `${statistics.corruptionIndex}%`,   color: statistics.corruptionIndex > 10 ? '#ef4444' : '#22c55e' },
+              ].map(s => (
+                <div key={s.label} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6, fontSize: 12 }}>
+                  <span style={{ color: '#64748b' }}>{s.label}</span>
+                  <span style={{ fontWeight: 700, color: s.color }}>{s.value}</span>
+                </div>
+              ))}
+            </div>
+            {menuButton}
+          </div>
+        )}
+
+        <button onClick={() => setExpanded(e => !e)} style={{ width: '100%', marginTop: 8, padding: 6, borderRadius: 8, border: '1px solid #334155', background: 'transparent', color: '#64748b', cursor: 'pointer', fontSize: 11, fontWeight: 700 }}>
+          {expanded ? '▲ Ocultar' : '▼ Estadísticas y menú'}
+        </button>
+      </div>
+    );
+  }
+
+  // ── Versión ESCRITORIO: barra lateral ──
   return (
     <div style={{ width: 240, minHeight: '100vh', background: '#1e293b', borderRight: '1px solid #334155', padding: 16, display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
 
@@ -90,20 +158,7 @@ export function HUD() {
 
       {/* Menú / Abandonar */}
       <div style={{ marginTop: 16 }}>
-        {!confirm ? (
-          <button onClick={() => setConfirm(true)} style={{ width: '100%', padding: 10, borderRadius: 10, border: '1px solid #475569', background: '#0f172a', color: '#94a3b8', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>
-            🏠 Menú principal
-          </button>
-        ) : (
-          <div style={{ padding: 12, background: '#0f172a', borderRadius: 10, border: '1px solid #ef4444' }}>
-            <p style={{ fontSize: 12, color: '#fca5a5', marginBottom: 8, textAlign: 'center', fontWeight: 700 }}>¿Volver al menú?</p>
-            <p style={{ fontSize: 11, color: '#64748b', marginBottom: 10, textAlign: 'center' }}>Se perderá la partida actual</p>
-            <div style={{ display: 'flex', gap: 6 }}>
-              <button onClick={resetGame} style={{ flex: 1, padding: 8, borderRadius: 8, border: 'none', background: '#ef4444', color: '#fff', cursor: 'pointer', fontSize: 12, fontWeight: 700 }}>Sí, salir</button>
-              <button onClick={() => setConfirm(false)} style={{ flex: 1, padding: 8, borderRadius: 8, border: '1px solid #334155', background: 'transparent', color: '#94a3b8', cursor: 'pointer', fontSize: 12 }}>Cancelar</button>
-            </div>
-          </div>
-        )}
+        {menuButton}
       </div>
     </div>
   );

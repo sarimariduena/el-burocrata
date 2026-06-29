@@ -10,6 +10,7 @@ import { EventModal } from '@/components/modals/EventModal';
 import { GameOverScreen } from './GameOverScreen';
 import { pickNextCase } from '@/services/caseEngine';
 import { shouldTriggerEvent, pickRandomEvent } from '@/services/eventEngine';
+import { useIsMobile } from '@/hooks/useIsMobile';
 import npcProfiles from '@/data/npcs/profiles.json';
 
 export function GameBoard() {
@@ -20,6 +21,8 @@ export function GameBoard() {
   const setCurrentCase     = useGameStore((s) => s.setCurrentCase);
   const triggerRandomEvent = useGameStore((s) => s.triggerRandomEvent);
   const advanceDay         = useGameStore((s) => s.advanceDay);
+
+  const isMobile = useIsMobile();
 
   const lastCategoryRef        = useRef<string | undefined>(undefined);
   const recentEventIdsRef      = useRef<string[]>([]);
@@ -78,10 +81,10 @@ export function GameBoard() {
     : null;
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh' }}>
+    <div style={{ display: 'flex', flexDirection: isMobile ? 'column' : 'row', minHeight: '100vh' }}>
       <HUD />
 
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '16px 32px', overflowY: 'auto' }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: isMobile ? 'flex-start' : 'center', padding: isMobile ? '14px 12px 32px' : '16px 32px', overflowY: 'auto' }}>
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
