@@ -104,10 +104,11 @@ export const useGameStore = create<GameStore>()(
       lastFeedback: '',
       lastChoiceCorrect: false,
       isLoading: false,
+      isPlaying: false,
 
       initGame(playerName, difficulty, mode) {
         const save = buildInitialSave(playerName, difficulty, mode);
-        set({ save, currentCase: null, currentEvent: null, showFeedback: false });
+        set({ save, currentCase: null, currentEvent: null, showFeedback: false, isPlaying: true });
       },
 
       setCurrentCase(gameCase) {
@@ -122,7 +123,7 @@ export const useGameStore = create<GameStore>()(
           try {
             const parsed = JSON.parse(stored);
             if (parsed?.state?.save) {
-              set({ save: parsed.state.save });
+              set({ save: parsed.state.save, isPlaying: true });
             }
           } catch {
             // partida corrupta — no hacer nada
@@ -285,6 +286,7 @@ export const useGameStore = create<GameStore>()(
           showFeedback: false,
           lastFeedback: '',
           lastChoiceCorrect: false,
+          isPlaying: false,
         });
       },
     }),

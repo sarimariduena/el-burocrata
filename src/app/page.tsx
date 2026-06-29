@@ -5,8 +5,10 @@ import { MainMenu } from '@/components/game/MainMenu';
 import { GameBoard } from '@/components/game/GameBoard';
 
 export default function Home() {
-  const save = useGameStore((s) => s.save);
+  const isPlaying = useGameStore((s) => s.isPlaying);
 
-  if (!save) return <MainMenu />;
+  // Siempre se abre en el menú principal. Solo entra al juego cuando
+  // la persona elige "Nueva partida" o "Continuar".
+  if (!isPlaying) return <MainMenu />;
   return <GameBoard />;
 }

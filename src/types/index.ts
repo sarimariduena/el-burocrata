@@ -219,6 +219,7 @@ export interface GameStore {
   lastFeedback: string;
   lastChoiceCorrect: boolean;
   isLoading: boolean;
+  isPlaying: boolean;
 
   // Acciones
   initGame: (playerName: string, difficulty: Difficulty, mode: 'campaign' | 'infinite') => void;
